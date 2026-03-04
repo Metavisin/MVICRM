@@ -92,7 +92,7 @@
       "phone": "Not publicly available",
       "location": "New York / London",
       "region": "US",
-      "category": "Fund-of-Funds",
+      "category": "Individual Investors",
       "notes": "Leading crypto investment firm. $100M+ in crypto fund investments. Provides LP access to crypto strategies.",
       "source": "Galaxy website",
       "linkedin": "https://www.linkedin.com/in/mikenovogratz",
@@ -169,48 +169,6 @@
       "contact_person": "Nikolajsen Capital AG"
     },
     {
-      "id": 81,
-      "name": "Zann Kwan",
-      "organization": "Raffles Family Office",
-      "email": "enquire@rafflesgroup.co",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Digital asset & FinTech expert. Independent advisory board member at Raffles Family Office. Good contact point.",
-      "source": "Campden FB",
-      "linkedin": "https://www.linkedin.com/in/zannkwan",
-      "contact_person": "Zann Kwan"
-    },
-    {
-      "id": 102,
-      "name": "Herbert Lau",
-      "organization": "XSquared Family Office",
-      "email": "herbert@xsquared.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Asset Allocator & Investment Advisor. 500+ LinkedIn connections. Strong crypto focus. LinkedIn: linkedin.com/in/herbertlyc",
-      "source": "LinkedIn",
-      "linkedin": "https://www.linkedin.com/in/herbertlyc",
-      "contact_person": "Herbert Lau"
-    },
-    {
-      "id": 210,
-      "name": "Mike Novogratz",
-      "organization": "Galaxy Digital",
-      "email": "funds@galaxydigital.com",
-      "phone": "Not publicly available",
-      "location": "New York / London",
-      "region": "US",
-      "category": "Fund-of-Funds",
-      "notes": "Leading crypto investment firm. Provides LP access to crypto strategies. TIER 2 TARGET.",
-      "source": "Galaxy website",
-      "linkedin": "https://www.linkedin.com/in/mikenovogratz",
-      "contact_person": "Mike Novogratz"
-    },
-    {
       "id": 211,
       "name": "Edwin Lawrence",
       "organization": "Nettlestone Capital Advisors",
@@ -246,7 +204,7 @@
       "phone": "Not publicly available",
       "location": "Hong Kong",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "[INDIVIDUAL with team] CEO of New World Development. Backed Hex Trust (crypto custody) and ConsenSys. Crypto-native ultra-HNW individual. TIER 1 TARGET - individual investor.",
       "source": "Forbes",
       "linkedin": "https://www.linkedin.com/in/adrian-cheng-8a384b1a7",
@@ -260,7 +218,7 @@
       "phone": "Not publicly available",
       "location": "Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "[INDIVIDUAL with team] CEO/Co-founder of ReferReach. Web3 angel investor in Singapore. TIER 2 TARGET - individual crypto investor.",
       "source": "Shizune",
       "linkedin": "https://www.linkedin.com/in/kellychoo",
@@ -274,7 +232,7 @@
       "phone": "Not publicly available",
       "location": "Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "[INDIVIDUAL with team] Serial entrepreneur. Top crypto KOL. Active angel investor in Web3 since 2014. TIER 1 TARGET - crypto whale individual.",
       "source": "Analytics Insight",
       "linkedin": "https://www.linkedin.com/in/evanluthra",
@@ -287,7 +245,7 @@
       "linkedin": "",
       "location": "Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Crypto whale. Early Bitcoin investor. Portfolio includes multiple crypto hedge funds. Typical ticket larger individual LP. TIER 1 TARGET - individual LP."
     },
     {
@@ -297,7 +255,7 @@
       "linkedin": "",
       "location": "Hong Kong",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Ex-crypto exchange founder. Has liquid crypto wealth. Looking for systematic crypto strategies. Typical ticket larger individual LP. TIER 1 TARGET."
     },
     {
@@ -307,7 +265,7 @@
       "linkedin": "",
       "location": "Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Early crypto investor. Portfolio includes DeFi protocols. Interested in hedge fund allocations. Typical ticket smaller individual LP. TIER 1 TARGET."
     },
     {
@@ -317,7 +275,7 @@
       "linkedin": "",
       "location": "Dubai, UAE",
       "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Tech entrepreneur with crypto exits. Now invests personal capital. Prefers liquid strategies. Typical ticket larger individual LP. TIER 1 TARGET."
     },
     {
@@ -327,7 +285,7 @@
       "linkedin": "",
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "UAE family contact. Diversifying into crypto. Small tickets to start (smaller ticket individual). Interest in systematic strategies. TIER 2 TARGET."
     },
     {
@@ -337,7 +295,7 @@
       "linkedin": "",
       "location": "Tokyo / Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Japanese tech entrepreneur. Crypto interested. Looking for managed exposure. Typical ticket individual LP. TIER 2 TARGET."
     },
     {
@@ -347,7 +305,7 @@
       "linkedin": "",
       "location": "Seoul / Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Korean crypto investor. Early BTC/ETH adopter. Interested in systematic strategies. Ticket larger individual LP. TIER 1 TARGET."
     },
     {
@@ -357,7 +315,7 @@
       "linkedin": "",
       "location": "Mumbai / Singapore",
       "region": "Asia",
-      "category": "Crypto-Native Family Offices",
+      "category": "Individual Investors",
       "notes": "Indian tech founder with crypto holdings. Looking for institutional crypto exposure. Ticket smaller individual LP. TIER 2 TARGET."
     }
   ]
