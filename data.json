@@ -171,14 +171,14 @@
       "notes": "Forward-thinking angel investor. Interests: Blockchain, FinTech, BioTech, Longevity. From Prestel Dubai network."
     },
     {
-      "name": "Hubertus (Enabling Future)",
+      "name": "Hubertus Thonhauser",
       "organization": "Enabling Future",
       "email": "",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/hubertus-thonhauser-b6a43127/",
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Family office VC. Investing in crypto since 2017. Backed layer one protocols, crypto-derivatives, institutional custodians."
+      "notes": "Managing Partner at Enabling Future. Family office VC. Investing in crypto since 2017. Backed layer one protocols, crypto-derivatives, institutional custodians. Also invested in hedge fund GP in crypto space."
     },
     {
       "name": "Vasil Family Office",
@@ -189,6 +189,46 @@
       "region": "Middle East",
       "category": "Regular Family Offices",
       "notes": "Family office. Investments: family business, shares, bonds, commodities, real estate, PE, VC, crypto."
+    },
+    {
+      "name": "Bobby Ong",
+      "organization": "CoinGecko",
+      "email": "",
+      "linkedin": "https://my.linkedin.com/in/bobbyongce",
+      "location": "Malaysia / Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Co-founder of CoinGecko (major crypto data platform). Exited crypto entrepreneur. Likely has crypto wealth to allocate. TIER 1 individual LP."
+    },
+    {
+      "name": "Kevin Liang",
+      "organization": "Web3 Builder & Investor",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/k8liang/",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Web3 builder and investor. Active in Singapore crypto scene. Could be LP."
+    },
+    {
+      "name": "Fardad Fateri",
+      "organization": "Family Office",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/fardadfateri/",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "Founder and investor. Harvard. Has family office. Crypto interested."
+    },
+    {
+      "name": "Luis G.",
+      "organization": "Investocrats International",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/lgintl/",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Founder at Investocrats. Blockchain/Crypto enthusiast. Angel investor in DeFi GameFi NFT."
     }
   ]
 }
