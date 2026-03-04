@@ -57,22 +57,8 @@
       "contact_person": "Elton Cheung"
     },
     {
-      "id": 8,
-      "name": "Campden FB / RBC Family Office Network",
-      "organization": "Campden Wealth",
-      "email": "info@campdenfb.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Fund-of-Funds",
-      "notes": "28% of Asia-Pacific family offices already invested in crypto (2024). Network of 2,000+ family offices. Good conduit for LP access.",
-      "source": "Campden FB Research",
-      "linkedin": "https://linkedin.com/company/campden-wealth",
-      "contact_person": "Campden FB / RBC Family Office Network"
-    },
-    {
       "id": 15,
-      "name": "Fosun Group Family Office",
+      "name": "Liang Xinjun",
       "organization": "Fosun International",
       "email": "ir@fosun.com",
       "phone": "Not publicly available",
@@ -81,7 +67,7 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Chinese conglomerate family office. Liang Xinjun (co-founder) active. Traditional + crypto allocation.",
       "source": "Empaxis Family Office Guide",
-      "linkedin": "https://linkedin.com/company/fosun-international",
+      "linkedin": "https://www.linkedin.com/in/xinjun-liang-245030bb/",
       "contact_person": "Fosun Group Family Office"
     },
     {
@@ -95,12 +81,12 @@
       "category": "Multi-Asset Family Offices",
       "notes": "20+ years financial markets experience. Derivatives background. Family office network in Singapore.",
       "source": "Prestel and Partner website",
-      "linkedin": "https://linkedin.com/in/tuckmengyee",
+      "linkedin": "https://www.linkedin.com/in/tuckmengyee",
       "contact_person": "Tuck Meng Yee"
     },
     {
       "id": 18,
-      "name": "Galaxy Digital",
+      "name": "Mike Novogratz",
       "organization": "Galaxy Digital Holdings",
       "email": "info@galaxydigital.com",
       "phone": "Not publicly available",
@@ -109,12 +95,12 @@
       "category": "Fund-of-Funds",
       "notes": "Leading crypto investment firm. $100M+ in crypto fund investments. Provides LP access to crypto strategies.",
       "source": "Galaxy website",
-      "linkedin": "https://linkedin.com/company/galaxy-digital",
+      "linkedin": "https://www.linkedin.com/in/mikenovogratz",
       "contact_person": "Galaxy Digital"
     },
     {
       "id": 26,
-      "name": "Raffles Family Office",
+      "name": "Zann Kwan",
       "organization": "Raffles Group",
       "email": "info@rafflesgroup.co",
       "phone": "Not publicly available",
@@ -123,7 +109,7 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Dual HQ in Hong Kong and Singapore. Representative offices across Asia. Potential crypto allocator.",
       "source": "Raffles Group website",
-      "linkedin": "https://linkedin.com/company/raffles-family-office",
+      "linkedin": "https://www.linkedin.com/in/zannkwan",
       "contact_person": "Raffles Family Office"
     },
     {
@@ -137,26 +123,12 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Focus on FinTech, Web3, AI. Strong network in Dubai family office circles.",
       "source": "Prestel website",
-      "linkedin": "https://linkedin.com/in/yusufalagh",
+      "linkedin": "https://www.linkedin.com/in/yusufalagh",
       "contact_person": "Yusuf Alagh"
     },
     {
-      "id": 51,
-      "name": "Double Peak",
-      "organization": "Double Peak Group",
-      "email": "info@doublepeak.io",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Hong Kong-based family office investing heavily in digital assets and blockchain. Founder ex-Bitcoin Suisse.",
-      "source": "Family Office Hub",
-      "linkedin": "https://linkedin.com/company/double-peak-group",
-      "contact_person": "Double Peak"
-    },
-    {
       "id": 52,
-      "name": "XSquared Family Office",
+      "name": "Herbert Lau",
       "organization": "XSquared",
       "email": "info@xsquared.com",
       "phone": "Not publicly available",
@@ -165,7 +137,7 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Singapore-based single family office. Strong tech/digital asset focus.",
       "source": "LinkedIn",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/herbertlyc",
       "contact_person": "XSquared Family Office"
     },
     {
@@ -184,7 +156,7 @@
     },
     {
       "id": 77,
-      "name": "Nikolajsen Capital AG",
+      "name": "Niklas Nikolajsen",
       "organization": "Nikolajsen Capital",
       "email": "info@nikolajsen.com",
       "phone": "Not publicly available",
@@ -193,7 +165,7 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Niklas Nikolajsen - founder of Bitcoin Suisse (2013). Early crypto investor. Family office since 2018. Swiss-based. High crypto allocation.",
       "source": "Family Office Hub",
-      "linkedin": "https://linkedin.com/in/nikolajsen",
+      "linkedin": "https://ch.linkedin.com/in/niklasnikolajsen",
       "contact_person": "Nikolajsen Capital AG"
     },
     {
@@ -225,20 +197,6 @@
       "contact_person": "Herbert Lau"
     },
     {
-      "id": 204,
-      "name": "Contact via Website",
-      "organization": "Portal Asset Management",
-      "email": "info@portal-am.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Emerging Manager Platforms",
-      "notes": "Runs Radiance Multi-Strategy Hedge Fund specifically designed for family offices in Singapore/Australia/NZ. Focus on systematic crypto strategies. TIER 1 TARGET.",
-      "source": "Asian Private Banker",
-      "linkedin": "https://www.linkedin.com/company/portal-asset-management",
-      "contact_person": "Contact via Website"
-    },
-    {
       "id": 210,
       "name": "Mike Novogratz",
       "organization": "Galaxy Digital",
@@ -268,7 +226,7 @@
     },
     {
       "id": 212,
-      "name": "DAMAC Capital",
+      "name": "Hussein Sajwani",
       "organization": "DAMAC Group",
       "email": "info@damacgroup.com",
       "phone": "Not publicly available",
@@ -277,22 +235,8 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Family office of DAMAC Group. Investment arm. Diversified across private/public equity. Potential crypto interest. TIER 2 TARGET.",
       "source": "Dakota",
-      "linkedin": "https://linkedin.com/company/damac-group",
+      "linkedin": "https://www.linkedin.com/in/hussein-sajwani",
       "contact_person": "DAMAC Capital"
-    },
-    {
-      "id": 215,
-      "name": "Contact via Website",
-      "organization": "SEDCO Capital",
-      "email": "info@sedcocapital.com",
-      "phone": "Not publicly available",
-      "location": "Jeddah, Saudi Arabia",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Sharia-compliant investment firm. Saudi-based. Encouraged to adopt digital assets. TIER 2 TARGET.",
-      "source": "CFA Institute",
-      "linkedin": "https://www.linkedin.com/company/sedco-capital",
-      "contact_person": "Contact via Website"
     },
     {
       "id": 218,
@@ -305,7 +249,7 @@
       "category": "Crypto-Native Family Offices",
       "notes": "[INDIVIDUAL with team] CEO of New World Development. Backed Hex Trust (crypto custody) and ConsenSys. Crypto-native ultra-HNW individual. TIER 1 TARGET - individual investor.",
       "source": "Forbes",
-      "linkedin": "https://linkedin.com/in/adrian-cheng-8a384b1a7",
+      "linkedin": "https://www.linkedin.com/in/adrian-cheng-8a384b1a7",
       "contact_person": "Adrian Cheng"
     },
     {
@@ -319,7 +263,7 @@
       "category": "Crypto-Native Family Offices",
       "notes": "[INDIVIDUAL with team] CEO/Co-founder of ReferReach. Web3 angel investor in Singapore. TIER 2 TARGET - individual crypto investor.",
       "source": "Shizune",
-      "linkedin": "https://linkedin.com/in/kellychoo",
+      "linkedin": "https://www.linkedin.com/in/kellychoo",
       "contact_person": "Kelly Choo"
     },
     {
@@ -333,7 +277,7 @@
       "category": "Crypto-Native Family Offices",
       "notes": "[INDIVIDUAL with team] Serial entrepreneur. Top crypto KOL. Active angel investor in Web3 since 2014. TIER 1 TARGET - crypto whale individual.",
       "source": "Analytics Insight",
-      "linkedin": "https://linkedin.com/in/evanluthra",
+      "linkedin": "https://www.linkedin.com/in/evanluthra",
       "contact_person": "Evan Luthra"
     }
   ]
