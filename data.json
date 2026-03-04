@@ -2399,6 +2399,126 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Kenyan crypto investor. Africa focus.",
       "source": "Industry knowledge"
+    },
+    {
+      "id": 201,
+      "name": "Elton Cheung",
+      "organization": "VMS Group",
+      "email": "elton.cheung@vmsgroup.com",
+      "phone": "Not publicly available",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Managing Partner. VMS Group made first crypto foray - $10M allocation to Re7 Capital (DeFi hedge fund). $4B AUM. Active in Singapore/Hong Kong. EXCELLENT FIT - already allocating to crypto hedge funds.",
+      "source": "Business Times, Blockhead"
+    },
+    {
+      "id": 202,
+      "name": "VMS Group",
+      "organization": "VMS Group",
+      "email": "info@vmsgroup.com",
+      "phone": "Not publicly available",
+      "location": "Hong Kong / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Multi-family office with $4B AUM. Just allocated $10M to crypto hedge fund Re7 Capital. Looking for systematic strategies. TIER 1 TARGET.",
+      "source": "Business Times"
+    },
+    {
+      "id": 203,
+      "name": "Jason",
+      "organization": "Raffles Family Office",
+      "email": "jason@rafflesgroup.co",
+      "phone": "Not publicly available",
+      "location": "Hong Kong / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Raffles launched digital asset fund in Hong Kong (April 2025). Focus on actively managed crypto exposure. Available to professional investors. TIER 1 TARGET.",
+      "source": "Raffles Group website"
+    },
+    {
+      "id": 204,
+      "name": "Portal Asset Management",
+      "organization": "Portal Asset Management",
+      "email": "info@portal-am.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Emerging Manager Platforms",
+      "notes": "Runs Radiance Multi-Strategy Hedge Fund specifically designed for family offices in Singapore/Australia/NZ. Focus on systematic crypto strategies. TIER 1 TARGET.",
+      "source": "Asian Private Banker"
+    },
+    {
+      "id": 205,
+      "name": "Amphibian Capital",
+      "organization": "Amphibian Capital",
+      "email": "info@amphibiancapital.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Fund-of-Funds",
+      "notes": "Crypto Quant Fund of Funds. Founder invested in crypto since 2013. Scaled MX.com from 2M to 28M users. TIER 2 TARGET - could allocate or co-invest.",
+      "source": "Company website"
+    },
+    {
+      "id": 206,
+      "name": "Re7 Capital",
+      "organization": "Re7 Capital",
+      "email": "info@re7capital.com",
+      "phone": "Not publicly available",
+      "location": "London / Dubai",
+      "region": "Middle East",
+      "category": "Hedge Funds",
+      "notes": "DeFi hedge fund that received $10M from VMS Group. Good benchmark for our strategy - systematic DeFi focus. May have LP network.",
+      "source": "Blockhead"
+    },
+    {
+      "id": 207,
+      "name": "Radiance Fund",
+      "organization": "Portal Asset Management",
+      "email": "info@portal-am.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Hedge Funds",
+      "notes": "Multi-strategy crypto hedge fund designed for family offices. Raised $100M+ in 3 months. Systematic approach. TIER 1 TARGET for comparison/outreach.",
+      "source": "Asian Private Banker"
+    },
+    {
+      "id": 208,
+      "name": "NextGen Digital Venture",
+      "organization": "NextGen Digital Venture",
+      "email": "info@nextgen-digital.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Raised $100M+ crypto equity fund. Delivered 375% return. Already invests in crypto hedge funds. TIER 1 TARGET.",
+      "source": "Reuters"
+    },
+    {
+      "id": 209,
+      "name": "Sygnum Bank",
+      "organization": "Sygnum",
+      "email": "info@sygnum.com",
+      "phone": "Not publicly available",
+      "location": "Zurich / Singapore",
+      "region": "EU",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "Crypto-native bank. Offers crypto yield funds. Institutional clients. Good for HNW crypto allocation.",
+      "source": "Sygnum website"
+    },
+    {
+      "id": 210,
+      "name": "Galaxy Asset Management",
+      "organization": "Galaxy Digital",
+      "email": "funds@galaxydigital.com",
+      "phone": "Not publicly available",
+      "location": "New York / London",
+      "region": "US",
+      "category": "Fund-of-Funds",
+      "notes": "Leading crypto investment firm. Provides LP access to crypto strategies. TIER 2 TARGET.",
+      "source": "Galaxy website"
     }
   ]
 }
