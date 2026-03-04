@@ -323,11 +323,11 @@
             <table>
                 <thead>
                     <tr>
-                        <th onclick="sortTable(0)">Name ↕</th>
-                        <th onclick="sortTable(1)">Organization ↕</th>
+                        <th onclick="sortTable(0)">Organization ↕</th>
+                        <th>Contact Person</th>
                         <th>Email</th>
                         <th>LinkedIn</th>
-                        <th onclick="sortTable(2)">Location ↕</th>
+                        <th onclick="sortTable(1)">Location ↕</th>
                         <th>Region</th>
                         <th>LP Category</th>
                         <th>Notes</th>
@@ -385,8 +385,8 @@
                 
                 return `
                     <tr>
-                        <td><strong>${escapeHtml(contact.name)}</strong></td>
-                        <td>${escapeHtml(contact.organization)}</td>
+                        <td><strong>${escapeHtml(contact.organization)}</strong></td>
+                        <td>${escapeHtml(contact.contact_person || '-')}</td>
                         <td class="email">${escapeHtml(contact.email)}</td>
                         <td>${contact.linkedin ? '<a href="'+escapeHtml(contact.linkedin)+'" target="_blank" class="linkedin-link">Profile</a>' : '-'}</td>
                         <td>${escapeHtml(contact.location)}</td>
