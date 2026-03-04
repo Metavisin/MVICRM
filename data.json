@@ -299,6 +299,26 @@
       "region": "Asia",
       "category": "Regular Family Offices",
       "notes": "Singapore family office. Active investor. Hosts family office events. Could be LP."
+    },
+    {
+      "name": "Eric Wong",
+      "organization": "Bricks and Mortar Management",
+      "email": "",
+      "linkedin": "",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "Managing Director at HK-based family office. Said allocate half of precious metals to crypto as hedge."
+    },
+    {
+      "name": "Yagnam Family Office",
+      "organization": "Yagnam",
+      "email": "",
+      "linkedin": "",
+      "location": "Asia",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "$1B family office actively investing in crypto hedge funds since 2020."
     }
   ]
 }
