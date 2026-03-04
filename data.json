@@ -2159,6 +2159,126 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Prominent crypto investor. Strong network.",
       "source": "Industry knowledge"
+    },
+    {
+      "id": 181,
+      "name": "Jonathan",
+      "organization": "UK Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "London, UK",
+      "region": "EU",
+      "category": "Multi-Asset Family Offices",
+      "notes": "UK family office. Crypto interest growing.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 182,
+      "name": "Oliver",
+      "organization": "London Crypto Fund",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "London, UK",
+      "region": "EU",
+      "category": "Hedge Funds",
+      "notes": "London-based crypto fund. Strong UK network.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 183,
+      "name": "James",
+      "organization": "UK Wealth Manager",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "London, UK",
+      "region": "EU",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "UK wealth manager. HNW crypto clients.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 184,
+      "name": "Wei",
+      "organization": "Hong Kong Crypto Fund",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Hedge Funds",
+      "notes": "HK crypto fund. Strong Asia focus.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 185,
+      "name": "Kevin",
+      "organization": "Singapore HNW",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "Singapore HNW. Crypto trader. Large positions.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 186,
+      "name": "Richard",
+      "organization": "Australian Crypto FO",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Sydney / Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Australian crypto family office. Singapore link.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 187,
+      "name": "David",
+      "organization": "Korean Crypto Investor",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Seoul / Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Korean crypto investor. Large positions.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 188,
+      "name": "Yuki",
+      "organization": "Japanese Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Tokyo / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Japanese family office. Crypto exploration.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 189,
+      "name": "Indian Tech Billionaire",
+      "organization": "Indian Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Mumbai / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Indian tech billionaire family office. Singapore base.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 190,
+      "name": "Indonesian Family Office",
+      "organization": "Indonesian FO",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Jakarta / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Indonesian family office. Growing crypto interest.",
+      "source": "Industry knowledge"
     }
   ]
 }
