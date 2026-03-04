@@ -289,6 +289,16 @@
       "region": "US",
       "category": "Fund-of-Funds",
       "notes": "Crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto funds."
+    },
+    {
+      "name": "Wee Ping Goh",
+      "organization": "Family Office",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/weeps/",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "Singapore family office. Active investor. Hosts family office events. Could be LP."
     }
   ]
 }
