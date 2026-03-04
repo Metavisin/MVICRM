@@ -1919,6 +1919,126 @@
       "category": "Tech/Web3 Entrepreneurs",
       "notes": "French tech investor. Exited founder. Crypto interested.",
       "source": "Industry knowledge"
+    },
+    {
+      "id": 161,
+      "name": "Alex",
+      "organization": "Pantera",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco / Singapore",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Pantera Capital. Early crypto VC. Exited crypto founders may allocate.",
+      "source": "Company website"
+    },
+    {
+      "id": 162,
+      "name": "Luke",
+      "organization": "a16z",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco",
+      "region": "US",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "a16z partner. Crypto. Exited founders may become LPs.",
+      "source": "Company website"
+    },
+    {
+      "id": 163,
+      "name": "Chris",
+      "organization": "Coinbase Ventures",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Coinbase VC arm. Crypto ecosystem. Good network.",
+      "source": "Company website"
+    },
+    {
+      "id": 164,
+      "name": "Lily",
+      "organization": "Blockchain Capital",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Early crypto VC. Strong track record.",
+      "source": "Company website"
+    },
+    {
+      "id": 165,
+      "name": "Brian",
+      "organization": "Electric Capital",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco / New York",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Crypto VC. Developer-focused. Strong network.",
+      "source": "Company website"
+    },
+    {
+      "id": 166,
+      "name": "Katie",
+      "organization": "Framework Ventures",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Crypto VC. DeFi focus. Strong network.",
+      "source": "Company website"
+    },
+    {
+      "id": 167,
+      "name": "Robert",
+      "organization": "SIX Group",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Zurich, Switzerland",
+      "region": "EU",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Swiss stock exchange. Digital assets. Family office clients.",
+      "source": "Company website"
+    },
+    {
+      "id": 168,
+      "name": "Stefan",
+      "organization": "Swiss Crypto Bank",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Zurich, Switzerland",
+      "region": "EU",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "Swiss crypto banking. HNW clients. Institutional quality.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 169,
+      "name": "Laurent",
+      "organization": "Geneva Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Geneva, Switzerland",
+      "region": "EU",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Geneva-based FO. Traditional + crypto interest.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 170,
+      "name": "Frederik",
+      "organization": "Dutch Tech Investor",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Amsterdam / Singapore",
+      "region": "EU",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Dutch investor. Tech exits. Singapore focus.",
+      "source": "Industry knowledge"
     }
   ]
 }
