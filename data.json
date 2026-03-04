@@ -229,6 +229,36 @@
       "region": "Asia",
       "category": "Individual Investors",
       "notes": "Founder at Investocrats. Blockchain/Crypto enthusiast. Angel investor in DeFi GameFi NFT."
+    },
+    {
+      "name": "Yat Siu",
+      "organization": "Animoca Brands",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/yatsiu/",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Co-founder of Animoca Brands (major Web3 gaming company). Exited multiple times. Has crypto wealth to allocate."
+    },
+    {
+      "name": "Whampoa Group",
+      "organization": "Whampoa Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "Tied to Singapore Lee family. Launched crypto venture fund in 2022. Major Singapore family office now in crypto."
+    },
+    {
+      "name": "CMCC Global",
+      "organization": "CMCC Global",
+      "email": "",
+      "linkedin": "",
+      "location": "Hong Kong / Singapore",
+      "region": "Asia",
+      "category": "Fund-of-Funds",
+      "notes": "One of Asias first VC focused on blockchain. Could allocate to emerging crypto managers."
     }
   ]
 }
