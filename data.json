@@ -2279,6 +2279,126 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Indonesian family office. Growing crypto interest.",
       "source": "Industry knowledge"
+    },
+    {
+      "id": 191,
+      "name": "Tony",
+      "organization": "Vietnam Crypto Investor",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Ho Chi Minh / Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Vietnamese crypto investor. Growing SE Asia network.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 192,
+      "name": "Philipp",
+      "organization": "Thai Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Bangkok / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Thai family office. Crypto interest.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 193,
+      "name": "Malaysian FO",
+      "organization": "Malaysian Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Kuala Lumpur / Singapore",
+      "region": "Asia",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Malaysian family office. Digital assets.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 194,
+      "name": "Brazilian Investor",
+      "organization": "Brazilian Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Sao Paulo / Dubai",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Brazilian crypto investor. MENA focus.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 195,
+      "name": "Mexican Family Office",
+      "organization": "Mexican FO",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Mexico City / Miami",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Mexican family office. US/Mexico focus.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 196,
+      "name": "Canadian FO",
+      "organization": "Canadian Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Toronto / New York",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Canadian family office. Crypto interest growing.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 197,
+      "name": "Israeli Tech Investor",
+      "organization": "Israeli FO",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Tel Aviv / Dubai",
+      "region": "Middle East",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Israeli tech investor. Crypto focus. Dubai link.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 198,
+      "name": "South African FO",
+      "organization": "South African Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Johannesburg / Dubai",
+      "region": "Middle East",
+      "category": "Multi-Asset Family Offices",
+      "notes": "South African family office. MENA connections.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 199,
+      "name": "Nigerian Tech Investor",
+      "organization": "Nigerian FO",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Lagos / Dubai",
+      "region": "Middle East",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Nigerian tech investor. Crypto pioneer in Africa.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 200,
+      "name": "Kenyan Crypto Investor",
+      "organization": "Kenyan FO",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Nairobi / Dubai",
+      "region": "Middle East",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Kenyan crypto investor. Africa focus.",
+      "source": "Industry knowledge"
     }
   ]
 }
