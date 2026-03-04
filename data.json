@@ -1,18 +1,6 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "name": "Temasek Holdings",
-      "organization": "Temasek Holdings",
-      "email": "enquiry@temasek.com.sg",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Singapore sovereign wealth fund with crypto exposure via blockchain infrastructure. Has invested in crypto exchanges. Large ticket size potential ($10M+).",
-      "source": "Reuters, company filings"
-    },
-    {
       "id": 2,
       "name": "NextGen Digital Venture",
       "organization": "NextGen Digital Venture",
@@ -23,18 +11,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Raised $100M+ crypto equity fund. Delivered 375% return. Strong crypto conviction. Good LP prospect for crypto funds.",
       "source": "Reuters, DailyCoin"
-    },
-    {
-      "id": 3,
-      "name": "2PointZero",
-      "organization": "International Holding Company (IHC)",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Emerging Manager Platforms",
-      "notes": "Family office under IHC. Venture capital focus. Pro-crypto policies in UAE. Potential gateway to UAE investor network.",
-      "source": "Dakota Family Office Guide"
     },
     {
       "id": 4,
@@ -61,18 +37,6 @@
       "source": "Ghaf Capital website"
     },
     {
-      "id": 6,
-      "name": "Mubadala Investment Co.",
-      "organization": "Mubadala Investment Co.",
-      "email": "info@mubadala.com",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Abu Dhabi sovereign wealth fund. Acquired $436.9M in iShares Bitcoin Trust ETF (Feb 2025). Large ticket sizes. Institutional-grade governance.",
-      "source": "AInvest, Reuters"
-    },
-    {
       "id": 7,
       "name": "VMS Group",
       "organization": "VMS Group",
@@ -95,30 +59,6 @@
       "category": "Fund-of-Funds",
       "notes": "28% of Asia-Pacific family offices already invested in crypto (2024). Network of 2,000+ family offices. Good conduit for LP access.",
       "source": "Campden FB Research"
-    },
-    {
-      "id": 9,
-      "name": "Sheikh Tahnoon bin Zayed al-Nahyan",
-      "organization": "Abu Dhabi Royal Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Backed $500M+ into World Liberty Financial. Strong crypto conviction at royal level. Ultra-high ticket size ($10M+).",
-      "source": "Financial Times, CNN"
-    },
-    {
-      "id": 10,
-      "name": "DIFC Family Offices",
-      "organization": "Dubai International Financial Centre",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Pro-crypto regulatory regime. Growing hub for crypto fund managers. Multiple family offices setting up in DIFC.",
-      "source": "The National UAE"
     },
     {
       "id": 11,
@@ -178,18 +118,6 @@
       "region": "Asia",
       "category": "Multi-Asset Family Offices",
       "notes": "Chinese conglomerate family office. Liang Xinjun (co-founder) active. Traditional + crypto allocation.",
-      "source": "Empaxis Family Office Guide"
-    },
-    {
-      "id": 16,
-      "name": "Ray Dalio Family Office",
-      "organization": "Dalio Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Connecticut / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "World's largest family office. Has shown interest in BTC. Institutional governance. Large tickets but high scrutiny.",
       "source": "Empaxis Family Office Guide"
     },
     {
@@ -253,18 +181,6 @@
       "source": "Company website"
     },
     {
-      "id": 22,
-      "name": "Brevan Howard Crypto",
-      "organization": "Brevan Howard",
-      "email": "info@brevanhoward.com",
-      "phone": "Not publicly available",
-      "location": "London / Geneva",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Macro hedge fund launching crypto fund. $25B+ AUM. Would allocate to external crypto managers.",
-      "source": "Industry news"
-    },
-    {
       "id": 23,
       "name": "Citi Private Bank Asia",
       "organization": "Citi",
@@ -313,42 +229,6 @@
       "source": "Raffles Group website"
     },
     {
-      "id": 27,
-      "name": "Bayshore Global Management",
-      "organization": "Google Co-Founder Sergey Brin",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Sergey Brin's family office set up in Singapore. Tech billionaire with crypto interest.",
-      "source": "Empaxis Family Office Guide"
-    },
-    {
-      "id": 28,
-      "name": "Mubadala Capital",
-      "organization": "Mubadala Capital",
-      "email": "info@mubadala.com",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Emerging Manager Platforms",
-      "notes": "Venture arm of Mubadala. invests in emerging managers. Could seed new crypto strategies.",
-      "source": "Company website"
-    },
-    {
-      "id": 29,
-      "name": "Saudi Arabia PIF",
-      "organization": "Public Investment Fund",
-      "email": "contact@pif.gov.sa",
-      "phone": "Not publicly available",
-      "location": "Riyadh, Saudi Arabia",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Saudi Arabia's sovereign wealth fund ($600B+). Increasing tech/crypto allocations. Large tickets.",
-      "source": "PIF disclosures"
-    },
-    {
       "id": 30,
       "name": "Antler VC",
       "organization": "Antler",
@@ -383,18 +263,6 @@
       "category": "Tech/Web3 Entrepreneurs",
       "notes": "Singapore-based VC. Strong Southeast Asia network. Exited founders potential LPs.",
       "source": "Company website"
-    },
-    {
-      "id": 33,
-      "name": "Qatar Investment Authority",
-      "organization": "QIA",
-      "email": "info@qia.qa",
-      "phone": "Not publicly available",
-      "location": "Doha, Qatar",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Qatar sovereign wealth fund. Growing interest in crypto/fintech. Large tickets.",
-      "source": "QIA disclosures"
     },
     {
       "id": 34,
@@ -529,18 +397,6 @@
       "source": "Prestel website"
     },
     {
-      "id": 45,
-      "name": "Asian Private Banker Network",
-      "organization": "Asian Private Banker",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Industry network. HNW individuals seeking crypto exposure. Good intro conduit.",
-      "source": "Industry association"
-    },
-    {
       "id": 46,
       "name": "Cumberland DRW",
       "organization": "DRW",
@@ -623,18 +479,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Singapore-based single family office. Strong tech/digital asset focus.",
       "source": "LinkedIn"
-    },
-    {
-      "id": 53,
-      "name": "SEDCO Capital",
-      "organization": "SEDCO Capital",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Jeddah, Saudi Arabia",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Saudi-based Sharia-compliant investment firm. Increasing tech allocations. Potential crypto interest.",
-      "source": "CFA Institute"
     },
     {
       "id": 54,
@@ -841,42 +685,6 @@
       "source": "Industry news"
     },
     {
-      "id": 71,
-      "name": "Jane Street",
-      "organization": "Jane Street",
-      "email": "info@janestreet.com",
-      "phone": "Not publicly available",
-      "location": "New York / London / Singapore",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Quantitative trading firm. Crypto market making. May allocate to systematic strategies.",
-      "source": "Company website"
-    },
-    {
-      "id": 72,
-      "name": "Two Sigma",
-      "organization": "Two Sigma",
-      "email": "invest@twosigma.com",
-      "phone": "Not publicly available",
-      "location": "New York / London",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Quant hedge fund. Exploring crypto. $60B+ AUM. Large potential tickets.",
-      "source": "Company website"
-    },
-    {
-      "id": 73,
-      "name": "DE Shaw",
-      "organization": "D.E. Shaw",
-      "email": "contact@deshaw.com",
-      "phone": "Not publicly available",
-      "location": "New York / London",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Quant hedge fund. Crypto exploration. $60B+ AUM. Institutional quality.",
-      "source": "Company website"
-    },
-    {
       "id": 74,
       "name": "Sequoia India/Singapore",
       "organization": "Sequoia Capital",
@@ -923,30 +731,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Niklas Nikolajsen - founder of Bitcoin Suisse (2013). Early crypto investor. Family office since 2018. Swiss-based. High crypto allocation.",
       "source": "Family Office Hub"
-    },
-    {
-      "id": 78,
-      "name": "Advani Family Office",
-      "organization": "Advani Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Runs co-investing platform for family offices. Based in Dubai. Pro-crypto. Easy paperwork vs Singapore.",
-      "source": "The National UAE"
-    },
-    {
-      "id": 79,
-      "name": "Ahmed Al Qassim Family Office",
-      "organization": "Ahmed Al Qassim",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Pursues Sharia-compliant crypto investments. Active in Dubai crypto scene.",
-      "source": "Insights4VC"
     },
     {
       "id": 80,
@@ -1033,18 +817,6 @@
       "source": "Company website"
     },
     {
-      "id": 87,
-      "name": "Citadel Securities",
-      "organization": "Citadel Securities",
-      "email": "info@citadel.com",
-      "phone": "Not publicly available",
-      "location": "New York / Singapore",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Market maker exploring crypto. Large AUM. Potential allocator.",
-      "source": "Industry news"
-    },
-    {
       "id": 88,
       "name": "Virtu Financial",
       "organization": "Virtu Financial",
@@ -1102,42 +874,6 @@
       "region": "US",
       "category": "HNW Individuals via Private Banks",
       "notes": "Business banking with crypto. Startups need crypto banking.",
-      "source": "Company website"
-    },
-    {
-      "id": 93,
-      "name": "Mercuria",
-      "organization": "Mercuria",
-      "email": "info@mercuria.com",
-      "phone": "Not publicly available",
-      "location": "Geneva / Singapore",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Commodity trading firm. Crypto trading. Traditional finance meets crypto.",
-      "source": "Company website"
-    },
-    {
-      "id": 94,
-      "name": "Trafigura",
-      "organization": "Trafigura",
-      "email": "contact@trafigura.com",
-      "phone": "Not publicly available",
-      "location": "Singapore / Geneva",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Commodity giant. Crypto exploration. Large tickets.",
-      "source": "Industry news"
-    },
-    {
-      "id": 95,
-      "name": "Venture Capital Dharma",
-      "organization": "VC Dharma",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "India-focused VC. Tech exits could lead to family office creation.",
       "source": "Company website"
     },
     {
@@ -1225,78 +961,6 @@
       "source": "LinkedIn"
     },
     {
-      "id": 103,
-      "name": "Kingsley Advani",
-      "organization": "Advani Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "British serial entrepreneur. Moved to Dubai. Runs family office. Pro-crypto. LinkedIn: linkedin.com/in/kingsley-advani",
-      "source": "The National UAE"
-    },
-    {
-      "id": 104,
-      "name": "Sheikh Saeed Al Maktoum",
-      "organization": "Sheikh Saeed Al Maktoum Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Dubai royal family. Private investment vehicle. Extensive UAE ties. Large ticket sizes.",
-      "source": "FINTRX"
-    },
-    {
-      "id": 105,
-      "name": "Michel Daher",
-      "organization": "Daher Capital",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "From Daher Foods. Diversified into real estate, stocks, VC. Dubai-based. LinkedIn: linkedin.com/in/micheldaher",
-      "source": "Altoo"
-    },
-    {
-      "id": 106,
-      "name": "Chantel",
-      "organization": "Crypto Angel Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Forward-thinking angel investor. Blockchain, FinTech, BioTech, longevity. Prestel Dubai network.",
-      "source": "Prestel Dubai"
-    },
-    {
-      "id": 107,
-      "name": "Paul Aver",
-      "organization": "Frontier Path",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Emerging Manager Platforms",
-      "notes": "Managing partner. VC consulting for Dubai family offices. Good intro to FO network.",
-      "source": "Empaxis"
-    },
-    {
-      "id": 108,
-      "name": "Tensai Holdings",
-      "organization": "Tensai Holdings",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Family office specializing in PE. Dubai-based. Investment services.",
-      "source": "Dakota"
-    },
-    {
       "id": 109,
       "name": "Lunate",
       "organization": "Lunate",
@@ -1345,18 +1009,6 @@
       "source": "Dakota"
     },
     {
-      "id": 113,
-      "name": "Peter Thiel",
-      "organization": "Thiel Capital",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "San Francisco, USA",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "PayPal co-founder. Early Bitcoin investor. Family office. Large tickets. High conviction.",
-      "source": "FINTRX"
-    },
-    {
       "id": 114,
       "name": "Joe Kwan",
       "organization": "Raffles Family Office",
@@ -1379,18 +1031,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Raffles FO leadership. Real estate + alternative investments.",
       "source": "LinkedIn"
-    },
-    {
-      "id": 116,
-      "name": "Kyu Ho",
-      "organization": "Crypto Pioneer",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Podcast host. Crypto Revolution show. Strong voice in Singapore crypto scene.",
-      "source": "Raffles Podcast"
     },
     {
       "id": 117,
@@ -1429,18 +1069,6 @@
       "source": "LinkedIn"
     },
     {
-      "id": 120,
-      "name": "Crystal Cruse",
-      "organization": "Lindeque Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Connector with deep network. Investor introductions. LinkedIn: linkedin.com/in/crystal-cruse-7828b413",
-      "source": "LinkedIn"
-    },
-    {
       "id": 121,
       "name": "Idan Levy",
       "organization": "DC Finance",
@@ -1465,18 +1093,6 @@
       "source": "LinkedIn"
     },
     {
-      "id": 123,
-      "name": "Chris Yin",
-      "organization": "Stripe",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "San Francisco / Singapore",
-      "region": "US",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Ex-Stripe. Exited founder. May have personal crypto allocation. Potential LP.",
-      "source": "Industry knowledge"
-    },
-    {
       "id": 124,
       "name": "Edward Yau",
       "organization": "Dragonfly Capital",
@@ -1487,18 +1103,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Managing Partner at Dragonfly. Key crypto VC contact in Asia.",
       "source": "Company website"
-    },
-    {
-      "id": 125,
-      "name": "Moses Muthama",
-      "organization": "Cryptonization",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Nairobi / Dubai",
-      "region": "Middle East",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "African crypto pioneer. Building bridges Africa-MENA. Good network.",
-      "source": "Industry news"
     },
     {
       "id": 126,
@@ -1513,102 +1117,6 @@
       "source": "Company website"
     },
     {
-      "id": 127,
-      "name": "Shailesh Lakhavani",
-      "organization": "Buddha",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Ex-BitMEX. Strong crypto network in Asia. Could be LP or gateway.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 128,
-      "name": "Arthur Zhang",
-      "organization": "ABC123",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Shanghai / Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto trader. Strong following. May allocate personally.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 129,
-      "name": "Riyaz",
-      "organization": "Crypto Fund",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Dubai-based crypto fund manager. Good network in MENA.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 130,
-      "name": "Daniel V.",
-      "organization": "Digital Finance Group",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Singapore crypto finance. Family office services.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 131,
-      "name": "Jeffrey",
-      "organization": "AngelCentral",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Singapore angel network. 120K+ investors. Good for syndicate leads.",
-      "source": "AngelCentral"
-    },
-    {
-      "id": 132,
-      "name": "Kenneth",
-      "organization": "Investment Network Singapore",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Singapore angel investment network. Entrepreneur connections.",
-      "source": "InvestmentNetwork.sg"
-    },
-    {
-      "id": 133,
-      "name": "Gaurav",
-      "organization": "Crypto Angel Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Active crypto angel in Singapore. Exited founder.",
-      "source": "AngelList"
-    },
-    {
-      "id": 134,
-      "name": "Rishi",
-      "organization": "Tech Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Hong Kong tech angel. Crypto interested. LinkedIn: 500+",
-      "source": "LinkedIn"
-    },
-    {
       "id": 135,
       "name": "Boon Sim",
       "organization": "Credit Suisse / Family Office",
@@ -1621,30 +1129,6 @@
       "source": "Industry knowledge"
     },
     {
-      "id": 136,
-      "name": "John",
-      "organization": "WOO Network",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "WOO Network founder ecosystem. May. Crypto allocate.",
-      "source": "Company website"
-    },
-    {
-      "id": 137,
-      "name": "Ran",
-      "organization": "NEO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Shanghai / Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "NEO founder. Chinese crypto pioneer. Strong network.",
-      "source": "Industry knowledge"
-    },
-    {
       "id": 138,
       "name": "CZ",
       "organization": "Binance",
@@ -1654,18 +1138,6 @@
       "region": "Middle East",
       "category": "Crypto-Native Family Offices",
       "notes": "Binance founder. World's largest crypto exchange. Ultra high net worth. Personal crypto investments.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 139,
-      "name": "Arthur Hayes",
-      "organization": "BitMEX",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore / Dubai",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "BitMEX founder. Crypto derivatives pioneer. Personal trading.",
       "source": "Industry knowledge"
     },
     {
@@ -1705,222 +1177,6 @@
       "source": "IQ-EQ website"
     },
     {
-      "id": 143,
-      "name": "Nexus Wealth Management",
-      "organization": "Nexus",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Family Office Summit partner. UAE wealth management.",
-      "source": "Family Office Summit"
-    },
-    {
-      "id": 144,
-      "name": "Select Equity",
-      "organization": "Select Equity",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Family Office Summit partner. Investment firm.",
-      "source": "Family Office Summit"
-    },
-    {
-      "id": 145,
-      "name": "Mashreq Bank",
-      "organization": "Mashreq",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "UAE bank. Family Office Summit partner. Private banking.",
-      "source": "Family Office Summit"
-    },
-    {
-      "id": 146,
-      "name": "Justin",
-      "organization": "Exo Prime",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Dubai-based family office. Real estate + alternatives.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 147,
-      "name": "Michele",
-      "organization": "MNM Capital",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Dubai family office. Alternatives focus.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 148,
-      "name": "Raj",
-      "organization": "Emerging Markets FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Emerging markets focused. Crypto interest growing.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 149,
-      "name": "Ahmad",
-      "organization": "Saudi Tech Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Riyadh, Saudi Arabia",
-      "region": "Middle East",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Saudi-based tech investor. Crypto interested.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 150,
-      "name": "Mohammed",
-      "organization": "Saudi Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Jeddah, Saudi Arabia",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Saudi family office. Growing crypto interest.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 151,
-      "name": "Dr. Abdulrahman",
-      "organization": "Saudi Arabian Crypto Initiative",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Riyadh, Saudi Arabia",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Saudi crypto initiative lead. Government + family office connections.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 152,
-      "name": "Omar",
-      "organization": "MENA Blockchain Association",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Blockchain association. Good network to family offices.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 153,
-      "name": "Sarah",
-      "organization": "Emirates NBD Digital",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Emirates NBD digital banking. Private banking crypto interest.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 154,
-      "name": "Vikram",
-      "organization": "Indian Crypto HNI",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Indian HNI in Singapore. Crypto trader. Large positions.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 155,
-      "name": "Wei",
-      "organization": "Chinese Crypto Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Chinese trader moved to Singapore. Large crypto wealth.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 156,
-      "name": "Tom",
-      "organization": "Global Trading Firm",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "London / Dubai",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Global trading. Crypto exploration. Large tickets.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 157,
-      "name": "Marcus",
-      "organization": "European Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Zurich, Switzerland",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Swiss family office. Crypto interest growing.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 158,
-      "name": "Erik",
-      "organization": "Nordic Crypto Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Stockholm / Singapore",
-      "region": "EU",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Nordic investor. Singapore based. Crypto focus.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 159,
-      "name": "Hans",
-      "organization": "German Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Frankfurt, Germany",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "German family office. Traditional + crypto exploration.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 160,
-      "name": "Pierre",
-      "organization": "French Tech Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Paris / Dubai",
-      "region": "EU",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "French tech investor. Exited founder. Crypto interested.",
-      "source": "Industry knowledge"
-    },
-    {
       "id": 161,
       "name": "Alex",
       "organization": "Pantera",
@@ -1930,30 +1186,6 @@
       "region": "US",
       "category": "Crypto-Native Family Offices",
       "notes": "Pantera Capital. Early crypto VC. Exited crypto founders may allocate.",
-      "source": "Company website"
-    },
-    {
-      "id": 162,
-      "name": "Luke",
-      "organization": "a16z",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "San Francisco",
-      "region": "US",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "a16z partner. Crypto. Exited founders may become LPs.",
-      "source": "Company website"
-    },
-    {
-      "id": 163,
-      "name": "Chris",
-      "organization": "Coinbase Ventures",
-      "email": "ventures@coinbase.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Coinbase VC arm. Crypto ecosystem. Good network.",
       "source": "Company website"
     },
     {
@@ -2003,402 +1235,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Swiss stock exchange. Digital assets. Family office clients.",
       "source": "Company website"
-    },
-    {
-      "id": 168,
-      "name": "Stefan",
-      "organization": "Swiss Crypto Bank",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Zurich, Switzerland",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Swiss crypto banking. HNW clients. Institutional quality.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 169,
-      "name": "Laurent",
-      "organization": "Geneva Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Geneva, Switzerland",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Geneva-based FO. Traditional + crypto interest.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 170,
-      "name": "Frederik",
-      "organization": "Dutch Tech Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Amsterdam / Singapore",
-      "region": "EU",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Dutch investor. Tech exits. Singapore focus.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 171,
-      "name": "Michael",
-      "organization": "Goldman Sachs Digital",
-      "email": "gs@gs.com",
-      "phone": "Not publicly available",
-      "location": "New York / London",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Goldman Sachs digital assets. Institutional crypto. Large tickets.",
-      "source": "Company website"
-    },
-    {
-      "id": 172,
-      "name": "James",
-      "organization": "Morgan Stanley Digital",
-      "email": "info@morganstanley.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Morgan Stanley private bank. HNW crypto interest.",
-      "source": "Company website"
-    },
-    {
-      "id": 173,
-      "name": "David",
-      "organization": "JP Morgan Onyx",
-      "email": "info@jpmorgan.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "JP Morgan blockchain. Onyx. Institutional crypto.",
-      "source": "Company website"
-    },
-    {
-      "id": 174,
-      "name": "Sarah Chen",
-      "organization": "BlackRock Digital",
-      "email": "info@blackrock.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "BlackRock digital assets. Bitcoin ETF. Institutional adoption.",
-      "source": "Company website"
-    },
-    {
-      "id": 175,
-      "name": "Fidelity Digital",
-      "organization": "Fidelity",
-      "email": "info@fidelity.com",
-      "phone": "Not publicly available",
-      "location": "Boston",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Fidelity digital assets. Bitcoin ETF. Institutional.",
-      "source": "Company website"
-    },
-    {
-      "id": 176,
-      "name": "VanEck Digital",
-      "organization": "VanEck",
-      "email": "info@vaneck.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "VanEck digital assets. Bitcoin ETF. Crypto focus.",
-      "source": "Company website"
-    },
-    {
-      "id": 177,
-      "name": "Grayscale",
-      "organization": "Grayscale Investments",
-      "email": "info@grayscale.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Grayscale. Crypto ETFs. Institutional access.",
-      "source": "Company website"
-    },
-    {
-      "id": 178,
-      "name": "Anthony",
-      "organization": "Bitwise",
-      "email": "info@bitwise.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Bitwise. Crypto index funds. Institutional.",
-      "source": "Company website"
-    },
-    {
-      "id": 179,
-      "name": "Matthew",
-      "organization": "21Shares",
-      "email": "info@21shares.com",
-      "phone": "Not publicly available",
-      "location": "Zurich / New York",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "21Shares. Crypto ETPs. European + US.",
-      "source": "Company website"
-    },
-    {
-      "id": 180,
-      "name": "Hester",
-      "organization": "Crypto Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "San Francisco",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Prominent crypto investor. Strong network.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 181,
-      "name": "Jonathan",
-      "organization": "UK Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "London, UK",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "UK family office. Crypto interest growing.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 182,
-      "name": "Oliver",
-      "organization": "London Crypto Fund",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "London, UK",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "London-based crypto fund. Strong UK network.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 183,
-      "name": "James",
-      "organization": "UK Wealth Manager",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "London, UK",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "UK wealth manager. HNW crypto clients.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 184,
-      "name": "Wei",
-      "organization": "Hong Kong Crypto Fund",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Hedge Funds",
-      "notes": "HK crypto fund. Strong Asia focus.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 185,
-      "name": "Kevin",
-      "organization": "Singapore HNW",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Singapore HNW. Crypto trader. Large positions.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 186,
-      "name": "Richard",
-      "organization": "Australian Crypto FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Sydney / Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Australian crypto family office. Singapore link.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 187,
-      "name": "David",
-      "organization": "Korean Crypto Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Seoul / Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Korean crypto investor. Large positions.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 188,
-      "name": "Yuki",
-      "organization": "Japanese Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Tokyo / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Japanese family office. Crypto exploration.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 189,
-      "name": "Indian Tech Billionaire",
-      "organization": "Indian Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Mumbai / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Indian tech billionaire family office. Singapore base.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 190,
-      "name": "Indonesian Family Office",
-      "organization": "Indonesian FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Jakarta / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Indonesian family office. Growing crypto interest.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 191,
-      "name": "Tony",
-      "organization": "Vietnam Crypto Investor",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Ho Chi Minh / Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Vietnamese crypto investor. Growing SE Asia network.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 192,
-      "name": "Philipp",
-      "organization": "Thai Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Bangkok / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Thai family office. Crypto interest.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 193,
-      "name": "Malaysian FO",
-      "organization": "Malaysian Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Kuala Lumpur / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Malaysian family office. Digital assets.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 194,
-      "name": "Brazilian Investor",
-      "organization": "Brazilian Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Sao Paulo / Dubai",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Brazilian crypto investor. MENA focus.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 195,
-      "name": "Mexican Family Office",
-      "organization": "Mexican FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Mexico City / Miami",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Mexican family office. US/Mexico focus.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 196,
-      "name": "Canadian FO",
-      "organization": "Canadian Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Toronto / New York",
-      "region": "US",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Canadian family office. Crypto interest growing.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 197,
-      "name": "Israeli Tech Investor",
-      "organization": "Israeli FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Tel Aviv / Dubai",
-      "region": "Middle East",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Israeli tech investor. Crypto focus. Dubai link.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 198,
-      "name": "South African FO",
-      "organization": "South African Family Office",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Johannesburg / Dubai",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "South African family office. MENA connections.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 199,
-      "name": "Nigerian Tech Investor",
-      "organization": "Nigerian FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Lagos / Dubai",
-      "region": "Middle East",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Nigerian tech investor. Crypto pioneer in Africa.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 200,
-      "name": "Kenyan Crypto Investor",
-      "organization": "Kenyan FO",
-      "email": "Not publicly available",
-      "phone": "Not publicly available",
-      "location": "Nairobi / Dubai",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Kenyan crypto investor. Africa focus.",
-      "source": "Industry knowledge"
     },
     {
       "id": 201,
