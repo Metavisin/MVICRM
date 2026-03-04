@@ -419,6 +419,16 @@
       "region": "Asia",
       "category": "Regular Family Offices",
       "notes": "One of earliest regional family offices. Has publicly disclosed crypto holdings."
+    },
+    {
+      "name": "Jason Huang",
+      "organization": "NextGen Digital Venture",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/jason-huang-58296816",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Fund-of-Funds",
+      "notes": "Founder of NextGen Digital. Raised $100M+ long-short crypto fund from LPs. First fund returned 375%. Key LP target."
     }
   ]
 }
