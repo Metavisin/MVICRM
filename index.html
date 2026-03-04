@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVI LP CRM - Investor Database</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: #888;
+            font-size: 1.1em;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .filters {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        label {
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        
+        select {
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-size: 1em;
+            min-width: 200px;
+            cursor: pointer;
+        }
+        
+        select:focus {
+            outline: none;
+            border-color: #00d4ff;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-size: 1em;
+        }
+        
+        .search-box input::placeholder {
+            color: #666;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: #00d4ff;
+        }
+        
+        .table-container {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background: rgba(0,0,0,0.3);
+        }
+        
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #00d4ff;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        th:hover {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.95em;
+        }
+        
+        tr:hover {
+            background: rgba(255,255,255,0.03);
+        }
+        
+        .category {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .category-1 { background: rgba(0,212,255,0.2); color: #00d4ff; }
+        .category-2 { background: rgba(124,58,237,0.2); color: #a78bfa; }
+        .category-3 { background: rgba(16,185,129,0.2); color: #34d399; }
+        .category-4 { background: rgba(245,158,11,0.2); color: #fbbf24; }
+        .category-5 { background: rgba(236,72,153,0.2); color: #f472b6; }
+        .category-6 { background: rgba(99,102,241,0.2); color: #818cf8; }
+        .category-7 { background: rgba(239,68,68,0.2); color: #f87171; }
+        
+        .region {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .region-asia { background: rgba(239,68,68,0.2); }
+        .region-middle-east { background: rgba(245,158,11,0.2); }
+        .region-eu { background: rgba(59,130,246,0.2); }
+        .region-us { background: rgba(16,185,129,0.2); }
+        
+        .notes {
+            max-width: 300px;
+            color: #aaa;
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+        
+        .contact-info {
+            font-size: 0.85em;
+            color: #888;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+            font-size: 1.2em;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .filters {
+                flex-direction: column;
+            }
+            
+            select, .search-box {
+                width: 100%;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 MVI LP CRM</h1>
+            <p class="subtitle">Quantitative Crypto Fund - Investor Database</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value" id="totalContacts">0</div>
+                    <div class="stat-label">Total Contacts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="totalRegions">0</div>
+                    <div class="stat-label">Regions</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="totalCategories">0</div>
+                    <div class="stat-label">LP Categories</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label>Region</label>
+                <select id="regionFilter" onchange="filterTable()">
+                    <option value="">All Regions</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Middle East">Middle East</option>
+                    <option value="EU">EU</option>
+                    <option value="US">US</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>LP Category</label>
+                <select id="categoryFilter" onchange="filterTable()">
+                    <option value="">All Categories</option>
+                    <option value="Crypto-Native Family Offices">Crypto-Native Family Offices</option>
+                    <option value="Tech/Web3 Entrepreneurs">Tech/Web3 Entrepreneurs</option>
+                    <option value="Multi-Asset Family Offices">Multi-Asset Family Offices</option>
+                    <option value="Emerging Manager Platforms">Emerging Manager Platforms</option>
+                    <option value="Fund-of-Funds">Fund-of-Funds</option>
+                    <option value="HNW Individuals via Private Banks">HNW Individuals via Private Banks</option>
+                    <option value="Hedge Funds">Hedge Funds</option>
+                </select>
+            </div>
+            
+            <div class="search-box">
+                <label>Search</label>
+                <input type="text" id="searchInput" placeholder="Search name, organization, location..." oninput="filterTable()">
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name ↕</th>
+                        <th onclick="sortTable(1)">Organization ↕</th>
+                        <th onclick="sortTable(2)">Location ↕</th>
+                        <th>Region</th>
+                        <th>LP Category</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            No contacts found matching your filters.
+        </div>
+        
+        <footer>
+            <p>Last updated: March 2026 | MVI CRM - Research Only. Do Not Contact.</p>
+        </footer>
+    </div>
+
+    <script>
+        let contacts = [];
+        let sortDirection = 1;
+        let lastSortColumn = -1;
+
+        // Load data
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+                contacts = data.contacts;
+                renderTable(contacts);
+                updateStats(contacts);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('tableBody').innerHTML = 
+                    '<tr><td colspan="6" class="no-results">Error loading data. Please ensure data.json is present.</td></tr>';
+            }
+        }
+
+        function renderTable(data) {
+            const tbody = document.getElementById('tableBody');
+            const noResults = document.getElementById('noResults');
+            
+            if (data.length === 0) {
+                tbody.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            noResults.style.display = 'none';
+            
+            tbody.innerHTML = data.map((contact, index) => {
+                const categoryClass = getCategoryClass(contact.category);
+                const regionClass = getRegionClass(contact.region);
+                
+                return `
+                    <tr>
+                        <td><strong>${escapeHtml(contact.name)}</strong></td>
+                        <td>${escapeHtml(contact.organization)}</td>
+                        <td>${escapeHtml(contact.location)}</td>
+                        <td><span class="region ${regionClass}">${escapeHtml(contact.region)}</span></td>
+                        <td><span class="category ${categoryClass}">${escapeHtml(contact.category)}</span></td>
+                        <td class="notes">${escapeHtml(contact.notes)}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function getCategoryClass(category) {
+            const classes = {
+                'Crypto-Native Family Offices': 'category-1',
+                'Tech/Web3 Entrepreneurs': 'category-2',
+                'Multi-Asset Family Offices': 'category-3',
+                'Emerging Manager Platforms': 'category-4',
+                'Fund-of-Funds': 'category-5',
+                'HNW Individuals via Private Banks': 'category-6',
+                'Hedge Funds': 'category-7'
+            };
+            return classes[category] || 'category-1';
+        }
+
+        function getRegionClass(region) {
+            return 'region-' + region.toLowerCase().replace(' ', '-');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function filterTable() {
+            const regionFilter = document.getElementById('regionFilter').value;
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            
+            let filtered = contacts.filter(contact => {
+                const matchesRegion = !regionFilter || contact.region === regionFilter;
+                const matchesCategory = !categoryFilter || contact.category === categoryFilter;
+                const matchesSearch = !searchInput || 
+                    contact.name.toLowerCase().includes(searchInput) ||
+                    contact.organization.toLowerCase().includes(searchInput) ||
+                    contact.location.toLowerCase().includes(searchInput) ||
+                    contact.notes.toLowerCase().includes(searchInput);
+                
+                return matchesRegion && matchesCategory && matchesSearch;
+            });
+            
+            renderTable(filtered);
+            updateStats(filtered);
+        }
+
+        function updateStats(data) {
+            document.getElementById('totalContacts').textContent = data.length;
+            
+            const regions = new Set(contacts.map(c => c.region));
+            document.getElementById('totalRegions').textContent = regions.size;
+            
+            const categories = new Set(contacts.map(c => c.category));
+            document.getElementById('totalCategories').textContent = categories.size;
+        }
+
+        function sortTable(column) {
+            if (lastSortColumn === column) {
+                sortDirection *= -1;
+            } else {
+                sortDirection = 1;
+                lastSortColumn = column;
+            }
+            
+            const keys = ['name', 'organization', 'location', 'region', 'category', 'notes'];
+            const key = keys[column];
+            
+            const filtered = [...document.querySelectorAll('#tableBody tr')].map(row => {
+                const cells = row.cells;
+                return {
+                    element: row,
+                    values: [
+                        cells[0].textContent,
+                        cells[1].textContent,
+                        cells[2].textContent,
+                        cells[3].textContent,
+                        cells[4].textContent,
+                        cells[5].textContent
+                    ]
+                };
+            });
+            
+            filtered.sort((a, b) => {
+                const valA = a.values[column].toLowerCase();
+                const valB = b.values[column].toLowerCase();
+                
+                if (valA < valB) return -1 * sortDirection;
+                if (valA > valB) return 1 * sortDirection;
+                return 0;
+            });
+            
+            filtered.forEach(item => {
+                document.getElementById('tableBody').appendChild(item.element);
+            });
+        }
+
+        // Initial load
+        loadData();
+    </script>
+</body>
+</html>
