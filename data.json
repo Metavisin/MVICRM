@@ -159,6 +159,36 @@
       "region": "Asia",
       "category": "Regular Family Offices",
       "notes": "Serial entrepreneur. Indian family office. Early crypto investor. Smaller tickets possible."
+    },
+    {
+      "name": "Chantel (Prestel Dubai)",
+      "organization": "Prestel and Partner Dubai",
+      "email": "",
+      "linkedin": "",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Individual Investors",
+      "notes": "Forward-thinking angel investor. Interests: Blockchain, FinTech, BioTech, Longevity. From Prestel Dubai network."
+    },
+    {
+      "name": "Hubertus (Enabling Future)",
+      "organization": "Enabling Future",
+      "email": "",
+      "linkedin": "",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Family office VC. Investing in crypto since 2017. Backed layer one protocols, crypto-derivatives, institutional custodians."
+    },
+    {
+      "name": "Vasil Family Office",
+      "organization": "Vasil & Partners Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Family office. Investments: family business, shares, bonds, commodities, real estate, PE, VC, crypto."
     }
   ]
 }
