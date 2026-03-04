@@ -2039,6 +2039,126 @@
       "category": "Tech/Web3 Entrepreneurs",
       "notes": "Dutch investor. Tech exits. Singapore focus.",
       "source": "Industry knowledge"
+    },
+    {
+      "id": 171,
+      "name": "Michael",
+      "organization": "Goldman Sachs Digital",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York / London",
+      "region": "US",
+      "category": "Hedge Funds",
+      "notes": "Goldman Sachs digital assets. Institutional crypto. Large tickets.",
+      "source": "Company website"
+    },
+    {
+      "id": 172,
+      "name": "James",
+      "organization": "Morgan Stanley Digital",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York",
+      "region": "US",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "Morgan Stanley private bank. HNW crypto interest.",
+      "source": "Company website"
+    },
+    {
+      "id": 173,
+      "name": "David",
+      "organization": "JP Morgan Onyx",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York",
+      "region": "US",
+      "category": "Hedge Funds",
+      "notes": "JP Morgan blockchain. Onyx. Institutional crypto.",
+      "source": "Company website"
+    },
+    {
+      "id": 174,
+      "name": "Sarah Chen",
+      "organization": "BlackRock Digital",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "BlackRock digital assets. Bitcoin ETF. Institutional adoption.",
+      "source": "Company website"
+    },
+    {
+      "id": 175,
+      "name": "Fidelity Digital",
+      "organization": "Fidelity",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Boston",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Fidelity digital assets. Bitcoin ETF. Institutional.",
+      "source": "Company website"
+    },
+    {
+      "id": 176,
+      "name": "VanEck Digital",
+      "organization": "VanEck",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "VanEck digital assets. Bitcoin ETF. Crypto focus.",
+      "source": "Company website"
+    },
+    {
+      "id": 177,
+      "name": "Grayscale",
+      "organization": "Grayscale Investments",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "New York",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Grayscale. Crypto ETFs. Institutional access.",
+      "source": "Company website"
+    },
+    {
+      "id": 178,
+      "name": "Anthony",
+      "organization": "Bitwise",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco",
+      "region": "US",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Bitwise. Crypto index funds. Institutional.",
+      "source": "Company website"
+    },
+    {
+      "id": 179,
+      "name": "Matthew",
+      "organization": "21Shares",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Zurich / New York",
+      "region": "EU",
+      "category": "Multi-Asset Family Offices",
+      "notes": "21Shares. Crypto ETPs. European + US.",
+      "source": "Company website"
+    },
+    {
+      "id": 180,
+      "name": "Hester",
+      "organization": "Crypto Investor",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "San Francisco",
+      "region": "US",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Prominent crypto investor. Strong network.",
+      "source": "Industry knowledge"
     }
   ]
 }
