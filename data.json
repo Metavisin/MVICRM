@@ -288,7 +288,7 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Crypto whale. Early Bitcoin investor. Portfolio includes multiple crypto hedge funds. Typical ticket $500K-$1M. TIER 1 TARGET - individual LP."
+      "notes": "Crypto whale. Early Bitcoin investor. Portfolio includes multiple crypto hedge funds. Typical ticket larger individual LP. TIER 1 TARGET - individual LP."
     },
     {
       "name": "Marcus Chen",
@@ -298,7 +298,7 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Ex-crypto exchange founder. Has liquid crypto wealth. Looking for systematic crypto strategies. Typical ticket $500K-$1M. TIER 1 TARGET."
+      "notes": "Ex-crypto exchange founder. Has liquid crypto wealth. Looking for systematic crypto strategies. Typical ticket larger individual LP. TIER 1 TARGET."
     },
     {
       "name": "Wei Zhang",
@@ -308,7 +308,7 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Early crypto investor. Portfolio includes DeFi protocols. Interested in hedge fund allocations. Typical ticket $250K-$500K. TIER 1 TARGET."
+      "notes": "Early crypto investor. Portfolio includes DeFi protocols. Interested in hedge fund allocations. Typical ticket smaller individual LP. TIER 1 TARGET."
     },
     {
       "name": "Raj Malhotra",
@@ -318,7 +318,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Crypto-Native Family Offices",
-      "notes": "Tech entrepreneur with crypto exits. Now invests personal capital. Prefers liquid strategies. Typical ticket $500K-$1M. TIER 1 TARGET."
+      "notes": "Tech entrepreneur with crypto exits. Now invests personal capital. Prefers liquid strategies. Typical ticket larger individual LP. TIER 1 TARGET."
     },
     {
       "name": "Ahmed Al",
@@ -328,7 +328,7 @@
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
       "category": "Crypto-Native Family Offices",
-      "notes": "UAE family contact. Diversifying into crypto. Small tickets to start ($250K). Interest in systematic strategies. TIER 2 TARGET."
+      "notes": "UAE family contact. Diversifying into crypto. Small tickets to start (smaller ticket individual). Interest in systematic strategies. TIER 2 TARGET."
     },
     {
       "name": "Tanaka Satoshi",
@@ -338,7 +338,7 @@
       "location": "Tokyo / Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Japanese tech entrepreneur. Crypto interested. Looking for managed exposure. Typical ticket $500K. TIER 2 TARGET."
+      "notes": "Japanese tech entrepreneur. Crypto interested. Looking for managed exposure. Typical ticket individual LP. TIER 2 TARGET."
     },
     {
       "name": "Kim Min-jun",
@@ -348,7 +348,7 @@
       "location": "Seoul / Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Korean crypto investor. Early BTC/ETH adopter. Interested in systematic strategies. Ticket $500K-$1M. TIER 1 TARGET."
+      "notes": "Korean crypto investor. Early BTC/ETH adopter. Interested in systematic strategies. Ticket larger individual LP. TIER 1 TARGET."
     },
     {
       "name": "Pranav Sharma",
@@ -358,7 +358,7 @@
       "location": "Mumbai / Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Indian tech founder with crypto holdings. Looking for institutional crypto exposure. Ticket $250K-$500K. TIER 2 TARGET."
+      "notes": "Indian tech founder with crypto holdings. Looking for institutional crypto exposure. Ticket smaller individual LP. TIER 2 TARGET."
     }
   ]
 }
