@@ -2603,6 +2603,78 @@
       "category": "Emerging Manager Platforms",
       "notes": "Service for family offices entering crypto. Provides onboarding, fiat, financing, portfolio management. Good intro conduit.",
       "source": "Finance Magnates"
+    },
+    {
+      "id": 218,
+      "name": "Adrian Cheng",
+      "organization": "New World Development",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "CEO of New World Development. Backed Hex Trust (crypto custody) and ConsenSys. Crypto-native ultra-HNW individual. TIER 1 TARGET - individual investor.",
+      "source": "Forbes"
+    },
+    {
+      "id": 219,
+      "name": "Kelly Choo",
+      "organization": "ReferReach (Angel Investor)",
+      "email": "kelly@referreach.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "CEO/Co-founder of ReferReach. Web3 angel investor in Singapore. TIER 2 TARGET - individual crypto investor.",
+      "source": "Shizune"
+    },
+    {
+      "id": 220,
+      "name": "Evan Luthra",
+      "organization": "Serial Entrepreneur (Angel Investor)",
+      "email": "evan@evanluthra.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Serial entrepreneur. Top crypto KOL. Active angel investor in Web3 since 2014. TIER 1 TARGET - crypto whale individual.",
+      "source": "Analytics Insight"
+    },
+    {
+      "id": 221,
+      "name": "Mirana Ventures",
+      "organization": "Mirana Ventures",
+      "email": "contact@mirana.vc",
+      "phone": "Not publicly available",
+      "location": "Singapore / Hong Kong",
+      "region": "Asia",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Web3 VC fund. Provides long-term capital to founders and fund managers. Could seed or LP. TIER 2 TARGET.",
+      "source": "Shizune"
+    },
+    {
+      "id": 222,
+      "name": "Kenetic VC",
+      "organization": "Kenetic Capital",
+      "email": "info@kenetic.vc",
+      "phone": "Not publicly available",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Crypto VC in Hong Kong. Active Web3 investments. TIER 2 TARGET.",
+      "source": "Shizune"
+    },
+    {
+      "id": 223,
+      "name": "Web3 Capital",
+      "organization": "Web3 Capital",
+      "email": "info@web3cap.com",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "Web3 investment fund. Invests in crypto, DeFi, NFTs. Runs accelerator programs. TIER 2 TARGET.",
+      "source": "PitchBook"
     }
   ]
 }
