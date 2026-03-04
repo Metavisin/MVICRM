@@ -429,6 +429,26 @@
       "region": "Asia",
       "category": "Fund-of-Funds",
       "notes": "Founder of NextGen Digital. Raised $100M+ long-short crypto fund from LPs. First fund returned 375%. Key LP target."
+    },
+    {
+      "name": "Jack",
+      "organization": "Canary Capital",
+      "email": "",
+      "linkedin": "",
+      "location": "US",
+      "region": "US",
+      "category": "Fund-of-Funds",
+      "notes": "Brings deep network across hedge funds, family offices, and crypto-native institutions."
+    },
+    {
+      "name": "Independent Reserve",
+      "organization": "Independent Reserve",
+      "email": "",
+      "linkedin": "",
+      "location": "Sydney / Singapore",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "Crypto exchange seeing increased interest from family offices in Singapore."
     }
   ]
 }
