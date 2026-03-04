@@ -61,42 +61,6 @@
       "source": "Campden FB Research"
     },
     {
-      "id": 12,
-      "name": "Bitget Venture Fund",
-      "organization": "Bitget",
-      "email": "venture@bitget.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto exchange backed VC fund. Active in crypto ecosystem. Could allocate to crypto funds.",
-      "source": "Company website"
-    },
-    {
-      "id": 13,
-      "name": "OKX Ventures",
-      "organization": "OKX",
-      "email": "vc@okx.com",
-      "phone": "Not publicly available",
-      "location": "Dubai / Singapore",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Major crypto exchange VC arm. Based in Dubai. Active crypto fund allocations.",
-      "source": "Company website"
-    },
-    {
-      "id": 14,
-      "name": "Bybit Venture Arm",
-      "organization": "Bybit",
-      "email": "bybit.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Dubai-based crypto exchange. Heavy VC investment in Web3. Potential LP for crypto quant funds.",
-      "source": "Company website"
-    },
-    {
       "id": 15,
       "name": "Fosun Group Family Office",
       "organization": "Fosun International",
@@ -133,66 +97,6 @@
       "source": "Galaxy website"
     },
     {
-      "id": 19,
-      "name": "Paradigm",
-      "organization": "Paradigm",
-      "email": "info@paradigm.xyz",
-      "phone": "Not publicly available",
-      "location": "San Francisco / Singapore",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto-native VC fund. Exited founders may allocate personal capital. High crypto conviction.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 21,
-      "name": "Hashkey Capital",
-      "organization": "Hashkey Group",
-      "email": "info@hashkey.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Emerging Manager Platforms",
-      "notes": "Licensed crypto fund manager in Hong Kong. Runs HashKey Chain. Institutional crypto exposure.",
-      "source": "Company website"
-    },
-    {
-      "id": 23,
-      "name": "Citi Private Bank Asia",
-      "organization": "Citi",
-      "email": "privatebank@citi.com",
-      "phone": "Not publicly available",
-      "location": "Singapore / Hong Kong",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Private bank with HNW crypto interested clients. Fee sensitivity. Education required. Lower priority.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 24,
-      "name": "UBS Wealth Management",
-      "organization": "UBS",
-      "email": "ubs@ubs.com",
-      "phone": "Not publicly available",
-      "location": "Zurich / Singapore",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Survey shows Asian family offices plan 5% crypto allocation. HNW clients seeking crypto exposure.",
-      "source": "Reuters"
-    },
-    {
-      "id": 25,
-      "name": "Dragonfly Capital",
-      "organization": "Dragonfly Capital",
-      "email": "info@dragonflycap.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / New York",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto-native VC. Exited portfolio companies may allocate. Strong ecosystem network.",
-      "source": "Company website"
-    },
-    {
       "id": 26,
       "name": "Raffles Family Office",
       "organization": "Raffles Group",
@@ -203,18 +107,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Dual HQ in Hong Kong and Singapore. Representative offices across Asia. Potential crypto allocator.",
       "source": "Raffles Group website"
-    },
-    {
-      "id": 35,
-      "name": "Binance Labs",
-      "organization": "Binance",
-      "email": "labs@binance.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Binance VC arm. Based in Dubai. Heavy crypto ecosystem investments.",
-      "source": "Company website"
     },
     {
       "id": 36,
@@ -229,54 +121,6 @@
       "source": "Company website"
     },
     {
-      "id": 38,
-      "name": "Julius Baer Private Bank",
-      "organization": "Julius Baer",
-      "email": "info@juliusbaer.com",
-      "phone": "Not publicly available",
-      "location": "Zurich / Singapore",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Swiss private bank. HNW clients increasingly interested in crypto. Fee sensitive.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 39,
-      "name": "Lombard Odier",
-      "organization": "Lombard Odier",
-      "email": "info@lombardodier.com",
-      "phone": "Not publicly available",
-      "location": "Geneva / Singapore",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Swiss private bank. Digital assets advisory. Institutional-grade crypto solutions.",
-      "source": "Company website"
-    },
-    {
-      "id": 40,
-      "name": "Credit Suisse Private Bank",
-      "organization": "UBS",
-      "email": "info@credit-suisse.com",
-      "phone": "Not publicly available",
-      "location": "Zurich / Asia",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Post-acquisition integration. Legacy private bank with HNW crypto interest.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 41,
-      "name": "Polychain Capital",
-      "organization": "Polychain Capital",
-      "email": "info@polychaincap.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco / Singapore",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto-native VC fund. Exited crypto founders may allocate personally.",
-      "source": "Company website"
-    },
-    {
       "id": 44,
       "name": "Yusuf Alagh",
       "organization": "Prestel and Partner Dubai",
@@ -287,18 +131,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Focus on FinTech, Web3, AI. Strong network in Dubai family office circles.",
       "source": "Prestel website"
-    },
-    {
-      "id": 46,
-      "name": "Cumberland DRW",
-      "organization": "DRW",
-      "email": "cumberland@drw.com",
-      "phone": "Not publicly available",
-      "location": "Chicago / Singapore",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Crypto trading firm. Large proprietary trading. May allocate to external crypto managers.",
-      "source": "Company website"
     },
     {
       "id": 47,
@@ -322,30 +154,6 @@
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
       "notes": "Crypto financial services platform. CEO from Bitmain. Institutional crypto services.",
-      "source": "Company website"
-    },
-    {
-      "id": 49,
-      "name": "Wintermute Trading",
-      "organization": "Wintermute",
-      "email": "info@wintermute.com",
-      "phone": "Not publicly available",
-      "location": "London / Dubai",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Crypto market maker. Algorithmic trading. May allocate to quant crypto strategies.",
-      "source": "Company website"
-    },
-    {
-      "id": 50,
-      "name": "GSR Markets",
-      "organization": "GSR",
-      "email": "info@gsr.io",
-      "phone": "Not publicly available",
-      "location": "London / Singapore",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Crypto market maker. Long-standing in space. Potential allocator to systematic strategies.",
       "source": "Company website"
     },
     {
@@ -385,42 +193,6 @@
       "source": "Blockhead"
     },
     {
-      "id": 55,
-      "name": "DBS Bank Crypto",
-      "organization": "DBS Bank",
-      "email": "dbs@dbs.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Singapore's largest bank. Offers regulated crypto exchange. HNW clients seeking exposure.",
-      "source": "Company website"
-    },
-    {
-      "id": 56,
-      "name": "OCBC Bank",
-      "organization": "OCBC",
-      "email": "info@ocbc.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Singapore bank with growing crypto services. Private banking clients interested.",
-      "source": "Company website"
-    },
-    {
-      "id": 57,
-      "name": "UOB Kay Hian",
-      "organization": "UOB",
-      "email": "uob@uob.com.sg",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "UOB private bank. Southeast Asia HNW clients. Crypto education in progress.",
-      "source": "Company website"
-    },
-    {
       "id": 58,
       "name": "Elton Cheung",
       "organization": "VMS Group",
@@ -431,30 +203,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Managing Partner at VMS Group. Led $10M Re7 Capital investment. Key decision maker.",
       "source": "Straits Times"
-    },
-    {
-      "id": 59,
-      "name": "KPMG Crypto Services",
-      "organization": "KPMG",
-      "email": "info@kpmg.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Big 4 accounting firm. Family office practice with crypto interest. Good intro conduit.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 60,
-      "name": "PwC Crypto Team",
-      "organization": "PwC",
-      "email": "info@pwc.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Big 4 with crypto practice. Family office clients seeking crypto exposure.",
-      "source": "Industry knowledge"
     },
     {
       "id": 61,
@@ -673,54 +421,6 @@
       "source": "Company website"
     },
     {
-      "id": 86,
-      "name": "Jump Trading",
-      "organization": "Jump Trading",
-      "email": "info@jumptrading.com",
-      "phone": "Not publicly available",
-      "location": "Chicago / Singapore",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Quantitative trading firm. Heavy crypto trading. May allocate to strategies.",
-      "source": "Company website"
-    },
-    {
-      "id": 88,
-      "name": "Virtu Financial",
-      "organization": "Virtu Financial",
-      "email": "info@virtu.com",
-      "phone": "Not publicly available",
-      "location": "New York / Singapore",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Market maker. Crypto offerings. Institutional quality.",
-      "source": "Company website"
-    },
-    {
-      "id": 89,
-      "name": "Tower Research Capital",
-      "organization": "Tower Research",
-      "email": "info@towerresearch.com",
-      "phone": "Not publicly available",
-      "location": "New York / Singapore",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Quant trading firm. Crypto trading. Potential allocator.",
-      "source": "Company website"
-    },
-    {
-      "id": 90,
-      "name": "HRT Financial",
-      "organization": "HRT",
-      "email": "info@hrtrading.com",
-      "phone": "Not publicly available",
-      "location": "New York / London",
-      "region": "US",
-      "category": "Hedge Funds",
-      "notes": "Quant hedge fund. Crypto market making. Large AUM.",
-      "source": "Company website"
-    },
-    {
       "id": 91,
       "name": "Cambridge Global Payments",
       "organization": "Cambridge",
@@ -923,42 +623,6 @@
       "category": "Emerging Manager Platforms",
       "notes": "VC and syndicate leader program. Access to emerging managers. Good intro conduit.",
       "source": "LinkedIn"
-    },
-    {
-      "id": 124,
-      "name": "Edward Yau",
-      "organization": "Dragonfly Capital",
-      "email": "info@dragonflycap.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Managing Partner at Dragonfly. Key crypto VC contact in Asia.",
-      "source": "Company website"
-    },
-    {
-      "id": 135,
-      "name": "Boon Sim",
-      "organization": "Credit Suisse / Family Office",
-      "email": "info@credit-suisse.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Ex-Credit Suisse. Now family office. Traditional + crypto.",
-      "source": "Industry knowledge"
-    },
-    {
-      "id": 138,
-      "name": "CZ",
-      "organization": "Binance",
-      "email": "labs@binance.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Binance founder. World's largest crypto exchange. Ultra high net worth. Personal crypto investments.",
-      "source": "Industry knowledge"
     },
     {
       "id": 140,
@@ -1213,18 +877,6 @@
       "source": "Yahoo Finance"
     },
     {
-      "id": 214,
-      "name": "Arjun Mittal",
-      "organization": "Abbey Road Investment Group",
-      "email": "info@abbeyroadgroup.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Founder. Dubai-based multi-family office. Predicted UAE would rival Singapore/HK. TIER 2 TARGET.",
-      "source": "The National"
-    },
-    {
       "id": 215,
       "name": "SEDCO Capital",
       "organization": "SEDCO Capital",
@@ -1247,18 +899,6 @@
       "category": "Hedge Funds",
       "notes": "Digital asset management firm. Invests in early-stage crypto projects. Received investment from Dubai family office. TIER 2 TARGET.",
       "source": "Decrypt"
-    },
-    {
-      "id": 217,
-      "name": "Binance Prestige",
-      "organization": "Binance",
-      "email": "prestige@binance.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Emerging Manager Platforms",
-      "notes": "Service for family offices entering crypto. Provides onboarding, fiat, financing, portfolio management. Good intro conduit.",
-      "source": "Finance Magnates"
     },
     {
       "id": 218,
