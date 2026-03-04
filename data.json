@@ -109,18 +109,6 @@
       "source": "Raffles Group website"
     },
     {
-      "id": 36,
-      "name": "Alpha Blue Ocean",
-      "organization": "Alpha Blue Ocean",
-      "email": "info@alphablueocean.com",
-      "phone": "Not publicly available",
-      "location": "Paris / Dubai",
-      "region": "Middle East",
-      "category": "Hedge Funds",
-      "notes": "European hedge fund expanding to crypto. Global macro approach. Potential allocator.",
-      "source": "Company website"
-    },
-    {
       "id": 44,
       "name": "Yusuf Alagh",
       "organization": "Prestel and Partner Dubai",
@@ -131,30 +119,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Focus on FinTech, Web3, AI. Strong network in Dubai family office circles.",
       "source": "Prestel website"
-    },
-    {
-      "id": 47,
-      "name": "Three Arrows Capital Alumni",
-      "organization": "Three Arrows Capital",
-      "email": "info@3ac.com",
-      "phone": "Not publicly available",
-      "location": "Singapore (former)",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Former crypto hedge fund in liquidation. Portfolio managers may restart or join family offices.",
-      "source": "Industry news"
-    },
-    {
-      "id": 48,
-      "name": "Matrixport",
-      "organization": "Matrixport",
-      "email": "support@matrixport.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto financial services platform. CEO from Bitmain. Institutional crypto services.",
-      "source": "Company website"
     },
     {
       "id": 51,
@@ -179,18 +143,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Singapore-based single family office. Strong tech/digital asset focus.",
       "source": "LinkedIn"
-    },
-    {
-      "id": 54,
-      "name": "Re7 Capital",
-      "organization": "Re7 Capital",
-      "email": "info@re7capital.com",
-      "phone": "Not publicly available",
-      "location": "London / Dubai",
-      "region": "Middle East",
-      "category": "Hedge Funds",
-      "notes": "DeFi hedge fund. Received $10M allocation from VMS Group. Crypto-native strategy.",
-      "source": "Blockhead"
     },
     {
       "id": 58,
@@ -229,102 +181,6 @@
       "source": "Ghaf Capital website"
     },
     {
-      "id": 63,
-      "name": "Hypra",
-      "organization": "Hypra",
-      "email": "info@hypra.io",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto custody and infrastructure. Growing institutional adoption.",
-      "source": "Company website"
-    },
-    {
-      "id": 64,
-      "name": "Cobo Wallet",
-      "organization": "Cobo",
-      "email": "info@cobo.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto custody and wallet provider. Institutional clients. Good network.",
-      "source": "Company website"
-    },
-    {
-      "id": 65,
-      "name": "Fireblocks",
-      "organization": "Fireblocks",
-      "email": "info@fireblocks.com",
-      "phone": "Not publicly available",
-      "location": "Singapore / New York",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto custody platform. Institutional adoption. Family office connections.",
-      "source": "Company website"
-    },
-    {
-      "id": 66,
-      "name": "PrimeTrust",
-      "organization": "PrimeTrust",
-      "email": "info@primetrust.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Emerging Manager Platforms",
-      "notes": "Fund administration for crypto funds. Infrastructure for new managers.",
-      "source": "Company website"
-    },
-    {
-      "id": 67,
-      "name": "Maple Finance",
-      "organization": "Maple Finance",
-      "email": "info@maple.finance",
-      "phone": "Not publicly available",
-      "location": "Dubai / Singapore",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto lending platform. Institutional grade. Potential allocator.",
-      "source": "Company website"
-    },
-    {
-      "id": 68,
-      "name": "Clearpool",
-      "organization": "Clearpool",
-      "email": "info@clearpool.finance",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "DeFi liquidity platform. Institutional focus. Growing in Asia.",
-      "source": "Company website"
-    },
-    {
-      "id": 69,
-      "name": "Nervos Network",
-      "organization": "Nervos",
-      "email": "hello@nervos.org",
-      "phone": "Not publicly available",
-      "location": "Shanghai / Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Blockchain project. Chinese founders with crypto interest. Could be LP.",
-      "source": "Company website"
-    },
-    {
-      "id": 70,
-      "name": "Alameda Research Alumni",
-      "organization": "Alameda Research",
-      "email": "alameda.com",
-      "phone": "Not publicly available",
-      "location": "Dubai / Singapore",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Former Alameda staff launching new ventures. Strong crypto expertise. Potential allocators.",
-      "source": "Industry news"
-    },
-    {
       "id": 76,
       "name": "Winklevoss Capital",
       "organization": "Winklevoss Capital",
@@ -349,18 +205,6 @@
       "source": "Family Office Hub"
     },
     {
-      "id": 80,
-      "name": "XBTO",
-      "organization": "XBTO Group",
-      "email": "info@xbto.com",
-      "phone": "+1-212-797-8199",
-      "location": "New York / Dubai",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Digital asset platform. Family office services. Deep crypto expertise since 2015. Provides crypto wealth strategies.",
-      "source": "XBTO website"
-    },
-    {
       "id": 81,
       "name": "Zann Kwan",
       "organization": "Raffles Family Office",
@@ -371,30 +215,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Digital asset & FinTech expert. Independent advisory board member at Raffles Family Office. Good contact point.",
       "source": "Campden FB"
-    },
-    {
-      "id": 82,
-      "name": "Bobby Bong",
-      "organization": "ChainUp",
-      "email": "info@chainup.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto infrastructure provider. Strong Asia network. Could be LP or gateway.",
-      "source": "Company website"
-    },
-    {
-      "id": 83,
-      "name": "Pundi X",
-      "organization": "Pundi X",
-      "email": "info@pundix.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto payment company. Exited founders may allocate. Strong ecosystem.",
-      "source": "Company website"
     },
     {
       "id": 84,
@@ -409,18 +229,6 @@
       "source": "Company website"
     },
     {
-      "id": 85,
-      "name": "B2C2",
-      "organization": "B2C2",
-      "email": "info@b2c2.com",
-      "phone": "Not publicly available",
-      "location": "London / Hong Kong",
-      "region": "EU",
-      "category": "Hedge Funds",
-      "notes": "Crypto OTC market maker. Largest in Asia. Potential allocator.",
-      "source": "Company website"
-    },
-    {
       "id": 91,
       "name": "Cambridge Global Payments",
       "organization": "Cambridge",
@@ -431,42 +239,6 @@
       "category": "HNW Individuals via Private Banks",
       "notes": "FX/crypto payments. Corporate crypto needs. Potential LP.",
       "source": "Company website"
-    },
-    {
-      "id": 92,
-      "name": "Rho Business Banking",
-      "organization": "Rho",
-      "email": "info@rho.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Business banking with crypto. Startups need crypto banking.",
-      "source": "Company website"
-    },
-    {
-      "id": 97,
-      "name": "Eden Capital",
-      "organization": "Eden Capital",
-      "email": "info@edencap.co",
-      "phone": "Not publicly available",
-      "location": "London / Dubai",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Multi-family office. Growing crypto interest.",
-      "source": "Company website"
-    },
-    {
-      "id": 98,
-      "name": "Ocorian Family Office Services",
-      "organization": "Ocorian",
-      "email": "familyoffices@ocorian.com",
-      "phone": "+352-211-144-1",
-      "location": "Cayman / London / Dubai",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Family office services. Deep crypto research. Good intro conduit. Published crypto family office research.",
-      "source": "Ocorian website"
     },
     {
       "id": 101,
@@ -491,54 +263,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Asset Allocator & Investment Advisor. 500+ LinkedIn connections. Strong crypto focus. LinkedIn: linkedin.com/in/herbertlyc",
       "source": "LinkedIn"
-    },
-    {
-      "id": 109,
-      "name": "Lunate",
-      "organization": "Lunate",
-      "email": "investors@lunate.com",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "$115B+ AUM. Abu Dhabi-based. Independent global investment firm. Private markets focus. Large tickets.",
-      "source": "Lunate website"
-    },
-    {
-      "id": 110,
-      "name": "Dubai Holding",
-      "organization": "Dubai Holding",
-      "email": "info@dubaiholding.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Major UAE investment conglomerate. Diverse portfolio. Potential crypto interest.",
-      "source": "Dakota"
-    },
-    {
-      "id": 111,
-      "name": "YBA Kanoo Group",
-      "organization": "YBA Kanoo",
-      "email": "info@kanoo.com",
-      "phone": "Not publicly available",
-      "location": "Bahrain / Dubai",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Historic family group. Diversified investments. Regional influence.",
-      "source": "Dakota"
-    },
-    {
-      "id": 112,
-      "name": "Abu Dhabi Capital Group",
-      "organization": "ADCG",
-      "email": "info@adcg.ae",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Abu Dhabi investment firm. Real estate, private equity, crypto interest.",
-      "source": "Dakota"
     },
     {
       "id": 114,
@@ -601,126 +325,6 @@
       "source": "LinkedIn"
     },
     {
-      "id": 121,
-      "name": "Idan Levy",
-      "organization": "DC Finance",
-      "email": "info@dcf.co.il",
-      "phone": "Not publicly available",
-      "location": "New York / London / Tel Aviv",
-      "region": "US",
-      "category": "Fund-of-Funds",
-      "notes": "Family office group. 1000+ families, $400B+. Tech-oriented. Runs crypto events. Good LP conduit.",
-      "source": "LinkedIn"
-    },
-    {
-      "id": 122,
-      "name": "Sankalp Shangari",
-      "organization": "Rising Capital",
-      "email": "jenna@finallyfundadmin.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Emerging Manager Platforms",
-      "notes": "VC and syndicate leader program. Access to emerging managers. Good intro conduit.",
-      "source": "LinkedIn"
-    },
-    {
-      "id": 140,
-      "name": "Su Zhu",
-      "organization": "Three Arrows Capital",
-      "email": "info@3ac.com",
-      "phone": "Not publicly available",
-      "location": "Dubai",
-      "region": "Middle East",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Three Arrows founder. Now in Dubai. Strong crypto network.",
-      "source": "Industry news"
-    },
-    {
-      "id": 141,
-      "name": "The Family Office",
-      "organization": "TFOCO",
-      "email": "info@tfoco.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Wealth management for UHNWIs in GCC. Tailored services. Contact via website.",
-      "source": "TFOCO website"
-    },
-    {
-      "id": 142,
-      "name": "IQ-EQ UAE",
-      "organization": "IQ-EQ",
-      "email": "uae@iqeq.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Family office services in UAE. Good intro conduit. Regulatory expertise.",
-      "source": "IQ-EQ website"
-    },
-    {
-      "id": 161,
-      "name": "Alex",
-      "organization": "Pantera",
-      "email": "info@panteracapital.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco / Singapore",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Pantera Capital. Early crypto VC. Exited crypto founders may allocate.",
-      "source": "Company website"
-    },
-    {
-      "id": 164,
-      "name": "Lily",
-      "organization": "Blockchain Capital",
-      "email": "info@blockchaincap.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Early crypto VC. Strong track record.",
-      "source": "Company website"
-    },
-    {
-      "id": 165,
-      "name": "Brian",
-      "organization": "Electric Capital",
-      "email": "info@electriccapital.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco / New York",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto VC. Developer-focused. Strong network.",
-      "source": "Company website"
-    },
-    {
-      "id": 166,
-      "name": "Katie",
-      "organization": "Framework Ventures",
-      "email": "info@frameworkventures.com",
-      "phone": "Not publicly available",
-      "location": "New York",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto VC. DeFi focus. Strong network.",
-      "source": "Company website"
-    },
-    {
-      "id": 167,
-      "name": "Robert",
-      "organization": "SIX Group",
-      "email": "info@six-group.com",
-      "phone": "Not publicly available",
-      "location": "Zurich, Switzerland",
-      "region": "EU",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Swiss stock exchange. Digital assets. Family office clients.",
-      "source": "Company website"
-    },
-    {
       "id": 201,
       "name": "Elton Cheung",
       "organization": "VMS Group",
@@ -745,18 +349,6 @@
       "source": "Business Times"
     },
     {
-      "id": 203,
-      "name": "Jason",
-      "organization": "Raffles Family Office",
-      "email": "jason@rafflesgroup.co",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Raffles launched digital asset fund in Hong Kong (April 2025). Focus on actively managed crypto exposure. Available to professional investors. TIER 1 TARGET.",
-      "source": "Raffles Group website"
-    },
-    {
       "id": 204,
       "name": "Portal Asset Management",
       "organization": "Portal Asset Management",
@@ -766,42 +358,6 @@
       "region": "Asia",
       "category": "Emerging Manager Platforms",
       "notes": "Runs Radiance Multi-Strategy Hedge Fund specifically designed for family offices in Singapore/Australia/NZ. Focus on systematic crypto strategies. TIER 1 TARGET.",
-      "source": "Asian Private Banker"
-    },
-    {
-      "id": 205,
-      "name": "Amphibian Capital",
-      "organization": "Amphibian Capital",
-      "email": "info@amphibiancapital.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Fund-of-Funds",
-      "notes": "Crypto Quant Fund of Funds. Founder invested in crypto since 2013. Scaled MX.com from 2M to 28M users. TIER 2 TARGET - could allocate or co-invest.",
-      "source": "Company website"
-    },
-    {
-      "id": 206,
-      "name": "Re7 Capital",
-      "organization": "Re7 Capital",
-      "email": "info@re7capital.com",
-      "phone": "Not publicly available",
-      "location": "London / Dubai",
-      "region": "Middle East",
-      "category": "Hedge Funds",
-      "notes": "DeFi hedge fund that received $10M from VMS Group. Good benchmark for our strategy - systematic DeFi focus. May have LP network.",
-      "source": "Blockhead"
-    },
-    {
-      "id": 207,
-      "name": "Radiance Fund",
-      "organization": "Portal Asset Management",
-      "email": "info@portal-am.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Hedge Funds",
-      "notes": "Multi-strategy crypto hedge fund designed for family offices. Raised $100M+ in 3 months. Systematic approach. TIER 1 TARGET for comparison/outreach.",
       "source": "Asian Private Banker"
     },
     {
@@ -815,18 +371,6 @@
       "category": "Crypto-Native Family Offices",
       "notes": "Raised $100M+ crypto equity fund. Delivered 375% return. Already invests in crypto hedge funds. TIER 1 TARGET.",
       "source": "Reuters"
-    },
-    {
-      "id": 209,
-      "name": "Sygnum Bank",
-      "organization": "Sygnum",
-      "email": "info@sygnum.com",
-      "phone": "Not publicly available",
-      "location": "Zurich / Singapore",
-      "region": "EU",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "Crypto-native bank. Offers crypto yield funds. Institutional clients. Good for HNW crypto allocation.",
-      "source": "Sygnum website"
     },
     {
       "id": 210,
@@ -865,18 +409,6 @@
       "source": "Dakota"
     },
     {
-      "id": 213,
-      "name": "Bhaskar Dasgupta",
-      "organization": "Apex Group",
-      "email": "bhaskar.dasgupta@apexgroup.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Notes rising hedge fund allocations and strong crypto interest among Emirati families. Good network. TIER 2 TARGET.",
-      "source": "Yahoo Finance"
-    },
-    {
       "id": 215,
       "name": "SEDCO Capital",
       "organization": "SEDCO Capital",
@@ -887,18 +419,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Sharia-compliant investment firm. Saudi-based. Encouraged to adopt digital assets. TIER 2 TARGET.",
       "source": "CFA Institute"
-    },
-    {
-      "id": 216,
-      "name": "Varys Capital",
-      "organization": "Varys Capital",
-      "email": "info@varyscapital.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Hedge Funds",
-      "notes": "Digital asset management firm. Invests in early-stage crypto projects. Received investment from Dubai family office. TIER 2 TARGET.",
-      "source": "Decrypt"
     },
     {
       "id": 218,
