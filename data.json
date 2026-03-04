@@ -217,42 +217,6 @@
       "source": "Campden FB"
     },
     {
-      "id": 84,
-      "name": "Koi Trading",
-      "organization": "Koi Trading",
-      "email": "info@koitrading.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Crypto OTC desk in Hong Kong. Institutional liquidity. Good network.",
-      "source": "Company website"
-    },
-    {
-      "id": 91,
-      "name": "Cambridge Global Payments",
-      "organization": "Cambridge",
-      "email": "info@cambridgeglobal.com",
-      "phone": "Not publicly available",
-      "location": "Toronto / Singapore",
-      "region": "US",
-      "category": "HNW Individuals via Private Banks",
-      "notes": "FX/crypto payments. Corporate crypto needs. Potential LP.",
-      "source": "Company website"
-    },
-    {
-      "id": 101,
-      "name": "Zann Kwan",
-      "organization": "Revo Digital Family Office",
-      "email": "enquire@revogroup.co",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Managing Partner & CIO. Speaking on spot Bitcoin ETF on CNA. Strong crypto voice in Singapore. LinkedIn: sg.linkedin.com/in/zannkwan",
-      "source": "LinkedIn, CNA interview"
-    },
-    {
       "id": 102,
       "name": "Herbert Lau",
       "organization": "XSquared Family Office",
@@ -325,30 +289,6 @@
       "source": "LinkedIn"
     },
     {
-      "id": 201,
-      "name": "Elton Cheung",
-      "organization": "VMS Group",
-      "email": "elton.cheung@vmsgroup.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Managing Partner. VMS Group made first crypto foray - $10M allocation to Re7 Capital (DeFi hedge fund). $4B AUM. Active in Singapore/Hong Kong. EXCELLENT FIT - already allocating to crypto hedge funds.",
-      "source": "Business Times, Blockhead"
-    },
-    {
-      "id": 202,
-      "name": "VMS Group",
-      "organization": "VMS Group",
-      "email": "info@vmsgroup.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Multi-Asset Family Offices",
-      "notes": "Multi-family office with $4B AUM. Just allocated $10M to crypto hedge fund Re7 Capital. Looking for systematic strategies. TIER 1 TARGET.",
-      "source": "Business Times"
-    },
-    {
       "id": 204,
       "name": "Portal Asset Management",
       "organization": "Portal Asset Management",
@@ -359,18 +299,6 @@
       "category": "Emerging Manager Platforms",
       "notes": "Runs Radiance Multi-Strategy Hedge Fund specifically designed for family offices in Singapore/Australia/NZ. Focus on systematic crypto strategies. TIER 1 TARGET.",
       "source": "Asian Private Banker"
-    },
-    {
-      "id": 208,
-      "name": "NextGen Digital Venture",
-      "organization": "NextGen Digital Venture",
-      "email": "info@nextgen-digital.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Raised $100M+ crypto equity fund. Delivered 375% return. Already invests in crypto hedge funds. TIER 1 TARGET.",
-      "source": "Reuters"
     },
     {
       "id": 210,
