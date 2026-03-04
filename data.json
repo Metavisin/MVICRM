@@ -259,6 +259,36 @@
       "region": "Asia",
       "category": "Fund-of-Funds",
       "notes": "One of Asias first VC focused on blockchain. Could allocate to emerging crypto managers."
+    },
+    {
+      "name": "Tushar Jain",
+      "organization": "Multicoin Capital",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/tusharjain/",
+      "location": "US / Asia",
+      "region": "US",
+      "category": "Individual Investors",
+      "notes": "Co-Founder and Managing Partner at Multicoin Capital. Has personal wealth from crypto success. Could be LP."
+    },
+    {
+      "name": "Foresight Ventures",
+      "organization": "Foresight Ventures",
+      "email": "",
+      "linkedin": "",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Fund-of-Funds",
+      "notes": "Launched $200M secondary fund. Active crypto investor. Could allocate to emerging managers."
+    },
+    {
+      "name": "Pure Crypto",
+      "organization": "Pure Crypto",
+      "email": "",
+      "linkedin": "",
+      "location": "US",
+      "region": "US",
+      "category": "Fund-of-Funds",
+      "notes": "Crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto funds."
     }
   ]
 }
