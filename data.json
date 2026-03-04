@@ -2519,6 +2519,90 @@
       "category": "Fund-of-Funds",
       "notes": "Leading crypto investment firm. Provides LP access to crypto strategies. TIER 2 TARGET.",
       "source": "Galaxy website"
+    },
+    {
+      "id": 211,
+      "name": "Edwin Lawrence",
+      "organization": "Nettlestone Capital Advisors",
+      "email": "info@nettlestonecapital.com",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Emerging Manager Platforms",
+      "notes": "CEO. Acts as intermediary between hedge funds and family offices in Dubai. Good gateway to UAE allocator network. TIER 1 TARGET.",
+      "source": "Crain Currency"
+    },
+    {
+      "id": 212,
+      "name": "DAMAC Capital",
+      "organization": "DAMAC Group",
+      "email": "info@damacgroup.com",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Family office of DAMAC Group. Investment arm. Diversified across private/public equity. Potential crypto interest. TIER 2 TARGET.",
+      "source": "Dakota"
+    },
+    {
+      "id": 213,
+      "name": "Bhaskar Dasgupta",
+      "organization": "Apex Group",
+      "email": "bhaskar.dasgupta@apexgroup.com",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Notes rising hedge fund allocations and strong crypto interest among Emirati families. Good network. TIER 2 TARGET.",
+      "source": "Yahoo Finance"
+    },
+    {
+      "id": 214,
+      "name": "Arjun Mittal",
+      "organization": "Abbey Road Investment Group",
+      "email": "info@abbeyroadgroup.com",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Founder. Dubai-based multi-family office. Predicted UAE would rival Singapore/HK. TIER 2 TARGET.",
+      "source": "The National"
+    },
+    {
+      "id": 215,
+      "name": "SEDCO Capital",
+      "organization": "SEDCO Capital",
+      "email": "info@sedcocapital.com",
+      "phone": "Not publicly available",
+      "location": "Jeddah, Saudi Arabia",
+      "region": "Middle East",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Sharia-compliant investment firm. Saudi-based. Encouraged to adopt digital assets. TIER 2 TARGET.",
+      "source": "CFA Institute"
+    },
+    {
+      "id": 216,
+      "name": "Varys Capital",
+      "organization": "Varys Capital",
+      "email": "info@varyscapital.com",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Hedge Funds",
+      "notes": "Digital asset management firm. Invests in early-stage crypto projects. Received investment from Dubai family office. TIER 2 TARGET.",
+      "source": "Decrypt"
+    },
+    {
+      "id": 217,
+      "name": "Binance Prestige",
+      "organization": "Binance",
+      "email": "prestige@binance.com",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Emerging Manager Platforms",
+      "notes": "Service for family offices entering crypto. Provides onboarding, fiat, financing, portfolio management. Good intro conduit.",
+      "source": "Finance Magnates"
     }
   ]
 }
