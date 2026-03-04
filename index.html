@@ -218,6 +218,11 @@
             color: #888;
         }
         
+        .email {
+            color: #00d4ff;
+            font-size: 0.85em;
+        }
+        
         .no-results {
             text-align: center;
             padding: 50px;
@@ -310,6 +315,7 @@
                     <tr>
                         <th onclick="sortTable(0)">Name ↕</th>
                         <th onclick="sortTable(1)">Organization ↕</th>
+                        <th>Email</th>
                         <th onclick="sortTable(2)">Location ↕</th>
                         <th>Region</th>
                         <th>LP Category</th>
@@ -370,6 +376,7 @@
                     <tr>
                         <td><strong>${escapeHtml(contact.name)}</strong></td>
                         <td>${escapeHtml(contact.organization)}</td>
+                        <td class="email">${escapeHtml(contact.email)}</td>
                         <td>${escapeHtml(contact.location)}</td>
                         <td><span class="region ${regionClass}">${escapeHtml(contact.region)}</span></td>
                         <td><span class="category ${categoryClass}">${escapeHtml(contact.category)}</span></td>
