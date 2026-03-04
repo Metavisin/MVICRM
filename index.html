@@ -223,6 +223,16 @@
             font-size: 0.85em;
         }
         
+        .linkedin-link {
+            color: #0a66c2;
+            text-decoration: none;
+            font-size: 0.85em;
+        }
+        
+        .linkedin-link:hover {
+            text-decoration: underline;
+        }
+        
         .no-results {
             text-align: center;
             padding: 50px;
@@ -316,6 +326,7 @@
                         <th onclick="sortTable(0)">Name ↕</th>
                         <th onclick="sortTable(1)">Organization ↕</th>
                         <th>Email</th>
+                        <th>LinkedIn</th>
                         <th onclick="sortTable(2)">Location ↕</th>
                         <th>Region</th>
                         <th>LP Category</th>
@@ -377,6 +388,7 @@
                         <td><strong>${escapeHtml(contact.name)}</strong></td>
                         <td>${escapeHtml(contact.organization)}</td>
                         <td class="email">${escapeHtml(contact.email)}</td>
+                        <td>${contact.linkedin ? '<a href="'+escapeHtml(contact.linkedin)+'" target="_blank" class="linkedin-link">Profile</a>' : '-'}</td>
                         <td>${escapeHtml(contact.location)}</td>
                         <td><span class="region ${regionClass}">${escapeHtml(contact.region)}</span></td>
                         <td><span class="category ${categoryClass}">${escapeHtml(contact.category)}</span></td>
