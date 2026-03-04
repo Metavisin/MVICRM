@@ -369,6 +369,56 @@
       "region": "Asia",
       "category": "Regular Family Offices",
       "notes": "At Raffles Family Office. Digital assets and fintech focus."
+    },
+    {
+      "name": "Basil",
+      "organization": "Angel Investor",
+      "email": "",
+      "linkedin": "",
+      "location": "Malaysia",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Top angel investor in Malaysia. 50+ investments. Companies raised $1B+ from VCs."
+    },
+    {
+      "name": "Zach",
+      "organization": "Pure Crypto",
+      "email": "",
+      "linkedin": "",
+      "location": "US",
+      "region": "US",
+      "category": "Fund-of-Funds",
+      "notes": "Portfolio manager at Pure Crypto. One of first crypto fund-of-funds."
+    },
+    {
+      "name": "Revo Digital FO",
+      "organization": "Revo Digital Family Office",
+      "email": "",
+      "linkedin": "https://sg.linkedin.com/company/revo_group",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Asias first digital-assets-focused multi-family office. 1,413 followers. Focus on UHNWIs."
+    },
+    {
+      "name": "Li Lin",
+      "organization": "Avenir Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Founded Huobi in 2013. Now runs Avenir Group (family office). Major crypto native."
+    },
+    {
+      "name": "Brooker Group",
+      "organization": "Brooker Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Thailand",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "One of earliest regional family offices. Has publicly disclosed crypto holdings."
     }
   ]
 }
