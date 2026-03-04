@@ -61,18 +61,6 @@
       "source": "Campden FB Research"
     },
     {
-      "id": 11,
-      "name": "Sequoia China Exited Founders",
-      "organization": "Sequoia Capital",
-      "email": "info@sequoiacap.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Shanghai",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Exited founders from tech unicorns often set up family offices. Strong crypto interest. $250k-$5M tickets.",
-      "source": "Industry knowledge"
-    },
-    {
       "id": 12,
       "name": "Bitget Venture Fund",
       "organization": "Bitget",
@@ -157,18 +145,6 @@
       "source": "Industry knowledge"
     },
     {
-      "id": 20,
-      "name": "a16z Crypto Partners",
-      "organization": "Andreessen Horowitz",
-      "email": "a16z.com",
-      "phone": "Not publicly available",
-      "location": "San Francisco / New York",
-      "region": "US",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Top crypto VC. Partners have personal wealth to allocate. Could seed fund or LP.",
-      "source": "Company website"
-    },
-    {
       "id": 21,
       "name": "Hashkey Capital",
       "organization": "Hashkey Group",
@@ -229,54 +205,6 @@
       "source": "Raffles Group website"
     },
     {
-      "id": 30,
-      "name": "Antler VC",
-      "organization": "Antler",
-      "email": "hello@antler.co",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Early-stage VC. Exited founders from portfolio often set up family offices. Regional network.",
-      "source": "Company website"
-    },
-    {
-      "id": 31,
-      "name": "Jungle Ventures",
-      "organization": "Jungle Ventures",
-      "email": "info@junglevc.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Southeast Asia focused VC. Exited founders may allocate to crypto funds.",
-      "source": "Company website"
-    },
-    {
-      "id": 32,
-      "name": "Insignia Ventures Partners",
-      "organization": "Insignia Ventures",
-      "email": "info@insigniavc.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Singapore-based VC. Strong Southeast Asia network. Exited founders potential LPs.",
-      "source": "Company website"
-    },
-    {
-      "id": 34,
-      "name": "Lightspeed Venture Partners",
-      "organization": "Lightspeed",
-      "email": "info@lsvp.com",
-      "phone": "Not publicly available",
-      "location": "Singapore / Silicon Valley",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Global VC with strong crypto portfolio. Exited founders often become angel investors.",
-      "source": "Company website"
-    },
-    {
       "id": 35,
       "name": "Binance Labs",
       "organization": "Binance",
@@ -298,18 +226,6 @@
       "region": "Middle East",
       "category": "Hedge Funds",
       "notes": "European hedge fund expanding to crypto. Global macro approach. Potential allocator.",
-      "source": "Company website"
-    },
-    {
-      "id": 37,
-      "name": "GP Bullhound",
-      "organization": "GP Bullhound",
-      "email": "info@gpbullhound.com",
-      "phone": "Not publicly available",
-      "location": "London / Stockholm",
-      "region": "EU",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "European tech VC. Tech entrepreneur exits could lead to family office allocations.",
       "source": "Company website"
     },
     {
@@ -358,30 +274,6 @@
       "region": "US",
       "category": "Crypto-Native Family Offices",
       "notes": "Crypto-native VC fund. Exited crypto founders may allocate personally.",
-      "source": "Company website"
-    },
-    {
-      "id": 42,
-      "name": "Animoca Brands",
-      "organization": "Animoca Brands",
-      "email": "contact@animocabrands.com",
-      "phone": "Not publicly available",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Major Web3 gaming company. Exited founders could allocate. Strong crypto network.",
-      "source": "Company website"
-    },
-    {
-      "id": 43,
-      "name": "Dapper Labs",
-      "organization": "Dapper Labs",
-      "email": "info@dapperlabs.com",
-      "phone": "Not publicly available",
-      "location": "Vancouver / New York",
-      "region": "US",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "NFT/gaming company (NBA Top Shot). Exited founders may become angel investors.",
       "source": "Company website"
     },
     {
@@ -685,30 +577,6 @@
       "source": "Industry news"
     },
     {
-      "id": 74,
-      "name": "Sequoia India/Singapore",
-      "organization": "Sequoia Capital",
-      "email": "info@sequoiacap.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "India/Singapore VC. Exited founders could become LPs. Strong network.",
-      "source": "Company website"
-    },
-    {
-      "id": 75,
-      "name": "Accel India",
-      "organization": "Accel",
-      "email": "india@accel.com",
-      "phone": "Not publicly available",
-      "location": "Bangalore / Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "India-focused VC. Tech exits could lead to family office creation.",
-      "source": "Company website"
-    },
-    {
       "id": 76,
       "name": "Winklevoss Capital",
       "organization": "Winklevoss Capital",
@@ -877,18 +745,6 @@
       "source": "Company website"
     },
     {
-      "id": 96,
-      "name": "Vertex Ventures",
-      "organization": "Vertex Ventures",
-      "email": "info@vertexventures.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "SEA-focused VC. Exited founders potential LPs.",
-      "source": "Company website"
-    },
-    {
       "id": 97,
       "name": "Eden Capital",
       "organization": "Eden Capital",
@@ -911,30 +767,6 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Family office services. Deep crypto research. Good intro conduit. Published crypto family office research.",
       "source": "Ocorian website"
-    },
-    {
-      "id": 99,
-      "name": "Highland Europe",
-      "organization": "Highland Europe",
-      "email": "info@highlandeurope.com",
-      "phone": "Not publicly available",
-      "location": "London / Geneva",
-      "region": "EU",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Growth equity firm. Tech exits lead to family offices.",
-      "source": "Company website"
-    },
-    {
-      "id": 100,
-      "name": "Fifth Wall",
-      "organization": "Fifth Wall",
-      "email": "info@fifthwall.com",
-      "phone": "Not publicly available",
-      "location": "Los Angeles / New York",
-      "region": "US",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "PropTech VC. Real estate tokenization interest. Exited founders.",
-      "source": "Company website"
     },
     {
       "id": 101,
@@ -1102,18 +934,6 @@
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
       "notes": "Managing Partner at Dragonfly. Key crypto VC contact in Asia.",
-      "source": "Company website"
-    },
-    {
-      "id": 126,
-      "name": "Amit Khanna",
-      "organization": "Sequoia Capital",
-      "email": "info@sequoiacap.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Sequoia India/Singapore. Exited founders could become LPs.",
       "source": "Company website"
     },
     {
@@ -1475,42 +1295,6 @@
       "category": "Tech/Web3 Entrepreneurs",
       "notes": "Serial entrepreneur. Top crypto KOL. Active angel investor in Web3 since 2014. TIER 1 TARGET - crypto whale individual.",
       "source": "Analytics Insight"
-    },
-    {
-      "id": 221,
-      "name": "Mirana Ventures",
-      "organization": "Mirana Ventures",
-      "email": "contact@mirana.vc",
-      "phone": "Not publicly available",
-      "location": "Singapore / Hong Kong",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Web3 VC fund. Provides long-term capital to founders and fund managers. Could seed or LP. TIER 2 TARGET.",
-      "source": "Shizune"
-    },
-    {
-      "id": 222,
-      "name": "Kenetic VC",
-      "organization": "Kenetic Capital",
-      "email": "info@kenetic.vc",
-      "phone": "Not publicly available",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Crypto VC in Hong Kong. Active Web3 investments. TIER 2 TARGET.",
-      "source": "Shizune"
-    },
-    {
-      "id": 223,
-      "name": "Web3 Capital",
-      "organization": "Web3 Capital",
-      "email": "info@web3cap.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Tech/Web3 Entrepreneurs",
-      "notes": "Web3 investment fund. Invests in crypto, DeFi, NFTs. Runs accelerator programs. TIER 2 TARGET.",
-      "source": "PitchBook"
     }
   ]
 }
