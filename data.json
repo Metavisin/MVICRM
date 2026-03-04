@@ -1799,6 +1799,126 @@
       "category": "Multi-Asset Family Offices",
       "notes": "Saudi family office. Growing crypto interest.",
       "source": "Industry knowledge"
+    },
+    {
+      "id": 151,
+      "name": "Dr. Abdulrahman",
+      "organization": "Saudi Arabian Crypto Initiative",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Riyadh, Saudi Arabia",
+      "region": "Middle East",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Saudi crypto initiative lead. Government + family office connections.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 152,
+      "name": "Omar",
+      "organization": "MENA Blockchain Association",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Blockchain association. Good network to family offices.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 153,
+      "name": "Sarah",
+      "organization": "Emirates NBD Digital",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "Emirates NBD digital banking. Private banking crypto interest.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 154,
+      "name": "Vikram",
+      "organization": "Indian Crypto HNI",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "HNW Individuals via Private Banks",
+      "notes": "Indian HNI in Singapore. Crypto trader. Large positions.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 155,
+      "name": "Wei",
+      "organization": "Chinese Crypto Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Chinese trader moved to Singapore. Large crypto wealth.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 156,
+      "name": "Tom",
+      "organization": "Global Trading Firm",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "London / Dubai",
+      "region": "EU",
+      "category": "Hedge Funds",
+      "notes": "Global trading. Crypto exploration. Large tickets.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 157,
+      "name": "Marcus",
+      "organization": "European Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Zurich, Switzerland",
+      "region": "EU",
+      "category": "Multi-Asset Family Offices",
+      "notes": "Swiss family office. Crypto interest growing.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 158,
+      "name": "Erik",
+      "organization": "Nordic Crypto Investor",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Stockholm / Singapore",
+      "region": "EU",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Nordic investor. Singapore based. Crypto focus.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 159,
+      "name": "Hans",
+      "organization": "German Family Office",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Frankfurt, Germany",
+      "region": "EU",
+      "category": "Multi-Asset Family Offices",
+      "notes": "German family office. Traditional + crypto exploration.",
+      "source": "Industry knowledge"
+    },
+    {
+      "id": 160,
+      "name": "Pierre",
+      "organization": "French Tech Investor",
+      "email": "Not publicly available",
+      "phone": "Not publicly available",
+      "location": "Paris / Dubai",
+      "region": "EU",
+      "category": "Tech/Web3 Entrepreneurs",
+      "notes": "French tech investor. Exited founder. Crypto interested.",
+      "source": "Industry knowledge"
     }
   ]
 }
