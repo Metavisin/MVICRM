@@ -1,34 +1,6 @@
 {
   "contacts": [
     {
-      "id": 2,
-      "name": "Jason Huang",
-      "organization": "NextGen Digital Venture",
-      "email": "info@nextgen-digital.com",
-      "phone": "Not publicly available",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Regular Family Offices",
-      "notes": "Raised $100M+ crypto equity fund. Delivered 375% return. Strong crypto conviction. Good LP prospect for crypto funds.",
-      "source": "Reuters, DailyCoin",
-      "linkedin": "https://www.linkedin.com/in/jason-huang-58296816",
-      "contact_person": "Jason Huang"
-    },
-    {
-      "id": 4,
-      "name": "Kristiina Lumeste",
-      "organization": "Klumi Ventures",
-      "email": "hello@klumiventures.com",
-      "phone": "Not publicly available",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Emerging Manager Platforms",
-      "notes": "Licensed digital asset fund manager under ADGM. Provides institutional investors and family offices with crypto exposure. First-mover in regulated UAE crypto funds.",
-      "source": "Klumi Ventures website",
-      "linkedin": "https://www.linkedin.com/in/kristiina-lumeste/",
-      "contact_person": "Kristiina Lumeste"
-    },
-    {
       "id": 5,
       "name": "Shihab Al Hashimi",
       "organization": "Ghaf Capital Partners",
@@ -57,20 +29,6 @@
       "contact_person": "Elton Cheung"
     },
     {
-      "id": 15,
-      "name": "Liang Xinjun",
-      "organization": "Fosun International",
-      "email": "ir@fosun.com",
-      "phone": "Not publicly available",
-      "location": "Shanghai / Hong Kong",
-      "region": "Asia",
-      "category": "Regular Family Offices",
-      "notes": "Chinese conglomerate family office. Liang Xinjun (co-founder) active. Traditional + crypto allocation.",
-      "source": "Empaxis Family Office Guide",
-      "linkedin": "https://www.linkedin.com/in/xinjun-liang-245030bb/",
-      "contact_person": "Fosun Group Family Office"
-    },
-    {
       "id": 17,
       "name": "Tuck Meng Yee",
       "organization": "Prestel and Partner Family Office",
@@ -83,20 +41,6 @@
       "source": "Prestel and Partner website",
       "linkedin": "https://www.linkedin.com/in/tuckmengyee",
       "contact_person": "Tuck Meng Yee"
-    },
-    {
-      "id": 18,
-      "name": "Mike Novogratz",
-      "organization": "Galaxy Digital Holdings",
-      "email": "info@galaxydigital.com",
-      "phone": "Not publicly available",
-      "location": "New York / London",
-      "region": "US",
-      "category": "Individual Investors",
-      "notes": "Leading crypto investment firm. $100M+ in crypto fund investments. Provides LP access to crypto strategies.",
-      "source": "Galaxy website",
-      "linkedin": "https://www.linkedin.com/in/mikenovogratz",
-      "contact_person": "Galaxy Digital"
     },
     {
       "id": 26,
@@ -141,34 +85,6 @@
       "contact_person": "XSquared Family Office"
     },
     {
-      "id": 76,
-      "name": "Will McEvoy",
-      "organization": "Winklevoss Capital",
-      "email": "contact@winklevosscapital.com",
-      "phone": "Not publicly available",
-      "location": "New York, USA",
-      "region": "US",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Tyler & Cameron Winklevoss family office. Own 1% of Bitcoin (2012). Major crypto investors. Portfolio: BlockFi, Protocol Labs. High crypto conviction.",
-      "source": "Family Office Hub",
-      "linkedin": "https://www.linkedin.com/in/wmcevoy/",
-      "contact_person": "Will McEvoy"
-    },
-    {
-      "id": 77,
-      "name": "Niklas Nikolajsen",
-      "organization": "Nikolajsen Capital",
-      "email": "info@nikolajsen.com",
-      "phone": "Not publicly available",
-      "location": "Switzerland",
-      "region": "EU",
-      "category": "Crypto-Native Family Offices",
-      "notes": "Niklas Nikolajsen - founder of Bitcoin Suisse (2013). Early crypto investor. Family office since 2018. Swiss-based. High crypto allocation.",
-      "source": "Family Office Hub",
-      "linkedin": "https://ch.linkedin.com/in/niklasnikolajsen",
-      "contact_person": "Nikolajsen Capital AG"
-    },
-    {
       "id": 211,
       "name": "Edwin Lawrence",
       "organization": "Nettlestone Capital Advisors",
@@ -183,23 +99,9 @@
       "contact_person": "Edwin Lawrence"
     },
     {
-      "id": 212,
-      "name": "Hussein Sajwani",
-      "organization": "DAMAC Group",
-      "email": "info@damacgroup.com",
-      "phone": "Not publicly available",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Regular Family Offices",
-      "notes": "Family office of DAMAC Group. Investment arm. Diversified across private/public equity. Potential crypto interest. TIER 2 TARGET.",
-      "source": "Dakota",
-      "linkedin": "https://www.linkedin.com/in/hussein-sajwani",
-      "contact_person": "DAMAC Capital"
-    },
-    {
       "id": 218,
       "name": "Adrian Cheng",
-      "organization": "New World Development",
+      "organization": "C Capital",
       "email": "Not publicly available",
       "phone": "Not publicly available",
       "location": "Hong Kong",
@@ -237,86 +139,6 @@
       "source": "Analytics Insight",
       "linkedin": "https://www.linkedin.com/in/evanluthra",
       "contact_person": "Evan Luthra"
-    },
-    {
-      "name": "Jonathan (Crypto Whale)",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Crypto whale. Early Bitcoin investor. Portfolio includes multiple crypto hedge funds. Typical ticket larger individual LP. TIER 1 TARGET - individual LP."
-    },
-    {
-      "name": "Marcus Chen",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Hong Kong",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Ex-crypto exchange founder. Has liquid crypto wealth. Looking for systematic crypto strategies. Typical ticket larger individual LP. TIER 1 TARGET."
-    },
-    {
-      "name": "Wei Zhang",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Early crypto investor. Portfolio includes DeFi protocols. Interested in hedge fund allocations. Typical ticket smaller individual LP. TIER 1 TARGET."
-    },
-    {
-      "name": "Raj Malhotra",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Dubai, UAE",
-      "region": "Middle East",
-      "category": "Individual Investors",
-      "notes": "Tech entrepreneur with crypto exits. Now invests personal capital. Prefers liquid strategies. Typical ticket larger individual LP. TIER 1 TARGET."
-    },
-    {
-      "name": "Ahmed Al",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Abu Dhabi, UAE",
-      "region": "Middle East",
-      "category": "Individual Investors",
-      "notes": "UAE family contact. Diversifying into crypto. Small tickets to start (smaller ticket individual). Interest in systematic strategies. TIER 2 TARGET."
-    },
-    {
-      "name": "Tanaka Satoshi",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Tokyo / Singapore",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Japanese tech entrepreneur. Crypto interested. Looking for managed exposure. Typical ticket individual LP. TIER 2 TARGET."
-    },
-    {
-      "name": "Kim Min-jun",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Seoul / Singapore",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Korean crypto investor. Early BTC/ETH adopter. Interested in systematic strategies. Ticket larger individual LP. TIER 1 TARGET."
-    },
-    {
-      "name": "Pranav Sharma",
-      "organization": "Individual Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Mumbai / Singapore",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Indian tech founder with crypto holdings. Looking for institutional crypto exposure. Ticket smaller individual LP. TIER 2 TARGET."
     }
   ]
 }
