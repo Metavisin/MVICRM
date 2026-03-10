@@ -221,16 +221,6 @@
       "notes": "Founder and investor. Harvard. Has family office. Crypto interested."
     },
     {
-      "name": "Luis G.",
-      "organization": "Investocrats International",
-      "email": "",
-      "linkedin": "https://www.linkedin.com/in/lgintl/",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Founder at Investocrats. Blockchain/Crypto enthusiast. Angel investor in DeFi GameFi NFT."
-    },
-    {
       "name": "Yat Siu",
       "organization": "Animoca Brands",
       "email": "",
@@ -248,47 +238,7 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Tied to Singapore Lee family. Launched crypto venture fund in 2022. Major Singapore family office now in crypto."
-    },
-    {
-      "name": "CMCC Global",
-      "organization": "CMCC Global",
-      "email": "",
-      "linkedin": "",
-      "location": "Hong Kong / Singapore",
-      "region": "Asia",
-      "category": "Fund-of-Funds",
-      "notes": "One of Asias first VC focused on blockchain. Could allocate to emerging crypto managers."
-    },
-    {
-      "name": "Tushar Jain",
-      "organization": "Multicoin Capital",
-      "email": "",
-      "linkedin": "https://www.linkedin.com/in/tusharjain/",
-      "location": "US / Asia",
-      "region": "US",
-      "category": "Individual Investors",
-      "notes": "Co-Founder and Managing Partner at Multicoin Capital. Has personal wealth from crypto success. Could be LP."
-    },
-    {
-      "name": "Foresight Ventures",
-      "organization": "Foresight Ventures",
-      "email": "",
-      "linkedin": "",
-      "location": "Singapore",
-      "region": "Asia",
-      "category": "Fund-of-Funds",
-      "notes": "Launched $200M secondary fund. Active crypto investor. Could allocate to emerging managers."
-    },
-    {
-      "name": "Pure Crypto",
-      "organization": "Pure Crypto",
-      "email": "",
-      "linkedin": "",
-      "location": "US",
-      "region": "US",
-      "category": "Fund-of-Funds",
-      "notes": "Crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto funds."
+      "notes": "Tied to Singapore Lee family. Raised $50M for a crypto market-neutral hedge fund in 2022. Major Singapore family office actively in crypto."
     },
     {
       "name": "Wee Ping Goh",
@@ -319,16 +269,6 @@
       "region": "Asia",
       "category": "Regular Family Offices",
       "notes": "$1B family office actively investing in crypto hedge funds since 2020."
-    },
-    {
-      "name": "Soul Capital",
-      "organization": "Soul Capital",
-      "email": "",
-      "linkedin": "",
-      "location": "Asia-Pacific",
-      "region": "Asia",
-      "category": "Regular Family Offices",
-      "notes": "Family office actively co-invests with other LPs and family offices. Focus on Asia-Pacific."
     },
     {
       "name": "John Signs",
@@ -371,26 +311,6 @@
       "notes": "At Raffles Family Office. Digital assets and fintech focus."
     },
     {
-      "name": "Basil",
-      "organization": "Angel Investor",
-      "email": "",
-      "linkedin": "",
-      "location": "Malaysia",
-      "region": "Asia",
-      "category": "Individual Investors",
-      "notes": "Top angel investor in Malaysia. 50+ investments. Companies raised $1B+ from VCs."
-    },
-    {
-      "name": "Zach",
-      "organization": "Pure Crypto",
-      "email": "",
-      "linkedin": "",
-      "location": "US",
-      "region": "US",
-      "category": "Fund-of-Funds",
-      "notes": "Portfolio manager at Pure Crypto. One of first crypto fund-of-funds."
-    },
-    {
       "name": "Revo Digital FO",
       "organization": "Revo Digital Family Office",
       "email": "",
@@ -398,7 +318,7 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Asias first digital-assets-focused multi-family office. 1,413 followers. Focus on UHNWIs."
+      "notes": "Asia's first digital-assets-focused multi-family office. Focus on UHNWIs."
     },
     {
       "name": "Li Lin",
@@ -429,6 +349,86 @@
       "region": "Asia",
       "category": "Fund-of-Funds",
       "notes": "Founder of NextGen Digital. Raised $100M+ long-short crypto fund from LPs. First fund returned 375%. Key LP target."
+    },
+    {
+      "name": "Arjun Mittal",
+      "organization": "Abbey Road Investment Group",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/arjun-mittal-dubai/",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Founder & CIO of Dubai-based multi-family office. Explicitly lists crypto and algo-trading as investment mandates alongside PE and real estate. 20+ years banking background (J. Safra Sarasin Dubai). Strong fit for MVI LP outreach. TIER 1 TARGET."
+    },
+    {
+      "name": "Tensai Holdings",
+      "organization": "Tensai Holding Company",
+      "email": "",
+      "linkedin": "",
+      "location": "Abu Dhabi, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate — verify ticket size before outreach."
+    },
+    {
+      "name": "Shawn Chan",
+      "organization": "Whampoa Group",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/shawn-chan/",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "CEO and co-founder of Whampoa Group. Raised $50M for a crypto market-neutral hedge fund strategy in 2022. Direct decision-maker for Whampoa's crypto allocations. Key individual contact behind the Whampoa Group entity."
+    },
+    {
+      "name": "Amy Lee",
+      "organization": "Whampoa Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Co-founder of Whampoa Group. Lee Kuan Yew family connection. Co-created Whampoa's crypto hedge fund and venture strategies. Individual LP candidate with substantial family wealth and direct crypto conviction."
+    },
+    {
+      "name": "Lee Han Shih",
+      "organization": "Whampoa Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Co-founder of Whampoa Group. The principal driving Whampoa's push into crypto hedge funds and Web3. Separate personal wealth from the Lee family. Strong individual LP signal."
+    },
+    {
+      "name": "Jehan Chu",
+      "organization": "Kenetic Capital",
+      "email": "",
+      "linkedin": "https://hk.linkedin.com/in/jehanchu",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Co-founder of Kenetic Capital, HK-based blockchain investment and trading firm active since 2017. Also GP at Nural Capital (already in CRM). Active across both liquid and VC crypto strategies. Crypto-native with deep HK investor network. TIER 1 individual target."
+    },
+    {
+      "name": "Zhi Li",
+      "organization": "VMS Group",
+      "email": "",
+      "linkedin": "",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "Regular Family Offices",
+      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations — VMS just deployed $10M to Re7 Capital (DeFi hedge fund) in 2025. Key contact for future crypto fund allocations at VMS."
+    },
+    {
+      "name": "Bijan Alizadeh",
+      "organization": "Cypher Capital",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/bijan-alizadehfard/",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Individual Investors",
+      "notes": "Co-founder & GP of Cypher Capital ($100M Dubai crypto fund) and co-founder of M2 crypto exchange. Deep UAE crypto wealth and network. Primarily venture-focused but substantial personal crypto wealth — worth outreach as individual LP."
     }
   ]
 }
