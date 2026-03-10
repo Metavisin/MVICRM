@@ -459,6 +459,36 @@
       "region": "US",
       "category": "Fund-of-Funds",
       "notes": "Portfolio manager at Pure Crypto, one of the first dedicated crypto fund-of-funds. Key contact at Pure Crypto for LP outreach."
+    },
+    {
+      "name": "Saeed Al Darmaki",
+      "organization": "Alphabit Digital Currency Fund / Sheesha Finance",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/saeed-hareb-al-darmaki/",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Individual Investors",
+      "notes": "Co-founder of Alphabit Digital Currency Fund and CEO of Sheesha Finance. Serial crypto investor since 2010. Has personally invested on behalf of crypto hedge funds and has deep UAE crypto network and personal wealth. Strong individual LP candidate."
+    },
+    {
+      "name": "Darius Sit",
+      "organization": "QCP Capital",
+      "email": "",
+      "linkedin": "https://sg.linkedin.com/in/darius-sit",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "Co-founder & CIO of QCP Capital, one of Asia's largest crypto trading firms. Ex-macro trader at Dymon Asia Capital. Substantial personal crypto wealth from building a leading digital asset trading desk. Deep Singapore crypto network. Strong individual LP candidate."
+    },
+    {
+      "name": "Abhineet Singh",
+      "organization": "Al Siraj Holdings",
+      "email": "",
+      "linkedin": "https://www.linkedin.com/in/abhineet-singh-7fc7/",
+      "location": "Muscat, Oman",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "CIO of Al Siraj Holdings, an Oman-based family office. Presented at the Middle East Family Office Investment Summit alongside Gulf FOs actively exploring alternatives and hedge fund allocations. Worth outreach to gauge crypto appetite."
     }
   ]
 }
