@@ -617,6 +617,76 @@
       "category": "Regular Family Offices",
       "notes": "Macro analyst turned family office manager. Sourced via Crunchbase. Looking for low-beta crypto exposure.",
       "id": 240
+    },
+    {
+      "name": "Hadi Badri",
+      "organization": "Dubai Economic Development Corporation / Badri FO",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "CEO of Dubai Economic Development. High-level institutional allocator and principal. Speaker at Prestel Dubai 2024.",
+      "id": 241,
+      "email": "TBD (Manual verification required)",
+      "linkedin": "TBD",
+      "phone": "",
+      "source": "Prestel & Partner Dubai 2024",
+      "contact_person": "Hadi Badri"
+    },
+    {
+      "name": "Mishal Kanoo",
+      "organization": "The Kanoo Group",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Chairman of The Kanoo Group (one of the largest family conglomerates in the Gulf). Multi-generational wealth. Speaker at Prestel Dubai 2024.",
+      "id": 242,
+      "email": "TBD (Manual verification required)",
+      "linkedin": "TBD",
+      "phone": "",
+      "source": "Prestel & Partner Dubai 2024",
+      "contact_person": "Mishal Kanoo"
+    },
+    {
+      "name": "Yogesh Mehta",
+      "organization": "Petrochem Middle East / Mehta Family Office",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "CEO of Petrochem. Large single-family office principal. Known for diversified alternative investments. Speaker at Prestel Dubai 2024.",
+      "id": 243,
+      "email": "TBD (Manual verification required)",
+      "linkedin": "TBD",
+      "phone": "",
+      "source": "Prestel & Partner Dubai 2024",
+      "contact_person": "Yogesh Mehta"
+    },
+    {
+      "name": "Dawood Al Shezawi",
+      "organization": "Strategic Holding",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "President and CEO of Strategic Holding. Focus on strategic investments and technology. Speaker at Prestel Dubai 2024.",
+      "id": 244,
+      "email": "TBD (Manual verification required)",
+      "linkedin": "TBD",
+      "phone": "",
+      "source": "Prestel & Partner Dubai 2024",
+      "contact_person": "Dawood Al Shezawi"
+    },
+    {
+      "name": "Michael Greve",
+      "organization": "Forever Healthy Family Office",
+      "location": "Germany / Dubai",
+      "region": "EU",
+      "category": "Regular Family Offices",
+      "notes": "Founder of Forever Healthy. Tech entrepreneur turned high-impact FO principal. Significant history in tech/venture capital. Speaker at Prestel Dubai 2024.",
+      "id": 245,
+      "email": "TBD (Manual verification required)",
+      "linkedin": "TBD",
+      "phone": "",
+      "source": "Prestel & Partner Dubai 2024",
+      "contact_person": "Michael Greve"
     }
   ]
 }
