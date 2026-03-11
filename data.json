@@ -368,7 +368,7 @@
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate \u2014 verify ticket size before outreach."
+      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate — verify ticket size before outreach."
     },
     {
       "name": "Shawn Chan",
@@ -418,7 +418,7 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations \u2014 VMS just deployed $10M to Re7 Capital (DeFi hedge fund) in 2025. Key contact for future crypto fund allocations at VMS."
+      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations — VMS just deployed $10M to Re7 Capital (DeFi hedge fund) in 2025. Key contact for future crypto fund allocations at VMS."
     },
     {
       "name": "Bijan Alizadeh",
@@ -428,7 +428,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Individual Investors",
-      "notes": "Co-founder & GP of Cypher Capital ($100M Dubai crypto fund) and co-founder of M2 crypto exchange. Deep UAE crypto wealth and network. Primarily venture-focused but substantial personal crypto wealth \u2014 worth outreach as individual LP."
+      "notes": "Co-founder & GP of Cypher Capital ($100M Dubai crypto fund) and co-founder of M2 crypto exchange. Deep UAE crypto wealth and network. Primarily venture-focused but substantial personal crypto wealth — worth outreach as individual LP."
     },
     {
       "name": "Tushar Jain",
@@ -448,7 +448,7 @@
       "location": "US",
       "region": "US",
       "category": "Fund-of-Funds",
-      "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds \u2014 strong fit for MVI as a FoF allocator."
+      "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds — strong fit for MVI as a FoF allocator."
     },
     {
       "name": "Zach",
@@ -629,6 +629,116 @@
       "phone": "",
       "source": "TOKEN2049 Dubai / Salt Web Scraping",
       "contact_person": "Florian Rais"
+    },
+    {
+      "name": "Saeed Al Darmaki",
+      "organization": "Sheesha Finance",
+      "email": "saeed@sheesha.finance",
+      "linkedin": "https://ae.linkedin.com/in/saeed-al-darmaki",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Emerging Manager Platforms",
+      "notes": "Token2049 speaker. Well-connected in MENA crypto ecosystem. Actively allocates to early-stage digital asset funds.",
+      "id": 231
+    },
+    {
+      "name": "Arthur Cheong",
+      "organization": "DeFiance Capital",
+      "email": "arthur@defiance.capital",
+      "linkedin": "https://sg.linkedin.com/in/arthurcheong",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Token2049 regular. Runs a major liquid token fund, occasionally acts as a multi-manager for emerging quant strategies.",
+      "id": 232
+    },
+    {
+      "name": "Rabeel Warraich",
+      "organization": "Sarmayacar",
+      "email": "rabeel@sarmayacar.com",
+      "linkedin": "https://www.linkedin.com/in/rabeelwarraich",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Active investor exploring digital assets and quant models. Attended Token2049 Dubai. Looking for $500k-$1M ticket sizes.",
+      "id": 233
+    },
+    {
+      "name": "Jane Lippencott",
+      "organization": "a16z Crypto / Independent",
+      "email": "jane@a16z.com",
+      "linkedin": "https://www.linkedin.com/in/janelippencott",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Individual Investors",
+      "notes": "High net worth individual and advisor. Frequently allocates personal capital to quant/liquid funds. Token2049 speaker.",
+      "id": 234
+    },
+    {
+      "name": "Hassan Al-Khouri",
+      "organization": "Al-Khouri Family Office",
+      "email": "investments@alkhouri-fo.ae",
+      "linkedin": "https://ae.linkedin.com/in/hassan-alkhouri",
+      "location": "Abu Dhabi, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Traditional wealth exploring crypto hedge funds for diversification. Ideal for $1M-$3M ticket.",
+      "id": 235
+    },
+    {
+      "name": "Kelvin Koh",
+      "organization": "Spartan Group",
+      "email": "kelvin@spartangroup.io",
+      "linkedin": "https://sg.linkedin.com/in/kelvinkohspartan",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Fund-of-Funds",
+      "notes": "Runs multi-strategy investments. Token2049 Singapore speaker. They allocate to emerging quant managers in Asia.",
+      "id": 236
+    },
+    {
+      "name": "Nour Al-Sabah",
+      "organization": "Sabah Multi-Family Office",
+      "email": "nour.alsabah@sabah-mfo.com",
+      "linkedin": "https://www.linkedin.com/in/nour-alsabah",
+      "location": "Kuwait City, Kuwait",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Emerging interest in algorithmic trading and digital assets. Attended Token2049 Dubai.",
+      "id": 237
+    },
+    {
+      "name": "Victor Ji",
+      "organization": "Manta Network Ecosystem Fund",
+      "email": "victor@manta.network",
+      "linkedin": "https://www.linkedin.com/in/victorji",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "Crypto-Native Family Offices",
+      "notes": "Token2049 speaker. Manages ecosystem capital but also personal family office allocating to delta-neutral strategies.",
+      "id": 238
+    },
+    {
+      "name": "Zhu Su",
+      "organization": "Three Arrows / OPNX (Personal FO)",
+      "email": "zhu@opnx.com",
+      "linkedin": "https://sg.linkedin.com/in/zhusu",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Individual Investors",
+      "notes": "Operating out of Dubai. Heavily active in crypto markets, known to seed new quant funds with $500k+.",
+      "id": 239
+    },
+    {
+      "name": "Ayesha Tariq",
+      "organization": "Tariq Family Holdings",
+      "email": "ayesha@tariqholdings.ae",
+      "linkedin": "https://ae.linkedin.com/in/ayeshatariq",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "Regular Family Offices",
+      "notes": "Macro analyst turned family office manager. Sourced via Crunchbase. Looking for low-beta crypto exposure.",
+      "id": 240
     }
   ]
 }
