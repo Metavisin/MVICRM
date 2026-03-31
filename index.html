@@ -3,495 +3,1170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVI LP CRM - Investor Database</title>
+    <title>MetaVision - LP CRM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #000000;
+            --sidebar: #0a0a0a;
+            --card: #111111;
+            --card-hover: #1a1a1a;
+            --border: #222222;
+            --accent: #00e5a0;
+            --accent-2: #00c4b8;
+            --accent-dim: rgba(0,229,160,0.12);
+            --accent-glow: rgba(0,229,160,0.25);
+            --purple: #7c3aed;
+            --text: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --green: #10b981;
+            --blue: #3b82f6;
+            --yellow: #f59e0b;
+            --red: #ef4444;
+            --pink: #ec4899;
+            --orange: #f97316;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: #fff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            height: 100vh;
+            overflow: hidden;
         }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
+
+        /* ── App Shell ── */
+        .app {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: 60px 1fr;
+            grid-template-areas:
+                "sidebar topbar"
+                "sidebar main";
+            height: 100vh;
         }
-        
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 30px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+        .app.detail-open {
+            grid-template-columns: 240px 1fr 360px;
+            grid-template-areas:
+                "sidebar topbar  detail"
+                "sidebar main    detail";
         }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+
+        /* ── Sidebar ── */
+        .sidebar {
+            grid-area: sidebar;
+            background: var(--sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            overflow-y: auto;
+        }
+
+        .logo {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle at 50% 50%, #0f2030 40%, transparent 70%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            box-shadow: 0 0 16px var(--accent-glow), 0 0 4px var(--accent-glow) inset;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .brand {
+            font-size: 15px;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
-        .subtitle {
-            color: #888;
-            font-size: 1.1em;
+
+        .logo-text .sub {
+            font-size: 10px;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
-        
-        .stats {
+
+        .nav { padding: 16px 0; flex: 1; }
+
+        .nav-item {
             display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .stat {
-            background: rgba(255,255,255,0.1);
-            padding: 15px 25px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        .stat-value {
-            font-size: 2em;
-            font-weight: bold;
-            color: #00d4ff;
-        }
-        
-        .stat-label {
-            color: #888;
-            font-size: 0.9em;
-        }
-        
-        .filters {
-            background: rgba(255,255,255,0.05);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
             align-items: center;
+            gap: 14px;
+            padding: 12px 24px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            border-left: 3px solid transparent;
+            transition: all 0.15s;
         }
-        
-        .filter-group {
+
+        .nav-item:hover {
+            color: var(--text);
+            background: rgba(255,255,255,0.03);
+        }
+
+        .nav-item.active {
+            color: var(--accent);
+            background: var(--accent-dim);
+            border-left-color: var(--accent);
+        }
+
+        .nav-item svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .nav-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 12px 24px;
+        }
+
+        /* ── Top Bar ── */
+        .topbar {
+            grid-area: topbar;
+            background: var(--sidebar);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 28px;
+            gap: 20px;
+        }
+
+        .global-search {
+            flex: 1;
+            max-width: 480px;
+            position: relative;
+        }
+
+        .global-search svg {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            color: var(--text-muted);
+        }
+
+        .global-search input {
+            width: 100%;
+            padding: 10px 14px 10px 40px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 13px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        .global-search input::placeholder { color: var(--text-muted); }
+        .global-search input:focus { border-color: var(--accent); }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-left: auto;
+        }
+
+        .topbar-icon {
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            transition: background 0.15s;
+        }
+
+        .topbar-icon:hover { background: var(--card); }
+
+        .topbar-icon svg { width: 20px; height: 20px; }
+
+        .notif-badge {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 8px;
+            height: 8px;
+            background: var(--red);
+            border-radius: 50%;
+            border: 2px solid var(--sidebar);
+        }
+
+        .user-pill {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 12px 6px 6px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .user-pill:hover { background: var(--card); }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .avatar-teal { background: linear-gradient(135deg, #009b6e, #00e5a0); }
+        .avatar-blue { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+        .avatar-purple { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+        .avatar-pink { background: linear-gradient(135deg, #db2777, #ec4899); }
+        .avatar-orange { background: linear-gradient(135deg, #ea580c, #f97316); }
+        .avatar-green { background: linear-gradient(135deg, #059669, #10b981); }
+
+        .user-name {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .user-role {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        /* ── Main Content ── */
+        .main {
+            grid-area: main;
+            overflow-y: auto;
+            padding: 24px 28px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border) transparent;
+        }
+
+        .main::-webkit-scrollbar { width: 6px; }
+        .main::-webkit-scrollbar-track { background: transparent; }
+        .main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+        .page-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* ── Stats Row ── */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px 20px;
             display: flex;
             flex-direction: column;
-            gap: 8px;
-        }
-        
-        label {
-            font-size: 0.9em;
-            color: #aaa;
-        }
-        
-        select {
-            padding: 10px 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.2);
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-            font-size: 1em;
-            min-width: 200px;
-            cursor: pointer;
-        }
-        
-        select:focus {
-            outline: none;
-            border-color: #00d4ff;
-        }
-        
-        .search-box {
-            flex: 1;
-            min-width: 200px;
-        }
-        
-        .search-box input {
-            width: 100%;
-            padding: 10px 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.2);
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-            font-size: 1em;
-        }
-        
-        .search-box input::placeholder {
-            color: #666;
-        }
-        
-        .search-box input:focus {
-            outline: none;
-            border-color: #00d4ff;
-        }
-        
-        .table-container {
-            background: rgba(255,255,255,0.05);
-            border-radius: 15px;
+            gap: 4px;
+            position: relative;
             overflow: hidden;
-            backdrop-filter: blur(10px);
         }
-        
-        table {
+
+        .stat-card .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .stat-card .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.2;
+        }
+
+        .stat-card .stat-spark {
+            position: absolute;
+            bottom: 12px;
+            right: 16px;
+            opacity: 0.5;
+        }
+
+        .stat-card.highlight {
+            border-color: rgba(0,229,160,0.3);
+            background: linear-gradient(135deg, var(--card) 0%, rgba(0,229,160,0.06) 100%);
+        }
+
+        .stat-card.highlight .stat-value {
+            color: var(--accent);
+        }
+
+        /* ── Spark SVG ── */
+        .spark { width: 64px; height: 28px; }
+        .spark polyline {
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* ── Table Section ── */
+        .table-section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .table-header {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .table-title {
+            font-size: 16px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .table-filters {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: auto;
+            flex-wrap: wrap;
+        }
+
+        .filter-select {
+            padding: 7px 12px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text);
+            font-size: 12px;
+            font-family: inherit;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .filter-select:focus { border-color: var(--accent); }
+
+        .filter-search {
+            padding: 7px 12px 7px 32px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text);
+            font-size: 12px;
+            font-family: inherit;
+            outline: none;
+            width: 200px;
+        }
+
+        .filter-search::placeholder { color: var(--text-muted); }
+        .filter-search:focus { border-color: var(--accent); }
+
+        .filter-search-wrap {
+            position: relative;
+        }
+
+        .filter-search-wrap svg {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            color: var(--text-muted);
+        }
+
+        /* ── Data Table ── */
+        .data-table {
             width: 100%;
             border-collapse: collapse;
         }
-        
-        thead {
-            background: rgba(0,0,0,0.3);
+
+        .data-table thead {
+            background: rgba(0,0,0,0.2);
         }
-        
-        th {
-            padding: 15px;
+
+        .data-table th {
+            padding: 12px 16px;
             text-align: left;
+            font-size: 11px;
             font-weight: 600;
-            color: #00d4ff;
-            font-size: 0.9em;
+            color: var(--text-secondary);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             cursor: pointer;
             user-select: none;
+            white-space: nowrap;
+            border-bottom: 1px solid var(--border);
         }
-        
-        th:hover {
-            background: rgba(255,255,255,0.05);
+
+        .data-table th:hover { color: var(--accent); }
+        .data-table th .sort-icon { opacity: 0.4; margin-left: 4px; }
+
+        .data-table td {
+            padding: 14px 16px;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            vertical-align: middle;
         }
-        
-        td {
-            padding: 15px;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 0.95em;
+
+        .data-table tbody tr {
+            cursor: pointer;
+            transition: background 0.1s;
         }
-        
-        tr:hover {
+
+        .data-table tbody tr:hover {
             background: rgba(255,255,255,0.03);
         }
-        
-        .category {
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            font-weight: 500;
+
+        .data-table tbody tr.selected {
+            background: var(--accent-dim);
+            outline: 1px solid rgba(0,212,255,0.2);
         }
-        
-        .category-1 { background: rgba(0,212,255,0.2); color: #00d4ff; }
-        .category-2 { background: rgba(124,58,237,0.2); color: #a78bfa; }
-        .category-3 { background: rgba(16,185,129,0.2); color: #34d399; }
-        .category-4 { background: rgba(245,158,11,0.2); color: #fbbf24; }
-        .category-5 { background: rgba(236,72,153,0.2); color: #f472b6; }
-        .category-6 { background: rgba(99,102,241,0.2); color: #818cf8; }
-        .category-7 { background: rgba(239,68,68,0.2); color: #f87171; }
-        
-        .region {
+
+        /* ── Name Cell ── */
+        .name-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .name-cell .avatar {
+            width: 30px;
+            height: 30px;
+            font-size: 11px;
+        }
+
+        .name-cell .name-text {
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .name-cell .org-text {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        /* ── Badges ── */
+        .badge {
             display: inline-block;
             padding: 3px 10px;
-            border-radius: 5px;
-            font-size: 0.8em;
-            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 500;
+            white-space: nowrap;
         }
-        
-        .region-asia { background: rgba(239,68,68,0.2); }
-        .region-middle-east { background: rgba(245,158,11,0.2); }
-        .region-eu { background: rgba(59,130,246,0.2); }
-        .region-us { background: rgba(16,185,129,0.2); }
-        
-        .notes {
-            max-width: 300px;
-            color: #aaa;
-            font-size: 0.85em;
-            line-height: 1.4;
-        }
-        
-        .contact-info {
-            font-size: 0.85em;
-            color: #888;
-        }
-        
-        .email {
-            color: #00d4ff;
-            font-size: 0.85em;
-        }
-        
-        .linkedin-link {
-            color: #0a66c2;
+
+        .badge-cat-individual { background: rgba(0,212,255,0.15); color: #00d4ff; }
+        .badge-cat-crypto-fo { background: rgba(124,58,237,0.15); color: #a78bfa; }
+        .badge-cat-regular-fo { background: rgba(16,185,129,0.15); color: #34d399; }
+        .badge-cat-platform { background: rgba(245,158,11,0.15); color: #fbbf24; }
+        .badge-cat-fof { background: rgba(236,72,153,0.15); color: #f472b6; }
+
+        .badge-region-asia { background: rgba(239,68,68,0.12); color: #f87171; }
+        .badge-region-me { background: rgba(245,158,11,0.12); color: #fbbf24; }
+        .badge-region-eu { background: rgba(59,130,246,0.12); color: #60a5fa; }
+        .badge-region-us { background: rgba(16,185,129,0.12); color: #34d399; }
+
+        .badge-tier1 { background: rgba(245,158,11,0.2); color: #fbbf24; font-weight: 600; }
+        .badge-tier2 { background: rgba(59,130,246,0.15); color: #60a5fa; }
+
+        .email-link {
+            color: var(--accent);
+            font-size: 12px;
             text-decoration: none;
-            font-size: 0.85em;
         }
-        
-        .linkedin-link:hover {
-            text-decoration: underline;
+
+        .email-link:hover { text-decoration: underline; }
+
+        .linkedin-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: rgba(10,102,194,0.15);
+            color: #60a5fa;
+            font-size: 11px;
+            text-decoration: none;
+            font-weight: 500;
         }
-        
+
+        .linkedin-btn:hover { background: rgba(10,102,194,0.25); }
+
+        .action-btn {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .action-btn:hover {
+            background: var(--border);
+            color: var(--text);
+        }
+
         .no-results {
             text-align: center;
-            padding: 50px;
-            color: #666;
-            font-size: 1.2em;
+            padding: 60px 20px;
+            color: var(--text-muted);
         }
-        
-        footer {
+
+        .no-results-icon { font-size: 40px; margin-bottom: 12px; opacity: 0.3; }
+        .no-results-text { font-size: 14px; }
+
+        /* ── Detail Panel ── */
+        .detail-panel {
+            grid-area: detail;
+            background: var(--sidebar);
+            border-left: 1px solid var(--border);
+            overflow-y: auto;
+            display: none;
+            flex-direction: column;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border) transparent;
+        }
+
+        .app.detail-open .detail-panel { display: flex; }
+
+        .detail-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-close {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .detail-close:hover { background: var(--card); color: var(--text); }
+
+        .detail-profile {
+            padding: 24px 20px;
             text-align: center;
-            margin-top: 30px;
-            color: #666;
-            font-size: 0.9em;
+            border-bottom: 1px solid var(--border);
         }
-        
-        @media (max-width: 768px) {
-            .filters {
-                flex-direction: column;
-            }
-            
-            select, .search-box {
-                width: 100%;
-            }
-            
-            table {
-                font-size: 0.85em;
-            }
-            
-            th, td {
-                padding: 10px;
-            }
+
+        .detail-profile .avatar {
+            width: 64px;
+            height: 64px;
+            font-size: 22px;
+            margin: 0 auto 14px;
+        }
+
+        .detail-profile .detail-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .detail-profile .detail-org {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .detail-section {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-section-title {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .detail-row:last-child { margin-bottom: 0; }
+
+        .detail-row svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .detail-row a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .detail-row a:hover { text-decoration: underline; }
+
+        .detail-notes {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .detail-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .detail-source {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* ── Region Distribution Chart ── */
+        .region-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .region-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .region-bar-label {
+            width: 70px;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        .region-bar-track {
+            flex: 1;
+            height: 8px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .region-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.4s ease;
+        }
+
+        .region-bar-count {
+            width: 24px;
+            text-align: right;
+            color: var(--text-muted);
+            font-size: 11px;
+        }
+
+        /* ── Footer ── */
+        .table-footer {
+            padding: 12px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-muted);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🚀 MVI LP CRM</h1>
-            <p class="subtitle">Quantitative Crypto Fund - Investor Database</p>
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-value" id="totalContacts">0</div>
-                    <div class="stat-label">Total Contacts</div>
+    <div class="app" id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="brand">MetaVision</span>
+                    <span class="sub">Investor CRM</span>
                 </div>
-                <div class="stat">
-                    <div class="stat-value" id="totalRegions">0</div>
-                    <div class="stat-label">Regions</div>
+            </div>
+            <nav class="nav">
+                <div class="nav-item" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    Dashboard
                 </div>
-                <div class="stat">
-                    <div class="stat-value" id="totalCategories">0</div>
-                    <div class="stat-label">LP Categories</div>
+                <div class="nav-item active" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    Contacts
+                </div>
+                <div class="nav-item" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Funds
+                </div>
+                <div class="nav-item" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    Deal Flow
+                </div>
+                <div class="nav-divider"></div>
+                <div class="nav-item" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    Analytics
+                </div>
+                <div class="nav-item" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Compliance
+                </div>
+                <div class="nav-divider"></div>
+                <div class="nav-item" onclick="setNav(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    Settings
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="global-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="globalSearch" placeholder="Global Search..." oninput="filterTable()">
+            </div>
+            <div class="topbar-right">
+                <div class="topbar-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                </div>
+                <div class="topbar-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    <span class="notif-badge"></span>
+                </div>
+                <div class="user-pill">
+                    <div class="avatar avatar-teal">FM</div>
+                    <div>
+                        <div class="user-name">Fund Manager</div>
+                        <div class="user-role">MetaVision</div>
+                    </div>
                 </div>
             </div>
         </header>
-        
-        <div class="filters">
-            <div class="filter-group">
-                <label>Region</label>
-                <select id="regionFilter" onchange="filterTable()">
-                    <option value="">All Regions</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Middle East">Middle East</option>
-                    <option value="EU">EU</option>
-                    <option value="US">US</option>
-                </select>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="page-title">Contacts &amp; Database</div>
+
+            <!-- Stats -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-label">Total Contacts
+                        <svg class="spark"><polyline points="2,22 12,16 22,18 32,8 42,12 52,6 62,10" stroke="var(--accent)" opacity="0.5"/></svg>
+                    </div>
+                    <div class="stat-value" id="statTotal">0</div>
+                </div>
+                <div class="stat-card highlight">
+                    <div class="stat-label">Tier 1 Targets
+                        <svg class="spark"><polyline points="2,18 12,14 22,20 32,10 42,6 52,12 62,4" stroke="var(--accent)"/></svg>
+                    </div>
+                    <div class="stat-value" id="statTier1">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Regions Covered
+                        <svg class="spark"><polyline points="2,14 12,18 22,10 32,16 42,8 52,14 62,12" stroke="var(--green)" opacity="0.5"/></svg>
+                    </div>
+                    <div class="stat-value" id="statRegions">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">LP Categories
+                        <svg class="spark"><polyline points="2,20 12,12 22,16 32,8 42,14 52,10 62,6" stroke="var(--purple)" opacity="0.5"/></svg>
+                    </div>
+                    <div class="stat-value" id="statCategories">0</div>
+                </div>
             </div>
-            
-            <div class="filter-group">
-                <label>LP Category</label>
-                <select id="categoryFilter" onchange="filterTable()">
-                    <option value="">All Categories</option>
-                    <option value="Individual Investors">Individual Investors</option>
-                    <option value="Crypto-Native Family Offices">Crypto-Native Family Offices</option>
-                    <option value="Regular Family Offices">Regular Family Offices</option>
-                    <option value="Emerging Manager Platforms">Emerging Manager Platforms</option>
-                    <option value="Fund-of-Funds">Fund-of-Funds</option>
-                </select>
+
+            <!-- Table -->
+            <div class="table-section">
+                <div class="table-header">
+                    <div class="table-title">Investors &amp; Prospects</div>
+                    <div class="table-filters">
+                        <select class="filter-select" id="regionFilter" onchange="filterTable()">
+                            <option value="">All Regions</option>
+                        </select>
+                        <select class="filter-select" id="categoryFilter" onchange="filterTable()">
+                            <option value="">All Categories</option>
+                        </select>
+                        <div class="filter-search-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            <input type="text" class="filter-search" id="tableSearch" placeholder="Filter table..." oninput="filterTable()">
+                        </div>
+                    </div>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('category')">Category <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('region')">Region <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('location')">Location <span class="sort-icon">&#8597;</span></th>
+                                <th>Email</th>
+                                <th>LinkedIn</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+                <div id="noResults" class="no-results" style="display:none;">
+                    <div class="no-results-icon">&#128269;</div>
+                    <div class="no-results-text">No contacts match your filters.</div>
+                </div>
+                <div class="table-footer">
+                    <span id="footerCount">0 contacts</span>
+                    <span>Last updated: March 2026</span>
+                </div>
             </div>
-            
-            <div class="search-box">
-                <label>Search</label>
-                <input type="text" id="searchInput" placeholder="Search name, organization, location..." oninput="filterTable()">
+        </main>
+
+        <!-- Detail Panel -->
+        <aside class="detail-panel" id="detailPanel">
+            <div class="detail-top">
+                <span style="font-size:13px;font-weight:600;color:var(--text-secondary)">Contact Details</span>
+                <button class="detail-close" onclick="closeDetail()">&times;</button>
             </div>
-        </div>
-        
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th onclick="sortTable(0)">Name ↕</th>
-                        <th onclick="sortTable(1)">Organization ↕</th>
-                        <th>Email</th>
-                        <th>LinkedIn</th>
-                        <th onclick="sortTable(2)">Location ↕</th>
-                        <th>Region</th>
-                        <th>Category</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                </tbody>
-            </table>
-        </div>
-        
-        <div id="noResults" class="no-results" style="display: none;">
-            No contacts found matching your filters.
-        </div>
-        
-        <footer>
-            <p>Last updated: March 2026 | MVI CRM - Research Only. Do Not Contact.</p>
-        </footer>
+            <div class="detail-profile" id="detailProfile"></div>
+            <div class="detail-section" id="detailContact"></div>
+            <div class="detail-section" id="detailNotes"></div>
+            <div class="detail-section" id="detailTags"></div>
+        </aside>
     </div>
 
     <script>
         let contacts = [];
-        let sortDirection = 1;
-        let lastSortColumn = -1;
+        let filteredContacts = [];
+        let selectedIndex = -1;
+        let sortKey = '';
+        let sortDir = 1;
 
-        // Load data
-        async function loadData() {
-            try {
-                const response = await fetch('data.json');
-                const data = await response.json();
-                contacts = data.contacts;
-                renderTable(contacts);
-                updateStats(contacts);
-            } catch (error) {
-                console.error('Error loading data:', error);
-                document.getElementById('tableBody').innerHTML = 
-                    '<tr><td colspan="6" class="no-results">Error loading data. Please ensure data.json is present.</td></tr>';
-            }
+        const avatarColors = ['avatar-teal','avatar-blue','avatar-purple','avatar-pink','avatar-orange','avatar-green'];
+
+        function getInitials(name) {
+            const parts = name.replace(/\(.*?\)/g, '').trim().split(/\s+/);
+            if (parts.length === 1) return parts[0][0].toUpperCase();
+            return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
         }
 
-        function renderTable(data) {
-            const tbody = document.getElementById('tableBody');
-            const noResults = document.getElementById('noResults');
-            
-            if (data.length === 0) {
-                tbody.innerHTML = '';
-                noResults.style.display = 'block';
-                return;
-            }
-            
-            noResults.style.display = 'none';
-            
-            tbody.innerHTML = data.map((contact, index) => {
-                const categoryClass = getCategoryClass(contact.category);
-                const regionClass = getRegionClass(contact.region);
-                
-                return `
-                    <tr>
-                        <td><strong>${escapeHtml(contact.name)}</strong></td>
-                        <td>${escapeHtml(contact.organization)}</td>
-                        <td class="email">${escapeHtml(contact.email)}</td>
-                        <td>${contact.linkedin ? '<a href="'+escapeHtml(contact.linkedin)+'" target="_blank" class="linkedin-link">Profile</a>' : '-'}</td>
-                        <td>${escapeHtml(contact.location)}</td>
-                        <td><span class="region ${regionClass}">${escapeHtml(contact.region)}</span></td>
-                        <td><span class="category ${categoryClass}">${escapeHtml(contact.category)}</span></td>
-                        <td class="notes">${escapeHtml(contact.notes)}</td>
-                    </tr>
-                `;
-            }).join('');
+        function getAvatarColor(name) {
+            let h = 0;
+            for (let i = 0; i < name.length; i++) h = ((h << 5) - h) + name.charCodeAt(i);
+            return avatarColors[Math.abs(h) % avatarColors.length];
         }
 
-        function getCategoryClass(category) {
-            const classes = {
-                'Individual Investors': 'category-1',
-                'Crypto-Native Family Offices': 'category-2',
-                'Regular Family Offices': 'category-3',
-                'Emerging Manager Platforms': 'category-4',
-                'Fund-of-Funds': 'category-5',
-                'Multi-Asset Family Offices': 'category-6',
-                'Tech/Web3 Entrepreneurs': 'category-7',
-                'Hedge Funds': 'category-8'
+        function getCategoryBadge(cat) {
+            const map = {
+                'Individual Investors': 'badge-cat-individual',
+                'Crypto-Native Family Offices': 'badge-cat-crypto-fo',
+                'Regular Family Offices': 'badge-cat-regular-fo',
+                'Emerging Manager Platforms': 'badge-cat-platform',
+                'Fund-of-Funds': 'badge-cat-fof'
             };
-            return classes[category] || 'category-1';
+            return map[cat] || 'badge-cat-individual';
         }
 
-        function getRegionClass(region) {
-            return 'region-' + region.toLowerCase().replace(' ', '-');
+        function getRegionBadge(region) {
+            if (region.includes('Asia')) return 'badge-region-asia';
+            if (region.includes('Middle East') || region.includes('MENA')) return 'badge-region-me';
+            if (region.includes('EU')) return 'badge-region-eu';
+            if (region.includes('US') || region.includes('North America')) return 'badge-region-us';
+            return 'badge-region-asia';
+        }
+
+        function getCategoryShort(cat) {
+            const map = {
+                'Individual Investors': 'Individual',
+                'Crypto-Native Family Offices': 'Crypto FO',
+                'Regular Family Offices': 'Family Office',
+                'Emerging Manager Platforms': 'EM Platform',
+                'Fund-of-Funds': 'Fund-of-Funds'
+            };
+            return map[cat] || cat;
+        }
+
+        function getTier(notes) {
+            if (!notes) return null;
+            if (notes.toUpperCase().includes('TIER 1')) return 1;
+            if (notes.toUpperCase().includes('TIER 2')) return 2;
+            return null;
         }
 
         function escapeHtml(text) {
+            if (!text) return '';
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
         }
 
-        function filterTable() {
-            const regionFilter = document.getElementById('regionFilter').value;
-            const categoryFilter = document.getElementById('categoryFilter').value;
-            const searchInput = document.getElementById('searchInput').value.toLowerCase();
-            
-            let filtered = contacts.filter(contact => {
-                const matchesRegion = !regionFilter || contact.region === regionFilter;
-                const matchesCategory = !categoryFilter || contact.category === categoryFilter;
-                const matchesSearch = !searchInput || 
-                    contact.name.toLowerCase().includes(searchInput) ||
-                    contact.organization.toLowerCase().includes(searchInput) ||
-                    contact.location.toLowerCase().includes(searchInput) ||
-                    contact.notes.toLowerCase().includes(searchInput);
-                
-                return matchesRegion && matchesCategory && matchesSearch;
+        // Load data
+        async function loadData() {
+            try {
+                const res = await fetch('data.json');
+                const data = await res.json();
+                contacts = data.contacts;
+                populateFilters();
+                filterTable();
+                updateStats(contacts);
+            } catch (err) {
+                document.getElementById('tableBody').innerHTML =
+                    '<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json</td></tr>';
+            }
+        }
+
+        function populateFilters() {
+            const regions = [...new Set(contacts.map(c => c.region))].sort();
+            const categories = [...new Set(contacts.map(c => c.category))].sort();
+
+            const rf = document.getElementById('regionFilter');
+            regions.forEach(r => {
+                const opt = document.createElement('option');
+                opt.value = r; opt.textContent = r;
+                rf.appendChild(opt);
             });
-            
-            renderTable(filtered);
-            updateStats(filtered);
+
+            const cf = document.getElementById('categoryFilter');
+            categories.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c; opt.textContent = c;
+                cf.appendChild(opt);
+            });
+        }
+
+        function filterTable() {
+            const region = document.getElementById('regionFilter').value;
+            const category = document.getElementById('categoryFilter').value;
+            const globalQ = document.getElementById('globalSearch').value.toLowerCase();
+            const tableQ = document.getElementById('tableSearch').value.toLowerCase();
+            const q = globalQ || tableQ;
+
+            filteredContacts = contacts.filter(c => {
+                if (region && c.region !== region) return false;
+                if (category && c.category !== category) return false;
+                if (q) {
+                    const hay = [c.name, c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
+                    if (!hay.includes(q)) return false;
+                }
+                return true;
+            });
+
+            if (sortKey) applySortToFiltered();
+            renderTable();
+            document.getElementById('footerCount').textContent = filteredContacts.length + ' contact' + (filteredContacts.length !== 1 ? 's' : '');
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            const noRes = document.getElementById('noResults');
+
+            if (filteredContacts.length === 0) {
+                tbody.innerHTML = '';
+                noRes.style.display = 'block';
+                return;
+            }
+            noRes.style.display = 'none';
+
+            tbody.innerHTML = filteredContacts.map((c, i) => {
+                const initials = getInitials(c.name);
+                const avatarCls = getAvatarColor(c.name);
+                const catBadge = getCategoryBadge(c.category);
+                const regBadge = getRegionBadge(c.region);
+                const tier = getTier(c.notes);
+                const sel = i === selectedIndex ? ' selected' : '';
+                const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : '';
+                const li = c.linkedin && c.linkedin.startsWith('http') ? c.linkedin : '';
+
+                return `<tr class="${sel}" onclick="selectContact(${i})">
+                    <td>
+                        <div class="name-cell">
+                            <div class="avatar ${avatarCls}">${initials}</div>
+                            <div>
+                                <div class="name-text">${escapeHtml(c.name)}</div>
+                                <div class="org-text">${escapeHtml(c.organization)}</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="badge ${catBadge}">${getCategoryShort(c.category)}</span>${tier ? ' <span class="badge badge-tier' + tier + '">T' + tier + '</span>' : ''}</td>
+                    <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
+                    <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
+                    <td>${email ? '<a class="email-link" href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a>' : '<span style="color:var(--text-muted)">-</span>'}</td>
+                    <td>${li ? '<a class="linkedin-btn" href="' + escapeHtml(li) + '" target="_blank">in Profile</a>' : '<span style="color:var(--text-muted)">-</span>'}</td>
+                    <td><button class="action-btn" onclick="event.stopPropagation(); selectContact(${i})">&#8230;</button></td>
+                </tr>`;
+            }).join('');
         }
 
         function updateStats(data) {
-            document.getElementById('totalContacts').textContent = data.length;
-            
-            const regions = new Set(contacts.map(c => c.region));
-            document.getElementById('totalRegions').textContent = regions.size;
-            
-            const categories = new Set(contacts.map(c => c.category));
-            document.getElementById('totalCategories').textContent = categories.size;
+            document.getElementById('statTotal').textContent = data.length;
+            const tier1 = data.filter(c => c.notes && c.notes.toUpperCase().includes('TIER 1')).length;
+            document.getElementById('statTier1').textContent = tier1;
+            document.getElementById('statRegions').textContent = new Set(data.map(c => c.region)).size;
+            document.getElementById('statCategories').textContent = new Set(data.map(c => c.category)).size;
         }
 
-        function sortTable(column) {
-            if (lastSortColumn === column) {
-                sortDirection *= -1;
-            } else {
-                sortDirection = 1;
-                lastSortColumn = column;
-            }
-            
-            const keys = ['name', 'organization', 'location', 'region', 'category', 'notes'];
-            const key = keys[column];
-            
-            const filtered = [...document.querySelectorAll('#tableBody tr')].map(row => {
-                const cells = row.cells;
-                return {
-                    element: row,
-                    values: [
-                        cells[0].textContent,
-                        cells[1].textContent,
-                        cells[2].textContent,
-                        cells[3].textContent,
-                        cells[4].textContent,
-                        cells[5].textContent
-                    ]
-                };
-            });
-            
-            filtered.sort((a, b) => {
-                const valA = a.values[column].toLowerCase();
-                const valB = b.values[column].toLowerCase();
-                
-                if (valA < valB) return -1 * sortDirection;
-                if (valA > valB) return 1 * sortDirection;
+        function sortTable(key) {
+            if (sortKey === key) { sortDir *= -1; } else { sortKey = key; sortDir = 1; }
+            applySortToFiltered();
+            renderTable();
+        }
+
+        function applySortToFiltered() {
+            filteredContacts.sort((a, b) => {
+                const va = (a[sortKey] || '').toLowerCase();
+                const vb = (b[sortKey] || '').toLowerCase();
+                if (va < vb) return -1 * sortDir;
+                if (va > vb) return 1 * sortDir;
                 return 0;
             });
-            
-            filtered.forEach(item => {
-                document.getElementById('tableBody').appendChild(item.element);
-            });
         }
 
-        // Initial load
+        function selectContact(index) {
+            selectedIndex = index;
+            const c = filteredContacts[index];
+            if (!c) return;
+
+            document.getElementById('app').classList.add('detail-open');
+
+            const initials = getInitials(c.name);
+            const avatarCls = getAvatarColor(c.name);
+            const tier = getTier(c.notes);
+
+            document.getElementById('detailProfile').innerHTML = `
+                <div class="avatar ${avatarCls}" style="width:64px;height:64px;font-size:22px;margin:0 auto 14px;">${initials}</div>
+                <div class="detail-name">${escapeHtml(c.name)}</div>
+                <div class="detail-org">${escapeHtml(c.organization)}</div>
+                <span class="badge ${getCategoryBadge(c.category)}">${escapeHtml(c.category)}</span>
+                ${tier ? ' <span class="badge badge-tier' + tier + '">Tier ' + tier + '</span>' : ''}
+            `;
+
+            const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : null;
+            const li = c.linkedin && c.linkedin.startsWith('http') ? c.linkedin : null;
+            const phone = c.phone && !c.phone.includes('Not publicly') ? c.phone : null;
+
+            document.getElementById('detailContact').innerHTML = `
+                <div class="detail-section-title">Contact Information</div>
+                <div class="detail-row">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                    ${email ? '<a href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a>' : '<span style="color:var(--text-muted)">Not available</span>'}
+                </div>
+                ${phone ? '<div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>' + escapeHtml(phone) + '</div>' : ''}
+                ${li ? '<div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><a href="' + escapeHtml(li) + '" target="_blank">LinkedIn Profile</a></div>' : ''}
+                <div class="detail-row">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    ${escapeHtml(c.location)}
+                </div>
+            `;
+
+            document.getElementById('detailNotes').innerHTML = `
+                <div class="detail-section-title">Notes</div>
+                <div class="detail-notes">${escapeHtml(c.notes)}</div>
+                ${c.source ? '<div class="detail-source" style="margin-top:10px;">Source: ' + escapeHtml(c.source) + '</div>' : ''}
+                ${c.contact_person && c.contact_person !== c.name ? '<div class="detail-source">Contact Person: ' + escapeHtml(c.contact_person) + '</div>' : ''}
+            `;
+
+            document.getElementById('detailTags').innerHTML = `
+                <div class="detail-section-title">Region Distribution</div>
+                <div class="region-chart" id="regionChart"></div>
+            `;
+            buildRegionChart();
+
+            renderTable();
+        }
+
+        function buildRegionChart() {
+            const counts = {};
+            contacts.forEach(c => { counts[c.region] = (counts[c.region] || 0) + 1; });
+            const max = Math.max(...Object.values(counts));
+            const colors = { 'Asia': '#f87171', 'Middle East': '#fbbf24', 'EU': '#60a5fa', 'US': '#34d399' };
+
+            const chart = document.getElementById('regionChart');
+            chart.innerHTML = Object.entries(counts).sort((a,b) => b[1] - a[1]).map(([region, count]) => {
+                const pct = (count / max * 100).toFixed(0);
+                const col = colors[region] || 'var(--accent)';
+                return `<div class="region-bar-row">
+                    <div class="region-bar-label">${escapeHtml(region)}</div>
+                    <div class="region-bar-track"><div class="region-bar-fill" style="width:${pct}%;background:${col}"></div></div>
+                    <div class="region-bar-count">${count}</div>
+                </div>`;
+            }).join('');
+        }
+
+        function closeDetail() {
+            document.getElementById('app').classList.remove('detail-open');
+            selectedIndex = -1;
+            renderTable();
+        }
+
+        function setNav(el) {
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            el.classList.add('active');
+        }
+
         loadData();
     </script>
 </body>

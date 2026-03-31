@@ -348,7 +348,7 @@
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate \u2014 verify ticket size before outreach."
+      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate."
     },
     {
       "name": "Zhi Li",
@@ -358,7 +358,7 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations \u2014 VMS just deployed $10M to Re7 Capital (DeFi hedge fund) in 2025. Key contact for future crypto fund allocations at VMS."
+      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations."
     },
     {
       "name": "Pure Crypto",
@@ -368,7 +368,7 @@
       "location": "US",
       "region": "US",
       "category": "Fund-of-Funds",
-      "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds \u2014 strong fit for MVI as a FoF allocator."
+      "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds."
     },
     {
       "name": "Zach",
@@ -388,77 +388,7 @@
       "location": "Muscat, Oman",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "CIO of Al Siraj Holdings, an Oman-based family office. Presented at the Middle East Family Office Investment Summit alongside Gulf FOs actively exploring alternatives and hedge fund allocations. Worth outreach to gauge crypto appetite."
-    },
-    {
-      "id": 221,
-      "name": "Amine Bentaleb",
-      "organization": "Patrimium MFO",
-      "email": "amine.bentaleb@patrimiummfo.com",
-      "phone": "Not available",
-      "location": "Dubai",
-      "region": "MENA",
-      "category": "Regular Family Offices",
-      "notes": "Managing Partner at Global Multi Family Office",
-      "source": "TOKEN2049/Salt Research",
-      "linkedin": "https://www.linkedin.com/in/amine-bentaleb-48bb2239",
-      "contact_person": "Amine Bentaleb"
-    },
-    {
-      "id": 222,
-      "name": "Christine Moy",
-      "organization": "Apollo Global Management",
-      "email": "cmoy@apollo.com",
-      "phone": "Not available",
-      "location": "New York",
-      "region": "North America",
-      "category": "Emerging Manager Platforms",
-      "notes": "Partner; Head of Digital Assets",
-      "source": "TOKEN2049/Salt Research",
-      "linkedin": "https://www.linkedin.com/in/christine-moy-b6109164/",
-      "contact_person": "Christine Moy"
-    },
-    {
-      "id": 223,
-      "name": "Adel Alawadhi",
-      "organization": "Edris Alawadhi Group",
-      "email": "adel@thecorporategroup.ae",
-      "phone": "Not available",
-      "location": "Dubai",
-      "region": "MENA",
-      "category": "Regular Family Offices",
-      "notes": "Vice Chairman; Corporate Social Responsibility Specialist",
-      "source": "TOKEN2049/Salt Research",
-      "linkedin": "https://www.linkedin.com/in/adel-alawadhi-b79a115/",
-      "contact_person": "Adel Alawadhi"
-    },
-    {
-      "id": 224,
-      "name": "Dr. Ahmed Mansour",
-      "organization": "Private Dept of Sheikh Mohammed bin Khalid Al Nahyan",
-      "email": "ahmed.mansour@pvtdept.ae",
-      "phone": "Not available",
-      "location": "Abu Dhabi",
-      "region": "MENA",
-      "category": "Regular Family Offices",
-      "notes": "CEO of the Private Department",
-      "source": "TOKEN2049/Salt Research",
-      "linkedin": "https://ae.linkedin.com/company/pvtdept",
-      "contact_person": "Dr. Ahmed Mansour"
-    },
-    {
-      "id": 225,
-      "name": "Florian Rais",
-      "organization": "Criptonite Asset Management",
-      "email": "florian@criptoniteam.com",
-      "phone": "Not available",
-      "location": "Dubai",
-      "region": "MENA",
-      "category": "Emerging Manager Platforms",
-      "notes": "TOKEN2049 Dubai attendee; Founder & CEO (Wealth/Family Office admin)",
-      "source": "TOKEN2049/Salt Research",
-      "linkedin": "https://www.linkedin.com/in/florian-rais-677a633a/",
-      "contact_person": "Florian Rais"
+      "notes": "CIO of Al Siraj Holdings, an Oman-based family office. Presented at the Middle East Family Office Investment Summit alongside Gulf FOs actively exploring alternatives and hedge fund allocations."
     },
     {
       "name": "Amine Bentaleb",
@@ -468,11 +398,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Managing Partner at Global Multi Family Office. Scraped from Private Wealth ME Forum (co-located with TOKEN2049 Dubai).",
-      "id": 226,
-      "phone": "",
-      "source": "TOKEN2049 Dubai / Salt Web Scraping",
-      "contact_person": "Amine Bentaleb"
+      "notes": "Managing Partner at Global Multi Family Office. Scraped from Private Wealth ME Forum (co-located with TOKEN2049 Dubai)."
     },
     {
       "name": "Christine Moy",
@@ -482,11 +408,7 @@
       "location": "New York, USA",
       "region": "US",
       "category": "Emerging Manager Platforms",
-      "notes": "Partner; Head of Digital Assets at Apollo (major institutional allocator). Speaker at TOKEN2049 Dubai.",
-      "id": 227,
-      "phone": "",
-      "source": "TOKEN2049 Dubai / Salt Web Scraping",
-      "contact_person": "Christine Moy"
+      "notes": "Partner; Head of Digital Assets at Apollo (major institutional allocator). Speaker at TOKEN2049 Dubai."
     },
     {
       "name": "Adel Alawadhi",
@@ -496,11 +418,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Vice Chairman of UAE-based single-family office. Corporate Social Responsibility Specialist.",
-      "id": 228,
-      "phone": "",
-      "source": "TOKEN2049 Dubai / Salt Web Scraping",
-      "contact_person": "Adel Alawadhi"
+      "notes": "Vice Chairman of UAE-based single-family office. Corporate Social Responsibility Specialist."
     },
     {
       "name": "Dr. Ahmed Mansour",
@@ -510,11 +428,7 @@
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Group CEO of a royal family private investment office.",
-      "id": 229,
-      "phone": "",
-      "source": "TOKEN2049 Dubai / Salt Web Scraping",
-      "contact_person": "Dr. Ahmed Mansour"
+      "notes": "Group CEO of a royal family private investment office."
     },
     {
       "name": "Florian Rais",
@@ -524,11 +438,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Emerging Manager Platforms",
-      "notes": "Founder & CEO, handles family office wealth advisory. Scraped from TOKEN2049 Dubai.",
-      "id": 230,
-      "phone": "",
-      "source": "TOKEN2049 Dubai / Salt Web Scraping",
-      "contact_person": "Florian Rais"
+      "notes": "Founder & CEO, handles family office wealth advisory. Scraped from TOKEN2049 Dubai."
     },
     {
       "name": "Saeed Al Darmaki",
@@ -627,10 +537,7 @@
       "notes": "CEO of Dubai Economic Development. High-level institutional allocator and principal. Speaker at Prestel Dubai 2024.",
       "id": 241,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD",
-      "phone": "",
-      "source": "Prestel & Partner Dubai 2024",
-      "contact_person": "Hadi Badri"
+      "linkedin": "TBD"
     },
     {
       "name": "Mishal Kanoo",
@@ -641,10 +548,7 @@
       "notes": "Chairman of The Kanoo Group (one of the largest family conglomerates in the Gulf). Multi-generational wealth. Speaker at Prestel Dubai 2024.",
       "id": 242,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD",
-      "phone": "",
-      "source": "Prestel & Partner Dubai 2024",
-      "contact_person": "Mishal Kanoo"
+      "linkedin": "TBD"
     },
     {
       "name": "Yogesh Mehta",
@@ -655,10 +559,7 @@
       "notes": "CEO of Petrochem. Large single-family office principal. Known for diversified alternative investments. Speaker at Prestel Dubai 2024.",
       "id": 243,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD",
-      "phone": "",
-      "source": "Prestel & Partner Dubai 2024",
-      "contact_person": "Yogesh Mehta"
+      "linkedin": "TBD"
     },
     {
       "name": "Dawood Al Shezawi",
@@ -669,10 +570,7 @@
       "notes": "President and CEO of Strategic Holding. Focus on strategic investments and technology. Speaker at Prestel Dubai 2024.",
       "id": 244,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD",
-      "phone": "",
-      "source": "Prestel & Partner Dubai 2024",
-      "contact_person": "Dawood Al Shezawi"
+      "linkedin": "TBD"
     },
     {
       "name": "Michael Greve",
@@ -683,10 +581,7 @@
       "notes": "Founder of Forever Healthy. Tech entrepreneur turned high-impact FO principal. Significant history in tech/venture capital. Speaker at Prestel Dubai 2024.",
       "id": 245,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD",
-      "phone": "",
-      "source": "Prestel & Partner Dubai 2024",
-      "contact_person": "Michael Greve"
+      "linkedin": "TBD"
     }
   ]
 }
