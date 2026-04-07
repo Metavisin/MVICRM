@@ -1283,15 +1283,18 @@
         // Load data
         async function loadData() {
             try {
-                const res = await fetch('data.json');
-                const data = await res.json();
-                contacts = data.contacts;
+                const res = await fetch('./data.json');
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const text = await res.text();
+                const data = JSON.parse(text);
+                contacts = data.contacts || [];
                 populateFilters();
                 filterTable();
                 updateStats(contacts);
             } catch (err) {
+                console.error('loadData error:', err);
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json</td></tr>';
+                    '<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
             }
         }
 
