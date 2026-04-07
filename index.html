@@ -1211,12 +1211,14 @@
         const avatarColors = ['avatar-teal','avatar-blue','avatar-purple','avatar-pink','avatar-orange','avatar-green'];
 
         function getInitials(name) {
+            if (!name) return '?';
             const parts = name.replace(/\(.*?\)/g, '').trim().split(/\s+/);
             if (parts.length === 1) return parts[0][0].toUpperCase();
             return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
         }
 
         function getAvatarColor(name) {
+            if (!name) return avatarColors[0];
             let h = 0;
             for (let i = 0; i < name.length; i++) h = ((h << 5) - h) + name.charCodeAt(i);
             return avatarColors[Math.abs(h) % avatarColors.length];
@@ -1287,7 +1289,16 @@
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 const text = await res.text();
                 const data = JSON.parse(text);
-                contacts = data.contacts || [];
+                contacts = (data.contacts || []).map(c => ({
+                    ...c,
+                    name: c.name || c.full_name || '(Unknown)',
+                    organization: c.organization || c.company || '',
+                    linkedin: c.linkedin || c.linkedin_url || '',
+                    email: c.email || c.business_email || c.personal_email || '',
+                    notes: c.notes || c.score_rationale || '',
+                    region: c.region || 'Global',
+                    category: c.category || 'Uncategorized'
+                }));
                 populateFilters();
                 filterTable();
                 updateStats(contacts);
