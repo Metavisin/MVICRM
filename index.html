@@ -924,17 +924,17 @@
                 </div>
             </div>
             <nav class="nav">
-                <div class="nav-item" data-page="contacts" onclick="showPage('contacts', this)">
+                <div class="nav-item active" data-page="contacts" onclick="showPage('contacts', this)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                     Dashboard
-                </div>
-                <div class="nav-item active" data-page="contacts" onclick="showPage('contacts', this)">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    Contacts
                 </div>
                 <div class="nav-item" data-page="analytics" onclick="showPage('analytics', this)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                     Analytics
+                </div>
+                <div class="nav-item" data-page="scoring" onclick="showPage('scoring', this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    Scoring
                 </div>
             </nav>
         </aside>
@@ -968,30 +968,18 @@
             <div class="page-title">Contacts &amp; Database</div>
 
             <!-- Stats -->
-            <div class="stats-row">
-                <div class="stat-card">
+            <div class="stats-row" style="display:flex;gap:16px;">
+                <div class="stat-card" style="flex:1;">
                     <div class="stat-label">Total Contacts
                         <svg class="spark"><polyline points="2,22 12,16 22,18 32,8 42,12 52,6 62,10" stroke="var(--accent)" opacity="0.5"/></svg>
                     </div>
                     <div class="stat-value" id="statTotal">0</div>
                 </div>
-                <div class="stat-card highlight">
+                <div class="stat-card highlight" style="flex:1;cursor:pointer;" onclick="toggleHotFilter()">
                     <div class="stat-label">HOT Leads
                         <svg class="spark"><polyline points="2,18 12,14 22,20 32,10 42,6 52,12 62,4" stroke="var(--accent)"/></svg>
                     </div>
                     <div class="stat-value" id="statHot">0</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Regions Covered
-                        <svg class="spark"><polyline points="2,14 12,18 22,10 32,16 42,8 52,14 62,12" stroke="var(--green)" opacity="0.5"/></svg>
-                    </div>
-                    <div class="stat-value" id="statRegions">0</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">LP Categories
-                        <svg class="spark"><polyline points="2,20 12,12 22,16 32,8 42,14 52,10 62,6" stroke="var(--purple)" opacity="0.5"/></svg>
-                    </div>
-                    <div class="stat-value" id="statCategories">0</div>
                 </div>
             </div>
 
@@ -1089,6 +1077,114 @@
                 </div>
             </div>
             </div><!-- end page-analytics -->
+
+            <!-- Scoring Methodology Page -->
+            <div class="page-scoring" id="pageScoring" style="display:none;">
+            <div class="page-title">Scoring Methodology</div>
+
+            <div style="max-width:900px;display:flex;flex-direction:column;gap:24px;">
+
+                <div class="stat-card" style="padding:24px;">
+                    <h3 style="color:var(--accent);margin-bottom:12px;font-size:16px;">How Lead Scoring Works</h3>
+                    <p style="color:var(--text-secondary);line-height:1.7;font-size:13px;">
+                        Every contact in the CRM is scored across 5 dimensions on a 0&ndash;10 scale. The Lead Score is the average of all 5 dimensions, producing a final score from 1.0 to 10.0. This score determines the contact's priority tag and the urgency of outreach.
+                    </p>
+                </div>
+
+                <div class="stat-card" style="padding:24px;">
+                    <h3 style="color:var(--accent);margin-bottom:16px;font-size:16px;">5 Scoring Dimensions</h3>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">1. Mandate Fit (0&ndash;10)</div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">Does the contact or their firm explicitly allocate to crypto, quant, or systematic strategies? A score of 10 means they are actively seeking new crypto fund managers. A score of 3 means no alternatives mandate at all.</div>
+                        </div>
+                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">2. Decision-Making Power (0&ndash;10)</div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">Is this person a final decision maker (CIO, Founder, Principal) or an analyst who recommends? A score of 10 means they sign the check. A score of 4 means junior analyst or associate.</div>
+                        </div>
+                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">3. Check Size Fit (0&ndash;10)</div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">How large a ticket can this contact likely write? A score of 10 means $2M&ndash;$5M. A score of 4 means $250K&ndash;$500K. Based on AUM signals, firm type, and explicit mentions.</div>
+                        </div>
+                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">4. Accessibility &amp; Warmth (0&ndash;10)</div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">How reachable is this person? A score of 10 means warm intro from a mutual connection. A score of 5 means business email found with active LinkedIn. A score of 1 means no contact info, gated behind assistants.</div>
+                        </div>
+                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);grid-column:span 2;">
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">5. Timing &amp; Urgency (0&ndash;10)</div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">Are there recent signals of intent? A score of 10 means they recently posted about looking for new managers or increasing crypto allocation. A score of 6 means they are attending crypto events in the next 90 days. A score of 2 means they recently committed capital elsewhere.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card" style="padding:24px;">
+                    <h3 style="color:var(--accent);margin-bottom:16px;font-size:16px;">Priority Tags</h3>
+                    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:180px;background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <span class="badge badge-score-hot" style="font-size:13px;padding:5px 14px;">8.0&ndash;10.0 HOT</span>
+                            <div style="color:var(--text-secondary);font-size:12px;margin-top:8px;line-height:1.5;">Immediate priority. Telegram alert sent to team. Outreach drafted within 24 hours.</div>
+                        </div>
+                        <div style="flex:1;min-width:180px;background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <span class="badge badge-score-active" style="font-size:13px;padding:5px 14px;">6.0&ndash;7.9 ACTIVE</span>
+                            <div style="color:var(--text-secondary);font-size:12px;margin-top:8px;line-height:1.5;">Active pipeline. Outreach scheduled within 1 week. Regular follow-up.</div>
+                        </div>
+                        <div style="flex:1;min-width:180px;background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <span class="badge badge-score-nurture" style="font-size:13px;padding:5px 14px;">4.0&ndash;5.9 NURTURE</span>
+                            <div style="color:var(--text-secondary);font-size:12px;margin-top:8px;line-height:1.5;">Add to drip sequence. Monitor for signal changes that could upgrade priority.</div>
+                        </div>
+                        <div style="flex:1;min-width:180px;background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
+                            <span class="badge badge-score-low" style="font-size:13px;padding:5px 14px;">1.0&ndash;3.9 LOW</span>
+                            <div style="color:var(--text-secondary);font-size:12px;margin-top:8px;line-height:1.5;">Archive. Do not pursue unless context changes significantly.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card" style="padding:24px;">
+                    <h3 style="color:var(--accent);margin-bottom:16px;font-size:16px;">7 LP Target Segments</h3>
+                    <div style="display:flex;flex-direction:column;gap:10px;">
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--accent);color:#000;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">1</span>
+                            <div><div style="font-weight:600;font-size:13px;">Crypto-Native / Tech Family Offices</div><div style="color:var(--text-secondary);font-size:11px;">HIGHEST PRIORITY &mdash; CIOs, MDs at SFOs/MFOs with digital asset mandates. $500K&ndash;$5M checks.</div></div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--blue);color:#fff;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">2</span>
+                            <div><div style="font-weight:600;font-size:13px;">Crypto-Aware Multi-Family Offices</div><div style="color:var(--text-secondary);font-size:11px;">HIGH &mdash; Heads of Alternatives at MFOs exploring digital assets. $1M&ndash;$5M checks.</div></div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--blue);color:#fff;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">3</span>
+                            <div><div style="font-weight:600;font-size:13px;">HNWIs / VHNWIs with Crypto Background</div><div style="color:var(--text-secondary);font-size:11px;">HIGH &mdash; Crypto founders, exchange execs, angel investors. $250K&ndash;$2M checks.</div></div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--purple);color:#fff;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">4</span>
+                            <div><div style="font-weight:600;font-size:13px;">Crypto Fund of Funds &amp; Fund Allocators</div><div style="color:var(--text-secondary);font-size:11px;">MEDIUM-HIGH &mdash; Dedicated crypto FoFs like Amphibian, Pure Crypto. $1M&ndash;$10M checks.</div></div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--yellow);color:#000;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">5</span>
+                            <div><div style="font-weight:600;font-size:13px;">Crypto Hedge Fund Managers / Peers</div><div style="color:var(--text-secondary);font-size:11px;">MEDIUM &mdash; Value is warm intros to their LP base, even if they don't invest directly.</div></div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--yellow);color:#000;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">6</span>
+                            <div><div style="font-weight:600;font-size:13px;">Wealth Managers &amp; Private Bankers</div><div style="color:var(--text-secondary);font-size:11px;">MEDIUM &mdash; RIAs and private bankers with digital asset mandates. $500K&ndash;$3M aggregated.</div></div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:8px;padding:12px 16px;border:1px solid var(--border);">
+                            <span style="background:var(--text-muted);color:#fff;font-weight:700;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;">7</span>
+                            <div><div style="font-weight:600;font-size:13px;">Angel Syndicates &amp; DAO Treasuries</div><div style="color:var(--text-secondary);font-size:11px;">OPPORTUNISTIC &mdash; Only DAOs with $10M+ treasury and active diversification discussions.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card" style="padding:24px;">
+                    <h3 style="color:var(--accent);margin-bottom:12px;font-size:16px;">Scoring Formula</h3>
+                    <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);font-family:monospace;font-size:13px;color:var(--accent);text-align:center;">
+                        Lead Score = (Mandate Fit + Decision Power + Check Size + Accessibility + Timing) &divide; 5
+                    </div>
+                    <p style="color:var(--text-secondary);font-size:12px;margin-top:12px;line-height:1.6;">
+                        Scores are rounded to 1 decimal place. Each dimension is scored independently based on available data from the contact's profile, notes, email availability, LinkedIn presence, and recent activity signals.
+                    </p>
+                </div>
+
+            </div>
+            </div><!-- end page-scoring -->
 
         </main>
 
@@ -1242,6 +1338,12 @@
             document.getElementById('footerCount').textContent = filteredContacts.length + ' contact' + (filteredContacts.length !== 1 ? 's' : '');
         }
 
+        function toggleHotFilter() {
+            const pf = document.getElementById('priorityFilter');
+            pf.value = pf.value === 'HOT' ? '' : 'HOT';
+            filterTable();
+        }
+
         function renderTable() {
             const tbody = document.getElementById('tableBody');
             const noRes = document.getElementById('noResults');
@@ -1291,8 +1393,7 @@
             document.getElementById('statTotal').textContent = data.length;
             const hotCount = data.filter(c => c.lead_score >= 8.0).length;
             document.getElementById('statHot').textContent = hotCount;
-            document.getElementById('statRegions').textContent = new Set(data.map(c => c.region)).size;
-            document.getElementById('statCategories').textContent = new Set(data.map(c => c.category)).size;
+            // Regions and categories stats removed — only Total + HOT shown
         }
 
         function sortTable(key) {
@@ -1460,6 +1561,7 @@
 
             document.getElementById('pageContacts').style.display = page === 'contacts' ? '' : 'none';
             document.getElementById('pageAnalytics').style.display = page === 'analytics' ? '' : 'none';
+            document.getElementById('pageScoring').style.display = page === 'scoring' ? '' : 'none';
 
             if (page === 'analytics' && contacts.length) renderAnalytics();
             document.querySelector('.main').scrollTop = 0;
