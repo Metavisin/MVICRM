@@ -12,7 +12,11 @@
       "notes": "Blockchain-only VC in Dubai. Strong network in UAE. Could be LP or gateway to UAE family offices.",
       "source": "Ghaf Capital website",
       "linkedin": "https://ae.linkedin.com/in/shihab-al-hashimi-7a5b441b9",
-      "contact_person": "Shihab Ahmed"
+      "contact_person": "Shihab Ahmed",
+      "lead_score": 6.6,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (Ghaf Capital Partners); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "id": 7,
@@ -26,7 +30,11 @@
       "notes": "Multi-family office with $4B AUM. Made first crypto investment June 2025 - $10M to Re7 Capital (DeFi hedge fund). First-mover for crypto.",
       "source": "Straits Times, Blockhead",
       "linkedin": "https://www.linkedin.com/in/elton-cheung-581a561",
-      "contact_person": "Elton Cheung"
+      "contact_person": "Elton Cheung",
+      "lead_score": 8.2,
+      "priority_tag": "HOT",
+      "score_rationale": "Crypto-Native Family Offices (VMS Group); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "id": 17,
@@ -40,7 +48,11 @@
       "notes": "20+ years financial markets experience. Derivatives background. Family office network in Singapore.",
       "source": "Prestel and Partner website",
       "linkedin": "https://www.linkedin.com/in/tuckmengyee",
-      "contact_person": "Tuck Meng Yee"
+      "contact_person": "Tuck Meng Yee",
+      "lead_score": 5.4,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Prestel and Partner Family Office.",
+      "segment": 2
     },
     {
       "id": 26,
@@ -54,7 +66,11 @@
       "notes": "Dual HQ in Hong Kong and Singapore. Representative offices across Asia. Potential crypto allocator.",
       "source": "Raffles Group website",
       "linkedin": "https://www.linkedin.com/in/zannkwan",
-      "contact_person": "Raffles Family Office"
+      "contact_person": "Raffles Family Office",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Raffles Group; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "id": 44,
@@ -68,7 +84,11 @@
       "notes": "Focus on FinTech, Web3, AI. Strong network in Dubai family office circles.",
       "source": "Prestel website",
       "linkedin": "https://www.linkedin.com/in/yusufalagh",
-      "contact_person": "Yusuf Alagh"
+      "contact_person": "Yusuf Alagh",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Prestel and Partner Dubai; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "id": 52,
@@ -82,7 +102,11 @@
       "notes": "Singapore-based single family office. Strong tech/digital asset focus.",
       "source": "LinkedIn",
       "linkedin": "https://www.linkedin.com/in/herbertlyc",
-      "contact_person": "XSquared Family Office"
+      "contact_person": "XSquared Family Office",
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (XSquared); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "id": 211,
@@ -96,7 +120,11 @@
       "notes": "CEO. Acts as intermediary between hedge funds and family offices in Dubai. Good gateway to UAE allocator network. TIER 1 TARGET.",
       "source": "Crain Currency",
       "linkedin": "https://www.linkedin.com/in/edwinlawrence",
-      "contact_person": "Edwin Lawrence"
+      "contact_person": "Edwin Lawrence",
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Emerging Manager Platforms \u2014 Nettlestone Capital Advisors; marked as Tier 1 target.",
+      "segment": 6
     },
     {
       "id": 218,
@@ -110,7 +138,11 @@
       "notes": "[INDIVIDUAL with team] CEO of New World Development. Backed Hex Trust (crypto custody) and ConsenSys. Crypto-native ultra-HNW individual. TIER 1 TARGET - individual investor.",
       "source": "Forbes",
       "linkedin": "https://www.linkedin.com/in/adrian-cheng-8a384b1a7",
-      "contact_person": "Adrian Cheng"
+      "contact_person": "Adrian Cheng",
+      "lead_score": 7.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Individual investor at C Capital; marked as Tier 1 target.",
+      "segment": 3
     },
     {
       "id": 219,
@@ -124,7 +156,11 @@
       "notes": "[INDIVIDUAL with team] CEO/Co-founder of ReferReach. Web3 angel investor in Singapore. TIER 2 TARGET - individual crypto investor.",
       "source": "Shizune",
       "linkedin": "https://www.linkedin.com/in/kellychoo",
-      "contact_person": "Kelly Choo"
+      "contact_person": "Kelly Choo",
+      "lead_score": 6.6,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Individual investor at ReferReach (Angel Investor); moderate crypto awareness.",
+      "segment": 3
     },
     {
       "id": 220,
@@ -138,7 +174,11 @@
       "notes": "[INDIVIDUAL with team] Serial entrepreneur. Top crypto KOL. Active angel investor in Web3 since 2014. TIER 1 TARGET - crypto whale individual.",
       "source": "Analytics Insight",
       "linkedin": "https://www.linkedin.com/in/evanluthra",
-      "contact_person": "Evan Luthra"
+      "contact_person": "Evan Luthra",
+      "lead_score": 7.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Individual investor at Serial Entrepreneur (Angel Investor); marked as Tier 1 target.",
+      "segment": 3
     },
     {
       "name": "Jonathan (Nural Capital)",
@@ -148,7 +188,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Fund-of-Funds",
-      "notes": "LP in Polychain Capital. Family office/single family office. Focus on crypto. TIER 1 - already allocates to crypto hedge funds."
+      "notes": "LP in Polychain Capital. Family office/single family office. Focus on crypto. TIER 1 - already allocates to crypto hedge funds.",
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Fund-of-Funds (Nural Capital); marked as Tier 1 target.",
+      "segment": 4
     },
     {
       "name": "Sanjay Mehta",
@@ -158,7 +202,11 @@
       "location": "India / Singapore",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Serial entrepreneur. Indian family office. Early crypto investor. Smaller tickets possible."
+      "notes": "Serial entrepreneur. Indian family office. Early crypto investor. Smaller tickets possible.",
+      "lead_score": 6.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Mehta Ventures; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Chantel (Prestel Dubai)",
@@ -168,7 +216,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Individual Investors",
-      "notes": "Forward-thinking angel investor. Interests: Blockchain, FinTech, BioTech, Longevity. From Prestel Dubai network."
+      "notes": "Forward-thinking angel investor. Interests: Blockchain, FinTech, BioTech, Longevity. From Prestel Dubai network.",
+      "lead_score": 5.6,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Individual investor at Prestel and Partner Dubai; moderate crypto awareness; low accessibility.",
+      "segment": 3
     },
     {
       "name": "Hubertus Thonhauser",
@@ -178,7 +230,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Managing Partner at Enabling Future. Family office VC. Investing in crypto since 2017. Backed layer one protocols, crypto-derivatives, institutional custodians. Also invested in hedge fund GP in crypto space."
+      "notes": "Managing Partner at Enabling Future. Family office VC. Investing in crypto since 2017. Backed layer one protocols, crypto-derivatives, institutional custodians. Also invested in hedge fund GP in crypto space.",
+      "lead_score": 6.2,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Enabling Future; moderate crypto awareness.",
+      "segment": 1
     },
     {
       "name": "Vasil Family Office",
@@ -188,7 +244,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Family office. Investments: family business, shares, bonds, commodities, real estate, PE, VC, crypto."
+      "notes": "Family office. Investments: family business, shares, bonds, commodities, real estate, PE, VC, crypto.",
+      "lead_score": 5.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Vasil & Partners Group; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Bobby Ong",
@@ -198,7 +258,11 @@
       "location": "Malaysia / Singapore",
       "region": "Asia",
       "category": "Individual Investors",
-      "notes": "Co-founder of CoinGecko (major crypto data platform). Exited crypto entrepreneur. Likely has crypto wealth to allocate. TIER 1 individual LP."
+      "notes": "Co-founder of CoinGecko (major crypto data platform). Exited crypto entrepreneur. Likely has crypto wealth to allocate. TIER 1 individual LP.",
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Individual investor at CoinGecko; marked as Tier 1 target.",
+      "segment": 3
     },
     {
       "name": "Kevin Liang",
@@ -208,7 +272,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Individual Investors",
-      "notes": "Web3 builder and investor. Active in Singapore crypto scene. Could be LP."
+      "notes": "Web3 builder and investor. Active in Singapore crypto scene. Could be LP.",
+      "lead_score": 5.6,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Individual investor at Web3 Builder & Investor; moderate crypto awareness.",
+      "segment": 3
     },
     {
       "name": "Fardad Fateri",
@@ -218,7 +286,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Founder and investor. Harvard. Has family office. Crypto interested."
+      "notes": "Founder and investor. Harvard. Has family office. Crypto interested.",
+      "lead_score": 6.2,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Family Office; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "name": "Yat Siu",
@@ -228,7 +300,11 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Individual Investors",
-      "notes": "Co-founder of Animoca Brands (major Web3 gaming company). Exited multiple times. Has crypto wealth to allocate."
+      "notes": "Co-founder of Animoca Brands (major Web3 gaming company). Exited multiple times. Has crypto wealth to allocate.",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Individual investor at Animoca Brands; moderate crypto awareness.",
+      "segment": 3
     },
     {
       "name": "Wee Ping Goh",
@@ -238,7 +314,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Singapore family office. Active investor. Hosts family office events. Could be LP."
+      "notes": "Singapore family office. Active investor. Hosts family office events. Could be LP.",
+      "lead_score": 5.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Family Office.",
+      "segment": 2
     },
     {
       "name": "Eric Wong",
@@ -248,7 +328,11 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Managing Director at HK-based family office. Said allocate half of precious metals to crypto as hedge."
+      "notes": "Managing Director at HK-based family office. Said allocate half of precious metals to crypto as hedge.",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Bricks and Mortar Management; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Yagnam Family Office",
@@ -258,7 +342,11 @@
       "location": "Asia",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "$1B family office actively investing in crypto hedge funds since 2020."
+      "notes": "$1B family office actively investing in crypto hedge funds since 2020.",
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Yagnam; strong crypto mandate fit; low accessibility.",
+      "segment": 1
     },
     {
       "name": "John Signs",
@@ -268,7 +356,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Individual Investors",
-      "notes": "Founder of Signum Capital. Realized 122% IRR on crypto startups. Has personal crypto wealth."
+      "notes": "Founder of Signum Capital. Realized 122% IRR on crypto startups. Has personal crypto wealth.",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Individual investor at Signum Capital; moderate crypto awareness.",
+      "segment": 3
     },
     {
       "name": "Shreyas Chityala",
@@ -278,7 +370,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Principal at Vedas Group. Family office focused on digital assets. Active in Singapore family office network."
+      "notes": "Principal at Vedas Group. Family office focused on digital assets. Active in Singapore family office network.",
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Vedas Group; strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Keith Wong",
@@ -288,7 +384,11 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Chief Executive at Winland Wealth Management (HK multi-family office). See crypto as diversification and separate asset class."
+      "notes": "Chief Executive at Winland Wealth Management (HK multi-family office). See crypto as diversification and separate asset class.",
+      "lead_score": 5.6,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Winland Wealth Management; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "name": "Richelle Gan",
@@ -298,7 +398,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "At Raffles Family Office. Digital assets and fintech focus."
+      "notes": "At Raffles Family Office. Digital assets and fintech focus.",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Raffles Family Office; strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Revo Digital FO",
@@ -308,7 +412,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
-      "notes": "Asia's first digital-assets-focused multi-family office. Focus on UHNWIs."
+      "notes": "Asia's first digital-assets-focused multi-family office. Focus on UHNWIs.",
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (Revo Digital Family Office); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Brooker Group",
@@ -318,7 +426,11 @@
       "location": "Thailand",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "One of earliest regional family offices. Has publicly disclosed crypto holdings."
+      "notes": "One of earliest regional family offices. Has publicly disclosed crypto holdings.",
+      "lead_score": 5.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Brooker Group; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Jason Huang",
@@ -328,7 +440,11 @@
       "location": "Singapore",
       "region": "Asia",
       "category": "Fund-of-Funds",
-      "notes": "Founder of NextGen Digital. Raised $100M+ long-short crypto fund from LPs. First fund returned 375%. Key LP target."
+      "notes": "Founder of NextGen Digital. Raised $100M+ long-short crypto fund from LPs. First fund returned 375%. Key LP target.",
+      "lead_score": 7.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Fund-of-Funds (NextGen Digital Venture); strong crypto mandate fit.",
+      "segment": 4
     },
     {
       "name": "Arjun Mittal",
@@ -338,7 +454,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Founder & CIO of Dubai-based multi-family office. Explicitly lists crypto and algo-trading as investment mandates alongside PE and real estate. 20+ years banking background (J. Safra Sarasin Dubai). Strong fit for MVI LP outreach. TIER 1 TARGET."
+      "notes": "Founder & CIO of Dubai-based multi-family office. Explicitly lists crypto and algo-trading as investment mandates alongside PE and real estate. 20+ years banking background (J. Safra Sarasin Dubai). Strong fit for MVI LP outreach. TIER 1 TARGET.",
+      "lead_score": 7.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Abbey Road Investment Group; marked as Tier 1 target.",
+      "segment": 2
     },
     {
       "name": "Tensai Holdings",
@@ -348,7 +468,11 @@
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate."
+      "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate.",
+      "lead_score": 5.0,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Tensai Holding Company; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Zhi Li",
@@ -358,7 +482,11 @@
       "location": "Hong Kong",
       "region": "Asia",
       "category": "Regular Family Offices",
-      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations."
+      "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations.",
+      "lead_score": 6.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 VMS Group; strong crypto mandate fit; low accessibility.",
+      "segment": 1
     },
     {
       "name": "Pure Crypto",
@@ -368,7 +496,11 @@
       "location": "US",
       "region": "US",
       "category": "Fund-of-Funds",
-      "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds."
+      "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds.",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Fund-of-Funds (Pure Crypto); strong crypto mandate fit; low accessibility.",
+      "segment": 4
     },
     {
       "name": "Zach",
@@ -378,7 +510,11 @@
       "location": "US",
       "region": "US",
       "category": "Fund-of-Funds",
-      "notes": "Portfolio manager at Pure Crypto, one of the first dedicated crypto fund-of-funds. Key contact at Pure Crypto for LP outreach."
+      "notes": "Portfolio manager at Pure Crypto, one of the first dedicated crypto fund-of-funds. Key contact at Pure Crypto for LP outreach.",
+      "lead_score": 6.2,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Fund-of-Funds (Pure Crypto); strong crypto mandate fit; low accessibility.",
+      "segment": 4
     },
     {
       "name": "Abhineet Singh",
@@ -388,7 +524,11 @@
       "location": "Muscat, Oman",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "CIO of Al Siraj Holdings, an Oman-based family office. Presented at the Middle East Family Office Investment Summit alongside Gulf FOs actively exploring alternatives and hedge fund allocations."
+      "notes": "CIO of Al Siraj Holdings, an Oman-based family office. Presented at the Middle East Family Office Investment Summit alongside Gulf FOs actively exploring alternatives and hedge fund allocations.",
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Al Siraj Holdings; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "name": "Amine Bentaleb",
@@ -398,7 +538,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Managing Partner at Global Multi Family Office. Scraped from Private Wealth ME Forum (co-located with TOKEN2049 Dubai)."
+      "notes": "Managing Partner at Global Multi Family Office. Scraped from Private Wealth ME Forum (co-located with TOKEN2049 Dubai).",
+      "lead_score": 7.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Patrimium MFO; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "name": "Christine Moy",
@@ -408,7 +552,11 @@
       "location": "New York, USA",
       "region": "US",
       "category": "Emerging Manager Platforms",
-      "notes": "Partner; Head of Digital Assets at Apollo (major institutional allocator). Speaker at TOKEN2049 Dubai."
+      "notes": "Partner; Head of Digital Assets at Apollo (major institutional allocator). Speaker at TOKEN2049 Dubai.",
+      "lead_score": 7.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Emerging Manager Platforms \u2014 Apollo Global Management; moderate crypto awareness.",
+      "segment": 6
     },
     {
       "name": "Adel Alawadhi",
@@ -418,7 +566,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Vice Chairman of UAE-based single-family office. Corporate Social Responsibility Specialist."
+      "notes": "Vice Chairman of UAE-based single-family office. Corporate Social Responsibility Specialist.",
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Edris Alawadhi Group.",
+      "segment": 2
     },
     {
       "name": "Dr. Ahmed Mansour",
@@ -428,7 +580,11 @@
       "location": "Abu Dhabi, UAE",
       "region": "Middle East",
       "category": "Regular Family Offices",
-      "notes": "Group CEO of a royal family private investment office."
+      "notes": "Group CEO of a royal family private investment office.",
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Private Dept of Sheikh Mohammed bin Khalid Al Nahyan.",
+      "segment": 2
     },
     {
       "name": "Florian Rais",
@@ -438,7 +594,11 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Emerging Manager Platforms",
-      "notes": "Founder & CEO, handles family office wealth advisory. Scraped from TOKEN2049 Dubai."
+      "notes": "Founder & CEO, handles family office wealth advisory. Scraped from TOKEN2049 Dubai.",
+      "lead_score": 7.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Emerging Manager Platforms \u2014 Criptonite Asset Management; moderate crypto awareness.",
+      "segment": 6
     },
     {
       "name": "Saeed Al Darmaki",
@@ -449,7 +609,11 @@
       "region": "Middle East",
       "category": "Emerging Manager Platforms",
       "notes": "Token2049 speaker. Well-connected in MENA crypto ecosystem. Actively allocates to early-stage digital asset funds.",
-      "id": 231
+      "id": 231,
+      "lead_score": 7.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Emerging Manager Platforms \u2014 Sheesha Finance; moderate crypto awareness.",
+      "segment": 6
     },
     {
       "name": "Rabeel Warraich",
@@ -460,7 +624,11 @@
       "region": "Middle East",
       "category": "Regular Family Offices",
       "notes": "Active investor exploring digital assets and quant models. Attended Token2049 Dubai. Looking for $500k-$1M ticket sizes.",
-      "id": 233
+      "id": 233,
+      "lead_score": 8.2,
+      "priority_tag": "HOT",
+      "score_rationale": "Regular Family Offices \u2014 Sarmayacar; strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Jane Lippencott",
@@ -471,7 +639,11 @@
       "region": "Asia",
       "category": "Individual Investors",
       "notes": "High net worth individual and advisor. Frequently allocates personal capital to quant/liquid funds. Token2049 speaker.",
-      "id": 234
+      "id": 234,
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Individual investor at a16z Crypto / Independent; strong crypto mandate fit.",
+      "segment": 3
     },
     {
       "name": "Hassan Al-Khouri",
@@ -482,7 +654,11 @@
       "region": "Middle East",
       "category": "Regular Family Offices",
       "notes": "Traditional wealth exploring crypto hedge funds for diversification. Ideal for $1M-$3M ticket.",
-      "id": 235
+      "id": 235,
+      "lead_score": 7.6,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Al-Khouri Family Office; strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Kelvin Koh",
@@ -493,7 +669,11 @@
       "region": "Asia",
       "category": "Fund-of-Funds",
       "notes": "Runs multi-strategy investments. Token2049 Singapore speaker. They allocate to emerging quant managers in Asia.",
-      "id": 236
+      "id": 236,
+      "lead_score": 7.2,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Fund-of-Funds (Spartan Group); strong crypto mandate fit.",
+      "segment": 4
     },
     {
       "name": "Nour Al-Sabah",
@@ -504,7 +684,11 @@
       "region": "Middle East",
       "category": "Regular Family Offices",
       "notes": "Emerging interest in algorithmic trading and digital assets. Attended Token2049 Dubai.",
-      "id": 237
+      "id": 237,
+      "lead_score": 7.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Sabah Multi-Family Office; strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Victor Ji",
@@ -515,7 +699,11 @@
       "region": "Asia",
       "category": "Crypto-Native Family Offices",
       "notes": "Token2049 speaker. Manages ecosystem capital but also personal family office allocating to delta-neutral strategies.",
-      "id": 238
+      "id": 238,
+      "lead_score": 7.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (Manta Network Ecosystem Fund); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Ayesha Tariq",
@@ -526,7 +714,11 @@
       "region": "Middle East",
       "category": "Regular Family Offices",
       "notes": "Macro analyst turned family office manager. Sourced via Crunchbase. Looking for low-beta crypto exposure.",
-      "id": 240
+      "id": 240,
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Tariq Family Holdings; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "name": "Hadi Badri",
@@ -537,7 +729,11 @@
       "notes": "CEO of Dubai Economic Development. High-level institutional allocator and principal. Speaker at Prestel Dubai 2024.",
       "id": 241,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD"
+      "linkedin": "TBD",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Dubai Economic Development Corporation / Badri FO; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Mishal Kanoo",
@@ -548,7 +744,11 @@
       "notes": "Chairman of The Kanoo Group (one of the largest family conglomerates in the Gulf). Multi-generational wealth. Speaker at Prestel Dubai 2024.",
       "id": 242,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD"
+      "linkedin": "TBD",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 The Kanoo Group; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Yogesh Mehta",
@@ -559,7 +759,11 @@
       "notes": "CEO of Petrochem. Large single-family office principal. Known for diversified alternative investments. Speaker at Prestel Dubai 2024.",
       "id": 243,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD"
+      "linkedin": "TBD",
+      "lead_score": 6.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Petrochem Middle East / Mehta Family Office; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Dawood Al Shezawi",
@@ -570,7 +774,11 @@
       "notes": "President and CEO of Strategic Holding. Focus on strategic investments and technology. Speaker at Prestel Dubai 2024.",
       "id": 244,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD"
+      "linkedin": "TBD",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Strategic Holding; low accessibility.",
+      "segment": 2
     },
     {
       "name": "Michael Greve",
@@ -581,7 +789,11 @@
       "notes": "Founder of Forever Healthy. Tech entrepreneur turned high-impact FO principal. Significant history in tech/venture capital. Speaker at Prestel Dubai 2024.",
       "id": 245,
       "email": "TBD (Manual verification required)",
-      "linkedin": "TBD"
+      "linkedin": "TBD",
+      "lead_score": 6.0,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 Forever Healthy Family Office; moderate crypto awareness; low accessibility.",
+      "segment": 2
     },
     {
       "id": 246,
@@ -595,7 +807,11 @@
       "notes": "Web3 accelerator and VC. Early-stage crypto fund.",
       "source": "Hunter.io (score 96, verified)",
       "linkedin": "",
-      "contact_person": "Emma Cui"
+      "contact_person": "Emma Cui",
+      "lead_score": 5.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 LongHash Ventures; moderate crypto awareness.",
+      "segment": 5
     },
     {
       "id": 247,
@@ -609,7 +825,11 @@
       "notes": "Early-stage blockchain VC. 100+ Web3 investments.",
       "source": "Exa search",
       "linkedin": "",
-      "contact_person": "Aly Madhavji"
+      "contact_person": "Aly Madhavji",
+      "lead_score": 4.4,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 Blockchain Founders Fund; moderate crypto awareness; low accessibility.",
+      "segment": 5
     },
     {
       "id": 248,
@@ -623,7 +843,11 @@
       "notes": "Asia-focused digital asset VC.",
       "source": "Hunter.io (score 99)",
       "linkedin": "",
-      "contact_person": "Martin Baumann"
+      "contact_person": "Martin Baumann",
+      "lead_score": 5.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 CMCC Global; moderate crypto awareness.",
+      "segment": 5
     },
     {
       "id": 249,
@@ -637,7 +861,11 @@
       "notes": "Early-stage crypto fund.",
       "source": "Exa search",
       "linkedin": "",
-      "contact_person": "Belinda Zhou"
+      "contact_person": "Belinda Zhou",
+      "lead_score": 4.4,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 Sharding Capital; moderate crypto awareness; low accessibility.",
+      "segment": 5
     },
     {
       "id": 250,
@@ -651,7 +879,11 @@
       "notes": "Quantitative trading firm.",
       "source": "Hunter.io (score 77)",
       "linkedin": "",
-      "contact_person": "Michael Ashby"
+      "contact_person": "Michael Ashby",
+      "lead_score": 5.0,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Quant / Trading \u2014 AlgoQuant.",
+      "segment": 5
     },
     {
       "id": 251,
@@ -665,7 +897,11 @@
       "notes": "Singapore blockchain investment firm.",
       "source": "Exa search",
       "linkedin": "",
-      "contact_person": "Hock Yun Khoong"
+      "contact_person": "Hock Yun Khoong",
+      "lead_score": 4.4,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 Tembusu Partners; moderate crypto awareness; low accessibility.",
+      "segment": 5
     },
     {
       "id": 252,
@@ -679,7 +915,11 @@
       "notes": "CEO of Binance.",
       "source": "Hunter.io (score 97, verified)",
       "linkedin": "",
-      "contact_person": "Richard Teng"
+      "contact_person": "Richard Teng",
+      "lead_score": 5.8,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Exchange / Infrastructure \u2014 Binance.",
+      "segment": 5
     },
     {
       "id": 253,
@@ -693,7 +933,11 @@
       "notes": "Co-founder of LongHash Ventures.",
       "source": "Exa search",
       "linkedin": "",
-      "contact_person": "Shi Khai Wei"
+      "contact_person": "Shi Khai Wei",
+      "lead_score": 5.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 LongHash Ventures; moderate crypto awareness; low accessibility.",
+      "segment": 5
     },
     {
       "id": 254,
@@ -707,7 +951,11 @@
       "notes": "Abu Dhabi alternative investment manager.",
       "source": "Exa search",
       "linkedin": "",
-      "contact_person": "Wael Al Hashimi"
+      "contact_person": "Wael Al Hashimi",
+      "lead_score": 4.2,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Sovereign / Institutional \u2014 Lunate; low accessibility.",
+      "segment": 4
     },
     {
       "id": 255,
@@ -721,7 +969,11 @@
       "notes": "Singapore crypto VC.",
       "source": "Exa search",
       "linkedin": "",
-      "contact_person": "YY Lai"
+      "contact_person": "YY Lai",
+      "lead_score": 4.4,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Crypto VC \u2014 Signum Capital; moderate crypto awareness; low accessibility.",
+      "segment": 5
     },
     {
       "name": "Oliver Eckhard",
@@ -735,7 +987,11 @@
       "source": "LinkedIn search result",
       "linkedin": "https://www.linkedin.com/in/oliver-eckhard",
       "contact_person": "Oliver Eckhard",
-      "id": 256
+      "id": 256,
+      "lead_score": 6.4,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (Miami Based Family Office); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Sandra Familet",
@@ -749,7 +1005,11 @@
       "source": "LinkedIn search result",
       "linkedin": "https://www.linkedin.com/in/sandrafamilet",
       "contact_person": "Sandra Familet",
-      "id": 257
+      "id": 257,
+      "lead_score": 7.2,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (Hutt Capital / Single Family Office); strong crypto mandate fit.",
+      "segment": 1
     },
     {
       "name": "Joe Roos",
@@ -763,7 +1023,11 @@
       "source": "LinkedIn search result",
       "linkedin": "https://www.linkedin.com/in/joe-roos-cfa-543293a",
       "contact_person": "Joe Roos",
-      "id": 258
+      "id": 258,
+      "lead_score": 6.2,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Regular Family Offices \u2014 ZFO; moderate crypto awareness.",
+      "segment": 2
     },
     {
       "name": "Ming Chow",
@@ -777,7 +1041,11 @@
       "source": "LinkedIn search result",
       "linkedin": "https://linkedin.com/in/ming-chow-3b8571",
       "contact_person": "Ming Chow",
-      "id": 259
+      "id": 259,
+      "lead_score": 5.4,
+      "priority_tag": "NURTURE",
+      "score_rationale": "Regular Family Offices \u2014 Family Office / TGV / TELUS Global Ventures.",
+      "segment": 2
     },
     {
       "name": "Greg Hutton",
@@ -791,7 +1059,11 @@
       "source": "LinkedIn search result",
       "linkedin": "https://linkedin.com/in/greghutton1",
       "contact_person": "Greg Hutton",
-      "id": 260
+      "id": 260,
+      "lead_score": 6.8,
+      "priority_tag": "ACTIVE PIPELINE",
+      "score_rationale": "Crypto-Native Family Offices (Pactum Capital); strong crypto mandate fit.",
+      "segment": 1
     }
   ],
   "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31."

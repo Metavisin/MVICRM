@@ -573,6 +573,13 @@
         .badge-region-eu { background: rgba(59,130,246,0.12); color: #60a5fa; }
         .badge-region-us { background: rgba(16,185,129,0.12); color: #34d399; }
 
+        .badge-score-hot { background: rgba(16,185,129,0.2); color: #34d399; font-weight: 700; }
+        .badge-score-active { background: rgba(59,130,246,0.2); color: #60a5fa; }
+        .badge-score-nurture { background: rgba(245,158,11,0.15); color: #fbbf24; }
+        .badge-score-low { background: rgba(255,255,255,0.06); color: var(--text-muted); }
+
+        .score-num { font-weight: 700; margin-right: 4px; }
+
         .badge-tier1 { background: rgba(245,158,11,0.2); color: #fbbf24; font-weight: 600; }
         .badge-tier2 { background: rgba(59,130,246,0.15); color: #60a5fa; }
 
@@ -969,10 +976,10 @@
                     <div class="stat-value" id="statTotal">0</div>
                 </div>
                 <div class="stat-card highlight">
-                    <div class="stat-label">Tier 1 Targets
+                    <div class="stat-label">HOT Leads
                         <svg class="spark"><polyline points="2,18 12,14 22,20 32,10 42,6 52,12 62,4" stroke="var(--accent)"/></svg>
                     </div>
-                    <div class="stat-value" id="statTier1">0</div>
+                    <div class="stat-value" id="statHot">0</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Regions Covered
@@ -999,6 +1006,13 @@
                         <select class="filter-select" id="categoryFilter" onchange="filterTable()">
                             <option value="">All Categories</option>
                         </select>
+                        <select class="filter-select" id="priorityFilter" onchange="filterTable()">
+                            <option value="">All Scores</option>
+                            <option value="HOT">HOT (8.0+)</option>
+                            <option value="ACTIVE PIPELINE">ACTIVE (6.0–7.9)</option>
+                            <option value="NURTURE">NURTURE (4.0–5.9)</option>
+                            <option value="LOW">LOW (&lt;4.0)</option>
+                        </select>
                         <div class="filter-search-wrap">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                             <input type="text" class="filter-search" id="tableSearch" placeholder="Filter table..." oninput="filterTable()">
@@ -1010,6 +1024,7 @@
                         <thead>
                             <tr>
                                 <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('lead_score')">Score <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('category')">Category <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('region')">Region <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('location')">Location <span class="sort-icon">&#8597;</span></th>
@@ -1141,6 +1156,20 @@
             return map[cat] || cat;
         }
 
+        function getScoreBadge(tag) {
+            if (tag === 'HOT') return 'badge-score-hot';
+            if (tag === 'ACTIVE PIPELINE') return 'badge-score-active';
+            if (tag === 'NURTURE') return 'badge-score-nurture';
+            return 'badge-score-low';
+        }
+
+        function getScoreLabel(tag) {
+            if (tag === 'HOT') return 'HOT';
+            if (tag === 'ACTIVE PIPELINE') return 'ACTIVE';
+            if (tag === 'NURTURE') return 'NURTURE';
+            return 'LOW';
+        }
+
         function getTier(notes) {
             if (!notes) return null;
             if (notes.toUpperCase().includes('TIER 1')) return 1;
@@ -1166,7 +1195,7 @@
                 updateStats(contacts);
             } catch (err) {
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json</td></tr>';
+                    '<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json</td></tr>';
             }
         }
 
@@ -1192,6 +1221,7 @@
         function filterTable() {
             const region = document.getElementById('regionFilter').value;
             const category = document.getElementById('categoryFilter').value;
+            const priority = document.getElementById('priorityFilter').value;
             const globalQ = document.getElementById('globalSearch').value.toLowerCase();
             const tableQ = document.getElementById('tableSearch').value.toLowerCase();
             const q = globalQ || tableQ;
@@ -1199,6 +1229,7 @@
             filteredContacts = contacts.filter(c => {
                 if (region && c.region !== region) return false;
                 if (category && c.category !== category) return false;
+                if (priority && c.priority_tag !== priority) return false;
                 if (q) {
                     const hay = [c.name, c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
                     if (!hay.includes(q)) return false;
@@ -1232,6 +1263,9 @@
                 const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : '';
                 const li = c.linkedin && c.linkedin.startsWith('http') ? c.linkedin : '';
 
+                const scoreBadge = getScoreBadge(c.priority_tag);
+                const scoreVal = c.lead_score != null ? c.lead_score.toFixed(1) : '-';
+
                 return `<tr class="${sel}" onclick="selectContact(${i})">
                     <td>
                         <div class="name-cell">
@@ -1242,6 +1276,7 @@
                             </div>
                         </div>
                     </td>
+                    <td><span class="badge ${scoreBadge}"><span class="score-num">${scoreVal}</span>${getScoreLabel(c.priority_tag)}</span></td>
                     <td><span class="badge ${catBadge}">${getCategoryShort(c.category)}</span>${tier ? ' <span class="badge badge-tier' + tier + '">T' + tier + '</span>' : ''}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
@@ -1254,8 +1289,8 @@
 
         function updateStats(data) {
             document.getElementById('statTotal').textContent = data.length;
-            const tier1 = data.filter(c => c.notes && c.notes.toUpperCase().includes('TIER 1')).length;
-            document.getElementById('statTier1').textContent = tier1;
+            const hotCount = data.filter(c => c.lead_score >= 8.0).length;
+            document.getElementById('statHot').textContent = hotCount;
             document.getElementById('statRegions').textContent = new Set(data.map(c => c.region)).size;
             document.getElementById('statCategories').textContent = new Set(data.map(c => c.category)).size;
         }
@@ -1267,7 +1302,13 @@
         }
 
         function applySortToFiltered() {
+            const numericKeys = ['lead_score', 'segment'];
             filteredContacts.sort((a, b) => {
+                if (numericKeys.includes(sortKey)) {
+                    const va = a[sortKey] || 0;
+                    const vb = b[sortKey] || 0;
+                    return (va - vb) * sortDir;
+                }
                 const va = (a[sortKey] || '').toLowerCase();
                 const vb = (b[sortKey] || '').toLowerCase();
                 if (va < vb) return -1 * sortDir;
@@ -1293,6 +1334,9 @@
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 <span class="badge ${getCategoryBadge(c.category)}">${escapeHtml(c.category)}</span>
                 ${tier ? ' <span class="badge badge-tier' + tier + '">Tier ' + tier + '</span>' : ''}
+                ${c.lead_score != null ? '<div style="margin-top:12px;"><span class="badge ' + getScoreBadge(c.priority_tag) + '" style="font-size:14px;padding:5px 14px;"><span class="score-num">' + c.lead_score.toFixed(1) + '</span> ' + escapeHtml(c.priority_tag) + '</span></div>' : ''}
+                ${c.score_rationale ? '<div style="margin-top:8px;font-size:12px;color:var(--text-secondary);line-height:1.4;">' + escapeHtml(c.score_rationale) + '</div>' : ''}
+                ${c.segment ? '<div style="margin-top:6px;font-size:11px;color:var(--text-muted);">Segment ' + c.segment + '</div>' : ''}
             `;
 
             const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : null;
