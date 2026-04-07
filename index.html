@@ -1012,7 +1012,8 @@
                         <thead>
                             <tr>
                                 <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
-                                <th onclick="sortTable('lead_score')">Score <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('account_score')">Account <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('contact_score')">Contact <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('category')">Category <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('region')">Region <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('location')">Location <span class="sort-icon">&#8597;</span></th>
@@ -1292,6 +1293,13 @@
             return map[cat] || cat;
         }
 
+        function getAcctBadge(status) {
+            if (status === 'Priority') return 'badge-score-hot';
+            if (status === 'Active') return 'badge-score-active';
+            if (status === 'Watch') return 'badge-score-nurture';
+            return 'badge-score-low';
+        }
+
         function getScoreBadge(tag) {
             if (tag === 'HOT') return 'badge-score-hot';
             if (tag === 'ACTIVE PIPELINE') return 'badge-score-active';
@@ -1323,7 +1331,7 @@
         // Load data
         async function loadData() {
             try {
-                const res = await fetch('./data.json');
+                const res = await fetch('./data.json?v=' + Date.now());
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 const text = await res.text();
                 const data = JSON.parse(text);
@@ -1343,7 +1351,7 @@
             } catch (err) {
                 console.error('loadData error:', err);
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
+                    '<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
             }
         }
 
@@ -1417,8 +1425,10 @@
                 const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : '';
                 const li = c.linkedin && c.linkedin.startsWith('http') ? c.linkedin : '';
 
-                const scoreBadge = getScoreBadge(c.priority_tag);
-                const scoreVal = c.lead_score != null ? c.lead_score.toFixed(1) : '-';
+                const acctVal = c.account_score != null ? c.account_score.toFixed(1) : '-';
+                const contVal = c.contact_score != null ? c.contact_score.toFixed(1) : '-';
+                const acctBadge = getAcctBadge(c.account_status);
+                const contBadge = getScoreBadge(c.priority_tag);
 
                 return `<tr class="${sel}" onclick="selectContact(${i})">
                     <td>
@@ -1430,7 +1440,8 @@
                             </div>
                         </div>
                     </td>
-                    <td><span class="badge ${scoreBadge}"><span class="score-num">${scoreVal}</span>${getScoreLabel(c.priority_tag)}</span></td>
+                    <td><span class="badge ${acctBadge}"><span class="score-num">${acctVal}</span></span></td>
+                    <td><span class="badge ${contBadge}"><span class="score-num">${contVal}</span></span></td>
                     <td><span class="badge ${catBadge}">${getCategoryShort(c.category)}</span>${tier ? ' <span class="badge badge-tier' + tier + '">T' + tier + '</span>' : ''}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
@@ -1455,7 +1466,7 @@
         }
 
         function applySortToFiltered() {
-            const numericKeys = ['lead_score', 'segment'];
+            const numericKeys = ['lead_score', 'account_score', 'contact_score', 'segment'];
             filteredContacts.sort((a, b) => {
                 if (numericKeys.includes(sortKey)) {
                     const va = a[sortKey] || 0;
@@ -1487,7 +1498,10 @@
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 <span class="badge ${getCategoryBadge(c.category)}">${escapeHtml(c.category)}</span>
                 ${tier ? ' <span class="badge badge-tier' + tier + '">Tier ' + tier + '</span>' : ''}
-                ${c.lead_score != null ? '<div style="margin-top:12px;"><span class="badge ' + getScoreBadge(c.priority_tag) + '" style="font-size:14px;padding:5px 14px;"><span class="score-num">' + c.lead_score.toFixed(1) + '</span> ' + escapeHtml(c.priority_tag) + '</span></div>' : ''}
+                <div style="margin-top:14px;display:flex;gap:8px;justify-content:center;">
+                    ${c.account_score != null ? '<div style="text-align:center;"><div style="font-size:10px;color:var(--text-muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Account</div><span class="badge ' + getAcctBadge(c.account_status) + '" style="font-size:14px;padding:5px 14px;"><span class="score-num">' + c.account_score.toFixed(1) + '</span></span></div>' : ''}
+                    ${c.contact_score != null ? '<div style="text-align:center;"><div style="font-size:10px;color:var(--text-muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Contact</div><span class="badge ' + getScoreBadge(c.priority_tag) + '" style="font-size:14px;padding:5px 14px;"><span class="score-num">' + c.contact_score.toFixed(1) + '</span></span></div>' : ''}
+                </div>
                 ${c.score_rationale ? '<div style="margin-top:8px;font-size:12px;color:var(--text-secondary);line-height:1.4;">' + escapeHtml(c.score_rationale) + '</div>' : ''}
                 ${c.segment ? '<div style="margin-top:6px;font-size:11px;color:var(--text-muted);">Segment ' + c.segment + '</div>' : ''}
             `;
