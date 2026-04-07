@@ -1401,6 +1401,38 @@
       "priority_tag": "ACTIVE PIPELINE",
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found."
+    },
+    {
+      "id": 269,
+      "full_name": "Neel Dalal",
+      "title": "Investment Analyst",
+      "company": "Divergent Financial",
+      "segment": 2,
+      "linkedin_url": "https://linkedin.com/in/neel-dalal-909a19172",
+      "business_email": "",
+      "personal_email": "",
+      "x_twitter_handle": "",
+      "lead_score": 8.4,
+      "score_rationale": "Analyst-level role with direct digital asset research exposure and a real family office adjacency, so reply odds are better than senior executives.",
+      "priority_tag": "HOT",
+      "date_added": "2026-04-07",
+      "notes": "Research from Exa; no verified email found."
+    },
+    {
+      "id": 270,
+      "full_name": "Edwin Muchalanje",
+      "title": "Investment Analyst",
+      "company": "Private Family Office",
+      "segment": 2,
+      "linkedin_url": "https://linkedin.com/in/edwin-muchalanje-258511b6",
+      "business_email": "",
+      "personal_email": "",
+      "x_twitter_handle": "",
+      "lead_score": 8.2,
+      "score_rationale": "Investment analyst at a private family office with alternative assets focus, which is exactly the lower-tier allocator profile we want.",
+      "priority_tag": "HOT",
+      "date_added": "2026-04-07",
+      "notes": "Research from Exa; no verified email found."
     }
   ],
   "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31."
