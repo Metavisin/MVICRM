@@ -761,38 +761,26 @@
             gap: 10px;
         }
 
-        .region-bar-row {
+        .linked-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .linked-contact-card {
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 12px;
+            padding: 10px 12px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            transition: border-color 0.15s, background 0.15s;
         }
 
-        .region-bar-label {
-            width: 70px;
-            color: var(--text-secondary);
-            flex-shrink: 0;
-        }
-
-        .region-bar-track {
-            flex: 1;
-            height: 8px;
-            background: rgba(255,255,255,0.06);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .region-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.4s ease;
-        }
-
-        .region-bar-count {
-            width: 24px;
-            text-align: right;
-            color: var(--text-muted);
-            font-size: 11px;
+        .linked-contact-card:hover {
+            border-color: var(--accent);
+            background: rgba(99,102,241,0.06);
         }
 
         /* ── Analytics Page ── */
@@ -1498,31 +1486,45 @@
                 ${c.contact_person && c.contact_person !== c.name ? '<div class="detail-source">Contact Person: ' + escapeHtml(c.contact_person) + '</div>' : ''}
             `;
 
-            document.getElementById('detailTags').innerHTML = `
-                <div class="detail-section-title">Region Distribution</div>
-                <div class="region-chart" id="regionChart"></div>
+            // Linked Contacts — same organization/company (exact match OR shared root words)
+            const org = (c.organization || '').trim().toLowerCase();
+            const orgRoot = org.split(/\s+/).slice(0, 3).join(' ');
+            const linked = org ? contacts.filter(other => {
+                if (other === c) return false;
+                const oOrg = (other.organization || '').trim().toLowerCase();
+                if (!oOrg || oOrg === 'family office' || oOrg === 'individual' || oOrg.length < 4) return false;
+                if (oOrg === org) return true;
+                const oRoot = oOrg.split(/\s+/).slice(0, 3).join(' ');
+                return orgRoot.length >= 8 && oRoot === orgRoot;
+            }) : [];
+            // Collect unique org names from linked contacts + current
+            const linkedOrgNames = [...new Set([c.organization, ...linked.map(lc => lc.organization)].filter(Boolean))];
+            const orgLabel = linkedOrgNames.length === 1 ? linkedOrgNames[0] : linkedOrgNames.join(' / ');
+            document.getElementById('detailTags').innerHTML = linked.length ? `
+                <div class="detail-section-title">Linked Contacts <span style="font-size:11px;color:var(--text-muted);font-weight:400;">(${linked.length} at ${escapeHtml(orgLabel)})</span></div>
+                <div class="linked-contacts">
+                    ${linked.map(lc => {
+                        const lInit = getInitials(lc.name);
+                        const lAvCls = getAvatarColor(lc.name);
+                        const lIdx = filteredContacts.indexOf(lc);
+                        const clickable = lIdx >= 0 ? `onclick="selectContact(${lIdx})" style="cursor:pointer;"` : '';
+                        const lScore = lc.lead_score != null ? '<span class="badge ' + getScoreBadge(lc.priority_tag) + '" style="font-size:10px;padding:2px 7px;">' + lc.lead_score.toFixed(1) + '</span>' : '';
+                        return `<div class="linked-contact-card" ${clickable}>
+                            <div class="avatar ${lAvCls}" style="width:36px;height:36px;font-size:13px;flex-shrink:0;">${lInit}</div>
+                            <div style="min-width:0;flex:1;">
+                                <div style="font-size:13px;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(lc.name)}</div>
+                                <div style="font-size:11px;color:var(--text-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(lc.category || '')}</div>
+                            </div>
+                            <div style="flex-shrink:0;">${lScore}</div>
+                        </div>`;
+                    }).join('')}
+                </div>
+            ` : `
+                <div class="detail-section-title">Linked Contacts</div>
+                <div style="font-size:12px;color:var(--text-muted);padding:8px 0;">No other contacts at ${escapeHtml(c.organization || 'this organization')}.</div>
             `;
-            buildRegionChart();
 
             renderTable();
-        }
-
-        function buildRegionChart() {
-            const counts = {};
-            contacts.forEach(c => { counts[c.region] = (counts[c.region] || 0) + 1; });
-            const max = Math.max(...Object.values(counts));
-            const colors = { 'Asia': '#f87171', 'Middle East': '#fbbf24', 'EU': '#60a5fa', 'US': '#34d399' };
-
-            const chart = document.getElementById('regionChart');
-            chart.innerHTML = Object.entries(counts).sort((a,b) => b[1] - a[1]).map(([region, count]) => {
-                const pct = (count / max * 100).toFixed(0);
-                const col = colors[region] || 'var(--accent)';
-                return `<div class="region-bar-row">
-                    <div class="region-bar-label">${escapeHtml(region)}</div>
-                    <div class="region-bar-track"><div class="region-bar-fill" style="width:${pct}%;background:${col}"></div></div>
-                    <div class="region-bar-count">${count}</div>
-                </div>`;
-            }).join('');
         }
 
         function closeDetail() {
