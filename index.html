@@ -783,6 +783,33 @@
             background: rgba(99,102,241,0.06);
         }
 
+        .outreach-select {
+            appearance: none;
+            -webkit-appearance: none;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 13px;
+            padding: 7px 32px 7px 10px;
+            cursor: pointer;
+            width: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            transition: border-color 0.15s;
+        }
+        .outreach-select:hover { border-color: var(--accent); }
+        .outreach-select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(99,102,241,0.15); }
+
+        .outreach-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+        .outreach-dot-none { background: #6b7280; }
+        .outreach-dot-contacted { background: #f59e0b; }
+        .outreach-dot-waiting { background: #3b82f6; }
+        .outreach-dot-replied { background: #10b981; }
+        .outreach-dot-meeting { background: #8b5cf6; }
+        .outreach-dot-closed { background: #ef4444; }
+
         /* ── Analytics Page ── */
         .analytics-grid {
             display: grid;
@@ -1290,6 +1317,7 @@
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 const text = await res.text();
                 const data = JSON.parse(text);
+                const savedStatuses = JSON.parse(localStorage.getItem('mvicrm_outreach') || '{}');
                 contacts = (data.contacts || []).map(c => ({
                     ...c,
                     name: c.name || c.full_name || '(Unknown)',
@@ -1298,7 +1326,8 @@
                     email: c.email || c.business_email || c.personal_email || '',
                     notes: c.notes || c.score_rationale || '',
                     region: c.region || 'Global',
-                    category: c.category || 'Uncategorized'
+                    category: c.category || 'Uncategorized',
+                    outreach_status: savedStatuses[c.id] || c.outreach_status || ''
                 }));
                 populateFilters();
                 filterTable();
@@ -1391,8 +1420,8 @@
                         <div class="name-cell">
                             <div class="avatar ${avatarCls}">${initials}</div>
                             <div>
-                                <div class="name-text">${escapeHtml(c.name)}</div>
-                                <div class="org-text">${escapeHtml(c.organization)}</div>
+                                <div class="name-text">${escapeHtml(c.name)}${c.outreach_status ? ' ' + getOutreachDot(c.outreach_status) : ''}</div>
+                                <div class="org-text">${escapeHtml(c.organization)}${c.outreach_status ? ' <span style="font-size:10px;color:var(--text-muted);">' + getOutreachLabel(c.outreach_status) + '</span>' : ''}</div>
                             </div>
                         </div>
                     </td>
@@ -1477,6 +1506,17 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     ${escapeHtml(c.location)}
                 </div>
+                <div class="detail-row" style="align-items:center;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <select class="outreach-select" onchange="setOutreachStatus(${c.id}, this.value)">
+                        <option value=""${!c.outreach_status ? ' selected' : ''}>No status</option>
+                        <option value="contacted"${c.outreach_status === 'contacted' ? ' selected' : ''}>Contacted</option>
+                        <option value="waiting"${c.outreach_status === 'waiting' ? ' selected' : ''}>Waiting Reply</option>
+                        <option value="replied"${c.outreach_status === 'replied' ? ' selected' : ''}>Replied</option>
+                        <option value="meeting"${c.outreach_status === 'meeting' ? ' selected' : ''}>Meeting Booked</option>
+                        <option value="closed"${c.outreach_status === 'closed' ? ' selected' : ''}>Closed / Not Interested</option>
+                    </select>
+                </div>
             `;
 
             document.getElementById('detailNotes').innerHTML = `
@@ -1531,6 +1571,25 @@
             document.getElementById('app').classList.remove('detail-open');
             selectedIndex = -1;
             renderTable();
+        }
+
+        function setOutreachStatus(contactId, status) {
+            const c = contacts.find(x => x.id === contactId);
+            if (c) c.outreach_status = status;
+            const saved = JSON.parse(localStorage.getItem('mvicrm_outreach') || '{}');
+            if (status) saved[contactId] = status;
+            else delete saved[contactId];
+            localStorage.setItem('mvicrm_outreach', JSON.stringify(saved));
+            renderTable();
+        }
+
+        function getOutreachLabel(status) {
+            const map = { contacted: 'Contacted', waiting: 'Waiting Reply', replied: 'Replied', meeting: 'Meeting Booked', closed: 'Closed' };
+            return map[status] || '';
+        }
+
+        function getOutreachDot(status) {
+            return status ? '<span class="outreach-dot outreach-dot-' + status + '"></span>' : '';
         }
 
         function toggleNotifPanel(e) {
