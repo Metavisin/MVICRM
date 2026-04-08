@@ -996,10 +996,9 @@
                         </select>
                         <select class="filter-select" id="priorityFilter" onchange="filterTable()">
                             <option value="">All Scores</option>
-                            <option value="HOT">HOT (8.0+)</option>
-                            <option value="ACTIVE PIPELINE">ACTIVE (6.0–7.9)</option>
-                            <option value="NURTURE">NURTURE (4.0–5.9)</option>
-                            <option value="LOW">LOW (&lt;4.0)</option>
+                            <option value="HOT">HOT (7.0+)</option>
+                            <option value="ACTIVE">ACTIVE (5.0–6.9)</option>
+                            <option value="NURTURE">NURTURE (&lt;5.0)</option>
                         </select>
                         <div class="filter-search-wrap">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -1012,8 +1011,7 @@
                         <thead>
                             <tr>
                                 <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
-                                <th onclick="sortTable('contact_score')">Contact <span class="sort-icon">&#8597;</span></th>
-                                <th onclick="sortTable('account_score')">Account <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('lead_score')">Score <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('category')">Category <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('region')">Region <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('location')">Location <span class="sort-icon">&#8597;</span></th>
@@ -1086,73 +1084,49 @@
             <div style="max-width:900px;display:flex;flex-direction:column;gap:24px;">
 
                 <div class="stat-card" style="padding:24px;">
-                    <h3 style="color:var(--accent);margin-bottom:12px;font-size:16px;">Two-Layer Scoring System</h3>
+                    <h3 style="color:var(--accent);margin-bottom:12px;font-size:16px;">Weighted Lead Scoring System</h3>
                     <p style="color:var(--text-secondary);line-height:1.7;font-size:13px;">
-                        Every LP prospect is scored at two levels: the <strong style="color:var(--text);">Account (organization)</strong> and the <strong style="color:var(--text);">Contact (individual)</strong>. These are always separate. A great organization with an unreachable contact is still a great organization &mdash; never discard it. Account Score uses 4 dimensions. Contact Score uses 3 dimensions (only what is publicly observable).
+                        Every LP prospect is scored on a single <strong style="color:var(--text);">1.0&ndash;10.0 scale</strong> using 4 weighted dimensions. Only publicly observable data is used. The formula produces a weighted score that balances segment fit, role quality, reachability, and engagement signals.
+                    </p>
+                    <p style="color:var(--text-muted);font-size:12px;margin-top:8px;font-family:monospace;">
+                        Lead Score = (S1 &times; 0.30) + (S2 &times; 0.30) + (S3 &times; 0.25) + (S4 &times; 0.15)
                     </p>
                 </div>
 
-                <!-- ACCOUNT SCORING -->
+                <!-- SCORING DIMENSIONS -->
                 <div class="stat-card" style="padding:24px;">
-                    <h3 style="color:var(--accent);margin-bottom:4px;font-size:16px;">Layer 1 &mdash; Account Score</h3>
-                    <p style="color:var(--text-muted);font-size:11px;margin-bottom:16px;">Score the organization. Formula: (A1 + A2 + A3 + A4) &divide; 4</p>
+                    <h3 style="color:var(--accent);margin-bottom:4px;font-size:16px;">Scoring Dimensions</h3>
+                    <p style="color:var(--text-muted);font-size:11px;margin-bottom:16px;">4 weighted dimensions &mdash; S1 and S2 carry the most weight (30% each)</p>
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
                         <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">A1 &mdash; Mandate &amp; Crypto Readiness</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Actively seeking crypto quant managers. 7 = Crypto-aware, piloting first allocations. 6 = Alternatives mandate, no crypto yet (Segment A/B). 1&ndash;3 = No alternatives mandate.</div>
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">S1 &mdash; Segment Match Quality <span style="color:var(--accent);font-size:11px;">(30%)</span></div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Perfect match &mdash; title, org type, geo, keywords all align. 8 = Strong match. 6 = Partial (adjacent title). 4 = Weak (one indicator). 0 = No match &mdash; discard.</div>
                         </div>
                         <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">A2 &mdash; AUM / Check Size Potential</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Estimated check $2M+. 8 = $1M&ndash;$2M. 6 = $500K&ndash;$1M. 4 = $250K&ndash;$500K. 2 = Unknown or below $250K.</div>
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">S2 &mdash; Role Fit &amp; Entry Point <span style="color:var(--accent);font-size:11px;">(30%)</span></div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Ideal entry point (analyst at FO/MFO/FoF, or principal at HNWI/peer/RIA). 8 = Head of Alts / PM. 7 = Gatekeeper. 5 = CIO directly (high noise). 1 = Irrelevant role.</div>
                         </div>
                         <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">A3 &mdash; Geo Fit</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Primary (Singapore, Zurich, London, Dubai, Amsterdam, Miami, NYC). 8 = Secondary (Luxembourg, Geneva, HK, Cayman, Lisbon, Antwerp). 6 = Tertiary. 2 = Unknown.</div>
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">S3 &mdash; Reachability <span style="color:var(--accent);font-size:11px;">(25%)</span></div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Personal email + LinkedIn active. 8 = Business email + LinkedIn + X handle. 7 = Business email + LinkedIn. 3 = LinkedIn only, no email. 1 = No contact info.</div>
                         </div>
                         <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">A4 &mdash; Competition Density</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Under-served market (Segment A/B, secondary cities). 6 = Active market, several managers. 2 = Saturated, not taking new managers.</div>
+                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">S4 &mdash; Content Recency <span style="color:var(--accent);font-size:11px;">(15%)</span></div>
+                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Posted in last 7 days about crypto/alternatives. 8 = Posted in last 30 days. 7 = Attending conference in 90 days. 4 = Active, no crypto signals. 0 = No social presence.</div>
                         </div>
                     </div>
                     <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
-                        <div style="background:rgba(16,185,129,0.15);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:#34d399;font-weight:700;font-size:13px;">8.0+ Priority</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Telegram alert. Search contacts immediately.</div></div>
-                        <div style="background:rgba(59,130,246,0.12);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:#60a5fa;font-weight:700;font-size:13px;">6.0&ndash;7.9 Active</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Pipeline. Search contacts within 48h.</div></div>
-                        <div style="background:rgba(245,158,11,0.12);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:#fbbf24;font-weight:700;font-size:13px;">4.0&ndash;5.9 Watch</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Log and monitor.</div></div>
-                        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:var(--text-muted);font-weight:700;font-size:13px;">&lt;4.0 Archive</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Do not pursue.</div></div>
+                        <div style="background:rgba(16,185,129,0.15);border-radius:8px;padding:10px 14px;flex:1;min-width:180px;"><span style="color:#34d399;font-weight:700;font-size:13px;">7.0+ HOT</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Contacting phase. Verify email, draft outreach, Telegram alert.</div></div>
+                        <div style="background:rgba(59,130,246,0.12);border-radius:8px;padding:10px 14px;flex:1;min-width:180px;"><span style="color:#60a5fa;font-weight:700;font-size:13px;">5.0&ndash;6.9 ACTIVE</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Pipeline. Monitor for score changes.</div></div>
+                        <div style="background:rgba(245,158,11,0.12);border-radius:8px;padding:10px 14px;flex:1;min-width:180px;"><span style="color:#fbbf24;font-weight:700;font-size:13px;">&lt;5.0 NURTURE</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Log, do not actively pursue.</div></div>
                     </div>
                 </div>
 
-                <!-- CONTACT SCORING -->
-                <div class="stat-card" style="padding:24px;">
-                    <h3 style="color:var(--accent);margin-bottom:4px;font-size:16px;">Layer 2 &mdash; Contact Score</h3>
-                    <p style="color:var(--text-muted);font-size:11px;margin-bottom:16px;">Score the individual. Only publicly observable data. Formula: (C1 + C2 + C3) &divide; 3</p>
-                    <div style="display:flex;flex-direction:column;gap:16px;">
-                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">C1 &mdash; Role Fit &amp; Entry Point Quality</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Investment Analyst / Portfolio Analyst (ideal first contact). 9 = Head of Alternatives / Portfolio Manager. 8 = Chief of Staff / Office Manager (gatekeeper). 7 = CIO / MD / Principal (decision maker, high noise). For Segment 3 (HNWIs) and 5 (peers): founder/CIO = 10.</div>
-                        </div>
-                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">C2 &mdash; Reachability</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Personal email + LinkedIn active. 8 = Business email + LinkedIn active + X handle. 5 = Business email only. 3 = LinkedIn only, no email. 1 = No contact info found.</div>
-                        </div>
-                        <div style="background:var(--bg);border-radius:8px;padding:16px;border:1px solid var(--border);">
-                            <div style="font-weight:600;margin-bottom:6px;font-size:13px;">C3 &mdash; Engagement Signals</div>
-                            <div style="color:var(--text-secondary);font-size:12px;line-height:1.6;">10 = Posted about seeking new fund managers. 9 = Active crypto/DeFi posting in last 30 days. 8 = Attending crypto conference in 90 days. 5 = Active profile, no crypto signals. 1 = No social presence.</div>
-                        </div>
-                    </div>
-                    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
-                        <div style="background:rgba(16,185,129,0.15);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:#34d399;font-weight:700;font-size:13px;">8.0+ HOT</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Telegram alert. Draft outreach now.</div></div>
-                        <div style="background:rgba(59,130,246,0.12);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:#60a5fa;font-weight:700;font-size:13px;">6.0&ndash;7.9 ACTIVE</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Draft outreach within 48h.</div></div>
-                        <div style="background:rgba(245,158,11,0.12);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:#fbbf24;font-weight:700;font-size:13px;">4.0&ndash;5.9 NURTURE</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Log, monitor for signals.</div></div>
-                        <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;"><span style="color:var(--text-muted);font-weight:700;font-size:13px;">&lt;4.0 LOW</span><div style="color:var(--text-secondary);font-size:11px;margin-top:4px;">Trigger Contact Gap if account is strong.</div></div>
-                    </div>
-                </div>
-
-                <!-- CONTACT GAP -->
+                <!-- CONTACTING PHASE -->
                 <div class="stat-card" style="padding:24px;border-left:3px solid var(--yellow);">
-                    <h3 style="color:var(--yellow);margin-bottom:12px;font-size:16px;">Contact Gap Logic</h3>
+                    <h3 style="color:var(--yellow);margin-bottom:12px;font-size:16px;">Contacting Phase (Score &ge; 7.0)</h3>
                     <p style="color:var(--text-secondary);font-size:12px;line-height:1.7;">
-                        If Account Score &ge; 6.0 but best Contact Score &lt; 4.0: set status to <strong style="color:var(--text);">Contact Gap</strong>, send Telegram alert, run secondary LinkedIn search (analyst &rarr; chief of staff &rarr; portfolio manager &rarr; anyone posting about crypto). If still no contact found: flag for <strong style="color:var(--text);">Manual Review</strong>. Never discard a high-scoring account because the first contact didn't work.
+                        When a contact scores 7.0+: <strong style="color:var(--text);">verify email</strong> &rarr; if bounced, run <strong style="color:var(--text);">RocketReach</strong> for personal email &rarr; if still no email, run <strong style="color:var(--text);">Org Fallback Search</strong> (find another person at the same org using analyst-first priority). Never discard an organization just because the first email bounced.
                     </p>
                 </div>
 
@@ -1293,25 +1267,18 @@
             return map[cat] || cat;
         }
 
-        function getAcctBadge(status) {
-            if (status === 'Priority') return 'badge-score-hot';
-            if (status === 'Active') return 'badge-score-active';
-            if (status === 'Watch') return 'badge-score-nurture';
-            return 'badge-score-low';
-        }
-
         function getScoreBadge(tag) {
             if (tag === 'HOT') return 'badge-score-hot';
-            if (tag === 'ACTIVE PIPELINE') return 'badge-score-active';
+            if (tag === 'ACTIVE' || tag === 'ACTIVE PIPELINE') return 'badge-score-active';
             if (tag === 'NURTURE') return 'badge-score-nurture';
             return 'badge-score-low';
         }
 
         function getScoreLabel(tag) {
             if (tag === 'HOT') return 'HOT';
-            if (tag === 'ACTIVE PIPELINE') return 'ACTIVE';
+            if (tag === 'ACTIVE' || tag === 'ACTIVE PIPELINE') return 'ACTIVE';
             if (tag === 'NURTURE') return 'NURTURE';
-            return 'LOW';
+            return 'NURTURE';
         }
 
         function getTier(notes) {
@@ -1351,7 +1318,7 @@
             } catch (err) {
                 console.error('loadData error:', err);
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
+                    '<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
             }
         }
 
@@ -1385,7 +1352,10 @@
             filteredContacts = contacts.filter(c => {
                 if (region && c.region !== region) return false;
                 if (category && c.category !== category) return false;
-                if (priority && c.priority_tag !== priority) return false;
+                if (priority) {
+                    const ct = c.priority_tag === 'ACTIVE PIPELINE' ? 'ACTIVE' : c.priority_tag;
+                    if (ct !== priority) return false;
+                }
                 if (q) {
                     const hay = [c.name, c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
                     if (!hay.includes(q)) return false;
@@ -1425,10 +1395,8 @@
                 const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : '';
                 const li = c.linkedin && c.linkedin.startsWith('http') ? c.linkedin : '';
 
-                const acctVal = c.account_score != null ? c.account_score.toFixed(1) : '-';
-                const contVal = c.contact_score != null ? c.contact_score.toFixed(1) : '-';
-                const acctBadge = getAcctBadge(c.account_status);
-                const contBadge = getScoreBadge(c.priority_tag);
+                const scoreVal = c.lead_score != null ? c.lead_score.toFixed(1) : '-';
+                const scoreBadge = getScoreBadge(c.priority_tag);
 
                 return `<tr class="${sel}" onclick="selectContact(${i})">
                     <td>
@@ -1440,8 +1408,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><span class="badge ${contBadge}"><span class="score-num">${contVal}</span></span></td>
-                    <td><span class="badge ${acctBadge}"><span class="score-num">${acctVal}</span></span></td>
+                    <td><span class="badge ${scoreBadge}"><span class="score-num">${scoreVal}</span></span></td>
                     <td><span class="badge ${catBadge}">${getCategoryShort(c.category)}</span>${tier ? ' <span class="badge badge-tier' + tier + '">T' + tier + '</span>' : ''}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
@@ -1454,7 +1421,7 @@
 
         function updateStats(data) {
             document.getElementById('statTotal').textContent = data.length;
-            const hotCount = data.filter(c => c.lead_score >= 8.0).length;
+            const hotCount = data.filter(c => c.lead_score >= 7.0).length;
             document.getElementById('statHot').textContent = hotCount;
             // Regions and categories stats removed — only Total + HOT shown
         }
@@ -1466,7 +1433,7 @@
         }
 
         function applySortToFiltered() {
-            const numericKeys = ['lead_score', 'account_score', 'contact_score', 'segment'];
+            const numericKeys = ['lead_score', 'segment'];
             filteredContacts.sort((a, b) => {
                 if (numericKeys.includes(sortKey)) {
                     const va = a[sortKey] || 0;
@@ -1498,9 +1465,9 @@
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 <span class="badge ${getCategoryBadge(c.category)}">${escapeHtml(c.category)}</span>
                 ${tier ? ' <span class="badge badge-tier' + tier + '">Tier ' + tier + '</span>' : ''}
-                <div style="margin-top:14px;display:flex;gap:8px;justify-content:center;">
-                    ${c.contact_score != null ? '<div style="text-align:center;"><div style="font-size:10px;color:var(--text-muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Contact</div><span class="badge ' + getScoreBadge(c.priority_tag) + '" style="font-size:14px;padding:5px 14px;"><span class="score-num">' + c.contact_score.toFixed(1) + '</span></span></div>' : ''}
-                    ${c.account_score != null ? '<div style="text-align:center;"><div style="font-size:10px;color:var(--text-muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Account</div><span class="badge ' + getAcctBadge(c.account_status) + '" style="font-size:14px;padding:5px 14px;"><span class="score-num">' + c.account_score.toFixed(1) + '</span></span></div>' : ''}
+                <div style="margin-top:14px;display:flex;flex-direction:column;align-items:center;gap:8px;">
+                    ${c.lead_score != null ? '<div style="text-align:center;"><div style="font-size:10px;color:var(--text-muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Lead Score</div><span class="badge ' + getScoreBadge(c.priority_tag) + '" style="font-size:18px;padding:6px 18px;"><span class="score-num">' + c.lead_score.toFixed(1) + '</span> <span style="font-size:11px;opacity:0.7;">' + getScoreLabel(c.priority_tag) + '</span></span></div>' : ''}
+                    ${c.s1_segment_match != null ? '<div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:4px;"><span style="font-size:11px;color:var(--text-secondary);background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:3px 8px;">S1: ' + c.s1_segment_match + '</span><span style="font-size:11px;color:var(--text-secondary);background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:3px 8px;">S2: ' + c.s2_role_fit + '</span><span style="font-size:11px;color:var(--text-secondary);background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:3px 8px;">S3: ' + c.s3_reachability + '</span><span style="font-size:11px;color:var(--text-secondary);background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:3px 8px;">S4: ' + c.s4_content_recency + '</span></div>' : ''}
                 </div>
                 ${c.score_rationale ? '<div style="margin-top:8px;font-size:12px;color:var(--text-secondary);line-height:1.4;">' + escapeHtml(c.score_rationale) + '</div>' : ''}
                 ${c.segment ? '<div style="margin-top:6px;font-size:11px;color:var(--text-muted);">Segment ' + c.segment + '</div>' : ''}
