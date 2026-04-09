@@ -1755,28 +1755,6 @@
       "s3_reachability": 4,
       "s4_content_recency": 4,
       "id": 280
-    },
-    {
-      "email": "test@openclaw-test.com",
-      "phone": "",
-      "location": "Test City",
-      "region": "Global",
-      "category": "Uncategorized",
-      "notes": "End-to-end exec path verification contact \u2014 safe to delete",
-      "source": "System test",
-      "linkedin": "",
-      "contact_person": "System Test Contact",
-      "priority_tag": "NURTURE",
-      "score_rationale": "Test only",
-      "segment": 1,
-      "s1_segment_match": 1,
-      "s2_role_fit": 1,
-      "s3_reachability": 1,
-      "s4_content_recency": 1,
-      "name": "System Test Contact",
-      "organization": "OpenClaw Test Corp",
-      "lead_score": 1.0,
-      "id": 281
     }
   ],
   "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31."
