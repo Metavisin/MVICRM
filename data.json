@@ -2005,6 +2005,28 @@
       "seniority": "Entry Point",
       "lead_score": 7.4,
       "id": 290
+    },
+    {
+      "email": "",
+      "phone": "",
+      "location": "Test City",
+      "region": "Global",
+      "category": "Uncategorized",
+      "notes": "Testing unified sync_crm.sh flow \u2014 safe to delete",
+      "source": "System test",
+      "linkedin": "",
+      "contact_person": "SyncScript Test",
+      "priority_tag": "NURTURE",
+      "score_rationale": "Test only",
+      "segment": 1,
+      "s1_segment_match": 0,
+      "s2_role_fit": 0,
+      "s3_reachability": 0,
+      "s4_content_recency": 0,
+      "name": "SyncScript Test",
+      "organization": "Test Sync Corp",
+      "lead_score": 1.0,
+      "id": 291
     }
   ],
   "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31."
