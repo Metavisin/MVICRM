@@ -1025,6 +1025,7 @@
                     <table class="data-table">
                         <thead>
                             <tr>
+                                <th onclick="sortTable('date_added')">Added <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('lead_score')">Score <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('category')">Category <span class="sort-icon">&#8597;</span></th>
@@ -1233,8 +1234,8 @@
         let contacts = [];
         let filteredContacts = [];
         let selectedIndex = -1;
-        let sortKey = '';
-        let sortDir = 1;
+        let sortKey = 'date_added';
+        let sortDir = -1;  // newest first by default
 
         const avatarColors = ['avatar-teal','avatar-blue','avatar-purple','avatar-pink','avatar-orange','avatar-green'];
 
@@ -1414,8 +1415,10 @@
 
                 const scoreVal = c.lead_score != null ? c.lead_score.toFixed(1) : '-';
                 const scoreBadge = getScoreBadge(c.priority_tag);
+                const dateAdded = c.date_added || '';
 
                 return `<tr class="${sel}" onclick="selectContact(${i})">
+                    <td style="color:var(--text-secondary);font-size:12px;white-space:nowrap;">${escapeHtml(dateAdded)}</td>
                     <td>
                         <div class="name-cell">
                             <div class="avatar ${avatarCls}">${initials}</div>
