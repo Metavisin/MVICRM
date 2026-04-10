@@ -1483,7 +1483,7 @@
                 <div class="detail-notes">${escapeHtml(c.notes)}</div>
                 ${c.source ? '<div class="detail-source" style="margin-top:10px;">Source: ' + escapeHtml(c.source) + '</div>' : ''}
                 ${c.contact_person && c.contact_person !== c.name ? '<div class="detail-source">Contact Person: ' + escapeHtml(c.contact_person) + '</div>' : ''}
-                ${c.linked_contacts ? '<div class="detail-source" style="margin-top:10px;"><strong style="color:var(--accent);">Linked Contacts:</strong> ' + escapeHtml(c.linked_contacts).replace(/;/g, '<br>• ').replace(/^/, '• ') + '</div>' : ''}
+                ${c.linked_contacts ? '<div class="detail-source" style="margin-top:10px;"><strong style="color:var(--accent);">Key People:</strong> ' + escapeHtml(c.linked_contacts).replace(/;/g, '<br>• ').replace(/^/, '• ') + '</div>' : ''}
             `;
 
             // Linked Contacts — same organization/company (exact match OR shared root words)
@@ -1501,7 +1501,7 @@
             const linkedOrgNames = [...new Set([c.organization, ...linked.map(lc => lc.organization)].filter(Boolean))];
             const orgLabel = linkedOrgNames.length === 1 ? linkedOrgNames[0] : linkedOrgNames.join(' / ');
             document.getElementById('detailTags').innerHTML = linked.length ? `
-                <div class="detail-section-title">Linked Contacts <span style="font-size:11px;color:var(--text-muted);font-weight:400;">(${linked.length} at ${escapeHtml(orgLabel)})</span></div>
+                <div class="detail-section-title">Other Contacts at ${escapeHtml(orgLabel)} <span style="font-size:11px;color:var(--text-muted);font-weight:400;">(${linked.length})</span></div>
                 <div class="linked-contacts">
                     ${linked.map(lc => {
                         const lInit = getInitials(lc.name);
@@ -1518,7 +1518,7 @@
                     }).join('')}
                 </div>
             ` : `
-                <div class="detail-section-title">Linked Contacts</div>
+                <div class="detail-section-title">CRM Contacts</div>
                 <div style="font-size:12px;color:var(--text-muted);padding:8px 0;">No other contacts at ${escapeHtml(c.organization || 'this organization')}.</div>
             `;
 
