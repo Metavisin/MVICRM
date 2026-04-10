@@ -577,6 +577,8 @@
         .badge-cat-hnwi { background: rgba(124,58,237,0.2); color: #a78bfa; font-weight: 600; }
         .badge-cat-fof { background: rgba(59,130,246,0.2); color: #60a5fa; font-weight: 600; }
         .badge-cat-other { background: rgba(255,255,255,0.06); color: var(--text-muted); font-weight: 600; }
+        .badge-new { background: rgba(249,115,22,0.2); color: #fb923c; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 3px; margin-left: 6px; letter-spacing: 0.5px; vertical-align: middle; animation: newPulse 2s ease-in-out infinite; }
+        @keyframes newPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.6; } }
 
         .badge-tier1 { background: rgba(245,158,11,0.2); color: #fbbf24; font-weight: 600; }
         .badge-tier2 { background: rgba(59,130,246,0.15); color: #60a5fa; }
@@ -1009,6 +1011,7 @@
                         </select>
                         <select class="filter-select" id="segmentFilter" onchange="filterTable()">
                             <option value="">All Segments</option>
+                            <option value="__NEW__" style="color:#fb923c;">New Contacts</option>
                             <option value="Family Offices">Family Offices</option>
                             <option value="High Net Worth Individuals">HNWIs</option>
                             <option value="Crypto Funds of Funds">Crypto FoFs</option>
@@ -1266,6 +1269,7 @@
                     category: c.category || 'Uncategorized',
                     outreach_status: savedStatuses[c.id] || c.outreach_status || ''
                 }));
+                computeLatestDate();
                 populateFilters();
                 filterTable();
                 updateStats(contacts);
@@ -1306,7 +1310,8 @@
             filteredContacts = contacts.filter(c => {
                 if (region && c.region !== region) return false;
                 if (category && c.category !== category) return false;
-                if (segment && c.segment !== segment) return false;
+                if (segment === '__NEW__') { if (!isNewContact(c)) return false; }
+                else if (segment && c.segment !== segment) return false;
                 if (q) {
                     const hay = [c.name, c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
                     if (!hay.includes(q)) return false;
@@ -1324,6 +1329,21 @@
             if (seg === 'High Net Worth Individuals') return 'badge-cat-hnwi';
             if (seg === 'Crypto Funds of Funds') return 'badge-cat-fof';
             return 'badge-cat-other';
+        }
+
+        // "NEW" label — contacts added on the most recent date_added in the dataset
+        let latestDateAdded = '';
+        function computeLatestDate() {
+            latestDateAdded = contacts.reduce((max, c) => {
+                const d = c.date_added || '';
+                return d > max ? d : max;
+            }, '');
+        }
+        function isNewContact(c) {
+            return c.date_added && c.date_added === latestDateAdded;
+        }
+        function getNewBadge(c) {
+            return isNewContact(c) ? '<span class="badge-new">NEW</span>' : '';
         }
 
         function renderTable() {
@@ -1355,7 +1375,7 @@
                         <div class="name-cell">
                             <div class="avatar ${avatarCls}">${initials}</div>
                             <div>
-                                <div class="name-text">${escapeHtml(c.name)}${c.outreach_status ? ' ' + getOutreachDot(c.outreach_status) : ''}</div>
+                                <div class="name-text">${escapeHtml(c.name)}${getNewBadge(c)}${c.outreach_status ? ' ' + getOutreachDot(c.outreach_status) : ''}</div>
                                 <div class="org-text">${escapeHtml(c.organization)}${c.outreach_status ? ' <span style="font-size:10px;color:var(--text-muted);">' + getOutreachLabel(c.outreach_status) + '</span>' : ''}</div>
                             </div>
                         </div>
@@ -1377,7 +1397,8 @@
             const hnwi = data.filter(c => c.segment === 'High Net Worth Individuals').length;
             const fof = data.filter(c => c.segment === 'Crypto Funds of Funds').length;
             const other = data.filter(c => c.segment === 'Others').length;
-            document.getElementById('statSegments').textContent = `FO: ${fo} | HNWI: ${hnwi} | FoF: ${fof} | Other: ${other}`;
+            const newCount = data.filter(c => isNewContact(c)).length;
+            document.getElementById('statSegments').innerHTML = `FO: ${fo} | HNWI: ${hnwi} | FoF: ${fof} | Other: ${other}${newCount ? ' | <span style="color:#fb923c;">NEW: ' + newCount + '</span>' : ''}`;
         }
 
         function sortTable(key) {
@@ -1424,7 +1445,7 @@
 
             document.getElementById('detailProfile').innerHTML = `
                 <div class="avatar ${avatarCls}" style="width:64px;height:64px;font-size:22px;margin:0 auto 14px;">${initials}</div>
-                <div class="detail-name">${escapeHtml(c.name)}</div>
+                <div class="detail-name">${escapeHtml(c.name)}${getNewBadge(c)}</div>
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 ${c.segment ? '<span class="badge ' + getSegmentBadge(c.segment) + '" style="margin-top:8px;">' + escapeHtml(c.segment) + '</span>' : ''}
                 ${c.aum_estimate && c.aum_estimate !== 'N/A' ? '<div style="margin-top:10px;"><span style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">Est. AUM</span><div style="color:var(--accent);font-size:20px;font-weight:700;margin-top:2px;">' + escapeHtml(c.aum_estimate) + '</div></div>' : ''}
