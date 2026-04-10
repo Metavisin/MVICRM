@@ -1464,6 +1464,7 @@
                 <div class="detail-notes">${escapeHtml(c.notes)}</div>
                 ${c.source ? '<div class="detail-source" style="margin-top:10px;">Source: ' + escapeHtml(c.source) + '</div>' : ''}
                 ${c.contact_person && c.contact_person !== c.name ? '<div class="detail-source">Contact Person: ' + escapeHtml(c.contact_person) + '</div>' : ''}
+                ${c.linked_contacts ? '<div class="detail-source" style="margin-top:10px;"><strong style="color:var(--accent);">Linked Contacts:</strong> ' + escapeHtml(c.linked_contacts).replace(/;/g, '<br>• ').replace(/^/, '• ') + '</div>' : ''}
             `;
 
             // Linked Contacts — same organization/company (exact match OR shared root words)
