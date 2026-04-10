@@ -285,18 +285,6 @@
         .notif-org { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
         .notif-cat { font-size: 10px; font-weight: 600; color: var(--accent); margin-top: 3px; }
 
-        .user-pill {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 6px 12px 6px 6px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.15s;
-        }
-
-        .user-pill:hover { background: var(--card); }
-
         .avatar {
             width: 32px;
             height: 32px;
@@ -316,16 +304,6 @@
         .avatar-pink { background: linear-gradient(135deg, #db2777, #ec4899); }
         .avatar-orange { background: linear-gradient(135deg, #ea580c, #f97316); }
         .avatar-green { background: linear-gradient(135deg, #059669, #10b981); }
-
-        .user-name {
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        .user-role {
-            font-size: 11px;
-            color: var(--text-secondary);
-        }
 
         /* ── Main Content ── */
         .main {
@@ -810,112 +788,6 @@
         .outreach-dot-meeting { background: #8b5cf6; }
         .outreach-dot-closed { background: #ef4444; }
 
-        /* ── Analytics Page ── */
-        .analytics-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .chart-card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 22px 24px;
-        }
-
-        .chart-card-title {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: var(--text);
-        }
-
-        .chart-bars {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        .chart-bar-row {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .chart-bar-label {
-            width: 140px;
-            font-size: 12px;
-            color: var(--text-secondary);
-            flex-shrink: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .chart-bar-track {
-            flex: 1;
-            height: 24px;
-            background: rgba(255,255,255,0.04);
-            border-radius: 6px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .chart-bar-fill {
-            height: 100%;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            padding-left: 10px;
-            font-size: 11px;
-            font-weight: 600;
-            color: #fff;
-            min-width: 36px;
-            transition: width 0.5s ease;
-        }
-
-        .chart-bar-value {
-            width: 40px;
-            text-align: right;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text);
-            flex-shrink: 0;
-        }
-
-        .tier-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
-        }
-
-        .tier-card {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .tier-card-value {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .tier-card-label {
-            font-size: 12px;
-            color: var(--text-secondary);
-            margin-top: 6px;
-        }
-
-        .tier-card-pct {
-            font-size: 11px;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
-
         /* ── Footer ── */
         .table-footer {
             padding: 12px 20px;
@@ -943,10 +815,6 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                     Dashboard
                 </div>
-                <div class="nav-item" data-page="analytics" onclick="showPage('analytics', this)">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                    Analytics
-                </div>
                 <div class="nav-item" data-page="scoring" onclick="showPage('scoring', this)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     Segments
@@ -965,13 +833,6 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                     <span class="notif-badge"></span>
                     <div class="notif-panel" id="notifPanel"></div>
-                </div>
-                <div class="user-pill">
-                    <div class="avatar avatar-teal">FM</div>
-                    <div>
-                        <div class="user-name">Fund Manager</div>
-                        <div class="user-role">MetaVision</div>
-                    </div>
                 </div>
             </div>
         </header>
@@ -1052,48 +913,6 @@
             </div>
             </div><!-- end page-contacts -->
 
-            <!-- Analytics Page -->
-            <div class="page-analytics" id="pageAnalytics" style="display:none;">
-            <div class="page-title">Analytics &amp; Insights</div>
-
-            <div class="analytics-grid">
-                <!-- Region Distribution -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Region Distribution</div>
-                    <div id="chartRegion" class="chart-bars"></div>
-                </div>
-
-                <!-- LP Category Breakdown -->
-                <div class="chart-card">
-                    <div class="chart-card-title">LP Category Breakdown</div>
-                    <div id="chartCategory" class="chart-bars"></div>
-                </div>
-
-                <!-- Tier Analysis -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Tier Analysis</div>
-                    <div class="tier-cards" id="chartTier"></div>
-                </div>
-
-                <!-- Data Completeness -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Data Completeness</div>
-                    <div id="chartCompleteness" class="chart-bars"></div>
-                </div>
-
-                <!-- Top Organizations -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Top Organizations</div>
-                    <div id="chartOrgs" class="chart-bars"></div>
-                </div>
-
-                <!-- Source Distribution -->
-                <div class="chart-card">
-                    <div class="chart-card-title">Source Distribution</div>
-                    <div id="chartSources" class="chart-bars"></div>
-                </div>
-            </div>
-            </div><!-- end page-analytics -->
 
             <!-- Segments Info Page -->
             <div class="page-scoring" id="pageScoring" style="display:none;">
@@ -1612,138 +1431,8 @@
             closeDetail();
 
             document.getElementById('pageContacts').style.display = page === 'contacts' ? '' : 'none';
-            document.getElementById('pageAnalytics').style.display = page === 'analytics' ? '' : 'none';
             document.getElementById('pageScoring').style.display = page === 'scoring' ? '' : 'none';
-
-            if (page === 'analytics' && contacts.length) renderAnalytics();
             document.querySelector('.main').scrollTop = 0;
-        }
-
-        function renderAnalytics() {
-            const total = contacts.length;
-            const regionColors = { 'Asia': '#f87171', 'Middle East': '#fbbf24', 'EU': '#60a5fa', 'US': '#34d399' };
-            const catColors = {
-                'Regular Family Offices': '#34d399',
-                'Individual Investors': '#00d4ff',
-                'Crypto-Native Family Offices': '#a78bfa',
-                'Emerging Manager Platforms': '#fbbf24',
-                'Fund-of-Funds': '#f472b6'
-            };
-
-            // Region Distribution
-            const regions = {};
-            contacts.forEach(c => { regions[c.region] = (regions[c.region] || 0) + 1; });
-            const regMax = Math.max(...Object.values(regions));
-            document.getElementById('chartRegion').innerHTML = Object.entries(regions)
-                .sort((a,b) => b[1] - a[1])
-                .map(([r, n]) => {
-                    const pct = (n / regMax * 100).toFixed(0);
-                    const col = regionColors[r] || 'var(--accent)';
-                    return `<div class="chart-bar-row">
-                        <div class="chart-bar-label">${escapeHtml(r)}</div>
-                        <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${pct}%;background:${col}">${n}</div></div>
-                        <div class="chart-bar-value">${(n/total*100).toFixed(0)}%</div>
-                    </div>`;
-                }).join('');
-
-            // Category Breakdown
-            const cats = {};
-            contacts.forEach(c => { cats[c.category] = (cats[c.category] || 0) + 1; });
-            const catMax = Math.max(...Object.values(cats));
-            document.getElementById('chartCategory').innerHTML = Object.entries(cats)
-                .sort((a,b) => b[1] - a[1])
-                .map(([c, n]) => {
-                    const pct = (n / catMax * 100).toFixed(0);
-                    const col = catColors[c] || 'var(--accent)';
-                    return `<div class="chart-bar-row">
-                        <div class="chart-bar-label">${escapeHtml(c)}</div>
-                        <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${pct}%;background:${col}">${n}</div></div>
-                        <div class="chart-bar-value">${(n/total*100).toFixed(0)}%</div>
-                    </div>`;
-                }).join('');
-
-            // Tier Analysis
-            const t1 = contacts.filter(c => c.notes && c.notes.toUpperCase().includes('TIER 1')).length;
-            const t2 = contacts.filter(c => c.notes && c.notes.toUpperCase().includes('TIER 2')).length;
-            const untiered = total - t1 - t2;
-            document.getElementById('chartTier').innerHTML = `
-                <div class="tier-card" style="border-color:rgba(245,158,11,0.3)">
-                    <div class="tier-card-value" style="color:#fbbf24">${t1}</div>
-                    <div class="tier-card-label">Tier 1 Targets</div>
-                    <div class="tier-card-pct">${(t1/total*100).toFixed(0)}% of database</div>
-                </div>
-                <div class="tier-card" style="border-color:rgba(59,130,246,0.3)">
-                    <div class="tier-card-value" style="color:#60a5fa">${t2}</div>
-                    <div class="tier-card-label">Tier 2 Targets</div>
-                    <div class="tier-card-pct">${(t2/total*100).toFixed(0)}% of database</div>
-                </div>
-                <div class="tier-card">
-                    <div class="tier-card-value" style="color:var(--text-secondary)">${untiered}</div>
-                    <div class="tier-card-label">Untiered</div>
-                    <div class="tier-card-pct">${(untiered/total*100).toFixed(0)}% of database</div>
-                </div>
-            `;
-
-            // Data Completeness
-            const hasEmail = contacts.filter(c => c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') && c.email.includes('@')).length;
-            const hasLinkedin = contacts.filter(c => c.linkedin && c.linkedin.startsWith('http')).length;
-            const hasSource = contacts.filter(c => c.source).length;
-            const fields = [
-                { label: 'Has Email', count: hasEmail, color: 'var(--accent)' },
-                { label: 'Has LinkedIn', count: hasLinkedin, color: '#60a5fa' },
-                { label: 'Has Source', count: hasSource, color: '#a78bfa' }
-            ];
-            document.getElementById('chartCompleteness').innerHTML = fields.map(f => {
-                const pct = (f.count / total * 100).toFixed(0);
-                return `<div class="chart-bar-row">
-                    <div class="chart-bar-label">${f.label}</div>
-                    <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${pct}%;background:${f.color}">${f.count}</div></div>
-                    <div class="chart-bar-value">${pct}%</div>
-                </div>`;
-            }).join('');
-
-            // Top Organizations (by contact count)
-            const orgs = {};
-            contacts.forEach(c => { orgs[c.organization] = (orgs[c.organization] || 0) + 1; });
-            const topOrgs = Object.entries(orgs).filter(([,n]) => n > 1).sort((a,b) => b[1] - a[1]).slice(0, 8);
-            if (topOrgs.length === 0) {
-                document.getElementById('chartOrgs').innerHTML = '<div style="color:var(--text-muted);font-size:13px;">All organizations have single contacts.</div>';
-            } else {
-                const orgMax = topOrgs[0][1];
-                document.getElementById('chartOrgs').innerHTML = topOrgs.map(([org, n]) => {
-                    const pct = (n / orgMax * 100).toFixed(0);
-                    return `<div class="chart-bar-row">
-                        <div class="chart-bar-label">${escapeHtml(org)}</div>
-                        <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${pct}%;background:var(--accent)">${n}</div></div>
-                        <div class="chart-bar-value">${n}</div>
-                    </div>`;
-                }).join('');
-            }
-
-            // Source Distribution
-            const sources = {};
-            contacts.forEach(c => {
-                let src = c.source || 'Unknown';
-                if (src.includes('TOKEN2049') || src.includes('Token2049')) src = 'TOKEN2049 Dubai';
-                else if (src.includes('Prestel')) src = 'Prestel & Partner';
-                else if (src.includes('LinkedIn')) src = 'LinkedIn';
-                else if (src.includes('Salt')) src = 'TOKEN2049 Dubai';
-                else if (src.includes('Crunchbase')) src = 'Crunchbase';
-                else if (src.includes('Forbes')) src = 'Forbes';
-                else if (!c.source) src = 'Manual Research';
-                sources[src] = (sources[src] || 0) + 1;
-            });
-            const srcEntries = Object.entries(sources).sort((a,b) => b[1] - a[1]).slice(0, 8);
-            const srcMax = srcEntries[0] ? srcEntries[0][1] : 1;
-            const srcColors = ['#00e5a0','#60a5fa','#a78bfa','#fbbf24','#f472b6','#f87171','#34d399','#00d4ff'];
-            document.getElementById('chartSources').innerHTML = srcEntries.map(([s, n], i) => {
-                const pct = (n / srcMax * 100).toFixed(0);
-                return `<div class="chart-bar-row">
-                    <div class="chart-bar-label">${escapeHtml(s)}</div>
-                    <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${pct}%;background:${srcColors[i % srcColors.length]}">${n}</div></div>
-                    <div class="chart-bar-value">${n}</div>
-                </div>`;
-            }).join('');
         }
 
         loadData();
