@@ -14,7 +14,8 @@
       "linkedin": "https://ae.linkedin.com/in/shihab-al-hashimi-7a5b441b9",
       "contact_person": "Shihab Ahmed",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "id": 7,
@@ -30,7 +31,8 @@
       "linkedin": "https://www.linkedin.com/in/elton-cheung-581a561",
       "contact_person": "Elton Cheung",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$4B"
     },
     {
       "id": 17,
@@ -46,7 +48,8 @@
       "linkedin": "https://www.linkedin.com/in/tuckmengyee",
       "contact_person": "Tuck Meng Yee",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$200M"
     },
     {
       "id": 26,
@@ -62,7 +65,8 @@
       "linkedin": "https://www.linkedin.com/in/zannkwan",
       "contact_person": "Raffles Family Office",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$2B"
     },
     {
       "id": 44,
@@ -78,7 +82,8 @@
       "linkedin": "https://www.linkedin.com/in/yusufalagh",
       "contact_person": "Yusuf Alagh",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$200M"
     },
     {
       "id": 52,
@@ -94,7 +99,8 @@
       "linkedin": "https://www.linkedin.com/in/herbertlyc",
       "contact_person": "XSquared Family Office",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "id": 211,
@@ -110,7 +116,8 @@
       "linkedin": "https://www.linkedin.com/in/edwinlawrence",
       "contact_person": "Edwin Lawrence",
       "segment": "Others",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$50M"
     },
     {
       "id": 218,
@@ -126,7 +133,8 @@
       "linkedin": "https://www.linkedin.com/in/adrian-cheng-8a384b1a7",
       "contact_person": "Adrian Cheng",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$1B"
     },
     {
       "id": 219,
@@ -142,7 +150,8 @@
       "linkedin": "https://www.linkedin.com/in/kellychoo",
       "contact_person": "Kelly Choo",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$5M"
     },
     {
       "id": 220,
@@ -158,7 +167,8 @@
       "linkedin": "https://www.linkedin.com/in/evanluthra",
       "contact_person": "Evan Luthra",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$10M"
     },
     {
       "name": "Jonathan (Nural Capital)",
@@ -170,7 +180,8 @@
       "category": "Crypto Funds of Funds",
       "notes": "LP in Polychain Capital. Family office/single family office. Focus on crypto. TIER 1 - already allocates to crypto hedge funds.",
       "segment": "Crypto Funds of Funds",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Sanjay Mehta",
@@ -182,7 +193,8 @@
       "category": "Family Offices",
       "notes": "Serial entrepreneur. Indian family office. Early crypto investor. Smaller tickets possible.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Chantel (Prestel Dubai)",
@@ -194,7 +206,8 @@
       "category": "High Net Worth Individuals",
       "notes": "Forward-thinking angel investor. Interests: Blockchain, FinTech, BioTech, Longevity. From Prestel Dubai network.",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Hubertus Thonhauser",
@@ -206,7 +219,8 @@
       "category": "Family Offices",
       "notes": "Managing Partner at Enabling Future. Family office VC. Investing in crypto since 2017. Backed layer one protocols, crypto-derivatives, institutional custodians. Also invested in hedge fund GP in crypto space.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Vasil Family Office",
@@ -218,7 +232,8 @@
       "category": "Family Offices",
       "notes": "Family office. Investments: family business, shares, bonds, commodities, real estate, PE, VC, crypto.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Bobby Ong",
@@ -230,7 +245,8 @@
       "category": "High Net Worth Individuals",
       "notes": "Co-founder of CoinGecko (major crypto data platform). Exited crypto entrepreneur. Likely has crypto wealth to allocate. TIER 1 individual LP.",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "N/A"
     },
     {
       "name": "Kevin Liang",
@@ -242,7 +258,8 @@
       "category": "High Net Worth Individuals",
       "notes": "Web3 builder and investor. Active in Singapore crypto scene. Could be LP.",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$5M"
     },
     {
       "name": "Fardad Fateri",
@@ -254,7 +271,8 @@
       "category": "Family Offices",
       "notes": "Founder and investor. Harvard. Has family office. Crypto interested.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Yat Siu",
@@ -266,7 +284,8 @@
       "category": "High Net Worth Individuals",
       "notes": "Co-founder of Animoca Brands (major Web3 gaming company). Exited multiple times. Has crypto wealth to allocate.",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "N/A"
     },
     {
       "name": "Wee Ping Goh",
@@ -278,7 +297,8 @@
       "category": "Family Offices",
       "notes": "Singapore family office. Active investor. Hosts family office events. Could be LP.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Eric Wong",
@@ -290,7 +310,8 @@
       "category": "Family Offices",
       "notes": "Managing Director at HK-based family office. Said allocate half of precious metals to crypto as hedge.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Yagnam Family Office",
@@ -302,7 +323,8 @@
       "category": "Family Offices",
       "notes": "$1B family office actively investing in crypto hedge funds since 2020.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$1B"
     },
     {
       "name": "John Signs",
@@ -314,7 +336,8 @@
       "category": "High Net Worth Individuals",
       "notes": "Founder of Signum Capital. Realized 122% IRR on crypto startups. Has personal crypto wealth.",
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Shreyas Chityala",
@@ -326,7 +349,8 @@
       "category": "Family Offices",
       "notes": "Principal at Vedas Group. Family office focused on digital assets. Active in Singapore family office network.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Keith Wong",
@@ -338,7 +362,8 @@
       "category": "Family Offices",
       "notes": "Chief Executive at Winland Wealth Management (HK multi-family office). See crypto as diversification and separate asset class.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Richelle Gan",
@@ -350,7 +375,8 @@
       "category": "Family Offices",
       "notes": "At Raffles Family Office. Digital assets and fintech focus.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$2B"
     },
     {
       "name": "Revo Digital FO",
@@ -362,7 +388,8 @@
       "category": "Family Offices",
       "notes": "Asia's first digital-assets-focused multi-family office. Focus on UHNWIs.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Brooker Group",
@@ -374,7 +401,8 @@
       "category": "Family Offices",
       "notes": "One of earliest regional family offices. Has publicly disclosed crypto holdings.",
       "segment": "Family Offices",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$300M"
     },
     {
       "name": "Jason Huang",
@@ -386,7 +414,8 @@
       "category": "Crypto Funds of Funds",
       "notes": "Founder of NextGen Digital. Raised $100M+ long-short crypto fund from LPs. First fund returned 375%. Key LP target.",
       "segment": "Crypto Funds of Funds",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Arjun Mittal",
@@ -398,7 +427,8 @@
       "category": "Family Offices",
       "notes": "Founder & CIO of Dubai-based multi-family office. Explicitly lists crypto and algo-trading as investment mandates alongside PE and real estate. 20+ years banking background (J. Safra Sarasin Dubai). Strong fit for MVI LP outreach. TIER 1 TARGET.",
       "segment": "Family Offices",
-      "date_added": "2026-03-10"
+      "date_added": "2026-03-10",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Tensai Holdings",
@@ -410,7 +440,8 @@
       "category": "Family Offices",
       "notes": "Private single-family office based in Abu Dhabi. Manages global portfolio across public equities, private equities, hedge funds, and infrastructure. Already makes external hedge fund allocations. Good Middle East LP candidate.",
       "segment": "Family Offices",
-      "date_added": "2026-03-10"
+      "date_added": "2026-03-10",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Zhi Li",
@@ -422,7 +453,8 @@
       "category": "Family Offices",
       "notes": "Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing. Direct decision-maker for VMS's crypto allocations.",
       "segment": "Family Offices",
-      "date_added": "2026-03-10"
+      "date_added": "2026-03-10",
+      "aum_estimate": "$4B"
     },
     {
       "name": "Pure Crypto",
@@ -434,7 +466,8 @@
       "category": "Crypto Funds of Funds",
       "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds.",
       "segment": "Crypto Funds of Funds",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Zach",
@@ -446,7 +479,8 @@
       "category": "Crypto Funds of Funds",
       "notes": "Portfolio manager at Pure Crypto, one of the first dedicated crypto fund-of-funds. Key contact at Pure Crypto for LP outreach.",
       "segment": "Crypto Funds of Funds",
-      "date_added": "2026-03-04"
+      "date_added": "2026-03-04",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Abhineet Singh",
@@ -458,7 +492,8 @@
       "category": "Family Offices",
       "notes": "CIO of Al Siraj Holdings, an Oman-based family office. Presented at the Middle East Family Office Investment Summit alongside Gulf FOs actively exploring alternatives and hedge fund allocations.",
       "segment": "Family Offices",
-      "date_added": "2026-03-10"
+      "date_added": "2026-03-10",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Amine Bentaleb",
@@ -470,7 +505,8 @@
       "category": "Family Offices",
       "notes": "Managing Partner at Global Multi Family Office. Scraped from Private Wealth ME Forum (co-located with TOKEN2049 Dubai).",
       "segment": "Family Offices",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$300M"
     },
     {
       "name": "Christine Moy",
@@ -482,7 +518,8 @@
       "category": "Others",
       "notes": "Partner; Head of Digital Assets at Apollo (major institutional allocator). Speaker at TOKEN2049 Dubai.",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$700B"
     },
     {
       "name": "Adel Alawadhi",
@@ -494,7 +531,8 @@
       "category": "Family Offices",
       "notes": "Vice Chairman of UAE-based single-family office. Corporate Social Responsibility Specialist.",
       "segment": "Family Offices",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Dr. Ahmed Mansour",
@@ -506,7 +544,8 @@
       "category": "Family Offices",
       "notes": "Group CEO of a royal family private investment office.",
       "segment": "Family Offices",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$1B"
     },
     {
       "name": "Florian Rais",
@@ -518,7 +557,8 @@
       "category": "Others",
       "notes": "Founder & CEO, handles family office wealth advisory. Scraped from TOKEN2049 Dubai.",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Saeed Al Darmaki",
@@ -531,7 +571,8 @@
       "notes": "Token2049 speaker. Well-connected in MENA crypto ecosystem. Actively allocates to early-stage digital asset funds.",
       "id": 231,
       "segment": "Others",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Rabeel Warraich",
@@ -544,7 +585,8 @@
       "notes": "Active investor exploring digital assets and quant models. Attended Token2049 Dubai. Looking for $500k-$1M ticket sizes.",
       "id": 233,
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Jane Lippencott",
@@ -557,7 +599,8 @@
       "notes": "High net worth individual and advisor. Frequently allocates personal capital to quant/liquid funds. Token2049 speaker.",
       "id": 234,
       "segment": "High Net Worth Individuals",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$10M"
     },
     {
       "name": "Hassan Al-Khouri",
@@ -570,7 +613,8 @@
       "notes": "Traditional wealth exploring crypto hedge funds for diversification. Ideal for $1M-$3M ticket.",
       "id": 235,
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Kelvin Koh",
@@ -583,7 +627,8 @@
       "notes": "Runs multi-strategy investments. Token2049 Singapore speaker. They allocate to emerging quant managers in Asia.",
       "id": 236,
       "segment": "Crypto Funds of Funds",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Nour Al-Sabah",
@@ -596,7 +641,8 @@
       "notes": "Emerging interest in algorithmic trading and digital assets. Attended Token2049 Dubai.",
       "id": 237,
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$300M"
     },
     {
       "name": "Victor Ji",
@@ -609,7 +655,8 @@
       "notes": "Token2049 speaker. Manages ecosystem capital but also personal family office allocating to delta-neutral strategies.",
       "id": 238,
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Ayesha Tariq",
@@ -622,7 +669,8 @@
       "notes": "Macro analyst turned family office manager. Sourced via Crunchbase. Looking for low-beta crypto exposure.",
       "id": 240,
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Hadi Badri",
@@ -635,7 +683,8 @@
       "email": "TBD (Manual verification required)",
       "linkedin": "TBD",
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Mishal Kanoo",
@@ -648,7 +697,8 @@
       "email": "TBD (Manual verification required)",
       "linkedin": "TBD",
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$5B"
     },
     {
       "name": "Yogesh Mehta",
@@ -661,7 +711,8 @@
       "email": "TBD (Manual verification required)",
       "linkedin": "TBD",
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Dawood Al Shezawi",
@@ -674,7 +725,8 @@
       "email": "TBD (Manual verification required)",
       "linkedin": "TBD",
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Michael Greve",
@@ -687,7 +739,8 @@
       "email": "TBD (Manual verification required)",
       "linkedin": "TBD",
       "segment": "Family Offices",
-      "date_added": "2026-03-11"
+      "date_added": "2026-03-11",
+      "aum_estimate": "$200M"
     },
     {
       "id": 246,
@@ -703,7 +756,8 @@
       "linkedin": "",
       "contact_person": "Emma Cui",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$100M"
     },
     {
       "id": 247,
@@ -719,7 +773,8 @@
       "linkedin": "",
       "contact_person": "Aly Madhavji",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$100M"
     },
     {
       "id": 248,
@@ -735,7 +790,8 @@
       "linkedin": "",
       "contact_person": "Martin Baumann",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$200M"
     },
     {
       "id": 249,
@@ -751,7 +807,8 @@
       "linkedin": "",
       "contact_person": "Belinda Zhou",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$50M"
     },
     {
       "id": 250,
@@ -767,7 +824,8 @@
       "linkedin": "",
       "contact_person": "Michael Ashby",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$20M"
     },
     {
       "id": 251,
@@ -783,7 +841,8 @@
       "linkedin": "",
       "contact_person": "Hock Yun Khoong",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$50M"
     },
     {
       "id": 252,
@@ -799,7 +858,8 @@
       "linkedin": "",
       "contact_person": "Richard Teng",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "N/A"
     },
     {
       "id": 253,
@@ -815,7 +875,8 @@
       "linkedin": "",
       "contact_person": "Shi Khai Wei",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$100M"
     },
     {
       "id": 254,
@@ -831,7 +892,8 @@
       "linkedin": "",
       "contact_person": "Wael Al Hashimi",
       "segment": "Crypto Funds of Funds",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$3B"
     },
     {
       "id": 255,
@@ -847,7 +909,8 @@
       "linkedin": "",
       "contact_person": "YY Lai",
       "segment": "Others",
-      "date_added": "2026-03-31"
+      "date_added": "2026-03-31",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Oliver Eckhard",
@@ -863,7 +926,8 @@
       "contact_person": "Oliver Eckhard",
       "id": 256,
       "segment": "Family Offices",
-      "date_added": "2026-04-01"
+      "date_added": "2026-04-01",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Sandra Familet",
@@ -879,7 +943,8 @@
       "contact_person": "Sandra Familet",
       "id": 257,
       "segment": "Family Offices",
-      "date_added": "2026-04-01"
+      "date_added": "2026-04-01",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Joe Roos",
@@ -895,7 +960,8 @@
       "contact_person": "Joe Roos",
       "id": 258,
       "segment": "Family Offices",
-      "date_added": "2026-04-01"
+      "date_added": "2026-04-01",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Ming Chow",
@@ -911,7 +977,8 @@
       "contact_person": "Ming Chow",
       "id": 259,
       "segment": "Family Offices",
-      "date_added": "2026-04-01"
+      "date_added": "2026-04-01",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Greg Hutton",
@@ -927,7 +994,8 @@
       "contact_person": "Greg Hutton",
       "id": 260,
       "segment": "Family Offices",
-      "date_added": "2026-04-01"
+      "date_added": "2026-04-01",
+      "aum_estimate": "$100M"
     },
     {
       "id": 261,
@@ -940,7 +1008,8 @@
       "email": "",
       "category": "Family Offices",
       "region": "EU",
-      "location": "Zurich, Switzerland"
+      "location": "Zurich, Switzerland",
+      "aum_estimate": "$100M"
     },
     {
       "id": 262,
@@ -952,7 +1021,8 @@
       "linkedin": "https://linkedin.com/in/marcusmaute",
       "email": "marcus@solsticelabs.io",
       "category": "Others",
-      "region": "Global"
+      "region": "Global",
+      "aum_estimate": "$10M"
     },
     {
       "id": 263,
@@ -966,7 +1036,8 @@
       "x_twitter_handle": "",
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found.",
-      "category": "Others"
+      "category": "Others",
+      "aum_estimate": "N/A"
     },
     {
       "id": 264,
@@ -980,7 +1051,8 @@
       "x_twitter_handle": "",
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found.",
-      "category": "Crypto Funds of Funds"
+      "category": "Crypto Funds of Funds",
+      "aum_estimate": "N/A"
     },
     {
       "id": 265,
@@ -994,7 +1066,8 @@
       "x_twitter_handle": "",
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found.",
-      "category": "Family Offices"
+      "category": "Family Offices",
+      "aum_estimate": "N/A"
     },
     {
       "name": "Joe Marenda",
@@ -1008,7 +1081,8 @@
       "segment": "Crypto Funds of Funds",
       "source": "Exa search + Hunter.io (score 95)",
       "id": 266,
-      "date_added": "2026-04-07"
+      "date_added": "2026-04-07",
+      "aum_estimate": "$500B"
     },
     {
       "name": "Hui Gao",
@@ -1022,7 +1096,8 @@
       "segment": "Family Offices",
       "source": "Exa search + Hunter.io (score 96)",
       "id": 267,
-      "date_added": "2026-04-07"
+      "date_added": "2026-04-07",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Marilyn Tan",
@@ -1036,7 +1111,8 @@
       "segment": "Family Offices",
       "source": "Exa search",
       "id": 268,
-      "date_added": "2026-04-07"
+      "date_added": "2026-04-07",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Mael Pinget",
@@ -1050,7 +1126,8 @@
       "segment": "Family Offices",
       "source": "Exa search",
       "id": 269,
-      "date_added": "2026-04-07"
+      "date_added": "2026-04-07",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Virginie Vacca",
@@ -1064,7 +1141,8 @@
       "segment": "Family Offices",
       "source": "Exa search + Hunter.io (score 99)",
       "id": 270,
-      "date_added": "2026-04-07"
+      "date_added": "2026-04-07",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Philippe Kerkhoven",
@@ -1078,7 +1156,8 @@
       "segment": "Family Offices",
       "source": "Exa search + Hunter.io (score 78)",
       "id": 271,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Martin Boczek",
@@ -1092,7 +1171,8 @@
       "segment": "Crypto Funds of Funds",
       "source": "Exa search + Hunter.io (score 99)",
       "id": 272,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Mauro Grandinetti",
@@ -1106,7 +1186,8 @@
       "segment": "Crypto Funds of Funds",
       "source": "Exa search + Hunter.io (score 98)",
       "id": 273,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Aamir Wahid",
@@ -1120,7 +1201,8 @@
       "segment": "Family Offices",
       "source": "Exa search",
       "id": 274,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Dina Tsarapkina",
@@ -1134,7 +1216,8 @@
       "segment": "Crypto Funds of Funds",
       "source": "Exa search",
       "id": 275,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Thomas Barry",
@@ -1150,7 +1233,8 @@
       "contact_person": "Thomas Barry",
       "segment": "Family Offices",
       "id": 276,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Lùca MAINFRAIS",
@@ -1166,7 +1250,8 @@
       "contact_person": "Lùca MAINFRAIS",
       "segment": "Family Offices",
       "id": 277,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Philippe Humbert",
@@ -1182,7 +1267,8 @@
       "contact_person": "Philippe Humbert",
       "segment": "Family Offices",
       "id": 278,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$2B"
     },
     {
       "name": "Scott Yi",
@@ -1198,7 +1284,8 @@
       "contact_person": "Scott Yi",
       "segment": "Others",
       "id": 279,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$3B"
     },
     {
       "name": "Lars Knudsen",
@@ -1214,7 +1301,8 @@
       "contact_person": "Lars Knudsen",
       "segment": "Others",
       "id": 280,
-      "date_added": "2026-04-08"
+      "date_added": "2026-04-08",
+      "aum_estimate": "$2B"
     },
     {
       "email": "",
@@ -1232,7 +1320,8 @@
       "title": "Investment Analyst",
       "seniority": "Entry Point",
       "id": 281,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "email": "",
@@ -1250,7 +1339,8 @@
       "title": "Chief Operating Officer Head Of Business Development",
       "seniority": "Decision Maker",
       "id": 282,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "email": "",
@@ -1268,7 +1358,8 @@
       "title": "Family Office Analyst",
       "seniority": "Entry Point",
       "id": 283,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "email": "",
@@ -1286,7 +1377,8 @@
       "title": "Portfolio Manager",
       "seniority": "Decision Maker",
       "id": 284,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "email": "",
@@ -1304,7 +1396,8 @@
       "title": "Investment Director (Virtual Assets)",
       "seniority": "Decision Maker",
       "id": 285,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$200M"
     },
     {
       "email": "",
@@ -1322,7 +1415,8 @@
       "title": "Investment Analyst",
       "seniority": "Entry Point",
       "id": 286,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "email": "",
@@ -1340,7 +1434,8 @@
       "title": "Assistant Investment Manager",
       "seniority": "Entry Point",
       "id": 287,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "email": "",
@@ -1358,7 +1453,8 @@
       "title": "SVP Portfolio Manager",
       "seniority": "Decision Maker",
       "id": 288,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "email": "",
@@ -1376,7 +1472,8 @@
       "title": "Investment Analyst",
       "seniority": "Entry Point",
       "id": 289,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$50M"
     },
     {
       "email": "",
@@ -1394,7 +1491,8 @@
       "title": "Senior Investment Analyst",
       "seniority": "Entry Point",
       "id": 290,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$50M"
     },
     {
       "email": "",
@@ -1410,7 +1508,8 @@
       "name": "Eric Smits",
       "organization": "Family Office",
       "id": 291,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$50M"
     },
     {
       "email": "",
@@ -1426,7 +1525,8 @@
       "name": "Anthea Fang",
       "organization": "Homaer International",
       "id": 292,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$200M"
     },
     {
       "email": "",
@@ -1442,7 +1542,8 @@
       "name": "Zern Lee",
       "organization": "Montrachet Capital Pte Ltd",
       "id": 293,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$300M"
     },
     {
       "email": "",
@@ -1458,7 +1559,8 @@
       "name": "Chiara Fernanda Preite",
       "organization": "AMINA Bank AG",
       "id": 294,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$5B"
     },
     {
       "email": "",
@@ -1474,7 +1576,8 @@
       "name": "Nicolas Huber",
       "organization": "Freiberuflich (Freelance)",
       "id": 295,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$5M"
     },
     {
       "name": "Carlo Della Giusta",
@@ -1490,7 +1593,8 @@
       "contact_person": "Carlo Della Giusta",
       "segment": "Family Offices",
       "id": 296,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Salvador Juncadella",
@@ -1506,7 +1610,8 @@
       "contact_person": "Salvador Juncadella",
       "segment": "Family Offices",
       "id": 297,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$1.2B"
     },
     {
       "name": "Rebekah Woo",
@@ -1522,7 +1627,8 @@
       "contact_person": "Rebekah Woo",
       "segment": "Family Offices",
       "id": 298,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$3B"
     },
     {
       "name": "Hamza Ayub",
@@ -1538,7 +1644,8 @@
       "contact_person": "Hamza Ayub",
       "segment": "Family Offices",
       "id": 299,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$3B"
     },
     {
       "name": "Sarada Yechuri",
@@ -1554,7 +1661,8 @@
       "contact_person": "Sarada Yechuri",
       "segment": "Family Offices",
       "id": 300,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$3B"
     },
     {
       "name": "Cindy Mihalova",
@@ -1570,7 +1678,8 @@
       "contact_person": "Cindy Mihalova",
       "segment": "Family Offices",
       "id": 301,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$224B"
     },
     {
       "name": "Maurits van Son",
@@ -1586,7 +1695,8 @@
       "contact_person": "Maurits van Son",
       "segment": "Crypto Funds of Funds",
       "id": 302,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Tobias Datema",
@@ -1602,7 +1712,8 @@
       "contact_person": "Tobias Datema",
       "segment": "Others",
       "id": 303,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Francisco Carneiro",
@@ -1618,7 +1729,8 @@
       "contact_person": "Francisco Carneiro",
       "segment": "Family Offices",
       "id": 304,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Simão Cruz",
@@ -1634,7 +1746,8 @@
       "contact_person": "Simão Cruz",
       "segment": "Others",
       "id": 305,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$30M"
     },
     {
       "name": "Ryousuke Noguchi",
@@ -1650,7 +1763,8 @@
       "contact_person": "Ryousuke Noguchi",
       "segment": "Family Offices",
       "id": 306,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$200M"
     },
     {
       "name": "Hans Koenig",
@@ -1666,7 +1780,8 @@
       "contact_person": "Hans Koenig",
       "segment": "Crypto Funds of Funds",
       "id": 307,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$1B"
     },
     {
       "name": "Julia Stöcker",
@@ -1682,7 +1797,8 @@
       "contact_person": "Julia Stöcker",
       "segment": "Family Offices",
       "id": 308,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$970M"
     },
     {
       "name": "Justin Huang",
@@ -1698,7 +1814,8 @@
       "contact_person": "Justin Huang",
       "segment": "Family Offices",
       "id": 309,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Dan Ellis",
@@ -1714,7 +1831,8 @@
       "contact_person": "Dan Ellis",
       "segment": "Family Offices",
       "id": 310,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Matt Farrell",
@@ -1730,7 +1848,8 @@
       "contact_person": "Matt Farrell",
       "segment": "Family Offices",
       "id": 311,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$10B"
     },
     {
       "name": "Alison Davis",
@@ -1746,7 +1865,8 @@
       "contact_person": "Alison Davis",
       "segment": "Crypto Funds of Funds",
       "id": 312,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Matthew Le Merle",
@@ -1762,7 +1882,8 @@
       "contact_person": "Matthew Le Merle",
       "segment": "Crypto Funds of Funds",
       "id": 313,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Christina Wing",
@@ -1778,7 +1899,8 @@
       "contact_person": "Christina Wing",
       "segment": "Family Offices",
       "id": 314,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Kimberly Kupferman",
@@ -1794,7 +1916,8 @@
       "contact_person": "Kimberly Kupferman",
       "segment": "Crypto Funds of Funds",
       "id": 315,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Angel Versetti",
@@ -1810,7 +1933,8 @@
       "contact_person": "Angel Versetti",
       "segment": "Family Offices",
       "id": 316,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Brian Estes",
@@ -1826,7 +1950,8 @@
       "contact_person": "Brian Estes",
       "segment": "Family Offices",
       "id": 317,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100B"
     },
     {
       "name": "Mariya Spartalis",
@@ -1842,7 +1967,8 @@
       "contact_person": "Mariya Spartalis",
       "segment": "Others",
       "id": 318,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$20M"
     },
     {
       "name": "Kate Mitselmakher",
@@ -1858,7 +1984,8 @@
       "contact_person": "Kate Mitselmakher",
       "segment": "Others",
       "id": 319,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$30M"
     },
     {
       "name": "Charlene Chen",
@@ -1874,7 +2001,8 @@
       "contact_person": "Charlene Chen",
       "segment": "Family Offices",
       "id": 320,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$100M"
     },
     {
       "name": "Adam Blumberg",
@@ -1890,7 +2018,8 @@
       "contact_person": "Adam Blumberg",
       "segment": "Others",
       "id": 321,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$50M"
     },
     {
       "name": "Nicolas Vassaux",
@@ -1906,7 +2035,8 @@
       "contact_person": "Nicolas Vassaux",
       "segment": "Family Offices",
       "id": 322,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$300M"
     },
     {
       "name": "Muhammed Yesilhark",
@@ -1922,7 +2052,8 @@
       "contact_person": "Muhammed Yesilhark",
       "segment": "Family Offices",
       "id": 323,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$8B"
     },
     {
       "name": "Ray Tam",
@@ -1938,7 +2069,8 @@
       "contact_person": "Ray Tam",
       "segment": "Family Offices",
       "id": 324,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$500M"
     },
     {
       "name": "Rosemary Sagar",
@@ -1954,7 +2086,8 @@
       "contact_person": "Rosemary Sagar",
       "segment": "Family Offices",
       "id": 325,
-      "date_added": "2026-04-09"
+      "date_added": "2026-04-09",
+      "aum_estimate": "$1.6B"
     },
     {
       "name": "Joshua Choo",
@@ -1970,7 +2103,8 @@
       "linkedin": "https://www.linkedin.com/in/choo-joshua/",
       "contact_person": "Joshua Choo",
       "date_added": "2026-04-10",
-      "id": 326
+      "id": 326,
+      "aum_estimate": "$2B"
     },
     {
       "name": "Kerry Goh",
@@ -1986,7 +2120,8 @@
       "linkedin": "https://sg.linkedin.com/in/kerry-goh-8b89195",
       "contact_person": "Kerry Goh",
       "date_added": "2026-04-10",
-      "id": 327
+      "id": 327,
+      "aum_estimate": "$1B"
     },
     {
       "name": "Deng Chao",
@@ -2002,7 +2137,8 @@
       "linkedin": "https://sg.linkedin.com/in/chaodenghkc",
       "contact_person": "Deng Chao",
       "date_added": "2026-04-10",
-      "id": 328
+      "id": 328,
+      "aum_estimate": "$500M"
     },
     {
       "name": "Charlie Morris",
@@ -2018,7 +2154,8 @@
       "linkedin": "",
       "contact_person": "Charlie Morris",
       "date_added": "2026-04-10",
-      "id": 329
+      "id": 329,
+      "aum_estimate": "$200M"
     },
     {
       "name": "Alex Tapscott",
@@ -2034,7 +2171,8 @@
       "linkedin": "",
       "contact_person": "Alex Tapscott",
       "date_added": "2026-04-10",
-      "id": 330
+      "id": 330,
+      "aum_estimate": "$200M"
     },
     {
       "name": "Nadeem Hussain",
@@ -2050,7 +2188,8 @@
       "linkedin": "https://www.linkedin.com/in/nadeemhussain1/",
       "contact_person": "Nadeem Hussain",
       "date_added": "2026-04-10",
-      "id": 331
+      "id": 331,
+      "aum_estimate": "$14B"
     },
     {
       "name": "Billy Daly",
@@ -2066,7 +2205,8 @@
       "linkedin": "",
       "contact_person": "Billy Daly",
       "date_added": "2026-04-10",
-      "id": 332
+      "id": 332,
+      "aum_estimate": "$14B"
     },
     {
       "name": "Hussain Sajwani",
@@ -2082,7 +2222,8 @@
       "linkedin": "",
       "contact_person": "Hussain Sajwani",
       "date_added": "2026-04-10",
-      "id": 333
+      "id": 333,
+      "aum_estimate": "$10B"
     },
     {
       "name": "Essa Ibrahim",
@@ -2098,7 +2239,8 @@
       "linkedin": "",
       "contact_person": "Essa Ibrahim",
       "date_added": "2026-04-10",
-      "id": 334
+      "id": 334,
+      "aum_estimate": "$10B"
     },
     {
       "name": "Darius Sit",
@@ -2114,7 +2256,8 @@
       "linkedin": "",
       "contact_person": "Darius Sit",
       "date_added": "2026-04-10",
-      "id": 335
+      "id": 335,
+      "aum_estimate": "$30M"
     },
     {
       "name": "Tom Dunleavy",
@@ -2130,7 +2273,8 @@
       "linkedin": "",
       "contact_person": "Tom Dunleavy",
       "date_added": "2026-04-10",
-      "id": 336
+      "id": 336,
+      "aum_estimate": "$1B"
     },
     {
       "name": "Wassim Dbouk",
@@ -2146,7 +2290,8 @@
       "linkedin": "https://www.linkedin.com/in/dboukwassim/",
       "contact_person": "Wassim Dbouk",
       "date_added": "2026-04-10",
-      "id": 337
+      "id": 337,
+      "aum_estimate": "$1B"
     },
     {
       "name": "Naji Nehme",
@@ -2162,7 +2307,8 @@
       "linkedin": "",
       "contact_person": "Naji Nehme",
       "date_added": "2026-04-10",
-      "id": 338
+      "id": 338,
+      "aum_estimate": "$1B"
     },
     {
       "name": "Michael Wu",
@@ -2178,7 +2324,8 @@
       "linkedin": "",
       "contact_person": "Michael Wu",
       "date_added": "2026-04-10",
-      "id": 339
+      "id": 339,
+      "aum_estimate": "$1.6B"
     },
     {
       "name": "Wayne Huo",
@@ -2194,7 +2341,8 @@
       "linkedin": "",
       "contact_person": "Wayne Huo",
       "date_added": "2026-04-10",
-      "id": 340
+      "id": 340,
+      "aum_estimate": "$1.6B"
     },
     {
       "name": "Raymond Jook",
@@ -2210,7 +2358,8 @@
       "linkedin": "",
       "contact_person": "Raymond Jook",
       "date_added": "2026-04-10",
-      "id": 341
+      "id": 341,
+      "aum_estimate": "$4B"
     },
     {
       "name": "Kyle Wong",
@@ -2226,7 +2375,8 @@
       "linkedin": "",
       "contact_person": "Kyle Wong",
       "date_added": "2026-04-10",
-      "id": 342
+      "id": 342,
+      "aum_estimate": "$4B"
     },
     {
       "name": "Carmen Tang",
@@ -2242,7 +2392,8 @@
       "linkedin": "",
       "contact_person": "Carmen Tang",
       "date_added": "2026-04-10",
-      "id": 343
+      "id": 343,
+      "aum_estimate": "$4B"
     },
     {
       "name": "Badr Jafar",
@@ -2258,7 +2409,8 @@
       "linkedin": "",
       "contact_person": "Badr Jafar",
       "date_added": "2026-04-10",
-      "id": 344
+      "id": 344,
+      "aum_estimate": "$83B"
     },
     {
       "name": "Syed Basar Shueb",
@@ -2274,7 +2426,8 @@
       "linkedin": "",
       "contact_person": "Syed Basar Shueb",
       "date_added": "2026-04-10",
-      "id": 345
+      "id": 345,
+      "aum_estimate": "$27B"
     }
   ],
   "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31."

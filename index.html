@@ -1027,6 +1027,7 @@
                                 <th onclick="sortTable('date_added')">Added <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('segment')">Segment <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('aum_estimate')">AUM <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('region')">Region <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('location')">Location <span class="sort-icon">&#8597;</span></th>
                                 <th>Email</th>
@@ -1360,6 +1361,7 @@
                         </div>
                     </td>
                     <td><span class="badge ${getSegmentBadge(c.segment)}">${escapeHtml(c.segment || 'Others')}</span></td>
+                    <td style="color:var(--accent);font-weight:600;font-size:12px;white-space:nowrap;">${escapeHtml(c.aum_estimate || 'N/A')}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
                     <td>${email ? '<a class="email-link" href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a>' : '<span style="color:var(--text-muted)">-</span>'}</td>
@@ -1384,13 +1386,22 @@
             renderTable();
         }
 
+        function parseAum(s) {
+            if (!s || s === 'N/A') return 0;
+            const m = s.match(/\$([\d.]+)\s*([BMK])/i);
+            if (!m) return 0;
+            const val = parseFloat(m[1]);
+            const unit = m[2].toUpperCase();
+            if (unit === 'B') return val * 1e9;
+            if (unit === 'M') return val * 1e6;
+            if (unit === 'K') return val * 1e3;
+            return val;
+        }
+
         function applySortToFiltered() {
-            const numericKeys = [];
             filteredContacts.sort((a, b) => {
-                if (numericKeys.includes(sortKey)) {
-                    const va = a[sortKey] || 0;
-                    const vb = b[sortKey] || 0;
-                    return (va - vb) * sortDir;
+                if (sortKey === 'aum_estimate') {
+                    return (parseAum(a.aum_estimate) - parseAum(b.aum_estimate)) * sortDir;
                 }
                 const va = (a[sortKey] || '').toLowerCase();
                 const vb = (b[sortKey] || '').toLowerCase();
@@ -1416,6 +1427,7 @@
                 <div class="detail-name">${escapeHtml(c.name)}</div>
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 ${c.segment ? '<span class="badge ' + getSegmentBadge(c.segment) + '" style="margin-top:8px;">' + escapeHtml(c.segment) + '</span>' : ''}
+                ${c.aum_estimate && c.aum_estimate !== 'N/A' ? '<div style="margin-top:10px;"><span style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">Est. AUM</span><div style="color:var(--accent);font-size:20px;font-weight:700;margin-top:2px;">' + escapeHtml(c.aum_estimate) + '</div></div>' : ''}
             `;
 
             const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : null;
