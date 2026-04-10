@@ -1257,6 +1257,7 @@
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 const text = await res.text();
                 const data = JSON.parse(text);
+                window._dataBaseline = data._new_baseline || '';
                 const savedStatuses = JSON.parse(localStorage.getItem('mvicrm_outreach') || '{}');
                 contacts = (data.contacts || []).map(c => ({
                     ...c,
@@ -1265,7 +1266,7 @@
                     linkedin: c.linkedin || c.linkedin_url || '',
                     email: c.email || c.business_email || c.personal_email || '',
                     notes: c.notes || c.score_rationale || '',
-                    region: c.region || 'Global',
+                    region: c.region || 'Unknown',
                     category: c.category || 'Uncategorized',
                     outreach_status: savedStatuses[c.id] || c.outreach_status || ''
                 }));
@@ -1331,16 +1332,14 @@
             return 'badge-cat-other';
         }
 
-        // "NEW" label — contacts added on the most recent date_added in the dataset
-        let latestDateAdded = '';
+        // "NEW" label — contacts added AFTER the _new_baseline date in data.json
+        // Baseline is set each time a batch is committed. Only future batches show NEW.
+        let newBaseline = '';
         function computeLatestDate() {
-            latestDateAdded = contacts.reduce((max, c) => {
-                const d = c.date_added || '';
-                return d > max ? d : max;
-            }, '');
+            newBaseline = window._dataBaseline || '';
         }
         function isNewContact(c) {
-            return c.date_added && c.date_added === latestDateAdded;
+            return newBaseline && c.date_added && c.date_added > newBaseline;
         }
         function getNewBadge(c) {
             return isNewContact(c) ? '<span class="badge-new">NEW</span>' : '';
@@ -1397,8 +1396,7 @@
             const hnwi = data.filter(c => c.segment === 'High Net Worth Individuals').length;
             const fof = data.filter(c => c.segment === 'Crypto Funds of Funds').length;
             const other = data.filter(c => c.segment === 'Others').length;
-            const newCount = data.filter(c => isNewContact(c)).length;
-            document.getElementById('statSegments').innerHTML = `FO: ${fo} | HNWI: ${hnwi} | FoF: ${fof} | Other: ${other}${newCount ? ' | <span style="color:#fb923c;">NEW: ' + newCount + '</span>' : ''}`;
+            document.getElementById('statSegments').textContent = `FO: ${fo} | HNWI: ${hnwi} | FoF: ${fof} | Other: ${other}`;
         }
 
         function sortTable(key) {

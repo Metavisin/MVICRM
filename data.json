@@ -441,7 +441,7 @@
       "email": "",
       "linkedin": "",
       "location": "US",
-      "region": "US",
+      "region": "North America",
       "category": "Crypto Funds of Funds",
       "notes": "Dedicated crypto fund-of-funds. $100M opportunistic vehicle. Longtime investor in crypto hedge funds.",
       "segment": "Crypto Funds of Funds",
@@ -481,7 +481,7 @@
       "email": "cmoy@apollo.com",
       "linkedin": "https://www.linkedin.com/in/christine-moy-b6109164/",
       "location": "New York, USA",
-      "region": "US",
+      "region": "North America",
       "category": "Others",
       "notes": "Partner; Head of Digital Assets at Apollo (major institutional allocator). Speaker at TOKEN2049 Dubai.",
       "segment": "Others",
@@ -699,7 +699,7 @@
       "name": "Michael Greve",
       "organization": "Forever Healthy Family Office",
       "location": "Germany / Dubai",
-      "region": "EU",
+      "region": "Europe",
       "category": "Family Offices",
       "notes": "Founder of Forever Healthy. Tech entrepreneur turned high-impact FO principal. Significant history in tech/venture capital. Speaker at Prestel Dubai 2024.",
       "id": 245,
@@ -734,7 +734,7 @@
       "email": "Not publicly available",
       "phone": "Not publicly available",
       "location": "Toronto / Dubai",
-      "region": "Global",
+      "region": "North America",
       "category": "Others",
       "notes": "Early-stage blockchain VC. 100+ Web3 investments.",
       "source": "Exa search",
@@ -786,7 +786,7 @@
       "email": "michael@algoquant.com",
       "phone": "Not publicly available",
       "location": "Unknown",
-      "region": "Global",
+      "region": "Unknown",
       "category": "Others",
       "notes": "Quantitative trading firm.",
       "source": "Hunter.io (score 77)",
@@ -820,7 +820,7 @@
       "email": "richard.teng@binance.com",
       "phone": "Not publicly available",
       "location": "Dubai / Global",
-      "region": "Global",
+      "region": "Middle East",
       "category": "Others",
       "notes": "CEO of Binance.",
       "source": "Hunter.io (score 97, verified)",
@@ -942,7 +942,7 @@
       "linkedin": "https://linkedin.com/in/tnittel",
       "email": "",
       "category": "Family Offices",
-      "region": "EU",
+      "region": "Europe",
       "location": "Zurich, Switzerland",
       "aum_estimate": "$100M"
     },
@@ -956,7 +956,7 @@
       "linkedin": "https://linkedin.com/in/marcusmaute",
       "email": "marcus@solsticelabs.io",
       "category": "Others",
-      "region": "Global",
+      "region": "Unknown",
       "aum_estimate": "$10M"
     },
     {
@@ -972,7 +972,8 @@
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found.",
       "category": "Others",
-      "aum_estimate": "N/A"
+      "aum_estimate": "N/A",
+      "region": "Unknown"
     },
     {
       "id": 264,
@@ -987,7 +988,8 @@
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found.",
       "category": "Crypto Funds of Funds",
-      "aum_estimate": "N/A"
+      "aum_estimate": "N/A",
+      "region": "Unknown"
     },
     {
       "id": 265,
@@ -1004,7 +1006,8 @@
       "category": "Family Offices",
       "aum_estimate": "N/A",
       "linked_contacts": "Herbert Lau [LinkedIn: https://linkedin.com/in/herbert-lau-2935359b] — Portfolio Manager focused on crypto wealth management and fund selection; Charlene Chen [LinkedIn: https://sg.linkedin.com/in/charlene-chen-4822a9b4]",
-      "linkedin": "https://linkedin.com/in/herbert-lau-2935359b"
+      "linkedin": "https://linkedin.com/in/herbert-lau-2935359b",
+      "region": "Unknown"
     },
     {
       "name": "Joe Marenda",
@@ -1057,7 +1060,7 @@
       "email": "",
       "linkedin": "https://linkedin.com/in/ma%C3%ABl-pinget-455706177",
       "location": "Zurich, Switzerland",
-      "region": "EU",
+      "region": "Europe",
       "category": "Family Offices",
       "notes": "CIO Digital Asset Strategy, Alternative Investments & Macro Risk Management at INMATRADE AG. Based in Zurich — primary geo.",
       "segment": "Family Offices",
@@ -1072,7 +1075,7 @@
       "email": "virginie@gami.capital",
       "linkedin": "https://linkedin.com/in/vvacca",
       "location": "Nice / Monaco",
-      "region": "EU",
+      "region": "Europe",
       "category": "Family Offices",
       "notes": "Partner at Gami Capital SA, covering France and Monaco. Multi-family office with alternatives mandate. Secondary geo (Monaco).",
       "segment": "Family Offices",
@@ -1102,7 +1105,7 @@
       "email": "martin@temple.capital",
       "linkedin": "https://linkedin.com/in/boczekmartin",
       "location": "Gibraltar",
-      "region": "EU",
+      "region": "Europe",
       "category": "Crypto Funds of Funds",
       "notes": "Head of Capital Formation at Temple Capital. Focused on crypto fund capital raising. Connects emerging crypto managers with allocators.",
       "segment": "Crypto Funds of Funds",
@@ -1117,7 +1120,7 @@
       "email": "mauro.grandinetti@eharo.com",
       "linkedin": "https://linkedin.com/in/mauro-grandinetti-6769921",
       "location": "London, UK",
-      "region": "EU",
+      "region": "Europe",
       "category": "Crypto Funds of Funds",
       "notes": "Partner in Private Equity Funds at Eharo Ltd. Based in London — primary geo. Fund allocation background.",
       "segment": "Crypto Funds of Funds",
@@ -1726,7 +1729,7 @@
       "email": "angel.versetti@gmail.com",
       "phone": "",
       "location": "Bermuda / Global",
-      "region": "Global",
+      "region": "Unknown",
       "category": "Family Offices",
       "notes": "Founder of Versetti Family Office ('the world's first crypto family office' per company positioning), specializing in crypto turnarounds with institutional investments in Solana, Syscoin, Ethereum, Sonic. Owner of DOGE.ORG. Serial entrepreneur (co-founded/exited PrivateAI, Ambrosus, GintonicAI, Smart Security Systems). Previously UN project lead (UNIDIR/UNESCAP/UNEP). Education: Oxford (MSc Evidence-Based Healthcare), Cambridge (BA Land Economy, Santander Scholar), Sciences Po (MPA, Emile Boutmy Scholar). Speaker at Ritossa GFOIS Monte Carlo. Active LinkedIn author and X presence. Personal Gmail sourced from ContactOut/RocketReach. Not auto-verified; confirm deliverability before sending. Firm inbox info@versetti.co is an alternate channel.",
       "source": "WebSearch LinkedIn",
@@ -2932,5 +2935,6 @@
       "id": 412
     }
   ],
-  "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31."
+  "_TEST_COMMIT_NOTE": "Verified write access from MVbuilder_bot on 2026-03-31.",
+  "_new_baseline": "2026-04-10"
 }
