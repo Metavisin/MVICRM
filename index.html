@@ -798,6 +798,262 @@
             font-size: 12px;
             color: var(--text-muted);
         }
+
+        /* ── Events Page ── */
+        .events-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .events-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .events-month-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .events-month-label {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        .events-month-line {
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .events-month-count {
+            font-size: 12px;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 16px;
+        }
+
+        .event-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: border-color 0.15s, transform 0.15s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card:hover {
+            border-color: rgba(0,229,160,0.4);
+            transform: translateY(-2px);
+        }
+
+        .event-card.must-attend {
+            border-left: 3px solid var(--accent);
+        }
+
+        .event-card.high-value {
+            border-left: 3px solid var(--yellow);
+        }
+
+        .event-card.strategic {
+            border-left: 3px solid var(--blue);
+        }
+
+        .event-card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .event-card-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.3;
+        }
+
+        .event-card-priority {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .priority-must-attend {
+            background: rgba(0,229,160,0.2);
+            color: var(--accent);
+        }
+
+        .priority-high-value {
+            background: rgba(245,158,11,0.2);
+            color: #fbbf24;
+        }
+
+        .priority-strategic {
+            background: rgba(59,130,246,0.2);
+            color: #60a5fa;
+        }
+
+        .event-card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .event-card-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .event-card-meta svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            color: var(--text-muted);
+        }
+
+        .event-card-why {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            border-top: 1px solid var(--border);
+            padding-top: 10px;
+        }
+
+        .event-card-why strong {
+            color: var(--accent);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .event-card-cost {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .event-card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .event-tag {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .event-tag-fo { background: rgba(16,185,129,0.15); color: #34d399; }
+        .event-tag-hnwi { background: rgba(124,58,237,0.15); color: #a78bfa; }
+        .event-tag-fof { background: rgba(59,130,246,0.15); color: #60a5fa; }
+        .event-tag-crypto { background: rgba(245,158,11,0.15); color: #fbbf24; }
+        .event-tag-side { background: rgba(236,72,153,0.15); color: #f472b6; }
+        .event-tag-free { background: rgba(0,229,160,0.15); color: var(--accent); }
+
+        .event-geo-badge {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .event-geo-sg { background: rgba(239,68,68,0.12); color: #f87171; }
+        .event-geo-hk { background: rgba(236,72,153,0.12); color: #f472b6; }
+        .event-geo-dubai { background: rgba(245,158,11,0.12); color: #fbbf24; }
+        .event-geo-riyadh { background: rgba(16,185,129,0.12); color: #34d399; }
+        .event-geo-abudhabi { background: rgba(59,130,246,0.12); color: #60a5fa; }
+        .event-geo-china { background: rgba(124,58,237,0.12); color: #a78bfa; }
+
+        .events-filter-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .events-filter-btn {
+            padding: 7px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .events-filter-btn:hover {
+            border-color: var(--accent);
+            color: var(--text);
+        }
+
+        .events-filter-btn.active {
+            background: var(--accent-dim);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .event-detail-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 500;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .event-detail-overlay.open {
+            display: flex;
+        }
+
+        .event-detail-modal {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            width: 600px;
+            max-width: 90vw;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 28px;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+        }
     </style>
 </head>
 <body>
@@ -814,6 +1070,10 @@
                 <div class="nav-item active" data-page="contacts" onclick="showPage('contacts', this)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                     Dashboard
+                </div>
+                <div class="nav-item" data-page="events" onclick="showPage('events', this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Events
                 </div>
                 <div class="nav-item" data-page="scoring" onclick="showPage('scoring', this)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -972,6 +1232,58 @@
 
             </div>
             </div><!-- end page-scoring -->
+
+            <!-- Events Page -->
+            <div class="page-events" id="pageEvents" style="display:none;">
+            <div class="page-title">Events & Conferences</div>
+
+            <!-- Events Stats -->
+            <div class="events-stats">
+                <div class="stat-card highlight">
+                    <div class="stat-label">Total Events</div>
+                    <div class="stat-value" id="evStatTotal">35</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Must-Attend</div>
+                    <div class="stat-value" style="color:var(--accent);" id="evStatMust">6</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">High Value</div>
+                    <div class="stat-value" style="color:#fbbf24;" id="evStatHigh">14</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg. Cost</div>
+                    <div class="stat-value" style="color:var(--blue);font-size:22px;" id="evStatCost">~$1,800</div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="events-filter-bar">
+                <button class="events-filter-btn active" onclick="filterEvents('all', this)">All Events</button>
+                <button class="events-filter-btn" onclick="filterEvents('Must-Attend', this)">Must-Attend</button>
+                <button class="events-filter-btn" onclick="filterEvents('High Value', this)">High Value</button>
+                <button class="events-filter-btn" onclick="filterEvents('Strategic', this)">Strategic</button>
+                <div class="nav-divider" style="height:20px;width:1px;background:var(--border);margin:0 4px;"></div>
+                <button class="events-filter-btn" onclick="filterEvents('geo-dubai', this)">Dubai</button>
+                <button class="events-filter-btn" onclick="filterEvents('geo-singapore', this)">Singapore</button>
+                <button class="events-filter-btn" onclick="filterEvents('geo-riyadh', this)">Riyadh</button>
+                <button class="events-filter-btn" onclick="filterEvents('geo-abudhabi', this)">Abu Dhabi</button>
+                <button class="events-filter-btn" onclick="filterEvents('geo-hongkong', this)">Hong Kong</button>
+                <div class="nav-divider" style="height:20px;width:1px;background:var(--border);margin:0 4px;"></div>
+                <button class="events-filter-btn" onclick="filterEvents('type-side', this)">Side Events</button>
+                <button class="events-filter-btn" onclick="filterEvents('type-main', this)">Main Events</button>
+                <button class="events-filter-btn" onclick="filterEvents('tag-free', this)">Free / Low Cost</button>
+            </div>
+
+            <!-- Timeline -->
+            <div class="events-timeline" id="eventsTimeline"></div>
+
+            </div><!-- end page-events -->
+
+            <!-- Event Detail Overlay -->
+            <div class="event-detail-overlay" id="eventDetailOverlay" onclick="if(event.target===this)closeEventDetail()">
+                <div class="event-detail-modal" id="eventDetailModal"></div>
+            </div>
 
         </main>
 
@@ -1432,8 +1744,369 @@
 
             document.getElementById('pageContacts').style.display = page === 'contacts' ? '' : 'none';
             document.getElementById('pageScoring').style.display = page === 'scoring' ? '' : 'none';
+            document.getElementById('pageEvents').style.display = page === 'events' ? '' : 'none';
             document.querySelector('.main').scrollTop = 0;
+
+            if (page === 'events') renderEvents();
         }
+
+        // ── Events Data ──
+        const eventsData = [
+            // April 2026
+            { name: "Saudi Family Office Summit (Epicon)", date: "Apr 15, 2026", dateSort: "2026-04-15", venue: "Riyadh", city: "Riyadh", geo: "riyadh", cost: "$580", costNum: 580, priority: "Must-Attend", type: "main", month: "April 2026",
+              why: "Direct access to Saudi single & multi-family offices actively deploying into alternatives. Epicon events draw principals, not just advisors. Perfect for MetaVision's quant fund pitch to FO allocators in KSA.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Caproasia Family Office Summit", date: "Apr 23, 2026", dateSort: "2026-04-23", venue: "Singapore", city: "Singapore", geo: "singapore", cost: "~$2,000", costNum: 2000, priority: "Must-Attend", type: "main", month: "April 2026",
+              why: "Premier Asia family office gathering. High concentration of SG/HK-based SFOs and MFOs. Excellent for building FO pipeline in Asia's two key markets.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "HODL Summit 2026", date: "Apr 27-28, 2026", dateSort: "2026-04-27", venue: "Dubai Marina, Dubai", city: "Dubai", geo: "dubai", cost: "$200-$800", costNum: 500, priority: "Strategic", type: "main", month: "April 2026",
+              why: "Crypto-native event during Dubai Blockchain Week. Strong presence of crypto HNWIs and FoF allocators. Good for warming up contacts ahead of TOKEN2049.",
+              tags: ["hnwi", "crypto"], segments: "HNWIs, Crypto FoFs" },
+
+            { name: "5th Annual Private Wealth Middle East Forum", date: "Apr 29, 2026", dateSort: "2026-04-29", venue: "Dubai", city: "Dubai", geo: "dubai", cost: "$3,000", costNum: 3000, priority: "High Value", type: "main", month: "April 2026",
+              why: "Curated gathering of ME-based HNWIs, private bankers, and wealth managers. Decision-makers with $5M-$500M in deployable capital. Direct LP prospecting opportunity.",
+              tags: ["hnwi", "fo"], segments: "HNWIs, Family Offices" },
+
+            { name: "TOKEN2049 Dubai", date: "Apr 29-30, 2026", dateSort: "2026-04-29", venue: "Madinat Jumeirah, Dubai", city: "Dubai", geo: "dubai", cost: "$699-$5,999", costNum: 2500, priority: "High Value", type: "main", month: "April 2026",
+              why: "The largest crypto conference in the Middle East. Massive LP density -- crypto FoFs, family offices exploring digital assets, and HNWIs. Side events multiply networking 10x.",
+              tags: ["fof", "hnwi", "crypto"], segments: "All 3 Segments" },
+
+            { name: "Dubai Blockchain Week Side Events", date: "Apr 27-May 1, 2026", dateSort: "2026-04-27", venue: "Various Dubai venues", city: "Dubai", geo: "dubai", cost: "Free (RSVP)", costNum: 0, priority: "Strategic", type: "side", month: "April 2026",
+              why: "Free networking around TOKEN2049 week. Intimate dinners, roundtables, and after-parties where real deals happen. Often better LP access than the main conference.",
+              tags: ["crypto", "free"], segments: "All Segments" },
+
+            { name: "FOIS Family Office Summit (TOKEN2049 Side)", date: "Apr 29, 2026", dateSort: "2026-04-29", venue: "The Edit Dubai, Alserkal Avenue", city: "Dubai", geo: "dubai", cost: "$250 (free for qualifying funds)", costNum: 250, priority: "High Value", type: "side", month: "April 2026",
+              why: "Family office-specific side event during TOKEN2049. Qualifying funds (like MetaVision) may attend free. Intimate setting = higher-quality conversations with FO principals.",
+              tags: ["fo", "crypto", "free"], segments: "Family Offices" },
+
+            // May 2026
+            { name: "Wealth Tech Summit 2026", date: "May 8, 2026", dateSort: "2026-05-08", venue: "Ritz Carlton DIFC, Dubai", city: "Dubai", geo: "dubai", cost: "~$500-$2,000", costNum: 1250, priority: "Strategic", type: "main", month: "May 2026",
+              why: "Wealth technology focus attracts private bankers and wealth managers who allocate to alternative funds. Good for finding intermediaries who can introduce MetaVision to their HNWI clients.",
+              tags: ["hnwi"], segments: "HNWIs" },
+
+            { name: "Dubai FinTech Summit", date: "May 11-12, 2026", dateSort: "2026-05-11", venue: "Madinat Jumeirah, Dubai", city: "Dubai", geo: "dubai", cost: "~$500-$2,000", costNum: 1250, priority: "Strategic", type: "main", month: "May 2026",
+              why: "Major fintech event with growing crypto/DeFi track. Attracts institutional allocators exploring digital asset strategies. Good for FoF and tech-forward FO connections.",
+              tags: ["fof", "crypto"], segments: "Crypto FoFs" },
+
+            { name: "7th Annual Family Office & Private Wealth Asia Forum", date: "May 14, 2026", dateSort: "2026-05-14", venue: "Singapore", city: "Singapore", geo: "singapore", cost: "~$2,000-$3,000", costNum: 2500, priority: "High Value", type: "main", month: "May 2026",
+              why: "Top-tier FO event in Singapore. Draws Asian family office CIOs and heads of alternatives. Perfect venue for MetaVision's systematic crypto strategy pitch to traditional FOs.",
+              tags: ["fo", "hnwi"], segments: "Family Offices, HNWIs" },
+
+            { name: "Family Office Investment Summit Riyadh", date: "May 30, 2026", dateSort: "2026-05-30", venue: "Riyadh", city: "Riyadh", geo: "riyadh", cost: "$600", costNum: 600, priority: "High Value", type: "main", month: "May 2026",
+              why: "Epicon/Tablon's KSA event. Focused on Saudi family offices actively investing in alternatives. Well-priced entry point to the Saudi FO market.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            // June 2026
+            { name: "Dubai Family Office Summit (Epicon, 6th Ed.)", date: "Jun 11, 2026", dateSort: "2026-06-11", venue: "Ritz-Carlton, Dubai", city: "Dubai", geo: "dubai", cost: "$4,800", costNum: 4800, priority: "High Value", type: "main", month: "June 2026",
+              why: "Premium Epicon event. Higher ticket = more serious allocators. Ritz-Carlton setting means intimate, high-touch networking with UAE and international family offices.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Private Equity Asia Forum", date: "Jun 23, 2026", dateSort: "2026-06-23", venue: "Singapore", city: "Singapore", geo: "singapore", cost: "$5,000 (free for qualified LPs/GPs)", costNum: 0, priority: "Strategic", type: "main", month: "June 2026",
+              why: "Free for qualified GPs. PE-focused but increasingly includes crypto/digital asset allocators. Good for meeting institutional FoF managers and LP allocators who are diversifying into crypto.",
+              tags: ["fof", "free"], segments: "Crypto FoFs" },
+
+            // August 2026
+            { name: "Singapore Blockchain Week", date: "Aug 3-7, 2026", dateSort: "2026-08-03", venue: "Singapore + Johor-Singapore SEZ", city: "Singapore", geo: "singapore", cost: "~$200-$800", costNum: 500, priority: "Strategic", type: "main", month: "August 2026",
+              why: "Week-long blockchain focus in Singapore. Multiple sub-events attract crypto-native FoFs, emerging manager allocators, and blockchain HNWIs. Good value for broad networking.",
+              tags: ["fof", "crypto"], segments: "Crypto FoFs, HNWIs" },
+
+            // September 2026
+            { name: "APAC Family Office Investment Summit", date: "Sep 8-9, 2026", dateSort: "2026-09-08", venue: "Shanghai, China", city: "Shanghai", geo: "china", cost: "~$2,000", costNum: 2000, priority: "Strategic", type: "main", month: "September 2026",
+              why: "Access to mainland Chinese family offices expanding internationally. Many Chinese FOs are establishing Singapore/HK offices and looking at crypto exposure.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Family Office & Investors Summit (TOKEN2049 SG)", date: "Sep 30-Oct 1, 2026", dateSort: "2026-09-30", venue: "InterContinental Singapore", city: "Singapore", geo: "singapore", cost: "FREE (funds <$100M AUM)", costNum: 0, priority: "Must-Attend", type: "main", month: "September 2026",
+              why: "FREE for funds under $100M AUM -- MetaVision qualifies. Combines family office principals with TOKEN2049 attendees. Highest ROI event: zero cost, maximum LP exposure.",
+              tags: ["fo", "fof", "free"], segments: "Family Offices, Crypto FoFs" },
+
+            // October 2026
+            { name: "TOKEN2049 Singapore", date: "Oct 7-8, 2026", dateSort: "2026-10-07", venue: "Marina Bay Sands, Singapore", city: "Singapore", geo: "singapore", cost: "$699-$5,999", costNum: 2500, priority: "High Value", type: "main", month: "October 2026",
+              why: "The flagship crypto conference in Asia. 10,000+ attendees including crypto FoFs, institutional allocators, and HNWIs. Side events during the week multiply opportunities 10x.",
+              tags: ["fof", "hnwi", "crypto"], segments: "All 3 Segments" },
+
+            { name: "Caproasia Family Office Summit - Hong Kong", date: "Oct 15, 2026", dateSort: "2026-10-15", venue: "Ritz Carlton, Hong Kong", city: "Hong Kong", geo: "hongkong", cost: "~$2,000", costNum: 2000, priority: "High Value", type: "main", month: "October 2026",
+              why: "Hong Kong counterpart to the Singapore summit. Access to HK-based family offices, many with China and ASEAN connections. Key for expanding HK pipeline.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "World Family Office Forum - Asia", date: "Oct 15-16, 2026", dateSort: "2026-10-15", venue: "Ritz Carlton, Hong Kong", city: "Hong Kong", geo: "hongkong", cost: "By invitation", costNum: 3000, priority: "Strategic", type: "main", month: "October 2026",
+              why: "Invitation-only format means ultra-qualified attendees. If accepted, guarantees meetings with serious FO allocators across Asia-Pacific.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Global Owners & Family Office Congress (Campden)", date: "Oct 20-22, 2026", dateSort: "2026-10-20", venue: "Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "$4,650", costNum: 4650, priority: "Must-Attend", type: "main", month: "October 2026",
+              why: "Campden Wealth is the gold standard for family office events. Ultra-high-quality attendees -- principals and CIOs from $100M+ family offices. Abu Dhabi timing aligns with growing GCC interest in crypto alternatives.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Future Investment Initiative (FII) Riyadh", date: "Oct 26-29, 2026", dateSort: "2026-10-26", venue: "Riyadh", city: "Riyadh", geo: "riyadh", cost: "By invitation ($3K-$10K+)", costNum: 5000, priority: "Strategic", type: "main", month: "October 2026",
+              why: "Saudi Arabia's flagship investment conference ('Davos in the Desert'). Attracts sovereign wealth, royal family offices, and institutional allocators. Extremely high-value if invitation secured.",
+              tags: ["fo", "hnwi"], segments: "Family Offices, HNWIs" },
+
+            { name: "CoinFerenceX Singapore (TOKEN2049 alternative)", date: "Oct 5-6, 2026", dateSort: "2026-10-05", venue: "Singapore", city: "Singapore", geo: "singapore", cost: "~$200-$800", costNum: 500, priority: "Strategic", type: "side", month: "October 2026",
+              why: "Lower-cost alternative to TOKEN2049 during the same week. Attracts crypto-native investors and emerging FoF managers who prefer smaller, focused events.",
+              tags: ["fof", "crypto"], segments: "Crypto FoFs" },
+
+            { name: "VNTR Investor Forum (TOKEN2049 SG)", date: "Oct 8, 2026", dateSort: "2026-10-08", venue: "Singapore", city: "Singapore", geo: "singapore", cost: "Free (approved investors)", costNum: 0, priority: "High Value", type: "side", month: "October 2026",
+              why: "Curated investor-only event. Free for approved investors means only serious allocators attend. High-quality conversations with FoF managers and institutional LPs.",
+              tags: ["fof", "free"], segments: "Crypto FoFs" },
+
+            { name: "Cardano Summit 2026", date: "Oct 5-6, 2026", dateSort: "2026-10-05", venue: "Singapore", city: "Singapore", geo: "singapore", cost: "~$100-$300", costNum: 200, priority: "Strategic", type: "side", month: "October 2026",
+              why: "Niche blockchain community event during TOKEN2049 week. Good for connecting with crypto-native HNWIs and ecosystem fund allocators.",
+              tags: ["crypto", "hnwi"], segments: "HNWIs" },
+
+            { name: "Venture Capital World Summit Riyadh", date: "Oct 20, 2026", dateSort: "2026-10-20", venue: "KAFD, Riyadh", city: "Riyadh", geo: "riyadh", cost: "~$200-$500", costNum: 350, priority: "Strategic", type: "side", month: "October 2026",
+              why: "Budget-friendly entry to Riyadh VC/LP scene. KAFD venue attracts Saudi institutional investors exploring crypto and tech alternatives.",
+              tags: ["fof"], segments: "Crypto FoFs" },
+
+            // November 2026
+            { name: "World Family Office Forum - Middle East", date: "Nov 16-17, 2026", dateSort: "2026-11-16", venue: "Four Seasons Resort, Dubai", city: "Dubai", geo: "dubai", cost: "By invitation", costNum: 3000, priority: "High Value", type: "main", month: "November 2026",
+              why: "Invitation-only ME edition. Four Seasons setting signals ultra-premium audience. GCC family offices, sovereign-adjacent wealth, and international FOs with ME presence.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Middle East Family Office Investment Summit", date: "Nov 18-19, 2026", dateSort: "2026-11-18", venue: "Mandarin Oriental, Dubai", city: "Dubai", geo: "dubai", cost: "~$2,000-$4,000", costNum: 3000, priority: "Must-Attend", type: "main", month: "November 2026",
+              why: "Back-to-back with World FO Forum creates a full week of FO networking in Dubai. Mandarin Oriental draws serious allocators. Two-day format allows deeper relationship building.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            // December 2026
+            { name: "Family Office Forum Riyadh (Prestel & Partner)", date: "Dec 2-3, 2026", dateSort: "2026-12-02", venue: "Crowne Plaza, Riyadh", city: "Riyadh", geo: "riyadh", cost: "Free for qualified SFOs", costNum: 0, priority: "High Value", type: "main", month: "December 2026",
+              why: "Free for qualified single family offices. Prestel & Partner events are well-curated with vetted attendees. Excellent ROI for Saudi FO pipeline building.",
+              tags: ["fo", "free"], segments: "Family Offices" },
+
+            { name: "GFOIS Ritossa Summit Dubai (31st Ed.)", date: "Dec 2-3, 2026", dateSort: "2026-12-02", venue: "Mandarin Oriental, Dubai", city: "Dubai", geo: "dubai", cost: "By invitation ($5K-$10K+)", costNum: 7500, priority: "Strategic", type: "main", month: "December 2026",
+              why: "Ultra-exclusive Ritossa family office summit. $5K-$10K+ ticket ensures only principals with $100M+ portfolios attend. Highest cost but highest quality LP access if budget allows.",
+              tags: ["fo", "hnwi"], segments: "Family Offices, HNWIs" },
+
+            { name: "Abu Dhabi Finance Week", date: "Dec 7-10, 2026", dateSort: "2026-12-07", venue: "Al Maryah Island, Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "Varies (many free)", costNum: 500, priority: "High Value", type: "main", month: "December 2026",
+              why: "Abu Dhabi's flagship finance week. Multiple sub-events covering FOs, crypto, private wealth. Umbrella event with ADGM backing means institutional credibility and sovereign-adjacent attendees.",
+              tags: ["fo", "fof", "crypto"], segments: "All 3 Segments" },
+
+            { name: "Private Wealth & Funds Forum Abu Dhabi", date: "Dec 10, 2026", dateSort: "2026-12-10", venue: "Marriott Downtown, Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "~$1,500", costNum: 1500, priority: "High Value", type: "main", month: "December 2026",
+              why: "End-of-ADFW event focused on private wealth and fund allocators. Attendees have been warmed up by a week of finance events. Good for closing conversations started earlier in the week.",
+              tags: ["hnwi", "fof"], segments: "HNWIs, Crypto FoFs" },
+
+            { name: "International Family Office Congress (ADFW)", date: "Dec 8, 2026", dateSort: "2026-12-08", venue: "Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "Included with ADFW", costNum: 0, priority: "Must-Attend", type: "side", month: "December 2026",
+              why: "Dedicated FO congress within ADFW. Included in ADFW registration = free if already attending. Direct access to international FOs exploring Abu Dhabi's growing crypto-friendly ecosystem.",
+              tags: ["fo", "free"], segments: "Family Offices" },
+
+            { name: "VNTR Investor Forum Dubai (GITEX/ADFW)", date: "Dec 9, 2026", dateSort: "2026-12-09", venue: "Dubai", city: "Dubai", geo: "dubai", cost: "Free (approved investors)", costNum: 0, priority: "High Value", type: "side", month: "December 2026",
+              why: "VNTR's Dubai edition during ADFW week. Same curated, investor-only format. Free for approved participants. Connects with crypto FoFs and institutional allocators.",
+              tags: ["fof", "free"], segments: "Crypto FoFs" },
+
+            { name: "Family Offices Connect @ ADFW", date: "Dec 9, 2026", dateSort: "2026-12-09", venue: "Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "~$430", costNum: 430, priority: "High Value", type: "side", month: "December 2026",
+              why: "Budget-friendly FO networking during ADFW. Lower ticket means broader mix of emerging and established FOs. Good value-add to an ADFW trip.",
+              tags: ["fo"], segments: "Family Offices" },
+
+            { name: "Blockchain Abu Dhabi + Web3 Roundtable (ADFW)", date: "Dec 9, 2026", dateSort: "2026-12-09", venue: "Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "Included with ADFW", costNum: 0, priority: "Strategic", type: "side", month: "December 2026",
+              why: "Blockchain-specific sub-event within ADFW. Attracts crypto-native allocators and FoF managers exploring Abu Dhabi. Free with ADFW registration.",
+              tags: ["fof", "crypto", "free"], segments: "Crypto FoFs" }
+        ];
+
+        let eventsFilter = 'all';
+
+        function filterEvents(filter, btn) {
+            eventsFilter = filter;
+            document.querySelectorAll('.events-filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderEvents();
+        }
+
+        function getFilteredEvents() {
+            if (eventsFilter === 'all') return eventsData;
+            if (eventsFilter === 'Must-Attend' || eventsFilter === 'High Value' || eventsFilter === 'Strategic') {
+                return eventsData.filter(e => e.priority === eventsFilter);
+            }
+            if (eventsFilter.startsWith('geo-')) {
+                const geo = eventsFilter.replace('geo-', '');
+                return eventsData.filter(e => e.geo === geo);
+            }
+            if (eventsFilter === 'type-side') return eventsData.filter(e => e.type === 'side');
+            if (eventsFilter === 'type-main') return eventsData.filter(e => e.type === 'main');
+            if (eventsFilter === 'tag-free') return eventsData.filter(e => e.costNum === 0 || e.costNum <= 500);
+            return eventsData;
+        }
+
+        function renderEvents() {
+            const filtered = getFilteredEvents();
+            const timeline = document.getElementById('eventsTimeline');
+
+            // Update stats
+            document.getElementById('evStatTotal').textContent = filtered.length;
+            const must = filtered.filter(e => e.priority === 'Must-Attend').length;
+            const high = filtered.filter(e => e.priority === 'High Value').length;
+            document.getElementById('evStatMust').textContent = must;
+            document.getElementById('evStatHigh').textContent = high;
+            const paidEvents = filtered.filter(e => e.costNum > 0);
+            const avgCost = paidEvents.length > 0 ? Math.round(paidEvents.reduce((s, e) => s + e.costNum, 0) / paidEvents.length) : 0;
+            document.getElementById('evStatCost').textContent = avgCost > 0 ? '~$' + avgCost.toLocaleString() : 'Free';
+
+            // Group by month
+            const months = [];
+            const monthMap = {};
+            filtered.forEach(e => {
+                if (!monthMap[e.month]) {
+                    monthMap[e.month] = [];
+                    months.push(e.month);
+                }
+                monthMap[e.month].push(e);
+            });
+
+            timeline.innerHTML = months.map(month => {
+                const events = monthMap[month];
+                return `
+                    <div>
+                        <div class="events-month-header">
+                            <span class="events-month-label">${month}</span>
+                            <div class="events-month-line"></div>
+                            <span class="events-month-count">${events.length} event${events.length > 1 ? 's' : ''}</span>
+                        </div>
+                        <div class="events-grid">
+                            ${events.map((e, i) => renderEventCard(e, eventsData.indexOf(e))).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderEventCard(e, idx) {
+            const prClass = e.priority === 'Must-Attend' ? 'must-attend' : e.priority === 'High Value' ? 'high-value' : 'strategic';
+            const prBadge = e.priority === 'Must-Attend' ? 'priority-must-attend' : e.priority === 'High Value' ? 'priority-high-value' : 'priority-strategic';
+            const geoClass = 'event-geo-' + e.geo;
+            const typeLabel = e.type === 'side' ? '<span class="event-tag event-tag-side">Side Event</span>' : '';
+            const freeLabel = e.costNum === 0 ? '<span class="event-tag event-tag-free">Free</span>' : '';
+
+            const tagHtml = e.tags.map(t => {
+                if (t === 'fo') return '<span class="event-tag event-tag-fo">Family Offices</span>';
+                if (t === 'hnwi') return '<span class="event-tag event-tag-hnwi">HNWI</span>';
+                if (t === 'fof') return '<span class="event-tag event-tag-fof">Crypto FoF</span>';
+                if (t === 'crypto') return '<span class="event-tag event-tag-crypto">Crypto</span>';
+                if (t === 'free') return '';
+                return '';
+            }).filter(Boolean).join('');
+
+            return `
+                <div class="event-card ${prClass}" onclick="showEventDetail(${idx})">
+                    <div class="event-card-top">
+                        <div class="event-card-name">${escapeHtml(e.name)}</div>
+                        <span class="event-card-priority ${prBadge}">${e.priority}</span>
+                    </div>
+                    <div class="event-card-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            ${e.date}
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span class="event-geo-badge ${geoClass}">${e.city}</span>
+                        </span>
+                        <span class="event-card-cost">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            ${e.cost}
+                        </span>
+                    </div>
+                    <div class="event-card-tags">
+                        ${typeLabel}${freeLabel}${tagHtml}
+                    </div>
+                    <div class="event-card-why">
+                        <strong>Why attend:</strong> ${e.why.substring(0, 120)}${e.why.length > 120 ? '...' : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function showEventDetail(idx) {
+            const e = eventsData[idx];
+            if (!e) return;
+            const modal = document.getElementById('eventDetailModal');
+            const prBadge = e.priority === 'Must-Attend' ? 'priority-must-attend' : e.priority === 'High Value' ? 'priority-high-value' : 'priority-strategic';
+            const geoClass = 'event-geo-' + e.geo;
+
+            const tagHtml = e.tags.map(t => {
+                if (t === 'fo') return '<span class="event-tag event-tag-fo" style="font-size:12px;padding:4px 12px;">Family Offices</span>';
+                if (t === 'hnwi') return '<span class="event-tag event-tag-hnwi" style="font-size:12px;padding:4px 12px;">HNWI</span>';
+                if (t === 'fof') return '<span class="event-tag event-tag-fof" style="font-size:12px;padding:4px 12px;">Crypto FoF</span>';
+                if (t === 'crypto') return '<span class="event-tag event-tag-crypto" style="font-size:12px;padding:4px 12px;">Crypto</span>';
+                if (t === 'free') return '<span class="event-tag event-tag-free" style="font-size:12px;padding:4px 12px;">Free</span>';
+                return '';
+            }).filter(Boolean).join(' ');
+
+            // Find CRM contacts in same geo
+            const geoMap = { singapore: 'Singapore', hongkong: 'Hong Kong', dubai: 'Dubai', riyadh: 'Riyadh', abudhabi: 'Abu Dhabi', china: 'Shanghai' };
+            const geoCity = geoMap[e.geo] || '';
+            const nearbyContacts = contacts.filter(c => c.location && c.location.toLowerCase().includes(geoCity.toLowerCase()));
+            const nearbyPreview = nearbyContacts.slice(0, 5);
+
+            modal.innerHTML = `
+                <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;">
+                    <div>
+                        <span class="event-card-priority ${prBadge}" style="font-size:11px;margin-bottom:8px;display:inline-block;">${e.priority}</span>
+                        ${e.type === 'side' ? '<span class="event-tag event-tag-side" style="font-size:11px;margin-left:8px;padding:3px 10px;">Side Event</span>' : ''}
+                        <h2 style="font-size:20px;font-weight:700;color:var(--text);margin-top:8px;line-height:1.3;">${escapeHtml(e.name)}</h2>
+                    </div>
+                    <button onclick="closeEventDetail()" style="background:none;border:none;color:var(--text-secondary);font-size:24px;cursor:pointer;padding:0 4px;">&times;</button>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:24px;">
+                    <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;">
+                        <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Date</div>
+                        <div style="font-size:14px;font-weight:600;color:var(--text);">${e.date}</div>
+                    </div>
+                    <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;">
+                        <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Location</div>
+                        <div style="font-size:14px;font-weight:600;"><span class="event-geo-badge ${geoClass}">${e.city}</span></div>
+                        <div style="font-size:11px;color:var(--text-secondary);margin-top:4px;">${escapeHtml(e.venue)}</div>
+                    </div>
+                    <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;">
+                        <div style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Est. Cost</div>
+                        <div style="font-size:20px;font-weight:700;color:var(--accent);">${e.cost}</div>
+                    </div>
+                </div>
+
+                <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:20px;">
+                    <div style="font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Why This Event Matters for MetaVision</div>
+                    <div style="font-size:13px;color:var(--text-secondary);line-height:1.7;">${escapeHtml(e.why)}</div>
+                </div>
+
+                <div style="margin-bottom:20px;">
+                    <div style="font-size:11px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;">Target Segments</div>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px;">${tagHtml}</div>
+                    <div style="font-size:12px;color:var(--text-muted);margin-top:8px;">${escapeHtml(e.segments)}</div>
+                </div>
+
+                ${nearbyContacts.length > 0 ? `
+                <div style="border-top:1px solid var(--border);padding-top:18px;">
+                    <div style="font-size:11px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;">
+                        CRM Contacts in ${escapeHtml(geoCity)} <span style="color:var(--accent);font-weight:400;">(${nearbyContacts.length} total)</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:8px;">
+                        ${nearbyPreview.map(c => `
+                            <div style="display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 14px;">
+                                <div class="avatar ${getAvatarColor(c.name)}" style="width:30px;height:30px;font-size:11px;">${getInitials(c.name)}</div>
+                                <div style="flex:1;min-width:0;">
+                                    <div style="font-size:13px;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(c.name)}</div>
+                                    <div style="font-size:11px;color:var(--text-secondary);">${escapeHtml(c.organization)}</div>
+                                </div>
+                                <span class="badge ${getSegmentBadge(c.segment)}" style="font-size:10px;">${escapeHtml(c.segment || '')}</span>
+                            </div>
+                        `).join('')}
+                        ${nearbyContacts.length > 5 ? '<div style="font-size:12px;color:var(--text-muted);text-align:center;padding:6px;">+' + (nearbyContacts.length - 5) + ' more contacts</div>' : ''}
+                    </div>
+                </div>` : `
+                <div style="border-top:1px solid var(--border);padding-top:18px;">
+                    <div style="font-size:12px;color:var(--text-muted);">No CRM contacts yet in ${escapeHtml(geoCity)}. This event could help build the pipeline here.</div>
+                </div>`}
+            `;
+
+            document.getElementById('eventDetailOverlay').classList.add('open');
+        }
+
+        function closeEventDetail() {
+            document.getElementById('eventDetailOverlay').classList.remove('open');
+        }
+
+        // Close event modal on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeEventDetail();
+        });
 
         loadData();
     </script>
