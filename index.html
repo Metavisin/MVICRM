@@ -640,6 +640,10 @@
             vertical-align: middle;
         }
 
+        .data-table td[title]:not([title=""]):hover {
+            cursor: help;
+        }
+
         .data-table tbody tr {
             cursor: pointer;
             transition: background 0.1s;
@@ -1629,6 +1633,16 @@
             return isNewContact(c) ? '<span class="badge-new">NEW</span>' : '';
         }
 
+        function shortAum(aum) {
+            if (!aum || aum === 'N/A') return 'N/A';
+            // Already short like "$100M", "$1B" — keep as is
+            if (/^\$[\d.,]+[BMK]?\+?$/.test(aum.trim()) || /^[<~]?\$[\d.,]+[BMK]?\+?$/.test(aum.trim())) return aum;
+            // Ranges like "$200M-$500M" or "$10M-$50M" — keep
+            if (/^\$[\d.,]+[BMK]?\s*[-–]\s*\$[\d.,]+[BMK]?$/.test(aum.trim())) return aum;
+            // Strip verbose suffixes
+            return aum.replace(/\s*\(.*?\)/g, '').replace(/estimated/gi, '').replace(/personal net worth/gi, '').replace(/platform/gi, '').trim();
+        }
+
         function renderTable() {
             const tbody = document.getElementById('tableBody');
             const noRes = document.getElementById('noResults');
@@ -1664,7 +1678,7 @@
                         </div>
                     </td>
                     <td><span class="badge ${getSegmentBadge(c.segment)}">${escapeHtml(c.segment || 'Others')}</span></td>
-                    <td style="color:var(--accent);font-weight:600;font-size:12px;white-space:nowrap;">${escapeHtml(c.aum_estimate || 'N/A')}</td>
+                    <td style="color:var(--accent);font-weight:600;font-size:12px;white-space:nowrap;" title="${escapeHtml(c.aum_estimate || 'N/A')}">${escapeHtml(shortAum(c.aum_estimate))}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
                     <td>${email ? '<a class="email-link" href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a>' : '<span style="color:var(--text-muted)">-</span>'}</td>
