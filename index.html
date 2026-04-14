@@ -1354,7 +1354,7 @@
                             <option value="waiting">Waiting Reply</option>
                             <option value="replied">Replied</option>
                             <option value="meeting">Meeting Booked</option>
-                            <option value="closed">Closed (Won)</option>
+                            <option value="closed">Closed</option>
                             <option value="not_interested">Not Interested</option>
                         </select>
                         <div class="filter-search-wrap">
@@ -1839,7 +1839,7 @@
                         <option value="waiting"${c.outreach_status === 'waiting' ? ' selected' : ''}>Waiting Reply</option>
                         <option value="replied"${c.outreach_status === 'replied' ? ' selected' : ''}>Replied</option>
                         <option value="meeting"${c.outreach_status === 'meeting' ? ' selected' : ''}>Meeting Booked</option>
-                        <option value="closed"${c.outreach_status === 'closed' ? ' selected' : ''}>Closed (Won)</option>
+                        <option value="closed"${c.outreach_status === 'closed' ? ' selected' : ''}>Closed</option>
                         <option value="not_interested"${c.outreach_status === 'not_interested' ? ' selected' : ''}>Not Interested</option>
                     </select>
                 </div>
@@ -1909,7 +1909,7 @@
         }
 
         function getOutreachLabel(status) {
-            const map = { contacted: 'Contacted', waiting: 'Waiting Reply', replied: 'Replied', meeting: 'Meeting Booked', closed: 'Closed (Won)', not_interested: 'Not Interested' };
+            const map = { contacted: 'Contacted', waiting: 'Waiting Reply', replied: 'Replied', meeting: 'Meeting Booked', closed: 'Closed', not_interested: 'Not Interested' };
             return map[status] || '';
         }
 
