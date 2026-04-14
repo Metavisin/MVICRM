@@ -1027,6 +1027,57 @@
             border-left: 3px solid var(--blue);
         }
 
+        /* Main event: prominent */
+        .event-card.type-main {
+            border-left-width: 5px;
+            background: var(--card);
+        }
+
+        /* Side event: visually subordinate */
+        .event-card.type-side {
+            background: rgba(255,255,255,0.015);
+            border-style: dashed;
+            border-left-style: solid;
+            border-left-width: 2px;
+            margin-left: 24px;
+            padding: 14px 16px;
+            opacity: 0.88;
+        }
+        .event-card.type-side::before {
+            content: "↳ SIDE EVENT";
+            display: inline-block;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            color: var(--text-muted);
+            background: rgba(255,255,255,0.04);
+            padding: 2px 7px;
+            border-radius: 3px;
+            align-self: flex-start;
+            margin-bottom: -4px;
+        }
+        .event-card.type-side .event-card-name {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        .event-card.type-side:hover {
+            opacity: 1;
+        }
+        .event-card.type-main::before {
+            content: "MAIN EVENT";
+            display: inline-block;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            color: var(--accent);
+            background: rgba(0,229,160,0.08);
+            padding: 2px 7px;
+            border-radius: 3px;
+            align-self: flex-start;
+            margin-bottom: -4px;
+        }
+
         .event-card-top {
             display: flex;
             align-items: flex-start;
@@ -2126,7 +2177,8 @@
             const prClass = e.priority === 'Must-Attend' ? 'must-attend' : e.priority === 'High Value' ? 'high-value' : 'strategic';
             const prBadge = e.priority === 'Must-Attend' ? 'priority-must-attend' : e.priority === 'High Value' ? 'priority-high-value' : 'priority-strategic';
             const geoClass = 'event-geo-' + e.geo;
-            const typeLabel = e.type === 'side' ? '<span class="event-tag event-tag-side">Side Event</span>' : '';
+            const typeClass = e.type === 'side' ? 'type-side' : 'type-main';
+            const typeLabel = '';
             const freeLabel = e.costNum === 0 ? '<span class="event-tag event-tag-free">Free</span>' : '';
 
             const tagHtml = e.tags.map(t => {
@@ -2139,7 +2191,7 @@
             }).filter(Boolean).join('');
 
             return `
-                <div class="event-card ${prClass}" onclick="showEventDetail(${idx})">
+                <div class="event-card ${prClass} ${typeClass}" onclick="showEventDetail(${idx})">
                     <div class="event-card-top">
                         <div class="event-card-name">${escapeHtml(e.name)}</div>
                         <span class="event-card-priority ${prBadge}">${e.priority}</span>
