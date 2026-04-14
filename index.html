@@ -937,7 +937,8 @@
         .outreach-dot-waiting { background: #3b82f6; }
         .outreach-dot-replied { background: #10b981; }
         .outreach-dot-meeting { background: #8b5cf6; }
-        .outreach-dot-closed { background: #ef4444; }
+        .outreach-dot-closed { background: #10b981; }
+        .outreach-dot-not_interested { background: #ef4444; }
 
         /* ── Footer ── */
         .table-footer {
@@ -1346,6 +1347,16 @@
                             <option value="Crypto Funds of Funds">Crypto FoFs</option>
                             <option value="Others">Others</option>
                         </select>
+                        <select class="filter-select" id="statusFilter" onchange="filterTable()">
+                            <option value="">All Statuses</option>
+                            <option value="__NONE__">No Status</option>
+                            <option value="contacted">Contacted</option>
+                            <option value="waiting">Waiting Reply</option>
+                            <option value="replied">Replied</option>
+                            <option value="meeting">Meeting Booked</option>
+                            <option value="closed">Closed (Won)</option>
+                            <option value="not_interested">Not Interested</option>
+                        </select>
                         <div class="filter-search-wrap">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                             <input type="text" class="filter-search" id="tableSearch" placeholder="Filter table..." oninput="filterTable()">
@@ -1359,6 +1370,7 @@
                                 <th onclick="sortTable('date_added')">Added <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('name')">Name <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('segment')">Segment <span class="sort-icon">&#8597;</span></th>
+                                <th onclick="sortTable('outreach_status')">Status <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('aum_estimate')">AUM <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('region')">Region <span class="sort-icon">&#8597;</span></th>
                                 <th onclick="sortTable('location')">Location <span class="sort-icon">&#8597;</span></th>
@@ -1616,7 +1628,7 @@
             } catch (err) {
                 console.error('loadData error:', err);
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
+                    '<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
             }
         }
 
@@ -1643,6 +1655,8 @@
             const region = document.getElementById('regionFilter').value;
             const category = document.getElementById('categoryFilter').value;
             const segment = document.getElementById('segmentFilter').value;
+            const statusEl = document.getElementById('statusFilter');
+            const status = statusEl ? statusEl.value : '';
             const globalQ = document.getElementById('globalSearch').value.toLowerCase();
             const tableQ = document.getElementById('tableSearch').value.toLowerCase();
             const q = globalQ || tableQ;
@@ -1652,6 +1666,8 @@
                 if (category && c.category !== category) return false;
                 if (segment === '__NEW__') { if (!isNewContact(c)) return false; }
                 else if (segment && c.segment !== segment) return false;
+                if (status === '__NONE__') { if (c.outreach_status) return false; }
+                else if (status && c.outreach_status !== status) return false;
                 if (q) {
                     const hay = [c.name, c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
                     if (!hay.includes(q)) return false;
@@ -1729,6 +1745,7 @@
                         </div>
                     </td>
                     <td><span class="badge ${getSegmentBadge(c.segment)}">${escapeHtml(c.segment || 'Others')}</span></td>
+                    <td style="font-size:12px;white-space:nowrap;">${c.outreach_status ? getOutreachDot(c.outreach_status) + '<span style="color:var(--text-secondary);">' + getOutreachLabel(c.outreach_status) + '</span>' : '<span style="color:var(--text-muted);">—</span>'}</td>
                     <td style="color:var(--accent);font-weight:600;font-size:12px;white-space:nowrap;" title="${escapeHtml(c.aum_estimate || 'N/A')}">${escapeHtml(shortAum(c.aum_estimate))}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
@@ -1822,7 +1839,8 @@
                         <option value="waiting"${c.outreach_status === 'waiting' ? ' selected' : ''}>Waiting Reply</option>
                         <option value="replied"${c.outreach_status === 'replied' ? ' selected' : ''}>Replied</option>
                         <option value="meeting"${c.outreach_status === 'meeting' ? ' selected' : ''}>Meeting Booked</option>
-                        <option value="closed"${c.outreach_status === 'closed' ? ' selected' : ''}>Closed / Not Interested</option>
+                        <option value="closed"${c.outreach_status === 'closed' ? ' selected' : ''}>Closed (Won)</option>
+                        <option value="not_interested"${c.outreach_status === 'not_interested' ? ' selected' : ''}>Not Interested</option>
                     </select>
                 </div>
             `;
@@ -1891,7 +1909,7 @@
         }
 
         function getOutreachLabel(status) {
-            const map = { contacted: 'Contacted', waiting: 'Waiting Reply', replied: 'Replied', meeting: 'Meeting Booked', closed: 'Closed' };
+            const map = { contacted: 'Contacted', waiting: 'Waiting Reply', replied: 'Replied', meeting: 'Meeting Booked', closed: 'Closed (Won)', not_interested: 'Not Interested' };
             return map[status] || '';
         }
 
