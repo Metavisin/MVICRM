@@ -33,7 +33,7 @@
       "segment": "Family Offices",
       "date_added": "2026-03-04",
       "aum_estimate": "$4B",
-      "linked_contacts": "Zhi Li — Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing; Raymond Jook — Managing Director at VMS Group ($4B AUM MFO in Hong Kong); Kyle Wong — Investment team member at VMS Group ($4B MFO); Carmen Tang — Investment team member at VMS Group ($4B MFO)"
+      "linked_contacts": "Zhi Li \u2014 Joined VMS Group ($4B AUM HK multi-family office) specifically to lead digital asset investing; Raymond Jook \u2014 Managing Director at VMS Group ($4B AUM MFO in Hong Kong); Kyle Wong \u2014 Investment team member at VMS Group ($4B MFO); Carmen Tang \u2014 Investment team member at VMS Group ($4B MFO)"
     },
     {
       "id": 26,
@@ -68,7 +68,7 @@
       "segment": "Family Offices",
       "date_added": "2026-03-04",
       "aum_estimate": "$200M",
-      "linked_contacts": "Chantel (Prestel Dubai) — Forward-thinking angel investor"
+      "linked_contacts": "Chantel (Prestel Dubai) \u2014 Forward-thinking angel investor"
     },
     {
       "id": 52,
@@ -310,7 +310,7 @@
       "segment": "High Net Worth Individuals",
       "date_added": "2026-03-04",
       "aum_estimate": "$100M",
-      "linked_contacts": "YY Lai — Singapore crypto VC"
+      "linked_contacts": "YY Lai \u2014 Singapore crypto VC"
     },
     {
       "name": "Shreyas Chityala",
@@ -350,7 +350,7 @@
       "segment": "Family Offices",
       "date_added": "2026-03-04",
       "aum_estimate": "$2B",
-      "linked_contacts": "Chi Man Kwan — Founder & Group CEO of Raffles Family Office, est"
+      "linked_contacts": "Chi Man Kwan \u2014 Founder & Group CEO of Raffles Family Office, est"
     },
     {
       "name": "Revo Digital FO",
@@ -364,7 +364,7 @@
       "segment": "Family Offices",
       "date_added": "2026-03-04",
       "aum_estimate": "$500M",
-      "linked_contacts": "Dillon Y. [LinkedIn: https://linkedin.com/in/dillon-y-267b974a] — SVP Portfolio Manager at Revo Digital Family Office (subsidiary of Raffles Family Office); Ray Tam [LinkedIn: https://www.linkedin.com/in/raytamcw/]"
+      "linked_contacts": "Dillon Y. [LinkedIn: https://linkedin.com/in/dillon-y-267b974a] \u2014 SVP Portfolio Manager at Revo Digital Family Office (subsidiary of Raffles Family Office); Ray Tam [LinkedIn: https://www.linkedin.com/in/raytamcw/]"
     },
     {
       "name": "Brooker Group",
@@ -430,7 +430,7 @@
       "segment": "Crypto Funds of Funds",
       "date_added": "2026-03-04",
       "aum_estimate": "$100M",
-      "linked_contacts": "Zach — Portfolio manager at Pure Crypto, one of the first dedicated crypto fund-of-funds"
+      "linked_contacts": "Zach \u2014 Portfolio manager at Pure Crypto, one of the first dedicated crypto fund-of-funds"
     },
     {
       "name": "Abhineet Singh",
@@ -708,7 +708,7 @@
       "segment": "Others",
       "date_added": "2026-03-31",
       "aum_estimate": "$100M",
-      "linked_contacts": "Shi Khai Wei — Co-founder of LongHash Ventures"
+      "linked_contacts": "Shi Khai Wei \u2014 Co-founder of LongHash Ventures"
     },
     {
       "id": 247,
@@ -743,7 +743,7 @@
       "segment": "Others",
       "date_added": "2026-03-31",
       "aum_estimate": "$200M",
-      "linked_contacts": "Charlie Morris — Co-Founder of CMCC Global, one of Asia's first blockchain-focused VC firms (est; Glenn Stewart — CFO of CMCC Global, one of Asia's first blockchain-focused VC firms (est"
+      "linked_contacts": "Charlie Morris \u2014 Co-Founder of CMCC Global, one of Asia's first blockchain-focused VC firms (est; Glenn Stewart \u2014 CFO of CMCC Global, one of Asia's first blockchain-focused VC firms (est"
     },
     {
       "id": 249,
@@ -921,7 +921,7 @@
       "date_added": "2026-04-07",
       "notes": "Research from Exa; no verified email found yet.",
       "name": "Tobias Nittel",
-      "organization": "Panthère Family Office",
+      "organization": "Panth\u00e8re Family Office",
       "linkedin": "https://linkedin.com/in/tnittel",
       "email": "",
       "category": "Family Offices",
@@ -988,7 +988,7 @@
       "notes": "Research from Exa; no verified email found.",
       "category": "Family Offices",
       "aum_estimate": "N/A",
-      "linked_contacts": "Herbert Lau [LinkedIn: https://linkedin.com/in/herbert-lau-2935359b] — Portfolio Manager focused on crypto wealth management and fund selection; Charlene Chen [LinkedIn: https://sg.linkedin.com/in/charlene-chen-4822a9b4]",
+      "linked_contacts": "Herbert Lau [LinkedIn: https://linkedin.com/in/herbert-lau-2935359b] \u2014 Portfolio Manager focused on crypto wealth management and fund selection; Charlene Chen [LinkedIn: https://sg.linkedin.com/in/charlene-chen-4822a9b4]",
       "linkedin": "https://linkedin.com/in/herbert-lau-2935359b",
       "region": "Unknown"
     },
@@ -1045,7 +1045,7 @@
       "location": "Zurich, Switzerland",
       "region": "Europe",
       "category": "Family Offices",
-      "notes": "CIO Digital Asset Strategy, Alternative Investments & Macro Risk Management at INMATRADE AG. Based in Zurich — primary geo.",
+      "notes": "CIO Digital Asset Strategy, Alternative Investments & Macro Risk Management at INMATRADE AG. Based in Zurich \u2014 primary geo.",
       "segment": "Family Offices",
       "source": "Exa search",
       "id": 269,
@@ -1105,7 +1105,7 @@
       "location": "London, UK",
       "region": "Europe",
       "category": "Crypto Funds of Funds",
-      "notes": "Partner in Private Equity Funds at Eharo Ltd. Based in London — primary geo. Fund allocation background.",
+      "notes": "Partner in Private Equity Funds at Eharo Ltd. Based in London \u2014 primary geo. Fund allocation background.",
       "segment": "Crypto Funds of Funds",
       "source": "Exa search + Hunter.io (score 98)",
       "id": 273,
@@ -1120,7 +1120,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Family Offices",
-      "notes": "Board Member Advisory — Alternative Investments at a private family office in Dubai. Advisory role on alternatives allocation for UHNW family.",
+      "notes": "Board Member Advisory \u2014 Alternative Investments at a private family office in Dubai. Advisory role on alternatives allocation for UHNW family.",
       "segment": "Family Offices",
       "source": "Exa search",
       "id": 274,
@@ -1160,17 +1160,17 @@
       "aum_estimate": "$50M"
     },
     {
-      "name": "Lùca MAINFRAIS",
+      "name": "L\u00f9ca MAINFRAIS",
       "organization": "LEVY CAPITAL PARTNERS",
       "email": "",
       "phone": "Not publicly available",
-      "location": "Paris, Île-de-France, France",
+      "location": "Paris, \u00cele-de-France, France",
       "region": "Europe",
       "category": "Family Offices",
       "notes": "Investment Analyst at Multi Family Office. SKEMA Business School grad. Valuation and portfolio allocation for HNWI/UHNWI.",
       "source": "LinkedIn search via Exa",
       "linkedin": "https://fr.linkedin.com/in/luca-mainfrais",
-      "contact_person": "Lùca MAINFRAIS",
+      "contact_person": "L\u00f9ca MAINFRAIS",
       "segment": "Family Offices",
       "id": 277,
       "date_added": "2026-04-08",
@@ -1184,7 +1184,7 @@
       "location": "Dubai, UAE",
       "region": "Middle East",
       "category": "Family Offices",
-      "notes": "Head Of Alternative Investments managing liquid and illiquid portfolios. Previous: Le Conservateur, Caisse des Dépôts. CFA charter holder.",
+      "notes": "Head Of Alternative Investments managing liquid and illiquid portfolios. Previous: Le Conservateur, Caisse des D\u00e9p\u00f4ts. CFA charter holder.",
       "source": "LinkedIn search via Exa",
       "linkedin": "https://ae.linkedin.com/in/philippe-humbert-cfa-25415511",
       "contact_person": "Philippe Humbert",
@@ -1514,7 +1514,7 @@
       "id": 298,
       "date_added": "2026-04-09",
       "aum_estimate": "$3B",
-      "linked_contacts": "Hamza Ayub [LinkedIn: https://www.linkedin.com/company/farrocapital] — Executive Director / Portfolio Manager at Farro Capital, Singapore; Sarada Yechuri [LinkedIn: https://www.linkedin.com/company/farrocapital] — Executive Director at Farro Capital, Singapore"
+      "linked_contacts": "Hamza Ayub [LinkedIn: https://www.linkedin.com/company/farrocapital] \u2014 Executive Director / Portfolio Manager at Farro Capital, Singapore; Sarada Yechuri [LinkedIn: https://www.linkedin.com/company/farrocapital] \u2014 Executive Director at Farro Capital, Singapore"
     },
     {
       "name": "Cindy Mihalova",
@@ -1541,7 +1541,7 @@
       "location": "Amsterdam, Netherlands",
       "region": "Europe",
       "category": "Crypto Funds of Funds",
-      "notes": "Founder of Hedura Capital Partners, the first Dutch digital asset fund-of-funds focused on market-neutral strategies. Allocates across delta-neutral crypto funds with institutional risk management. Actively speaks at family office / digital asset events. Hedura Neutral returned +0.94% YTD through Feb 2026. Email found via Hunter (score 95, verification status unknown — likely deliverable, confirm before sending).",
+      "notes": "Founder of Hedura Capital Partners, the first Dutch digital asset fund-of-funds focused on market-neutral strategies. Allocates across delta-neutral crypto funds with institutional risk management. Actively speaks at family office / digital asset events. Hedura Neutral returned +0.94% YTD through Feb 2026. Email found via Hunter (score 95, verification status unknown \u2014 likely deliverable, confirm before sending).",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/mauritsvanson/",
       "contact_person": "Maurits van Son",
@@ -1575,7 +1575,7 @@
       "location": "Lisbon, Portugal",
       "region": "Europe",
       "category": "Family Offices",
-      "notes": "Founder & Managing Partner of Lisbon Family Office (LFO), a CMVM-regulated investment consulting firm serving HNW families, hedge funds and funds of funds. Ex-Banco BPI Asset Management / BPI Pensions. Small boutique, direct principal contact. Email found via Hunter (score 96, status valid but domain is accept_all — deliverability cannot be fully confirmed).",
+      "notes": "Founder & Managing Partner of Lisbon Family Office (LFO), a CMVM-regulated investment consulting firm serving HNW families, hedge funds and funds of funds. Ex-Banco BPI Asset Management / BPI Pensions. Small boutique, direct principal contact. Email found via Hunter (score 96, status valid but domain is accept_all \u2014 deliverability cannot be fully confirmed).",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/francisco-carneiro-8a3a8415/",
       "contact_person": "Francisco Carneiro",
@@ -1585,17 +1585,17 @@
       "aum_estimate": "$100M"
     },
     {
-      "name": "Simão Cruz",
+      "name": "Sim\u00e3o Cruz",
       "organization": "Lightshift Capital",
       "email": "build@lightshift.xyz",
       "phone": "",
       "location": "Lisbon, Portugal",
       "region": "Europe",
       "category": "Others",
-      "notes": "CEO and Founding Managing Partner of Lightshift Capital, a Lisbon-based ~€26M blockchain/crypto/web3/fintech VC fund. Peer crypto fund manager — potential warm intro to Lightshift LP base and the Lisbon crypto family network. No personal email found on lightshift.xyz; only the generic team inbox build@lightshift.xyz is indexed. Use LinkedIn or X (@simaoccruz) as primary channel.",
+      "notes": "CEO and Founding Managing Partner of Lightshift Capital, a Lisbon-based ~\u20ac26M blockchain/crypto/web3/fintech VC fund. Peer crypto fund manager \u2014 potential warm intro to Lightshift LP base and the Lisbon crypto family network. No personal email found on lightshift.xyz; only the generic team inbox build@lightshift.xyz is indexed. Use LinkedIn or X (@simaoccruz) as primary channel.",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/company/lightshift-capital",
-      "contact_person": "Simão Cruz",
+      "contact_person": "Sim\u00e3o Cruz",
       "segment": "Others",
       "id": 305,
       "date_added": "2026-04-09",
@@ -1609,7 +1609,7 @@
       "location": "Tokyo, Japan",
       "region": "Asia",
       "category": "Family Offices",
-      "notes": "Head of Digital Asset Investments at a Japanese single family office — leads proprietary liquid and illiquid crypto strategies (DeFi + venture). Also Investment Partner at Decima Fund (JPY 4.5B Japan web3 FoF) and advisor at MZ Web3 Fund (Yusaku Maezawa's JPY 10B fund). Ex-Coincheck (Director of New Business Development; led listing division, $5M+ revenue, JVCEA/FSA regulatory work) and ex-Deloitte.",
+      "notes": "Head of Digital Asset Investments at a Japanese single family office \u2014 leads proprietary liquid and illiquid crypto strategies (DeFi + venture). Also Investment Partner at Decima Fund (JPY 4.5B Japan web3 FoF) and advisor at MZ Web3 Fund (Yusaku Maezawa's JPY 10B fund). Ex-Coincheck (Director of New Business Development; led listing division, $5M+ revenue, JVCEA/FSA regulatory work) and ex-Deloitte.",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/ryousuke-noguchi-93b99292/",
       "contact_person": "Ryousuke Noguchi",
@@ -1634,7 +1634,7 @@
       "id": 307,
       "date_added": "2026-04-09",
       "aum_estimate": "$1B",
-      "linked_contacts": "Julia Stöcker [LinkedIn: https://www.linkedin.com/in/julia-st%C3%B6cker-geb-groth-cfa-0a11739b/] — Head of Asset Management at Lennertz & Co"
+      "linked_contacts": "Julia St\u00f6cker [LinkedIn: https://www.linkedin.com/in/julia-st%C3%B6cker-geb-groth-cfa-0a11739b/] \u2014 Head of Asset Management at Lennertz & Co"
     },
     {
       "name": "Justin Huang",
@@ -1662,7 +1662,7 @@
       "location": "Austin, TX, USA",
       "region": "North America",
       "category": "Family Offices",
-      "notes": "Investor at Sher Ventures, a single family office VC fund (seed to Series A) based in Sugar Land, TX. Exited founder — co-founded Rallyteam (HR tech, acquired by Workday). Angel investor in 50+ startups including unicorns Calm, Grove Collaborative, BillionToOne, GRIN. Principal at Saturna Consulting Group. MS Computer Science (USF), JD (UC Hastings). Based in Austin. Posting about seed/AI/startups on LinkedIn as of Sep 2025. Email found via Hunter (score 99, verification status unknown — likely deliverable, confirm before sending).",
+      "notes": "Investor at Sher Ventures, a single family office VC fund (seed to Series A) based in Sugar Land, TX. Exited founder \u2014 co-founded Rallyteam (HR tech, acquired by Workday). Angel investor in 50+ startups including unicorns Calm, Grove Collaborative, BillionToOne, GRIN. Principal at Saturna Consulting Group. MS Computer Science (USF), JD (UC Hastings). Based in Austin. Posting about seed/AI/startups on LinkedIn as of Sep 2025. Email found via Hunter (score 99, verification status unknown \u2014 likely deliverable, confirm before sending).",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/danclayellis/",
       "contact_person": "Dan Ellis",
@@ -1696,7 +1696,7 @@
       "location": "San Francisco Bay Area, CA, USA",
       "region": "North America",
       "category": "Crypto Funds of Funds",
-      "notes": "Chairman & Managing Partner of Blockchain Coinvestors (and Fifth Era). Co-founded BC in 2014 with Matthew Le Merle. BC has invested across 40+ pure-play blockchain VC funds, 1,500+ blockchain portfolio companies, 110+ unicorns. Three vintage FoFs (I-III) — small firm (~15 employees) so direct access is realistic. Ex-CFO of Barclays Global Investors (now BlackRock, $1.5T+ AUM); helped launch the iShares product range. McKinsey / A.T. Kearney alum. Currently on the boards of Bitwise, Kraken, and Pagaya. Email verified via Hunter (score 99, status valid, multiple public sources).",
+      "notes": "Chairman & Managing Partner of Blockchain Coinvestors (and Fifth Era). Co-founded BC in 2014 with Matthew Le Merle. BC has invested across 40+ pure-play blockchain VC funds, 1,500+ blockchain portfolio companies, 110+ unicorns. Three vintage FoFs (I-III) \u2014 small firm (~15 employees) so direct access is realistic. Ex-CFO of Barclays Global Investors (now BlackRock, $1.5T+ AUM); helped launch the iShares product range. McKinsey / A.T. Kearney alum. Currently on the boards of Bitwise, Kraken, and Pagaya. Email verified via Hunter (score 99, status valid, multiple public sources).",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/alison-davis-339541/",
       "contact_person": "Alison Davis",
@@ -1704,7 +1704,7 @@
       "id": 312,
       "date_added": "2026-04-09",
       "aum_estimate": "$500M",
-      "linked_contacts": "Matthew Le Merle [LinkedIn: https://www.linkedin.com/in/matthewlemerle/] — Co-founder & Managing Partner at Blockchain Coinvestors (and Fifth Era) alongside Alison Davis; Kimberly Kupferman [LinkedIn: https://www.linkedin.com/in/kimberly-kupferman-b44145b] — Head of Operations & CCO at Blockchain Coinvestors & Fifth Era"
+      "linked_contacts": "Matthew Le Merle [LinkedIn: https://www.linkedin.com/in/matthewlemerle/] \u2014 Co-founder & Managing Partner at Blockchain Coinvestors (and Fifth Era) alongside Alison Davis; Kimberly Kupferman [LinkedIn: https://www.linkedin.com/in/kimberly-kupferman-b44145b] \u2014 Head of Operations & CCO at Blockchain Coinvestors & Fifth Era"
     },
     {
       "name": "Angel Versetti",
@@ -1731,7 +1731,7 @@
       "location": "St. Louis, MO / Global",
       "region": "North America",
       "category": "Family Offices",
-      "notes": "Founder, CEO & CIO of Off the Chain Capital — originally launched as a single family office in 2016 investing in digital assets, now open to qualified purchasers. Fund has outperformed S&P 500 by 3,653% since inception and is 99.99% uncorrelated to S&P 500. 9-year crypto VC; advised/mentored/financed 6 blockchain companies now valued >$100B combined. Teaches blockchain & digital asset investing at University of Cambridge (UK), Washington University, and Morgan State's Center for Blockchain and FinTech. Previously youngest-ever SVP at A.G. Edwards & Sons; top 1/10th of 1% of Morningstar asset managers 2004–2014. Email not indexed by Hunter on offthechain.capital or brian-estes.com. NOTE: brian@offthechain.capital is claimed by Brian Dixon (separate President & CEO at Off the Chain Capital) per fintech.tv sources — do NOT use that alias for Brian Estes. Best channel: LinkedIn DM or personal site brian-estes.com contact form.",
+      "notes": "Founder, CEO & CIO of Off the Chain Capital \u2014 originally launched as a single family office in 2016 investing in digital assets, now open to qualified purchasers. Fund has outperformed S&P 500 by 3,653% since inception and is 99.99% uncorrelated to S&P 500. 9-year crypto VC; advised/mentored/financed 6 blockchain companies now valued >$100B combined. Teaches blockchain & digital asset investing at University of Cambridge (UK), Washington University, and Morgan State's Center for Blockchain and FinTech. Previously youngest-ever SVP at A.G. Edwards & Sons; top 1/10th of 1% of Morningstar asset managers 2004\u20132014. Email not indexed by Hunter on offthechain.capital or brian-estes.com. NOTE: brian@offthechain.capital is claimed by Brian Dixon (separate President & CEO at Off the Chain Capital) per fintech.tv sources \u2014 do NOT use that alias for Brian Estes. Best channel: LinkedIn DM or personal site brian-estes.com contact form.",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/brianestes32/",
       "contact_person": "Brian Estes",
@@ -1782,7 +1782,7 @@
       "location": "Denver, CO, USA",
       "region": "North America",
       "category": "Others",
-      "notes": "CFP® and co-founder/CCO of Enclave Digital Wealth (Denver, SEC-registered), a new crypto-focused RIA. Also co-founder of Interaxis (crypto education platform for financial advisors; 12K+ YouTube subscribers). Authors on CoinDesk. Consensus 2025 speaker. Co-launched PlannerDAO (first decentralized community for financial advisors). 12+ years in financial services; previously built his own RIA from scratch. Email found via Hunter (score 95, verification status unknown — likely deliverable). Uses Protocol Wealth (parent RIA) rather than the new Enclave Digital Wealth domain.",
+      "notes": "CFP\u00ae and co-founder/CCO of Enclave Digital Wealth (Denver, SEC-registered), a new crypto-focused RIA. Also co-founder of Interaxis (crypto education platform for financial advisors; 12K+ YouTube subscribers). Authors on CoinDesk. Consensus 2025 speaker. Co-launched PlannerDAO (first decentralized community for financial advisors). 12+ years in financial services; previously built his own RIA from scratch. Email found via Hunter (score 95, verification status unknown \u2014 likely deliverable). Uses Protocol Wealth (parent RIA) rather than the new Enclave Digital Wealth domain.",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/in/adamblumberg",
       "contact_person": "Adam Blumberg",
@@ -1799,7 +1799,7 @@
       "location": "Luxembourg",
       "region": "Europe",
       "category": "Family Offices",
-      "notes": "Head of Direct Deals at NOIA Capital — a Luxembourg-based MFO regulated by CSSF (Luxembourg), FSMA (Belgium), and VARA (UAE), with an explicit NOIA Digital Assets fund and a growth-capital / digital-asset mandate. Small team (~8 employees per mid-2024 data). Sits alongside CIO Muhammed Yesilhark on the direct investment side — the right layer to target for fund manager introductions. Email verified via Hunter Email-Verifier (score 100, status valid/deliverable). Also confirmed via WebSearch.",
+      "notes": "Head of Direct Deals at NOIA Capital \u2014 a Luxembourg-based MFO regulated by CSSF (Luxembourg), FSMA (Belgium), and VARA (UAE), with an explicit NOIA Digital Assets fund and a growth-capital / digital-asset mandate. Small team (~8 employees per mid-2024 data). Sits alongside CIO Muhammed Yesilhark on the direct investment side \u2014 the right layer to target for fund manager introductions. Email verified via Hunter Email-Verifier (score 100, status valid/deliverable). Also confirmed via WebSearch.",
       "source": "WebSearch LinkedIn",
       "linkedin": "https://www.linkedin.com/company/noia-capital",
       "contact_person": "Nicolas Vassaux",
@@ -1807,7 +1807,7 @@
       "id": 322,
       "date_added": "2026-04-09",
       "aum_estimate": "$300M",
-      "linked_contacts": "Muhammed Yesilhark [LinkedIn: https://www.linkedin.com/in/muhammed-yesilhark-b089996/] — Chief Investment Officer at NOIA Capital (Luxembourg MFO with NOIA Digital Assets fund; CSSF/FSMA/VARA regulated)"
+      "linked_contacts": "Muhammed Yesilhark [LinkedIn: https://www.linkedin.com/in/muhammed-yesilhark-b089996/] \u2014 Chief Investment Officer at NOIA Capital (Luxembourg MFO with NOIA Digital Assets fund; CSSF/FSMA/VARA regulated)"
     },
     {
       "name": "Rosemary Sagar",
@@ -1876,7 +1876,7 @@
       "date_added": "2026-04-10",
       "id": 328,
       "aum_estimate": "$500M",
-      "linked_contacts": "Eric Zhu — CFO of HashKey Capital"
+      "linked_contacts": "Eric Zhu \u2014 CFO of HashKey Capital"
     },
     {
       "name": "Alex Tapscott",
@@ -1911,7 +1911,7 @@
       "date_added": "2026-04-10",
       "id": 331,
       "aum_estimate": "$14B",
-      "linked_contacts": "Billy Daly — Group Chief Investment Officer at MBS Global Investments ($14B AUM); Franck Lopez — Chief Investment Officer at MBS Global Investments ($14B AUM)"
+      "linked_contacts": "Billy Daly \u2014 Group Chief Investment Officer at MBS Global Investments ($14B AUM); Franck Lopez \u2014 Chief Investment Officer at MBS Global Investments ($14B AUM)"
     },
     {
       "name": "Hussain Sajwani",
@@ -1946,7 +1946,7 @@
       "date_added": "2026-04-10",
       "id": 334,
       "aum_estimate": "$10B",
-      "linked_contacts": "Sandip Bhatt — CIO at DICO Investments, the family office diversification arm of DAMAC Group ($10B AUM)"
+      "linked_contacts": "Sandip Bhatt \u2014 CIO at DICO Investments, the family office diversification arm of DAMAC Group ($10B AUM)"
     },
     {
       "name": "Darius Sit",
@@ -1964,7 +1964,7 @@
       "date_added": "2026-04-10",
       "id": 335,
       "aum_estimate": "$30M",
-      "linked_contacts": "Tom Dunleavy — Head of Venture at Varys Capital, CFA & CAIA"
+      "linked_contacts": "Tom Dunleavy \u2014 Head of Venture at Varys Capital, CFA & CAIA"
     },
     {
       "name": "Wassim Dbouk",
@@ -2050,7 +2050,7 @@
       "date_added": "2026-04-10",
       "id": 344,
       "aum_estimate": "$83B",
-      "linked_contacts": "Ghada Abdelkader — SVP at Crescent Enterprises (Jafar family, UAE)"
+      "linked_contacts": "Ghada Abdelkader \u2014 SVP at Crescent Enterprises (Jafar family, UAE)"
     },
     {
       "name": "Syed Basar Shueb",
@@ -2061,7 +2061,7 @@
       "region": "Middle East",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "CEO of International Holding Company (IHC), overseeing 2PointZero — a $27B subsidiary with explicit Digital & Crypto investment focus. Owns 85% of Citadel Mining (Bitcoin mining). Five investment sectors including Finance, Tech/AI, Mining, Digital/Crypto.",
+      "notes": "CEO of International Holding Company (IHC), overseeing 2PointZero \u2014 a $27B subsidiary with explicit Digital & Crypto investment focus. Owns 85% of Citadel Mining (Bitcoin mining). Five investment sectors including Finance, Tech/AI, Mining, Digital/Crypto.",
       "source": "WebSearch - The National, Bloomberg, BeInCrypto",
       "linkedin": "https://www.linkedin.com/in/syed-basar-shueb-uae/",
       "contact_person": "Syed Basar Shueb",
@@ -2078,7 +2078,7 @@
       "region": "Asia",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "Founder & CEO of LionRock Capital, a Singapore SFO. Ex-TPG-Axon co-founder, ex-Goldman Sachs (1995-2004). Endowment-style approach — invests in highest quality franchises, management teams and funds across asset classes and cycles.",
+      "notes": "Founder & CEO of LionRock Capital, a Singapore SFO. Ex-TPG-Axon co-founder, ex-Goldman Sachs (1995-2004). Endowment-style approach \u2014 invests in highest quality franchises, management teams and funds across asset classes and cycles.",
       "source": "WebSearch - LionRock Capital website, Bloomberg",
       "linkedin": "",
       "contact_person": "Hari Kumar",
@@ -2153,7 +2153,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
       "id": 350,
-      "linked_contacts": "Rajkumar Khatri — Head of Investment Operations at Smile Group (Singapore FO/venture platform)"
+      "linked_contacts": "Rajkumar Khatri \u2014 Head of Investment Operations at Smile Group (Singapore FO/venture platform)"
     },
     {
       "name": "Abubaker Al Khoori",
@@ -2198,14 +2198,14 @@
       "region": "Middle East",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "CEO of Tamasuk Al Rajhi, family office of the late Sheikh Saleh Abdul Aziz Al Rajhi (Islamic banking pioneer). Led by Chairman Abdulaziz Saleh Al-Rajhi (30s). Riyadh-based. Embraces opportunities across all asset classes — breaks from traditional Saudi FO model.",
+      "notes": "CEO of Tamasuk Al Rajhi, family office of the late Sheikh Saleh Abdul Aziz Al Rajhi (Islamic banking pioneer). Led by Chairman Abdulaziz Saleh Al-Rajhi (30s). Riyadh-based. Embraces opportunities across all asset classes \u2014 breaks from traditional Saudi FO model.",
       "source": "WebSearch - Tamasuk website, Institutional Investor, Crunchbase",
       "linkedin": "https://www.linkedin.com/in/maher-al-mhawes-139581a1/",
       "contact_person": "Mohammad Shahid Motan",
       "date_added": "2026-04-10",
       "aum_estimate": "$2B",
       "id": 353,
-      "linked_contacts": "Abdulaziz Saleh Al-Rajhi — Chairman of Tamasuk Al Rajhi (Riyadh FO); Maher Al-Mhawes [LinkedIn: https://www.linkedin.com/in/maher-al-mhawes-139581a1/] — Senior team member at Tamasuk Al Rajhi, the Riyadh-based Al Rajhi family office"
+      "linked_contacts": "Abdulaziz Saleh Al-Rajhi \u2014 Chairman of Tamasuk Al Rajhi (Riyadh FO); Maher Al-Mhawes [LinkedIn: https://www.linkedin.com/in/maher-al-mhawes-139581a1/] \u2014 Senior team member at Tamasuk Al Rajhi, the Riyadh-based Al Rajhi family office"
     },
     {
       "name": "Mark Daher",
@@ -2223,7 +2223,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
       "id": 355,
-      "linked_contacts": "Michel Daher — Founder of Daher Investments (DIFC)"
+      "linked_contacts": "Michel Daher \u2014 Founder of Daher Investments (DIFC)"
     },
     {
       "name": "Talal Ibrahim Al Maimand",
@@ -2285,14 +2285,14 @@
       "region": "Asia",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "CEO & CIO of Tsao Family Office, a Singapore SFO est. 2016. Ex-Goldman Sachs, ex-Deutsche Bank. Philosophy: 'Investing to Make Things Better' — ESG/impact focus. Co-investments, funds of funds, PE, public equities. Active in Africa and Asia.",
+      "notes": "CEO & CIO of Tsao Family Office, a Singapore SFO est. 2016. Ex-Goldman Sachs, ex-Deutsche Bank. Philosophy: 'Investing to Make Things Better' \u2014 ESG/impact focus. Co-investments, funds of funds, PE, public equities. Active in Africa and Asia.",
       "source": "WebSearch - Tsao Family Office website, Preqin, Hubbis",
       "linkedin": "https://www.linkedin.com/in/convexity/",
       "contact_person": "Bryan Goh",
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
       "id": 366,
-      "linked_contacts": "Leslie Lim — Deputy CIO at Tsao Family Office; Diana Watson — Head of Sustainability and Impact Investment at Tsao Family Office; Geraldine Ong — Head of Real Estate at Tsao Family Office"
+      "linked_contacts": "Leslie Lim \u2014 Deputy CIO at Tsao Family Office; Diana Watson \u2014 Head of Sustainability and Impact Investment at Tsao Family Office; Geraldine Ong \u2014 Head of Real Estate at Tsao Family Office"
     },
     {
       "name": "Victor Sassoon",
@@ -2310,7 +2310,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$300M",
       "id": 367,
-      "linked_contacts": "Claire Benjamin [LinkedIn: https://www.linkedin.com/in/claire-benjamin-588370b3/] — Team member at Sassoon Investment Corporation (SassCorp)"
+      "linked_contacts": "Claire Benjamin [LinkedIn: https://www.linkedin.com/in/claire-benjamin-588370b3/] \u2014 Team member at Sassoon Investment Corporation (SassCorp)"
     },
     {
       "name": "Vinod Nair",
@@ -2362,7 +2362,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
       "id": 370,
-      "linked_contacts": "Steve Knabl — Managing Partner at WMA"
+      "linked_contacts": "Steve Knabl \u2014 Managing Partner at WMA"
     },
     {
       "name": "Kevin Zhang",
@@ -2373,7 +2373,7 @@
       "region": "Asia",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "Founder & CIO of Hereditas Capital, HK family office est. 2018. Former Goldman Sachs MD — headed Asian fixed income sales, China financing group, Asian Special Situations. Co-founded Ascendent Capital (China PE). Yale MBA. Co-chairs Yale SoM Greater China Board.",
+      "notes": "Founder & CIO of Hereditas Capital, HK family office est. 2018. Former Goldman Sachs MD \u2014 headed Asian fixed income sales, China financing group, Asian Special Situations. Co-founded Ascendent Capital (China PE). Yale MBA. Co-chairs Yale SoM Greater China Board.",
       "source": "WebSearch - LinkedIn, Preqin, PitchBook, Topio Networks",
       "linkedin": "https://hk.linkedin.com/in/kevin-zhang-19ba25186",
       "contact_person": "Kevin Zhang",
@@ -2414,7 +2414,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$800M",
       "id": 374,
-      "linked_contacts": "Yugi Lee — Co-Founder of Blackhorn Wealth Management, HK MFO est"
+      "linked_contacts": "Yugi Lee \u2014 Co-Founder of Blackhorn Wealth Management, HK MFO est"
     },
     {
       "name": "Andy Chen",
@@ -2449,7 +2449,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$800M",
       "id": 378,
-      "linked_contacts": "Walid Hizaoui [LinkedIn: https://www.linkedin.com/in/walid-hizaoui-b2442237/] — Group Chief Strategy Officer at Gargash Group"
+      "linked_contacts": "Walid Hizaoui [LinkedIn: https://www.linkedin.com/in/walid-hizaoui-b2442237/] \u2014 Group Chief Strategy Officer at Gargash Group"
     },
     {
       "name": "Nirav Shah",
@@ -2518,7 +2518,7 @@
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
       "id": 383,
-      "linked_contacts": "Rayan Sleem — Authorized individual at The Family Office Company BSC (c) in DIFC; Stuti Agarwal — Authorized individual at The Family Office Company BSC (c) in DIFC"
+      "linked_contacts": "Rayan Sleem \u2014 Authorized individual at The Family Office Company BSC (c) in DIFC; Stuti Agarwal \u2014 Authorized individual at The Family Office Company BSC (c) in DIFC"
     },
     {
       "name": "Ziyad Alajlan",
@@ -2620,7 +2620,7 @@
       "contact_person": "Jonathan Lo",
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
-      "linked_contacts": "Vincent Au — CIO & Managing Director; Scott Yong (CFA) — Associate Director, fund analysis [LinkedIn: linkedin.com/in/dunheyong/]; Dicken Sin (CFA) — Associate Director, investment research [LinkedIn: linkedin.com/in/dicken-sin-26773bb4/]",
+      "linked_contacts": "Vincent Au \u2014 CIO & Managing Director; Scott Yong (CFA) \u2014 Associate Director, fund analysis [LinkedIn: linkedin.com/in/dunheyong/]; Dicken Sin (CFA) \u2014 Associate Director, investment research [LinkedIn: linkedin.com/in/dicken-sin-26773bb4/]",
       "id": 395
     },
     {
@@ -2638,7 +2638,7 @@
       "contact_person": "Kenny Ho",
       "date_added": "2026-04-10",
       "aum_estimate": "$800M",
-      "linked_contacts": "Sam Rhee — CIO, shapes research, portfolio mandates and discretionary offerings",
+      "linked_contacts": "Sam Rhee \u2014 CIO, shapes research, portfolio mandates and discretionary offerings",
       "id": 396
     },
     {
@@ -2701,13 +2701,13 @@
       "region": "Asia",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "Principal of Rumah Group, a Singapore SFO for the Stanley Tan family. Investment strategy: oceans, transport-logistics, and built space — focused on decarbonisation. Director of Rumah Foundation (philanthropy). Nearly 10 years marine conservation experience in SE Asia. Impact-first allocator.",
+      "notes": "Principal of Rumah Group, a Singapore SFO for the Stanley Tan family. Investment strategy: oceans, transport-logistics, and built space \u2014 focused on decarbonisation. Director of Rumah Foundation (philanthropy). Nearly 10 years marine conservation experience in SE Asia. Impact-first allocator.",
       "source": "WebSearch - Rumah Group website, AsianInvestor, SWF Institute",
       "linkedin": "",
       "contact_person": "Kathlyn Tan",
       "date_added": "2026-04-10",
       "aum_estimate": "$300M",
-      "linked_contacts": "Stanley Tan — Founder; Thomas Riber Knudsen — Director, 30 years global logistics",
+      "linked_contacts": "Stanley Tan \u2014 Founder; Thomas Riber Knudsen \u2014 Director, 30 years global logistics",
       "id": 400
     },
     {
@@ -2810,7 +2810,7 @@
       "contact_person": "Turki AlRajhi",
       "date_added": "2026-04-10",
       "aum_estimate": "$800M",
-      "linked_contacts": "Muhammad Asif Seemab — Managing Director, 18+ years financial services",
+      "linked_contacts": "Muhammad Asif Seemab \u2014 Managing Director, 18+ years financial services",
       "id": 406
     },
     {
@@ -2828,7 +2828,7 @@
       "contact_person": "Augostino Sfeir",
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
-      "linked_contacts": "Zahra Khorasani — Group CEO; Raza Hassan — Group Managing Director",
+      "linked_contacts": "Zahra Khorasani \u2014 Group CEO; Raza Hassan \u2014 Group Managing Director",
       "id": 407
     },
     {
@@ -2863,7 +2863,7 @@
       "contact_person": "Helen Zhu",
       "date_added": "2026-04-10",
       "aum_estimate": "$800M",
-      "linked_contacts": "Charles Fang — Director of Public Investment; Janet Hung — COO",
+      "linked_contacts": "Charles Fang \u2014 Director of Public Investment; Janet Hung \u2014 COO",
       "id": 409
     },
     {
@@ -2875,7 +2875,7 @@
       "region": "Asia",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "Asian-based multi-family office providing comprehensive, bespoke family office services to UHNW families, trusts, foundations and investors worldwide. MFO allocator across traditional and alternative asset classes. Dual SG/HK presence — gateway for Asia-focused fund managers seeking family office capital.",
+      "notes": "Asian-based multi-family office providing comprehensive, bespoke family office services to UHNW families, trusts, foundations and investors worldwide. MFO allocator across traditional and alternative asset classes. Dual SG/HK presence \u2014 gateway for Asia-focused fund managers seeking family office capital.",
       "source": "WebSearch - Aglaia website",
       "linkedin": "",
       "contact_person": "",
@@ -2933,7 +2933,7 @@
       "contact_person": "Ekta Tolani",
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
-      "linked_contacts": "Prince Khaled bin Alwaleed — Founder of KBW Ventures, Saudi royal, plant-based and sustainability investor"
+      "linked_contacts": "Prince Khaled bin Alwaleed \u2014 Founder of KBW Ventures, Saudi royal, plant-based and sustainability investor"
     },
     {
       "id": 414,
@@ -2951,7 +2951,7 @@
       "contact_person": "Salvatore Lavallo",
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
-      "linked_contacts": "Aaron Weaver — Co-head at Apeiron Investment Group; Christian Angermayer — Founder, serial entrepreneur and investor"
+      "linked_contacts": "Aaron Weaver \u2014 Co-head at Apeiron Investment Group; Christian Angermayer \u2014 Founder, serial entrepreneur and investor"
     },
     {
       "id": 415,
@@ -3003,7 +3003,7 @@
       "contact_person": "Jason Smith",
       "date_added": "2026-04-10",
       "aum_estimate": "$5B",
-      "linked_contacts": "Mamoun Askari — CEO of Hasma Capital (ex-Investcorp MD); Alexander Godwin — Director (returned 2025); Thomas Fitzmaurice — Private markets (ex-Macdoch/Murdoch FO)"
+      "linked_contacts": "Mamoun Askari \u2014 CEO of Hasma Capital (ex-Investcorp MD); Alexander Godwin \u2014 Director (returned 2025); Thomas Fitzmaurice \u2014 Private markets (ex-Macdoch/Murdoch FO)"
     },
     {
       "id": 418,
@@ -3021,7 +3021,7 @@
       "contact_person": "Rai Rummaan Kharal",
       "date_added": "2026-04-10",
       "aum_estimate": "$500M",
-      "linked_contacts": "Haroon Tufail — Executive Director at Golden Equator Wealth (ex-Credit Suisse PB); Grace Lim — Director, Family Office Advisor"
+      "linked_contacts": "Haroon Tufail \u2014 Executive Director at Golden Equator Wealth (ex-Credit Suisse PB); Grace Lim \u2014 Director, Family Office Advisor"
     },
     {
       "id": 421,
@@ -3073,7 +3073,7 @@
       "contact_person": "Jehan Chu",
       "date_added": "2026-04-10",
       "aum_estimate": "$150M",
-      "linked_contacts": "Lawrence Chu — Co-founder of Kenetic"
+      "linked_contacts": "Lawrence Chu \u2014 Co-founder of Kenetic"
     },
     {
       "id": 425,
@@ -3091,7 +3091,7 @@
       "contact_person": "Benedict Ho",
       "date_added": "2026-04-10",
       "aum_estimate": "$100M",
-      "linked_contacts": "Michael Wong — Co-founder of MaiCapital (Stanford alum, finance and tech)"
+      "linked_contacts": "Michael Wong \u2014 Co-founder of MaiCapital (Stanford alum, finance and tech)"
     },
     {
       "id": 426,
@@ -3109,7 +3109,7 @@
       "contact_person": "Kaleem",
       "date_added": "2026-04-10",
       "aum_estimate": "$30M",
-      "linked_contacts": "Alex — Co-founder, ex-single family office (crypto + trad portfolios), co-founded Llama Brothers; Daniel — managed PE/VC portfolio for Singapore FO; Jack — trad finance and tech sales background"
+      "linked_contacts": "Alex \u2014 Co-founder, ex-single family office (crypto + trad portfolios), co-founded Llama Brothers; Daniel \u2014 managed PE/VC portfolio for Singapore FO; Jack \u2014 trad finance and tech sales background"
     },
     {
       "id": 427,
@@ -3274,7 +3274,7 @@
       "region": "Asia",
       "category": "High Net Worth Individuals",
       "segment": "High Net Worth Individuals",
-      "notes": "Co-Founder and CEO of Kyber Network (decentralized liquidity protocol, est. 2017). Founder of Caliber (Web3 venture builder, 2023). Individual angel investor with 11 investments in blockchain/fintech — 1 unicorn (1inch). PhD in Computer Science from NUS. Technology Advisor at Signum Capital. Deep crypto-native since 2014.",
+      "notes": "Co-Founder and CEO of Kyber Network (decentralized liquidity protocol, est. 2017). Founder of Caliber (Web3 venture builder, 2023). Individual angel investor with 11 investments in blockchain/fintech \u2014 1 unicorn (1inch). PhD in Computer Science from NUS. Technology Advisor at Signum Capital. Deep crypto-native since 2014.",
       "source": "WebSearch - Crunchbase, PitchBook, Sygnum Bank",
       "linkedin": "https://sg.linkedin.com/in/loiluu",
       "contact_person": "Loi Luu",
@@ -3348,7 +3348,7 @@
       "contact_person": "Amy Lee",
       "date_added": "2026-04-10",
       "aum_estimate": "$300M",
-      "linked_contacts": "Sherwin Koh — Co-Head, Whampoa Digital; Jeffrey Ma — Co-CIO Whampoa Digital (ex-Huobi Global Head of M&A, ex-Binance); Peter Huo — Co-CIO Whampoa Digital (ex-Binance Labs Executive Director)"
+      "linked_contacts": "Sherwin Koh \u2014 Co-Head, Whampoa Digital; Jeffrey Ma \u2014 Co-CIO Whampoa Digital (ex-Huobi Global Head of M&A, ex-Binance); Peter Huo \u2014 Co-CIO Whampoa Digital (ex-Binance Labs Executive Director)"
     },
     {
       "id": 445,
@@ -3366,7 +3366,7 @@
       "contact_person": "Ahmed Nasser Al Nowais",
       "date_added": "2026-04-10",
       "aum_estimate": "$200M",
-      "linked_contacts": "Kareem Anabtawi — Co-Founder and Partner at Annex Investments"
+      "linked_contacts": "Kareem Anabtawi \u2014 Co-Founder and Partner at Annex Investments"
     },
     {
       "id": 446,
@@ -3384,7 +3384,7 @@
       "contact_person": "Shukri Al Braik",
       "date_added": "2026-04-10",
       "aum_estimate": "$250M",
-      "linked_contacts": "Saleh Al Braik — Managing Director at Al Braik Investments"
+      "linked_contacts": "Saleh Al Braik \u2014 Managing Director at Al Braik Investments"
     },
     {
       "id": 447,
@@ -3402,7 +3402,7 @@
       "contact_person": "Sara Alagil",
       "date_added": "2026-04-10",
       "aum_estimate": "$350M",
-      "linked_contacts": "Abdulrahman AlAgil — Commercial Real Estate Analyst at Jarir Investments; Muhammad Alagil — Co-founder and Chairman"
+      "linked_contacts": "Abdulrahman AlAgil \u2014 Commercial Real Estate Analyst at Jarir Investments; Muhammad Alagil \u2014 Co-founder and Chairman"
     },
     {
       "id": 448,
@@ -3431,7 +3431,7 @@
       "region": "Middle East",
       "category": "Family Offices",
       "segment": "Family Offices",
-      "notes": "CEO and Board Member of Alsharif Group Holding (ASG), a Jeddah-based SFO of the Al-Sharif family. Founded 1980. SFO arm focuses on technology, green energy, hospitality, and wealth investments — distinct from the group's EPC operations. Confirmed SFO by Altss LP intelligence platform. Strong alignment with tech and renewables.",
+      "notes": "CEO and Board Member of Alsharif Group Holding (ASG), a Jeddah-based SFO of the Al-Sharif family. Founded 1980. SFO arm focuses on technology, green energy, hospitality, and wealth investments \u2014 distinct from the group's EPC operations. Confirmed SFO by Altss LP intelligence platform. Strong alignment with tech and renewables.",
       "source": "WebSearch - Altss, Alsharif website",
       "linkedin": "",
       "contact_person": "Nawaf Al-Sharif",
@@ -3471,7 +3471,7 @@
       "contact_person": "Greg Galton",
       "date_added": "2026-04-10",
       "aum_estimate": "$150M",
-      "linked_contacts": "Deryck Graham — CEO and Founder of Portal Asset Management"
+      "linked_contacts": "Deryck Graham \u2014 CEO and Founder of Portal Asset Management"
     },
     {
       "id": 452,
@@ -3534,7 +3534,7 @@
       "region": "Middle East",
       "category": "High Net Worth Individuals",
       "segment": "High Net Worth Individuals",
-      "notes": "Co-founded Careem, acquired by Uber for $3.1B in 2020 — the largest tech exit in MENA history. Now angel investing personally in fintech and enterprise startups. Active on boards including Bupa Arabia and MonshaatSA. One of Saudi Arabia's most successful tech entrepreneurs turned individual allocator.",
+      "notes": "Co-founded Careem, acquired by Uber for $3.1B in 2020 \u2014 the largest tech exit in MENA history. Now angel investing personally in fintech and enterprise startups. Active on boards including Bupa Arabia and MonshaatSA. One of Saudi Arabia's most successful tech entrepreneurs turned individual allocator.",
       "source": "WebSearch - Crunchbase, Tracxn, Rasmal",
       "linkedin": "https://www.linkedin.com/in/abdullaelyas/",
       "contact_person": "Abdulla Elyas",
@@ -3603,7 +3603,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "Family Offices",
-      "notes": "CEO of SEED Group, the commercial arm of the Private Office of Sheikh Saeed. Active blockchain investor — partnered with Fantom Foundation, Liquefy, CoinCorner, INVAO. Selects one leading blockchain company per vertical as exclusive partner. Diversified holdings across 12+ countries.",
+      "notes": "CEO of SEED Group, the commercial arm of the Private Office of Sheikh Saeed. Active blockchain investor \u2014 partnered with Fantom Foundation, Liquefy, CoinCorner, INVAO. Selects one leading blockchain company per vertical as exclusive partner. Diversified holdings across 12+ countries.",
       "source": "Web Search (seedgroup.com)",
       "linkedin": "https://www.linkedin.com/in/hisham-al-gurg-87aa5410/",
       "contact_person": "",
@@ -3639,7 +3639,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "Family Offices",
-      "notes": "CEO, Bugshan Investment Company — investment arm of Ahmed Salem Bugshan Group (est. 1923). Invested in ArabianChain (public blockchain). Portfolio spans PE, real estate, money markets. Investment arm since 2015, aligned with Vision 2030 digital ambitions. One of the largest conglomerates in MENA.",
+      "notes": "CEO, Bugshan Investment Company \u2014 investment arm of Ahmed Salem Bugshan Group (est. 1923). Invested in ArabianChain (public blockchain). Portfolio spans PE, real estate, money markets. Investment arm since 2015, aligned with Vision 2030 digital ambitions. One of the largest conglomerates in MENA.",
       "source": "Web Search (altss.com, swfinstitute.org)",
       "linkedin": "https://www.linkedin.com/company/bugshan-investment-company-limited",
       "contact_person": "",
@@ -3675,7 +3675,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "Co-Founder & CEO APAC. Manages Digital Asset Multi-Manager Fund (DAMMF) — a true crypto fund-of-funds investing across established and emerging crypto hedge fund managers. 5-year track record. Distributed via Moomoo Singapore to accredited investors. Team from Blackrock, Goldman Sachs, UBS backgrounds.",
+      "notes": "Co-Founder & CEO APAC. Manages Digital Asset Multi-Manager Fund (DAMMF) \u2014 a true crypto fund-of-funds investing across established and emerging crypto hedge fund managers. 5-year track record. Distributed via Moomoo Singapore to accredited investors. Team from Blackrock, Goldman Sachs, UBS backgrounds.",
       "source": "Web Search (sygnum.com)",
       "linkedin": "https://www.linkedin.com/in/gerald-goh-2a75b541/",
       "contact_person": "",
@@ -3693,13 +3693,13 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "CEO. Launched ADAP (AltNovel Digital Access Portfolio) with 3iQ — the Middle East's first multi-strategy digital assets fund. FSRA-regulated in ADGM. Multi-strategy portfolio of alpha-oriented digital asset hedge funds. Founded AltNovel in 2023.",
+      "notes": "CEO. Launched ADAP (AltNovel Digital Access Portfolio) with 3iQ \u2014 the Middle East's first multi-strategy digital assets fund. FSRA-regulated in ADGM. Multi-strategy portfolio of alpha-oriented digital asset hedge funds. Founded AltNovel in 2023.",
       "source": "Web Search (prnewswire.com, 3iq.io)",
       "linkedin": "",
       "contact_person": "",
       "date_added": "2026-04-13",
       "aum_estimate": "Not disclosed (multi-strategy digital asset fund)",
-      "linked_contacts": "Pascal St-Jean (President & CEO, 3iQ — fund partner)"
+      "linked_contacts": "Pascal St-Jean (President & CEO, 3iQ \u2014 fund partner)"
     },
     {
       "id": 465,
@@ -3747,7 +3747,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "Managing Partner, Asia. Multi-strategy crypto fund manager — runs Frontier Fund (early-stage blockchain/DeFi/AI) and Market Neutral Fund. CMS-licensed via Pilgrim Partners Asia in Singapore. Team has 25+ years crypto experience, 85+ years in VC/fund management. Expanding with family offices and wealth managers in Asia.",
+      "notes": "Managing Partner, Asia. Multi-strategy crypto fund manager \u2014 runs Frontier Fund (early-stage blockchain/DeFi/AI) and Market Neutral Fund. CMS-licensed via Pilgrim Partners Asia in Singapore. Team has 25+ years crypto experience, 85+ years in VC/fund management. Expanding with family offices and wealth managers in Asia.",
       "source": "Web Search (apollocrypto.com, hubbis.com)",
       "linkedin": "",
       "contact_person": "",
@@ -3783,7 +3783,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Known as 'Discus Fish.' CEO & co-founder of Cobo (crypto custody platform, $40M Series B). Co-founded F2Pool, one of the world's largest mining pools. China's crypto pioneer since 2011 — introduced crypto to China with mining tutorials. Active angel investor in blockchain projects.",
+      "notes": "Known as 'Discus Fish.' CEO & co-founder of Cobo (crypto custody platform, $40M Series B). Co-founded F2Pool, one of the world's largest mining pools. China's crypto pioneer since 2011 \u2014 introduced crypto to China with mining tutorials. Active angel investor in blockchain projects.",
       "source": "Web Search (crunchbase.com, techcrunch.com)",
       "linkedin": "https://www.linkedin.com/in/shixing%E2%80%9Cdiscus-fish-mao-247695166/",
       "contact_person": "",
@@ -3837,7 +3837,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Partner at Infinity Ventures Crypto (IVC) — $70M Web3 VC fund investing in gaming, DeFi, AI, infrastructure. 200+ portfolio investments. From the Jiaravanon family (Charoen Pokphand Group, one of Asia's largest conglomerates). Also Director at Lightnet (blockchain payments). Chulalongkorn University.",
+      "notes": "Partner at Infinity Ventures Crypto (IVC) \u2014 $70M Web3 VC fund investing in gaming, DeFi, AI, infrastructure. 200+ portfolio investments. From the Jiaravanon family (Charoen Pokphand Group, one of Asia's largest conglomerates). Also Director at Lightnet (blockchain payments). Chulalongkorn University.",
       "source": "Web Search (crunchbase.com, signal.nfx.com)",
       "linkedin": "",
       "contact_person": "",
@@ -3873,7 +3873,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "CEO Singapore & Co-Founder. Crypto-native financial services firm — market making, quant trading, treasury management, venture funding. MAS Major Payment Institution license (in-principle). 20+ years traditional finance. Entered crypto 2014, launched JST 2018. Offices in NY, Singapore, Portugal.",
+      "notes": "CEO Singapore & Co-Founder. Crypto-native financial services firm \u2014 market making, quant trading, treasury management, venture funding. MAS Major Payment Institution license (in-principle). 20+ years traditional finance. Entered crypto 2014, launched JST 2018. Offices in NY, Singapore, Portugal.",
       "source": "Web Search (jstdigital.io, prnewswire.com)",
       "linkedin": "",
       "contact_person": "Scott Freeman (Co-Founder, US)",
@@ -3927,7 +3927,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "CEO & Co-Founder. Multi-manager, non-directional, multi-strategy crypto fund. Allocates to quant systematic traders — allocated $100M+ to quant crypto managers. UK FCA-authorized. Institutional clients include pension funds, endowments, family offices. Team from Goldman Sachs, JPMorgan backgrounds. Abu Dhabi presence (Brevan Howard ecosystem).",
+      "notes": "CEO & Co-Founder. Multi-manager, non-directional, multi-strategy crypto fund. Allocates to quant systematic traders \u2014 allocated $100M+ to quant crypto managers. UK FCA-authorized. Institutional clients include pension funds, endowments, family offices. Team from Goldman Sachs, JPMorgan backgrounds. Abu Dhabi presence (Brevan Howard ecosystem).",
       "source": "Web Search (nickel.digital, hedgeweek.com)",
       "linkedin": "https://www.linkedin.com/in/anatoly-crachilov",
       "contact_person": "",
@@ -4017,7 +4017,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "Family Offices",
-      "notes": "CIO of Aras Limited, a single Spanish family office based in Abu Dhabi (ADGM); manages investments across asset classes and sits on several boards; former GP at biotech VC Forepont Capital and Head of Alternatives at AG2R La Mondiale (€3B+ allocated); twice awarded French Investor of the Year in Hedge Funds",
+      "notes": "CIO of Aras Limited, a single Spanish family office based in Abu Dhabi (ADGM); manages investments across asset classes and sits on several boards; former GP at biotech VC Forepont Capital and Head of Alternatives at AG2R La Mondiale (\u20ac3B+ allocated); twice awarded French Investor of the Year in Hedge Funds",
       "source": "Web Search (https://ae.linkedin.com/in/julientizot)",
       "linkedin": "https://ae.linkedin.com/in/julientizot",
       "contact_person": "",
@@ -4053,7 +4053,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Dubai-born serial entrepreneur with 12+ years across hospitality, real estate, and crypto; joined family-owned investment conglomerate (hospitality, real estate, trading, manufacturing, construction); founded Ghaf Capital in 2019 — UAE's first locally-managed blockchain private investment firm with 90+ startup investments; personal wealth from family business and early crypto bets.",
+      "notes": "Dubai-born serial entrepreneur with 12+ years across hospitality, real estate, and crypto; joined family-owned investment conglomerate (hospitality, real estate, trading, manufacturing, construction); founded Ghaf Capital in 2019 \u2014 UAE's first locally-managed blockchain private investment firm with 90+ startup investments; personal wealth from family business and early crypto bets.",
       "source": "Web Search (https://ghafcapital.ae/team.html)",
       "linkedin": "https://www.linkedin.com/in/feras-al-sadek-9a44a371/",
       "contact_person": "",
@@ -4179,7 +4179,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "Venture Partner – Digital Assets at Further Ventures (Abu Dhabi), the integrated platform backed by Lunate and Mastercard that operates Further Fund of Funds (allocating to leading global venture and digital asset managers, including CoinFund and others); also Co-founder of Disruptive Knowledge, advising on DeFi and Web3; focus on fintech and digital asset innovation in MENA.",
+      "notes": "Venture Partner \u2013 Digital Assets at Further Ventures (Abu Dhabi), the integrated platform backed by Lunate and Mastercard that operates Further Fund of Funds (allocating to leading global venture and digital asset managers, including CoinFund and others); also Co-founder of Disruptive Knowledge, advising on DeFi and Web3; focus on fintech and digital asset innovation in MENA.",
       "source": "Web Search (https://signal.nfx.com/investors/john-ounjian)",
       "linkedin": "https://www.linkedin.com/in/john-o-8936b734/",
       "contact_person": "",
@@ -4521,7 +4521,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "Crypto Funds of Funds",
-      "notes": "Co-founder and Principal/Chairman of First Degree Global Asset Management (est. 2011), the MAS-licensed Singapore fund manager of Portal Digital Fund — Asia Pacific's #1 crypto fund of funds by Preqin. Portal allocates to 8-10 specialist crypto hedge fund managers. Previously Head of Global Fixed Income Product Asia Pacific at JPMorgan Asset Management. PhD in Finance from University of Rochester.",
+      "notes": "Co-founder and Principal/Chairman of First Degree Global Asset Management (est. 2011), the MAS-licensed Singapore fund manager of Portal Digital Fund \u2014 Asia Pacific's #1 crypto fund of funds by Preqin. Portal allocates to 8-10 specialist crypto hedge fund managers. Previously Head of Global Fixed Income Product Asia Pacific at JPMorgan Asset Management. PhD in Finance from University of Rochester.",
       "source": "Web Search (linkedin.com/in/stephen-fisher-7414b415, hedgefundsclub.com/archives/3351, firstdegree.asia)",
       "linkedin": "https://www.linkedin.com/in/stephen-fisher-7414b415",
       "contact_person": "",
@@ -5704,7 +5704,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Co-founder of PropertyGuru (acquired by EQT for ~$1.1B, Dec 2024). Active angel investor in 25+ startups since 2004. Stated blockchain and digital assets as key investment interest. Venture partner at Wavemaker Partners Singapore. Estimated net worth $30M–$80M post-exit.",
+      "notes": "Co-founder of PropertyGuru (acquired by EQT for ~$1.1B, Dec 2024). Active angel investor in 25+ startups since 2004. Stated blockchain and digital assets as key investment interest. Venture partner at Wavemaker Partners Singapore. Estimated net worth $30M\u2013$80M post-exit.",
       "source": "Web Search (https://sg.linkedin.com/in/stevemel)",
       "linkedin": "https://sg.linkedin.com/in/stevemel",
       "contact_person": "",
@@ -5740,7 +5740,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Former Singapore Nominated Member of Parliament. Serial entrepreneur across modeling, media, and EdTech (Chairman of listed ReTech Technology Co). Web3 Holdings FZE (Dubai) received provisional virtual asset license in 2022 for NFT and fan-token investments — first regulated Web3 holding company in Dubai. Active personal crypto investor.",
+      "notes": "Former Singapore Nominated Member of Parliament. Serial entrepreneur across modeling, media, and EdTech (Chairman of listed ReTech Technology Co). Web3 Holdings FZE (Dubai) received provisional virtual asset license in 2022 for NFT and fan-token investments \u2014 first regulated Web3 holding company in Dubai. Active personal crypto investor.",
       "source": "Web Search (https://www.crowdfundinsider.com/2022/05/191398-former-singapore-parliamentarian-calvin-cheng-gains-virtual-asset-license-in-dubai/)",
       "linkedin": "",
       "contact_person": "",
@@ -5776,7 +5776,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Early Bitcoin adopter (discovered Bitcoin Dec 2012 at age 16). Based in Dubai since 2010. Organiser of the Dubai Bitcoin Meetup since 2017. Speaker at Bitcoin MENA 2025. CEO of La Boulangerie by Vulpes. Likely accumulated significant personal Bitcoin wealth through early adoption — a grassroots Bitcoin HNWI in the UAE.",
+      "notes": "Early Bitcoin adopter (discovered Bitcoin Dec 2012 at age 16). Based in Dubai since 2010. Organiser of the Dubai Bitcoin Meetup since 2017. Speaker at Bitcoin MENA 2025. CEO of La Boulangerie by Vulpes. Likely accumulated significant personal Bitcoin wealth through early adoption \u2014 a grassroots Bitcoin HNWI in the UAE.",
       "source": "Web Search (https://mena.b.tc/speaker/adam-schneider---la-boulangerie-by-vulpes)",
       "linkedin": "https://www.linkedin.com/in/seccour/",
       "contact_person": "",
@@ -5956,7 +5956,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Carousell co-founder who stepped down in February 2024 after 11.5 years to explore new frontiers; explicitly cited web3 among areas of interest alongside AI/biotech and climate tech; wealth from Carousell (Singapore e-commerce unicorn valued at $1.1B, 1/3 co-founder); continues as board director and shareholder; non-crypto consumer marketplace background with clear web3 exploration signal—ideal managed fund prospect.",
+      "notes": "Carousell co-founder who stepped down in February 2024 after 11.5 years to explore new frontiers; explicitly cited web3 among areas of interest alongside AI/biotech and climate tech; wealth from Carousell (Singapore e-commerce unicorn valued at $1.1B, 1/3 co-founder); continues as board director and shareholder; non-crypto consumer marketplace background with clear web3 exploration signal\u2014ideal managed fund prospect.",
       "source": "Web Search (https://sg.finance.yahoo.com/news/carousell-co-founder-lucas-ngoo-031843387.html)",
       "linkedin": "https://sg.linkedin.com/in/lucasngoo",
       "contact_person": "",
@@ -5992,7 +5992,7 @@
       "region": "Middle East",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "Emirati serial entrepreneur and media personality; founder of Bukhash Brothers (UAE influencer marketing pioneer), CHALK (unisex hair salon lifestyle brand), #ABtalks (10M+ subscriber MENA talk show), and Not (So) Guilty (F&B concept); wealth from F&B, media, and consumer lifestyle businesses; prominent Emirati entrepreneur exploring new asset classes; high-profile Emirati profile with deep local network—non-crypto background makes him an ideal managed fund LP candidate.",
+      "notes": "Emirati serial entrepreneur and media personality; founder of Bukhash Brothers (UAE influencer marketing pioneer), CHALK (unisex hair salon lifestyle brand), #ABtalks (10M+ subscriber MENA talk show), and Not (So) Guilty (F&B concept); wealth from F&B, media, and consumer lifestyle businesses; prominent Emirati entrepreneur exploring new asset classes; high-profile Emirati profile with deep local network\u2014non-crypto background makes him an ideal managed fund LP candidate.",
       "source": "Web Search (https://www.entrepreneur.com/en-ae/starting-a-business/the-creative-concepts-of-emirati-serial-entrepreneur-anas/346432)",
       "linkedin": "https://www.linkedin.com/in/anasbukhash/",
       "contact_person": "",
@@ -6010,7 +6010,7 @@
       "region": "Asia",
       "category": "LP Target",
       "segment": "High Net Worth Individuals",
-      "notes": "HK veteran entrepreneur and cross-sector investor; former major shareholder of Yunfeng Financial Group (HKEX: 0376, Jack Ma-backed) which in 2025 added Bitcoin and Solana to its corporate treasury—strong proxy signal for personal crypto interest; formerly major shareholder of Concord New Energy (HKEX: 0182) and BOE Varitronix (HKEX: 0710); Deputy Chairman at Frontier Services Group (logistics); background spans logistics, media, financial services, renewable energy, and biotech; non-crypto wealth with clear digital asset exposure through investment network.",
+      "notes": "HK veteran entrepreneur and cross-sector investor; former major shareholder of Yunfeng Financial Group (HKEX: 0376, Jack Ma-backed) which in 2025 added Bitcoin and Solana to its corporate treasury\u2014strong proxy signal for personal crypto interest; formerly major shareholder of Concord New Energy (HKEX: 0182) and BOE Varitronix (HKEX: 0710); Deputy Chairman at Frontier Services Group (logistics); background spans logistics, media, financial services, renewable energy, and biotech; non-crypto wealth with clear digital asset exposure through investment network.",
       "source": "Web Search (https://bitcoinethereumnews.com/bitcoin/hong-kong-giant-yunfeng-financial-adds-bitcoin-and-solana-to-reserves/)",
       "linkedin": "https://www.neonglobal.com/en/dipl-team-member/ko-chun-shun-johnson/",
       "contact_person": "",
@@ -6103,6 +6103,96 @@
       "notes": "Dubai-based HNWI and active member of Emirates Angels investor network (UAE's leading angel investor group). Focuses on AI, fintech, and logistics startup investments; known for strategic and value-driven approach. Non-crypto background across logistics, fintech, and technology sectors; positioned as a UAE HNWI expanding into digital assets as part of a broader tech portfolio.",
       "source": "Web Search (https://mytablon.com/blog/list-of-top-20-angel-investors-in-dubai/)",
       "linkedin": "",
+      "contact_person": "",
+      "date_added": "2026-04-14",
+      "aum_estimate": "$5M-$30M",
+      "linked_contacts": ""
+    },
+    {
+      "id": 605,
+      "name": "Mikaal Abdulla",
+      "organization": "Individual Investor / BOOM (Hong Kong)",
+      "email": "",
+      "phone": "",
+      "location": "Hong Kong",
+      "region": "Asia",
+      "category": "LP Target",
+      "segment": "High Net Worth Individuals",
+      "notes": "Co-founder of 8 Securities (Hong Kong's first mobile-only broker and robo-advisor), sold to SoFi in 2020 after growing Asia's customer base 5x. Left SoFi in 2023 to acquire and run BOOM, recently licensed by the HK SFC to offer virtual assets to its affluent client base. Traditional fintech/wealthtech wealth now actively bridging into the digital assets space.",
+      "source": "Web Search (https://www.digfingroup.com/boom/)",
+      "linkedin": "https://www.linkedin.com/in/mikaalabdulla/",
+      "contact_person": "",
+      "date_added": "2026-04-14",
+      "aum_estimate": "$10M-$50M",
+      "linked_contacts": ""
+    },
+    {
+      "id": 606,
+      "name": "Kiren Tanna",
+      "organization": "Individual Investor / Una Brands (Singapore)",
+      "email": "",
+      "phone": "",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "LP Target",
+      "segment": "High Net Worth Individuals",
+      "notes": "Serial non-crypto tech entrepreneur: co-founder of Foodpanda (Asia's largest food delivery, acquired by Delivery Hero), ZEN Rooms (budget hotel aggregator), and Una Brands (e-commerce brand aggregator, raised $115M). Departed Una Brands CEO role in February 2025 to explore AI and consumer ventures. Angel investor in Singapore ecosystem. Classic exited founder now personally deploying capital.",
+      "source": "Web Search (https://e27.co/kiren-tanna-departs-una-brands-ceo-role-to-explore-ai-and-consumer-ventures-20250221/)",
+      "linkedin": "https://www.linkedin.com/in/kirentanna/",
+      "contact_person": "",
+      "date_added": "2026-04-14",
+      "aum_estimate": "$5M-$30M",
+      "linked_contacts": ""
+    },
+    {
+      "id": 607,
+      "name": "Joseph Phua",
+      "organization": "Turn Capital / Individual Investor (Singapore)",
+      "email": "",
+      "phone": "",
+      "location": "Singapore",
+      "region": "Asia",
+      "category": "LP Target",
+      "segment": "High Net Worth Individuals",
+      "notes": "Co-founder of 17LIVE Group (SGX-listed live streaming platform, 2023 IPO, largest individual shareholder) and Paktor (Asia's leading dating app). Founded Turn Capital in 2020 as personal family office making controlling acquisitions in consumer and tech companies. Wealth from social entertainment tech; has explored blockchain as investment class. Non-crypto primary identity with broad tech portfolio.",
+      "source": "Web Search (https://en.wikipedia.org/wiki/Joseph_Phua)",
+      "linkedin": "https://sg.linkedin.com/in/josephphua",
+      "contact_person": "",
+      "date_added": "2026-04-14",
+      "aum_estimate": "$20M-$100M",
+      "linked_contacts": ""
+    },
+    {
+      "id": 608,
+      "name": "Turki Al Rajhi",
+      "organization": "Al Rajhi Holdings / Individual Investor (Riyadh)",
+      "email": "",
+      "phone": "",
+      "location": "Riyadh, Saudi Arabia",
+      "region": "Middle East",
+      "category": "LP Target",
+      "segment": "High Net Worth Individuals",
+      "notes": "Partner at Al Rajhi Holdings, one of Saudi Arabia's largest diversified family conglomerates (construction, real estate, industrial, financial services). Heir of the Al Rajhi family, founders of Al Rajhi Bank (one of the world's largest Islamic banks). MBA from IMD. Angel investor in fashion and e-commerce startups. Classic family business HNWI with traditional wealth exploring alternatives and digital assets.",
+      "source": "Web Search (https://www.linkedin.com/in/turki-al-rajhi-a2b38622/)",
+      "linkedin": "https://www.linkedin.com/in/turki-al-rajhi-a2b38622/",
+      "contact_person": "",
+      "date_added": "2026-04-14",
+      "aum_estimate": "$50M-$500M",
+      "linked_contacts": ""
+    },
+    {
+      "id": 609,
+      "name": "Tarek Kabrit",
+      "organization": "Seez / Individual Investor (Dubai)",
+      "email": "",
+      "phone": "",
+      "location": "Dubai, UAE",
+      "region": "Middle East",
+      "category": "LP Target",
+      "segment": "High Net Worth Individuals",
+      "notes": "Co-founder of Dubai Angel Investors (DAI), the UAE's leading angel investor network, and CEO/co-founder of Seez (automotive AI platform). 20-year career in strategy consulting (Booz & Co.), investment banking (Deutsche Bank), and VC (Mubadala). Exited first startup in 2000. Active angel investor in SaaS, digital media, and consumer tech across MENA. Non-crypto background with deep MENA tech ecosystem ties.",
+      "source": "Web Search (https://www.strategyand.pwc.com/gx/en/alumni/featured-alumni/me/unscripted-tarek-kabrit.html)",
+      "linkedin": "https://www.linkedin.com/in/tarek-kabrit-b33a7a/",
       "contact_person": "",
       "date_added": "2026-04-14",
       "aum_estimate": "$5M-$30M",
