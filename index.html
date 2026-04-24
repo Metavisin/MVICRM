@@ -712,6 +712,49 @@
         .badge-tier1 { background: rgba(245,158,11,0.2); color: #fbbf24; font-weight: 600; }
         .badge-tier2 { background: rgba(59,130,246,0.15); color: #60a5fa; }
 
+        /* AUM type + website confidence badges (new) */
+        .tag-aum-type { display:inline-block; font-size:9px; text-transform:uppercase; letter-spacing:0.6px; padding:1px 5px; border-radius:3px; margin-left:6px; vertical-align:middle; font-weight:600; }
+        .tag-firm { background: rgba(0,229,160,0.1); color: #6ee7b7; }
+        .tag-net-worth { background: rgba(124,58,237,0.12); color: #c4b5fd; }
+        .tag-unknown { background: rgba(255,255,255,0.05); color: var(--text-muted); }
+        .tag-conf-low { background: rgba(239,68,68,0.12); color: #f87171; border:1px solid rgba(239,68,68,0.2); }
+        .tag-conf-high { background: rgba(16,185,129,0.1); color: #34d399; }
+
+        .aum-cell { display:inline-flex; flex-direction:column; align-items:flex-start; line-height:1.25; }
+        .aum-cell .aum-range { color: var(--accent); font-weight: 700; font-size: 12px; }
+        .aum-cell .aum-exact { color: var(--text-muted); font-size: 10px; margin-top: 1px; }
+        .aum-cell .aum-unknown { color: var(--text-muted); font-weight: 500; }
+
+        .company-links { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+        .company-link {
+            display:inline-flex; align-items:center; gap:5px;
+            padding: 4px 10px; font-size: 11px; font-weight: 500;
+            border: 1px solid var(--border); border-radius: 6px;
+            background: rgba(255,255,255,0.02); color: var(--text-secondary);
+            text-decoration: none; transition: all 0.15s;
+        }
+        .company-link:hover { background: var(--card-hover); color: var(--text); border-color: var(--accent-dim); }
+        .company-link svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+        .research-toggle {
+            background: none; border: 1px dashed var(--border); color: var(--text-muted);
+            padding: 6px 10px; font-size: 11px; border-radius: 6px; cursor: pointer;
+            width: 100%; text-align: left; margin-top: 6px; transition: all 0.15s;
+        }
+        .research-toggle:hover { color: var(--text-secondary); border-color: var(--accent-dim); }
+        .research-body {
+            display: none; margin-top: 6px; padding: 10px 12px; border-radius: 6px;
+            background: rgba(255,255,255,0.02); font-size: 11px; line-height: 1.55;
+            color: var(--text-secondary); border-left: 2px solid var(--accent-dim);
+        }
+        .research-body.open { display: block; }
+        .research-body a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        .research-body a:hover { text-decoration: underline; }
+        .research-body .rb-label { display:block; font-size:9px; letter-spacing:0.5px; text-transform:uppercase; color:var(--text-muted); margin-bottom:4px; margin-top:8px; }
+        .research-body .rb-label:first-child { margin-top:0; }
+
+        .title-line { font-size: 11px; color: var(--text-muted); font-style: italic; margin-bottom: 2px; }
+
         .email-link {
             color: var(--accent);
             font-size: 12px;
@@ -1326,6 +1369,18 @@
                     </div>
                     <div class="stat-value" id="statSegments" style="font-size:14px;">-</div>
                 </div>
+                <div class="stat-card" style="flex:1;">
+                    <div class="stat-label">AUM Coverage
+                        <svg class="spark"><polyline points="2,20 12,14 22,16 32,6 42,10 52,4 62,8" stroke="var(--accent)" opacity="0.5"/></svg>
+                    </div>
+                    <div class="stat-value" id="statAum" style="font-size:14px;">-</div>
+                </div>
+                <div class="stat-card" style="flex:1;">
+                    <div class="stat-label">Research Quality
+                        <svg class="spark"><polyline points="2,18 12,14 22,20 32,10 42,6 52,12 62,4" stroke="var(--accent)" opacity="0.5"/></svg>
+                    </div>
+                    <div class="stat-value" id="statResearch" style="font-size:14px;">-</div>
+                </div>
             </div>
 
             <!-- Table -->
@@ -1356,6 +1411,26 @@
                             <option value="meeting">Meeting Booked</option>
                             <option value="closed">Closed</option>
                             <option value="not_interested">Not Interested</option>
+                        </select>
+                        <select class="filter-select" id="aumFilter" onchange="filterTable()">
+                            <option value="">All AUM</option>
+                            <option value="__UNKNOWN__">Unknown</option>
+                            <option value="<$100M">&lt;$100M</option>
+                            <option value="$100M-$250M">$100M-$250M</option>
+                            <option value="$250M-$1B">$250M-$1B</option>
+                            <option value="$1B-$5B">$1B-$5B</option>
+                            <option value="$5B+">$5B+</option>
+                        </select>
+                        <select class="filter-select" id="aumTypeFilter" onchange="filterTable()">
+                            <option value="">AUM Type</option>
+                            <option value="firm_aum">Firm AUM</option>
+                            <option value="net_worth_est">Net Worth</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                        <select class="filter-select" id="websiteFilter" onchange="filterTable()">
+                            <option value="">Website</option>
+                            <option value="__HAS__">Has Website</option>
+                            <option value="__MISSING__">Not Found</option>
                         </select>
                         <div class="filter-search-wrap">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -1628,7 +1703,7 @@
             } catch (err) {
                 console.error('loadData error:', err);
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
+                    '<tr><td colspan="10" style="text-align:center;padding:40px;color:var(--text-muted)">Error loading data.json: ' + err.message + '</td></tr>';
             }
         }
 
@@ -1657,6 +1732,12 @@
             const segment = document.getElementById('segmentFilter').value;
             const statusEl = document.getElementById('statusFilter');
             const status = statusEl ? statusEl.value : '';
+            const aumEl = document.getElementById('aumFilter');
+            const aumRange = aumEl ? aumEl.value : '';
+            const aumTypeEl = document.getElementById('aumTypeFilter');
+            const aumType = aumTypeEl ? aumTypeEl.value : '';
+            const websiteEl = document.getElementById('websiteFilter');
+            const website = websiteEl ? websiteEl.value : '';
             const globalQ = document.getElementById('globalSearch').value.toLowerCase();
             const tableQ = document.getElementById('tableSearch').value.toLowerCase();
             const q = globalQ || tableQ;
@@ -1668,8 +1749,13 @@
                 else if (segment && c.segment !== segment) return false;
                 if (status === '__NONE__') { if (c.outreach_status) return false; }
                 else if (status && c.outreach_status !== status) return false;
+                if (aumRange === '__UNKNOWN__') { if (c.aum_range && c.aum_range.toLowerCase() !== 'unknown') return false; }
+                else if (aumRange && c.aum_range !== aumRange) return false;
+                if (aumType && (c.aum_type || '').toLowerCase() !== aumType) return false;
+                if (website === '__HAS__' && !(c.company_website && c.company_website.startsWith('http'))) return false;
+                if (website === '__MISSING__' && (c.website_confidence || '').toLowerCase() !== 'not_found') return false;
                 if (q) {
-                    const hay = [c.name, c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
+                    const hay = [c.name, c.title || '', c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
                     if (!hay.includes(q)) return false;
                 }
                 return true;
@@ -1710,6 +1796,41 @@
             return aum.replace(/\s*\(.*?\)/g, '').replace(/estimated/gi, '').replace(/personal net worth/gi, '').replace(/platform/gi, '').trim();
         }
 
+        // Prefer new aum_range, fall back to legacy aum_estimate
+        function displayAumRange(c) {
+            const r = (c.aum_range || '').trim();
+            if (r && r.toLowerCase() !== 'unknown') return r;
+            return shortAum(c.aum_estimate || '');
+        }
+        function aumTypeLabel(t) {
+            const map = { 'firm_aum': 'FIRM', 'net_worth_est': 'NET WORTH', 'unknown': '' };
+            return map[(t || '').toLowerCase()] || '';
+        }
+        function aumTypeClass(t) {
+            const map = { 'firm_aum': 'tag-firm', 'net_worth_est': 'tag-net-worth', 'unknown': 'tag-unknown' };
+            return map[(t || '').toLowerCase()] || 'tag-unknown';
+        }
+        function renderAumCell(c) {
+            const range = displayAumRange(c);
+            const hasRange = range && range !== 'N/A' && range.toLowerCase() !== 'unknown';
+            const exactRaw = c.aum_exact_usd_m;
+            const exactNum = exactRaw !== undefined && exactRaw !== null && exactRaw !== '' ? parseFloat(exactRaw) : null;
+            let exactFmt = '';
+            if (exactNum && !isNaN(exactNum)) {
+                if (exactNum >= 1000) exactFmt = '~$' + (exactNum/1000).toFixed(exactNum >= 10000 ? 0 : 1) + 'B';
+                else exactFmt = '~$' + Math.round(exactNum) + 'M';
+            }
+            const typeLbl = aumTypeLabel(c.aum_type);
+            const typeTag = typeLbl ? ' <span class="tag-aum-type ' + aumTypeClass(c.aum_type) + '">' + typeLbl + '</span>' : '';
+            if (!hasRange && !exactFmt) {
+                return '<span class="aum-unknown" style="font-size:12px;color:var(--text-muted);">—</span>';
+            }
+            return '<div class="aum-cell">' +
+                (hasRange ? '<span class="aum-range">' + escapeHtml(range) + typeTag + '</span>' : '') +
+                (exactFmt ? '<span class="aum-exact">' + escapeHtml(exactFmt) + '</span>' : '') +
+                '</div>';
+        }
+
         function renderTable() {
             const tbody = document.getElementById('tableBody');
             const noRes = document.getElementById('noResults');
@@ -1733,6 +1854,9 @@
 
                 const dateAdded = c.date_added || '';
 
+                const titleLine = c.title ? `<div class="title-line">${escapeHtml(c.title)}</div>` : '';
+                const aumTitle = [c.aum_range, c.aum_exact_usd_m ? '~$' + c.aum_exact_usd_m + 'M' : '', c.aum_type].filter(Boolean).join(' · ');
+
                 return `<tr class="${sel}" onclick="selectContact(${i})">
                     <td style="color:var(--text-secondary);font-size:12px;white-space:nowrap;">${escapeHtml(dateAdded)}</td>
                     <td>
@@ -1740,13 +1864,14 @@
                             <div class="avatar ${avatarCls}">${initials}</div>
                             <div>
                                 <div class="name-text">${escapeHtml(c.name)}${getNewBadge(c)}${c.outreach_status ? ' ' + getOutreachDot(c.outreach_status) : ''}</div>
+                                ${titleLine}
                                 <div class="org-text">${escapeHtml(c.organization)}${c.outreach_status ? ' <span style="font-size:10px;color:var(--text-muted);">' + getOutreachLabel(c.outreach_status) + '</span>' : ''}</div>
                             </div>
                         </div>
                     </td>
                     <td><span class="badge ${getSegmentBadge(c.segment)}">${escapeHtml(c.segment || 'Others')}</span></td>
                     <td style="font-size:12px;white-space:nowrap;">${c.outreach_status ? getOutreachDot(c.outreach_status) + '<span style="color:var(--text-secondary);">' + getOutreachLabel(c.outreach_status) + '</span>' : '<span style="color:var(--text-muted);">—</span>'}</td>
-                    <td style="color:var(--accent);font-weight:600;font-size:12px;white-space:nowrap;" title="${escapeHtml(c.aum_estimate || 'N/A')}">${escapeHtml(shortAum(c.aum_estimate))}</td>
+                    <td style="white-space:nowrap;" title="${escapeHtml(aumTitle || 'AUM unknown')}">${renderAumCell(c)}</td>
                     <td><span class="badge ${regBadge}">${escapeHtml(c.region)}</span></td>
                     <td style="color:var(--text-secondary);font-size:12px;">${escapeHtml(c.location)}</td>
                     <td>${email ? '<a class="email-link" href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a>' : '<span style="color:var(--text-muted)">-</span>'}</td>
@@ -1763,6 +1888,18 @@
             const fof = data.filter(c => c.segment === 'Crypto Funds of Funds').length;
             const other = data.filter(c => c.segment === 'Others').length;
             document.getElementById('statSegments').textContent = `FO: ${fo} | HNWI: ${hnwi} | FoF: ${fof} | Other: ${other}`;
+
+            // AUM coverage
+            const withRange = data.filter(c => c.aum_range && c.aum_range.toLowerCase() !== 'unknown').length;
+            const withExact = data.filter(c => c.aum_exact_usd_m && !isNaN(parseFloat(c.aum_exact_usd_m))).length;
+            const aumEl = document.getElementById('statAum');
+            if (aumEl) aumEl.textContent = `Range: ${withRange} | Exact: ${withExact}`;
+
+            // Research quality: website coverage + confidence
+            const hasWebsite = data.filter(c => c.company_website && c.company_website.startsWith('http')).length;
+            const notFound = data.filter(c => (c.website_confidence || '').toLowerCase() === 'not_found').length;
+            const researchEl = document.getElementById('statResearch');
+            if (researchEl) researchEl.textContent = `Websites: ${hasWebsite} | Not Found: ${notFound}`;
         }
 
         function sortTable(key) {
@@ -1783,10 +1920,34 @@
             return val;
         }
 
+        // Score a contact's AUM for sorting: prefer exact, then range midpoint, then legacy estimate
+        function aumSortValue(c) {
+            const ex = c.aum_exact_usd_m;
+            if (ex !== undefined && ex !== null && ex !== '' && !isNaN(parseFloat(ex))) {
+                return parseFloat(ex) * 1e6;
+            }
+            const r = (c.aum_range || '').trim();
+            if (r && r.toLowerCase() !== 'unknown') {
+                // Range like "$250M-$1B" or "$5B+" or "<$100M"
+                const nums = [...r.matchAll(/\$([\d.]+)\s*([BMK])/gi)].map(m => {
+                    const val = parseFloat(m[1]);
+                    const unit = m[2].toUpperCase();
+                    return unit === 'B' ? val * 1e9 : unit === 'M' ? val * 1e6 : val * 1e3;
+                });
+                if (nums.length === 2) return (nums[0] + nums[1]) / 2;
+                if (nums.length === 1) {
+                    if (r.includes('+')) return nums[0] * 1.5;
+                    if (r.includes('<')) return nums[0] * 0.5;
+                    return nums[0];
+                }
+            }
+            return parseAum(c.aum_estimate || '');
+        }
+
         function applySortToFiltered() {
             filteredContacts.sort((a, b) => {
-                if (sortKey === 'aum_estimate') {
-                    return (parseAum(a.aum_estimate) - parseAum(b.aum_estimate)) * sortDir;
+                if (sortKey === 'aum_estimate' || sortKey === 'aum_range') {
+                    return (aumSortValue(a) - aumSortValue(b)) * sortDir;
                 }
                 const va = (a[sortKey] || '').toLowerCase();
                 const vb = (b[sortKey] || '').toLowerCase();
@@ -1807,17 +1968,42 @@
             const avatarCls = getAvatarColor(c.name);
             const tier = getTier(c.notes);
 
+            const aumRangeDisp = displayAumRange(c);
+            const aumHasRange = aumRangeDisp && aumRangeDisp !== 'N/A' && aumRangeDisp.toLowerCase() !== 'unknown';
+            const exactRaw = c.aum_exact_usd_m;
+            const exactNum = exactRaw !== undefined && exactRaw !== null && exactRaw !== '' ? parseFloat(exactRaw) : null;
+            let exactFmt = '';
+            if (exactNum && !isNaN(exactNum)) {
+                if (exactNum >= 1000) exactFmt = '~$' + (exactNum/1000).toFixed(exactNum >= 10000 ? 0 : 1) + 'B';
+                else exactFmt = '~$' + Math.round(exactNum) + 'M';
+            }
+            const aumTypeLbl = aumTypeLabel(c.aum_type);
+            const aumTypeBadge = aumTypeLbl ? ' <span class="tag-aum-type ' + aumTypeClass(c.aum_type) + '">' + aumTypeLbl + '</span>' : '';
+
             document.getElementById('detailProfile').innerHTML = `
                 <div class="avatar ${avatarCls}" style="width:64px;height:64px;font-size:22px;margin:0 auto 14px;">${initials}</div>
                 <div class="detail-name">${escapeHtml(c.name)}${getNewBadge(c)}</div>
+                ${c.title ? '<div style="color:var(--text-secondary);font-size:12px;margin-top:2px;font-style:italic;">' + escapeHtml(c.title) + '</div>' : ''}
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 ${c.segment ? '<span class="badge ' + getSegmentBadge(c.segment) + '" style="margin-top:8px;">' + escapeHtml(c.segment) + '</span>' : ''}
-                ${c.aum_estimate && c.aum_estimate !== 'N/A' ? '<div style="margin-top:10px;"><span style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">Est. AUM</span><div style="color:var(--accent);font-size:20px;font-weight:700;margin-top:2px;">' + escapeHtml(c.aum_estimate) + '</div></div>' : ''}
+                ${aumHasRange || exactFmt ? '<div style="margin-top:12px;"><span style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">AUM ' + (c.aum_type === 'net_worth_est' ? '(Est. Net Worth)' : c.aum_type === 'firm_aum' ? '(Firm)' : '') + '</span><div style="color:var(--accent);font-size:20px;font-weight:700;margin-top:2px;">' + escapeHtml(aumHasRange ? aumRangeDisp : '') + aumTypeBadge + '</div>' + (exactFmt ? '<div style="color:var(--text-secondary);font-size:12px;margin-top:2px;">' + escapeHtml(exactFmt) + '</div>' : '') + '</div>' : ''}
             `;
 
             const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : null;
             const li = c.linkedin && c.linkedin.startsWith('http') ? c.linkedin : null;
             const phone = c.phone && !c.phone.includes('Not publicly') ? c.phone : null;
+
+            const companyWeb = c.company_website && c.company_website.startsWith('http') ? c.company_website : '';
+            const companyLi = c.linkedin_company_page && c.linkedin_company_page.startsWith('http') ? c.linkedin_company_page : '';
+            const webConfLow = (c.website_confidence || '').toLowerCase() === 'not_found';
+            const companyLinksHtml = (companyWeb || companyLi || webConfLow) ? `
+                <div class="detail-section-title" style="margin-top:14px;">Company</div>
+                <div class="company-links">
+                    ${companyWeb ? '<a class="company-link" href="' + escapeHtml(companyWeb) + '" target="_blank" rel="noreferrer noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Website</a>' : ''}
+                    ${companyLi ? '<a class="company-link" href="' + escapeHtml(companyLi) + '" target="_blank" rel="noreferrer noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn Page</a>' : ''}
+                    ${webConfLow && !companyWeb ? '<span class="tag-aum-type tag-conf-low" style="margin-left:0;">No public website found</span>' : ''}
+                </div>
+            ` : '';
 
             document.getElementById('detailContact').innerHTML = `
                 <div class="detail-section-title">Contact Information</div>
@@ -1843,7 +2029,22 @@
                         <option value="not_interested"${c.outreach_status === 'not_interested' ? ' selected' : ''}>Not Interested</option>
                     </select>
                 </div>
+                ${companyLinksHtml}
             `;
+
+            // Linkify markdown-style [text](url) and bare urls in research notes
+            const linkifyNotes = (s) => {
+                if (!s) return '';
+                let out = escapeHtml(s);
+                // markdown [label](url) — we escaped first, so look for escaped brackets
+                out = out.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer noopener">$1</a>');
+                // bare urls
+                out = out.replace(/(^|[^"'>])(https?:\/\/[^\s<)]+)/g, '$1<a href="$2" target="_blank" rel="noreferrer noopener">$2</a>');
+                return out;
+            };
+            const websiteNotes = c.website_notes ? linkifyNotes(c.website_notes) : '';
+            const aumNotes = c.aum_notes ? linkifyNotes(c.aum_notes) : '';
+            const hasResearch = websiteNotes || aumNotes;
 
             document.getElementById('detailNotes').innerHTML = `
                 <div class="detail-section-title">Notes</div>
@@ -1851,6 +2052,13 @@
                 ${c.source ? '<div class="detail-source" style="margin-top:10px;">Source: ' + escapeHtml(c.source) + '</div>' : ''}
                 ${c.contact_person && c.contact_person !== c.name ? '<div class="detail-source">Contact Person: ' + escapeHtml(c.contact_person) + '</div>' : ''}
                 ${c.linked_contacts ? '<div class="detail-source" style="margin-top:10px;"><strong style="color:var(--accent);">Key People:</strong> ' + escapeHtml(c.linked_contacts).replace(/;/g, '<br>• ').replace(/^/, '• ') + '</div>' : ''}
+                ${hasResearch ? `
+                    <button type="button" class="research-toggle" onclick="(function(btn){const b=btn.nextElementSibling;b.classList.toggle('open');btn.textContent=b.classList.contains('open')?'▾ Hide research notes':'▸ Show research notes';})(this)">▸ Show research notes</button>
+                    <div class="research-body">
+                        ${aumNotes ? '<span class="rb-label">AUM Research</span>' + aumNotes : ''}
+                        ${websiteNotes ? '<span class="rb-label">Website Research</span>' + websiteNotes : ''}
+                    </div>
+                ` : ''}
             `;
 
             // Linked Contacts — same organization/company (exact match OR shared root words)
