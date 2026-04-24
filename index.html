@@ -363,6 +363,160 @@
 
         .topbar-icon svg { width: 20px; height: 20px; }
 
+        /* Primary add-contact button */
+        .btn-add-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+            box-shadow: 0 0 0 1px rgba(245,158,11,0.2), 0 4px 14px rgba(249,115,22,0.2);
+        }
+        .btn-add-contact:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(245,158,11,0.35), 0 6px 20px rgba(249,115,22,0.35); }
+        .btn-add-contact svg { width: 16px; height: 16px; }
+
+        /* "MANUAL" / "EVENT" badges */
+        .badge-manual {
+            display: inline-flex; align-items: center; gap: 3px;
+            background: linear-gradient(135deg, rgba(245,158,11,0.25), rgba(249,115,22,0.18));
+            color: #fbbf24; border: 1px solid rgba(245,158,11,0.35);
+            font-size: 9px; font-weight: 700; padding: 1px 5px;
+            border-radius: 3px; margin-left: 6px; letter-spacing: 0.5px;
+            vertical-align: middle;
+        }
+        .badge-manual svg { width: 9px; height: 9px; }
+
+        /* Modal */
+        .modal-backdrop {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: none;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 60px 20px 20px;
+            overflow-y: auto;
+        }
+        .modal-backdrop.open { display: flex; }
+        .modal {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            width: 100%;
+            max-width: 640px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .modal-title {
+            font-size: 17px; font-weight: 700;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .modal-title svg { color: #fbbf24; }
+        .modal-close {
+            width: 32px; height: 32px;
+            display: flex; align-items: center; justify-content: center;
+            background: transparent; border: none;
+            color: var(--text-muted);
+            cursor: pointer; border-radius: 6px;
+            transition: all 0.15s;
+        }
+        .modal-close:hover { background: var(--card-hover); color: var(--text); }
+        .modal-body { padding: 20px 24px; max-height: 70vh; overflow-y: auto; }
+        .modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            display: flex; gap: 10px; justify-content: flex-end;
+            background: rgba(0,0,0,0.15);
+        }
+
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+        .form-grid .full { grid-column: 1 / -1; }
+        .form-field { display: flex; flex-direction: column; gap: 5px; }
+        .form-field label {
+            font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+            color: var(--text-muted); font-weight: 600;
+        }
+        .form-field label .req { color: #f87171; }
+        .form-field input, .form-field select, .form-field textarea {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 9px 12px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-family: inherit;
+            transition: border-color 0.15s;
+        }
+        .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0,229,160,0.1);
+        }
+        .form-field textarea { resize: vertical; min-height: 70px; }
+        .form-field .hint { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+        .form-section-divider {
+            grid-column: 1 / -1;
+            font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
+            color: var(--text-muted); font-weight: 700;
+            padding-top: 8px;
+            border-top: 1px dashed var(--border);
+            margin-top: 4px;
+        }
+
+        .btn-primary {
+            background: var(--accent); color: #000;
+            border: none; padding: 9px 18px;
+            border-radius: 7px; font-size: 13px; font-weight: 700;
+            cursor: pointer; transition: all 0.15s;
+        }
+        .btn-primary:hover { background: var(--accent-2); transform: translateY(-1px); }
+        .btn-secondary {
+            background: transparent; color: var(--text-secondary);
+            border: 1px solid var(--border); padding: 9px 18px;
+            border-radius: 7px; font-size: 13px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+        }
+        .btn-secondary:hover { background: var(--card-hover); color: var(--text); }
+        .btn-danger {
+            background: rgba(239,68,68,0.1); color: #f87171;
+            border: 1px solid rgba(239,68,68,0.25);
+            padding: 7px 14px; border-radius: 6px;
+            font-size: 12px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+        }
+        .btn-danger:hover { background: rgba(239,68,68,0.18); color: #ef4444; }
+
+        .form-error {
+            background: rgba(239,68,68,0.1);
+            border: 1px solid rgba(239,68,68,0.3);
+            color: #fca5a5;
+            padding: 8px 12px; border-radius: 6px;
+            font-size: 12px; margin-bottom: 12px;
+            display: none;
+        }
+        .form-error.show { display: block; }
+
+        /* Manual contact highlight in table */
+        tr.is-manual td:first-child { border-left: 3px solid #fbbf24; }
+
+        /* Detail pane manual actions */
+        .manual-actions {
+            display: flex; gap: 8px; margin-top: 10px;
+        }
+
         .notif-badge {
             position: absolute;
             top: 6px;
@@ -1341,6 +1495,10 @@
                 <input type="text" id="globalSearch" placeholder="Global Search..." oninput="filterTable()">
             </div>
             <div class="topbar-right">
+                <button class="btn-add-contact" onclick="openAddModal()" title="Add a contact you met in person">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add Contact
+                </button>
                 <div class="topbar-icon" id="bellBtn" onclick="toggleNotifPanel(event)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                     <span class="notif-badge"></span>
@@ -1380,6 +1538,15 @@
                         <svg class="spark"><polyline points="2,18 12,14 22,20 32,10 42,6 52,12 62,4" stroke="var(--accent)" opacity="0.5"/></svg>
                     </div>
                     <div class="stat-value" id="statResearch" style="font-size:14px;">-</div>
+                </div>
+                <div class="stat-card" style="flex:1;border:1px solid rgba(245,158,11,0.25);background:linear-gradient(135deg,rgba(245,158,11,0.04),rgba(249,115,22,0.02));">
+                    <div class="stat-label" style="display:flex;justify-content:space-between;align-items:center;">
+                        <span style="color:#fbbf24;">Manual Adds
+                            <svg style="display:inline;vertical-align:middle;margin-left:4px;" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </span>
+                        <button id="btnExportManual" onclick="exportManualContacts()" style="display:none;background:transparent;border:1px solid rgba(245,158,11,0.3);color:#fbbf24;font-size:10px;padding:2px 8px;border-radius:4px;cursor:pointer;font-weight:600;" title="Download your manually-added contacts as JSON">Export</button>
+                    </div>
+                    <div class="stat-value" id="statManual" style="color:#fbbf24;">0</div>
                 </div>
             </div>
 
@@ -1431,6 +1598,11 @@
                             <option value="">Website</option>
                             <option value="__HAS__">Has Website</option>
                             <option value="__MISSING__">Not Found</option>
+                        </select>
+                        <select class="filter-select" id="sourceFilter" onchange="filterTable()">
+                            <option value="">All Sources</option>
+                            <option value="agent">Agent Research</option>
+                            <option value="manual" style="color:#fbbf24;">Manually Added</option>
                         </select>
                         <div class="filter-search-wrap">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -1595,6 +1767,119 @@
         </aside>
     </div>
 
+    <!-- Add/Edit Manual Contact Modal -->
+    <div class="modal-backdrop" id="contactModal" onclick="if(event.target===this)closeAddModal()">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                    <span id="modalTitleText">Add Contact Manually</span>
+                </div>
+                <button class="modal-close" onclick="closeAddModal()" title="Close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-error" id="formError"></div>
+                <form id="contactForm" onsubmit="submitContact(event)">
+                    <input type="hidden" id="fld_id" value="">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label>Full Name <span class="req">*</span></label>
+                            <input type="text" id="fld_name" required autocomplete="off" placeholder="Jane Doe">
+                        </div>
+                        <div class="form-field">
+                            <label>Title / Role</label>
+                            <input type="text" id="fld_title" placeholder="Head of Alternatives">
+                        </div>
+                        <div class="form-field">
+                            <label>Organization <span class="req">*</span></label>
+                            <input type="text" id="fld_organization" required placeholder="Acme Family Office">
+                        </div>
+                        <div class="form-field">
+                            <label>Segment <span class="req">*</span></label>
+                            <select id="fld_segment" required>
+                                <option value="">Select segment...</option>
+                                <option value="Family Offices">Family Offices</option>
+                                <option value="High Net Worth Individuals">High Net Worth Individuals</option>
+                                <option value="Crypto Funds of Funds">Crypto Funds of Funds</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Location</label>
+                            <input type="text" id="fld_location" placeholder="Singapore">
+                        </div>
+                        <div class="form-field">
+                            <label>Region</label>
+                            <select id="fld_region">
+                                <option value="">Select region...</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Middle East">Middle East</option>
+                                <option value="Europe">Europe</option>
+                                <option value="Americas">Americas</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Email</label>
+                            <input type="email" id="fld_email" placeholder="jane@example.com">
+                        </div>
+                        <div class="form-field">
+                            <label>LinkedIn URL</label>
+                            <input type="url" id="fld_linkedin" placeholder="https://linkedin.com/in/...">
+                        </div>
+                        <div class="form-field">
+                            <label>AUM Range</label>
+                            <select id="fld_aum_range">
+                                <option value="">Unknown</option>
+                                <option value="<$100M">&lt;$100M</option>
+                                <option value="$100M-$250M">$100M-$250M</option>
+                                <option value="$250M-$1B">$250M-$1B</option>
+                                <option value="$1B-$5B">$1B-$5B</option>
+                                <option value="$5B+">$5B+</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>AUM Type</label>
+                            <select id="fld_aum_type">
+                                <option value="unknown">Unknown</option>
+                                <option value="firm_aum">Firm AUM</option>
+                                <option value="net_worth_est">Net Worth (Individual)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-section-divider">Event / In-Person Context</div>
+
+                        <div class="form-field">
+                            <label>Event / Where Met</label>
+                            <input type="text" id="fld_event_context" placeholder="Token2049 Singapore, Sep 2025">
+                        </div>
+                        <div class="form-field">
+                            <label>Met Date</label>
+                            <input type="date" id="fld_met_date">
+                        </div>
+
+                        <div class="form-field full">
+                            <label>Notes</label>
+                            <textarea id="fld_notes" placeholder="One sentence about this contact — interest, next step, follow-up..."></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label>Company Website</label>
+                            <input type="url" id="fld_company_website" placeholder="https://...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-danger" id="btnDeleteContact" onclick="deleteCurrentManual()" style="display:none;margin-right:auto;">Delete</button>
+                <button type="button" class="btn-secondary" onclick="closeAddModal()">Cancel</button>
+                <button type="button" class="btn-primary" onclick="submitContact(event)" id="btnSubmitContact">Save Contact</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         let contacts = [];
         let filteredContacts = [];
@@ -1694,12 +1979,15 @@
                     notes: c.notes || c.score_rationale || '',
                     region: c.region || 'Unknown',
                     category: c.category || 'Uncategorized',
-                    outreach_status: savedStatuses[c.id] || c.outreach_status || ''
+                    outreach_status: savedStatuses[c.id] || c.outreach_status || '',
+                    added_by: c.added_by || 'agent'
                 }));
                 computeLatestDate();
+                mergeManualContacts();
                 populateFilters();
                 filterTable();
                 updateStats(contacts);
+                updateManualCount();
             } catch (err) {
                 console.error('loadData error:', err);
                 document.getElementById('tableBody').innerHTML =
@@ -1738,6 +2026,8 @@
             const aumType = aumTypeEl ? aumTypeEl.value : '';
             const websiteEl = document.getElementById('websiteFilter');
             const website = websiteEl ? websiteEl.value : '';
+            const sourceEl = document.getElementById('sourceFilter');
+            const source = sourceEl ? sourceEl.value : '';
             const globalQ = document.getElementById('globalSearch').value.toLowerCase();
             const tableQ = document.getElementById('tableSearch').value.toLowerCase();
             const q = globalQ || tableQ;
@@ -1754,6 +2044,7 @@
                 if (aumType && (c.aum_type || '').toLowerCase() !== aumType) return false;
                 if (website === '__HAS__' && !(c.company_website && c.company_website.startsWith('http'))) return false;
                 if (website === '__MISSING__' && (c.website_confidence || '').toLowerCase() !== 'not_found') return false;
+                if (source && (c.added_by || 'agent') !== source) return false;
                 if (q) {
                     const hay = [c.name, c.title || '', c.organization, c.location, c.notes, c.email || ''].join(' ').toLowerCase();
                     if (!hay.includes(q)) return false;
@@ -1856,14 +2147,17 @@
 
                 const titleLine = c.title ? `<div class="title-line">${escapeHtml(c.title)}</div>` : '';
                 const aumTitle = [c.aum_range, c.aum_exact_usd_m ? '~$' + c.aum_exact_usd_m + 'M' : '', c.aum_type].filter(Boolean).join(' · ');
+                const isManual = c.added_by === 'manual';
+                const manualBadge = isManual ? '<span class="badge-manual" title="Manually added contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>MANUAL</span>' : '';
+                const rowCls = (isManual ? 'is-manual ' : '') + sel;
 
-                return `<tr class="${sel}" onclick="selectContact(${i})">
+                return `<tr class="${rowCls}" onclick="selectContact(${i})">
                     <td style="color:var(--text-secondary);font-size:12px;white-space:nowrap;">${escapeHtml(dateAdded)}</td>
                     <td>
                         <div class="name-cell">
                             <div class="avatar ${avatarCls}">${initials}</div>
                             <div>
-                                <div class="name-text">${escapeHtml(c.name)}${getNewBadge(c)}${c.outreach_status ? ' ' + getOutreachDot(c.outreach_status) : ''}</div>
+                                <div class="name-text">${escapeHtml(c.name)}${manualBadge}${getNewBadge(c)}${c.outreach_status ? ' ' + getOutreachDot(c.outreach_status) : ''}</div>
                                 ${titleLine}
                                 <div class="org-text">${escapeHtml(c.organization)}${c.outreach_status ? ' <span style="font-size:10px;color:var(--text-muted);">' + getOutreachLabel(c.outreach_status) + '</span>' : ''}</div>
                             </div>
@@ -1980,13 +2274,23 @@
             const aumTypeLbl = aumTypeLabel(c.aum_type);
             const aumTypeBadge = aumTypeLbl ? ' <span class="tag-aum-type ' + aumTypeClass(c.aum_type) + '">' + aumTypeLbl + '</span>' : '';
 
+            const isManualDetail = c.added_by === 'manual';
+            const manualBadgeDetail = isManualDetail ? '<span class="badge-manual" title="Manually added"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>MANUAL</span>' : '';
+            const manualActionsHtml = isManualDetail ? `
+                <div class="manual-actions">
+                    <button class="btn-secondary" style="padding:6px 12px;font-size:12px;" onclick="openAddModal(${c.id})">Edit</button>
+                    <button class="btn-danger" onclick="deleteManualById(${c.id})">Delete</button>
+                </div>
+            ` : '';
+
             document.getElementById('detailProfile').innerHTML = `
                 <div class="avatar ${avatarCls}" style="width:64px;height:64px;font-size:22px;margin:0 auto 14px;">${initials}</div>
-                <div class="detail-name">${escapeHtml(c.name)}${getNewBadge(c)}</div>
+                <div class="detail-name">${escapeHtml(c.name)}${manualBadgeDetail}${getNewBadge(c)}</div>
                 ${c.title ? '<div style="color:var(--text-secondary);font-size:12px;margin-top:2px;font-style:italic;">' + escapeHtml(c.title) + '</div>' : ''}
                 <div class="detail-org">${escapeHtml(c.organization)}</div>
                 ${c.segment ? '<span class="badge ' + getSegmentBadge(c.segment) + '" style="margin-top:8px;">' + escapeHtml(c.segment) + '</span>' : ''}
                 ${aumHasRange || exactFmt ? '<div style="margin-top:12px;"><span style="font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;">AUM ' + (c.aum_type === 'net_worth_est' ? '(Est. Net Worth)' : c.aum_type === 'firm_aum' ? '(Firm)' : '') + '</span><div style="color:var(--accent);font-size:20px;font-weight:700;margin-top:2px;">' + escapeHtml(aumHasRange ? aumRangeDisp : '') + aumTypeBadge + '</div>' + (exactFmt ? '<div style="color:var(--text-secondary);font-size:12px;margin-top:2px;">' + escapeHtml(exactFmt) + '</div>' : '') + '</div>' : ''}
+                ${manualActionsHtml}
             `;
 
             const email = c.email && !c.email.includes('TBD') && !c.email.includes('Not publicly') ? c.email : null;
@@ -2046,9 +2350,21 @@
             const aumNotes = c.aum_notes ? linkifyNotes(c.aum_notes) : '';
             const hasResearch = websiteNotes || aumNotes;
 
+            const eventCtxHtml = (c.event_context || c.met_date) ? `
+                <div style="margin-top:12px;padding:10px 12px;border-radius:8px;background:rgba(245,158,11,0.06);border-left:3px solid #fbbf24;">
+                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:#fbbf24;font-weight:700;margin-bottom:4px;">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;margin-right:3px;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        In-Person Meeting
+                    </div>
+                    ${c.event_context ? '<div style="font-size:13px;color:var(--text);margin-bottom:3px;">' + escapeHtml(c.event_context) + '</div>' : ''}
+                    ${c.met_date ? '<div style="font-size:11px;color:var(--text-secondary);">Met: ' + escapeHtml(c.met_date) + '</div>' : ''}
+                </div>
+            ` : '';
+
             document.getElementById('detailNotes').innerHTML = `
                 <div class="detail-section-title">Notes</div>
                 <div class="detail-notes">${escapeHtml(c.notes)}</div>
+                ${eventCtxHtml}
                 ${c.source ? '<div class="detail-source" style="margin-top:10px;">Source: ' + escapeHtml(c.source) + '</div>' : ''}
                 ${c.contact_person && c.contact_person !== c.name ? '<div class="detail-source">Contact Person: ' + escapeHtml(c.contact_person) + '</div>' : ''}
                 ${c.linked_contacts ? '<div class="detail-source" style="margin-top:10px;"><strong style="color:var(--accent);">Key People:</strong> ' + escapeHtml(c.linked_contacts).replace(/;/g, '<br>• ').replace(/^/, '• ') + '</div>' : ''}
@@ -2553,6 +2869,210 @@
         if (localStorage.getItem('mvicrm_sidebar') === 'collapsed') {
             document.getElementById('app').classList.add('sidebar-collapsed');
         }
+
+        // ============================================================
+        // Manual Contact Management (localStorage-backed)
+        // ============================================================
+        const MANUAL_STORAGE_KEY = 'mvicrm_manual_contacts_v1';
+
+        function loadManualContacts() {
+            try {
+                const raw = localStorage.getItem(MANUAL_STORAGE_KEY);
+                return raw ? JSON.parse(raw) : [];
+            } catch (e) {
+                console.error('Failed to load manual contacts:', e);
+                return [];
+            }
+        }
+
+        function saveManualContacts(list) {
+            localStorage.setItem(MANUAL_STORAGE_KEY, JSON.stringify(list));
+        }
+
+        function nextManualId() {
+            // Use 100000+ to avoid collision with agent-added IDs (which are <10000)
+            const list = loadManualContacts();
+            const maxId = list.reduce((m, c) => Math.max(m, c.id || 100000), 100000);
+            return maxId + 1;
+        }
+
+        // Merge manual contacts into the main contacts array
+        function mergeManualContacts() {
+            const manual = loadManualContacts();
+            // Remove any existing manual entries (they're always re-loaded from localStorage)
+            contacts = contacts.filter(c => c.added_by !== 'manual');
+            manual.forEach(m => {
+                m.added_by = 'manual';
+                m.category = m.segment;
+                contacts.push(m);
+            });
+        }
+
+        function openAddModal(editId) {
+            const modal = document.getElementById('contactModal');
+            const form = document.getElementById('contactForm');
+            form.reset();
+            document.getElementById('formError').classList.remove('show');
+            document.getElementById('fld_id').value = '';
+            document.getElementById('btnDeleteContact').style.display = 'none';
+
+            if (editId !== undefined) {
+                const manual = loadManualContacts().find(c => c.id === editId);
+                if (manual) {
+                    document.getElementById('modalTitleText').textContent = 'Edit Manual Contact';
+                    document.getElementById('btnDeleteContact').style.display = 'inline-block';
+                    document.getElementById('fld_id').value = manual.id;
+                    document.getElementById('fld_name').value = manual.name || '';
+                    document.getElementById('fld_title').value = manual.title || '';
+                    document.getElementById('fld_organization').value = manual.organization || '';
+                    document.getElementById('fld_segment').value = manual.segment || '';
+                    document.getElementById('fld_location').value = manual.location || '';
+                    document.getElementById('fld_region').value = manual.region || '';
+                    document.getElementById('fld_email').value = manual.email || '';
+                    document.getElementById('fld_linkedin').value = manual.linkedin || '';
+                    document.getElementById('fld_aum_range').value = manual.aum_range || '';
+                    document.getElementById('fld_aum_type').value = manual.aum_type || 'unknown';
+                    document.getElementById('fld_event_context').value = manual.event_context || '';
+                    document.getElementById('fld_met_date').value = manual.met_date || '';
+                    document.getElementById('fld_notes').value = manual.notes || '';
+                    document.getElementById('fld_company_website').value = manual.company_website || '';
+                }
+            } else {
+                document.getElementById('modalTitleText').textContent = 'Add Contact Manually';
+                // Default met_date to today
+                document.getElementById('fld_met_date').value = new Date().toISOString().slice(0,10);
+            }
+
+            modal.classList.add('open');
+            setTimeout(() => document.getElementById('fld_name').focus(), 50);
+        }
+
+        function closeAddModal() {
+            document.getElementById('contactModal').classList.remove('open');
+        }
+
+        function showFormError(msg) {
+            const el = document.getElementById('formError');
+            el.textContent = msg;
+            el.classList.add('show');
+        }
+
+        function submitContact(event) {
+            if (event) event.preventDefault();
+            const name = document.getElementById('fld_name').value.trim();
+            const organization = document.getElementById('fld_organization').value.trim();
+            const segment = document.getElementById('fld_segment').value;
+
+            if (!name) { showFormError('Name is required'); return; }
+            if (!organization) { showFormError('Organization is required'); return; }
+            if (!segment) { showFormError('Segment is required'); return; }
+
+            const editId = document.getElementById('fld_id').value;
+            const now = new Date().toISOString().slice(0,10);
+
+            const contact = {
+                id: editId ? parseInt(editId) : nextManualId(),
+                name,
+                title: document.getElementById('fld_title').value.trim(),
+                organization,
+                segment,
+                category: segment,
+                location: document.getElementById('fld_location').value.trim(),
+                region: document.getElementById('fld_region').value,
+                email: document.getElementById('fld_email').value.trim(),
+                linkedin: document.getElementById('fld_linkedin').value.trim(),
+                aum_range: document.getElementById('fld_aum_range').value || 'Unknown',
+                aum_type: document.getElementById('fld_aum_type').value || 'unknown',
+                aum_exact_usd_m: '',
+                event_context: document.getElementById('fld_event_context').value.trim(),
+                met_date: document.getElementById('fld_met_date').value,
+                notes: document.getElementById('fld_notes').value.trim(),
+                company_website: document.getElementById('fld_company_website').value.trim(),
+                source: 'Manual Entry',
+                date_added: now,
+                added_by: 'manual',
+                website_confidence: '',
+                linkedin_company_page: '',
+                website_notes: '',
+                aum_notes: ''
+            };
+
+            let list = loadManualContacts();
+            if (editId) {
+                list = list.map(c => c.id === contact.id ? contact : c);
+            } else {
+                list.push(contact);
+            }
+            saveManualContacts(list);
+
+            closeAddModal();
+            mergeManualContacts();
+            populateFilters();
+            filterTable();
+            updateStats(contacts);
+            updateManualCount();
+        }
+
+        function deleteCurrentManual() {
+            const id = parseInt(document.getElementById('fld_id').value);
+            if (!id) return;
+            if (!confirm('Delete this manual contact? This cannot be undone.')) return;
+            const list = loadManualContacts().filter(c => c.id !== id);
+            saveManualContacts(list);
+            closeAddModal();
+            mergeManualContacts();
+            populateFilters();
+            filterTable();
+            updateStats(contacts);
+            updateManualCount();
+            closeDetail();
+        }
+
+        function deleteManualById(id) {
+            if (!confirm('Delete this manual contact? This cannot be undone.')) return;
+            const list = loadManualContacts().filter(c => c.id !== id);
+            saveManualContacts(list);
+            mergeManualContacts();
+            populateFilters();
+            filterTable();
+            updateStats(contacts);
+            updateManualCount();
+            closeDetail();
+        }
+
+        function exportManualContacts() {
+            const list = loadManualContacts();
+            if (list.length === 0) {
+                alert('No manual contacts to export.');
+                return;
+            }
+            const json = JSON.stringify(list, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'mvicrm-manual-contacts-' + new Date().toISOString().slice(0,10) + '.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function updateManualCount() {
+            const el = document.getElementById('statManual');
+            if (!el) return;
+            const n = loadManualContacts().length;
+            el.textContent = n;
+            // Toggle export button visibility
+            const exp = document.getElementById('btnExportManual');
+            if (exp) exp.style.display = n > 0 ? 'inline-flex' : 'none';
+        }
+
+        // ESC to close modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const m = document.getElementById('contactModal');
+                if (m && m.classList.contains('open')) closeAddModal();
+            }
+        });
 
         loadData();
     </script>
