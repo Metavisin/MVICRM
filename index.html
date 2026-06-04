@@ -2718,28 +2718,56 @@
               tags: ["fof", "crypto"], segments: "Crypto FoFs" }
         ];
 
-        let eventsFilter = 'all';
+        // Multi-select: a set of active filters. Empty set = show all.
+        let eventsFilters = new Set();
 
         function filterEvents(filter, btn) {
-            eventsFilter = filter;
-            document.querySelectorAll('.events-filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            const allBtn = document.querySelector('.events-filter-btn'); // first btn is "All Events"
+
+            if (filter === 'all') {
+                // Reset: clear every filter and highlight only "All Events"
+                eventsFilters.clear();
+                document.querySelectorAll('.events-filter-btn').forEach(b => b.classList.remove('active'));
+                if (allBtn) allBtn.classList.add('active');
+                renderEvents();
+                return;
+            }
+
+            // Toggle this filter on/off
+            if (eventsFilters.has(filter)) {
+                eventsFilters.delete(filter);
+                btn.classList.remove('active');
+            } else {
+                eventsFilters.add(filter);
+                btn.classList.add('active');
+            }
+
+            // Keep "All Events" highlighted only when nothing else is selected
+            if (allBtn) allBtn.classList.toggle('active', eventsFilters.size === 0);
+
             renderEvents();
         }
 
         function getFilteredEvents() {
-            if (eventsFilter === 'all') return eventsData;
-            if (eventsFilter === 'Must-Attend' || eventsFilter === 'High Value' || eventsFilter === 'Strategic') {
-                return eventsData.filter(e => e.priority === eventsFilter);
-            }
-            if (eventsFilter.startsWith('geo-')) {
-                const geo = eventsFilter.replace('geo-', '');
-                return eventsData.filter(e => e.geo === geo);
-            }
-            if (eventsFilter === 'type-side') return eventsData.filter(e => e.type === 'side');
-            if (eventsFilter === 'type-main') return eventsData.filter(e => e.type === 'main');
-            if (eventsFilter === 'tag-free') return eventsData.filter(e => e.costNum === 0 || e.costNum <= 500);
-            return eventsData;
+            if (eventsFilters.size === 0) return eventsData;
+
+            // Group selected filters by category. OR within a category, AND across categories.
+            const priorities = [], geos = [], types = [];
+            let freeOnly = false;
+            eventsFilters.forEach(f => {
+                if (f.startsWith('geo-')) geos.push(f.replace('geo-', ''));
+                else if (f.startsWith('type-')) types.push(f.replace('type-', ''));
+                else if (f === 'tag-free') freeOnly = true;
+                else priorities.push(f); // Must-Attend, High Value, Strategic
+            });
+
+            return eventsData.filter(e => {
+                if (priorities.length && !priorities.includes(e.priority)) return false;
+                if (geos.length && !geos.includes(e.geo)) return false;
+                if (types.length && !types.includes(e.type)) return false;
+                if (freeOnly && !(e.costNum === 0 || e.costNum <= 500)) return false;
+                return true;
+            });
         }
 
         function renderEvents() {
