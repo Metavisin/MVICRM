@@ -1394,6 +1394,8 @@
         .event-geo-riyadh { background: rgba(16,185,129,0.12); color: #34d399; }
         .event-geo-abudhabi { background: rgba(59,130,246,0.12); color: #60a5fa; }
         .event-geo-china { background: rgba(124,58,237,0.12); color: #a78bfa; }
+        .event-geo-benelux { background: rgba(20,184,166,0.12); color: #2dd4bf; }
+        .event-geo-israel { background: rgba(99,102,241,0.14); color: #818cf8; }
 
         .events-filter-bar {
             display: flex;
@@ -1736,6 +1738,8 @@
                 <button class="events-filter-btn" onclick="filterEvents('geo-riyadh', this)">Riyadh</button>
                 <button class="events-filter-btn" onclick="filterEvents('geo-abudhabi', this)">Abu Dhabi</button>
                 <button class="events-filter-btn" onclick="filterEvents('geo-hongkong', this)">Hong Kong</button>
+                <button class="events-filter-btn" onclick="filterEvents('geo-benelux', this)">Benelux</button>
+                <button class="events-filter-btn" onclick="filterEvents('geo-israel', this)">Israel</button>
                 <div class="nav-divider" style="height:20px;width:1px;background:var(--border);margin:0 4px;"></div>
                 <button class="events-filter-btn" onclick="filterEvents('type-side', this)">Side Events</button>
                 <button class="events-filter-btn" onclick="filterEvents('type-main', this)">Main Events</button>
@@ -2646,7 +2650,45 @@
 
             { name: "Blockchain Abu Dhabi + Web3 Roundtable (ADFW)", date: "Dec 9, 2026", dateSort: "2026-12-09", venue: "Abu Dhabi", city: "Abu Dhabi", geo: "abudhabi", cost: "Included with ADFW", costNum: 0, priority: "Strategic", type: "side", month: "December 2026",
               why: "Blockchain-specific sub-event within ADFW. Attracts crypto-native allocators and FoF managers exploring Abu Dhabi. Free with ADFW registration.",
-              tags: ["fof", "crypto", "free"], segments: "Crypto FoFs" }
+              tags: ["fof", "crypto", "free"], segments: "Crypto FoFs" },
+
+            // ── Benelux 2026 ──
+            { name: "Impact Summit Europe", date: "Apr 14-15, 2026", dateSort: "2026-04-14", venue: "Amsterdam, Netherlands", city: "Amsterdam", geo: "benelux", cost: "~$1,500", costNum: 1500, priority: "Strategic", type: "main", month: "April 2026",
+              why: "Institutional asset owners — including family offices, wealth managers and private banks — gather in Amsterdam. Good entry point for ESG-minded Benelux FO and allocator connections.",
+              tags: ["fo", "fof"], segments: "Family Offices, Crypto FoFs" },
+
+            { name: "0100 Europe 2026", date: "Apr 21-23, 2026", dateSort: "2026-04-21", venue: "Amsterdam, Netherlands", city: "Amsterdam", geo: "benelux", cost: "Free FO pass / ~$1,500", costNum: 0, priority: "High Value", type: "main", month: "April 2026",
+              why: "650+ LPs, GPs and family offices across European private markets, with a complimentary Family Office Pass. Strong venue to meet Benelux and EU family-capital allocators face to face.",
+              tags: ["fo", "fof", "free"], segments: "Family Offices, Crypto FoFs" },
+
+            { name: "Dutch Blockchain Week — Summit", date: "Jun 24-25, 2026", dateSort: "2026-06-24", venue: "Johan Cruijff ArenA, Amsterdam", city: "Amsterdam", geo: "benelux", cost: "~$600", costNum: 600, priority: "High Value", type: "main", month: "June 2026",
+              why: "One of Europe's largest digital-asset gatherings. The institutional-adoption, tokenization and custody tracks draw banks, allocators and crypto FoFs — a direct fit for MetaVision's systematic crypto strategy.",
+              tags: ["crypto", "fof"], segments: "Crypto FoFs, HNWIs" },
+
+            { name: "Private Wealth Benelux Forum (8th Annual)", date: "Sep 17, 2026", dateSort: "2026-09-17", venue: "Amsterdam, Netherlands", city: "Amsterdam", geo: "benelux", cost: "~$2,000 (free for qualified investors)", costNum: 2000, priority: "Must-Attend", type: "main", month: "September 2026",
+              why: "The Benelux region's leading gathering of family offices, HNW wealth managers and private banks. Markets Group events are tightly curated — prime LP prospecting for the FO and HNWI segments.",
+              tags: ["fo", "hnwi"], segments: "Family Offices, HNWIs" },
+
+            { name: "Private Equity Insights BeNeLux", date: "Sep 18, 2026", dateSort: "2026-09-18", venue: "Amsterdam, Netherlands", city: "Amsterdam", geo: "benelux", cost: "~$430 (EUR 399)", costNum: 430, priority: "High Value", type: "main", month: "September 2026",
+              why: "500+ attendees including 150+ LPs at a low EUR 399 ticket. An efficient, affordable touchpoint for Benelux institutional investors and family offices diversifying into alternatives.",
+              tags: ["fof", "fo"], segments: "Crypto FoFs, Family Offices" },
+
+            { name: "Legends4Legends (10th Ed.)", date: "Oct 1, 2026", dateSort: "2026-10-01", venue: "Amsterdam, Netherlands", city: "Amsterdam", geo: "benelux", cost: "By invitation", costNum: 1500, priority: "Must-Attend", type: "main", month: "October 2026",
+              why: "Invitation-only gathering capped at 350 UHNWIs, family offices and institutional allocators in blockchain — exactly MetaVision's target audience in an intimate, high-trust setting.",
+              tags: ["hnwi", "fo", "crypto"], segments: "HNWIs, Family Offices, Crypto FoFs" },
+
+            // ── Israel 2026 ──
+            { name: "OurCrowd Global Investor Summit", date: "Feb 2026 (TBC)", dateSort: "2026-02-18", venue: "Binyanei Hauma, Jerusalem", city: "Jerusalem", geo: "israel", cost: "~$500", costNum: 500, priority: "High Value", type: "main", month: "February 2026",
+              why: "One of the world's largest investor gatherings (6,000+ attendees from 70 countries), hosted in Israel. Heavy presence of family offices, VCs and HNWIs for broad LP networking. Exact 2026 date to be confirmed.",
+              tags: ["fo", "fof", "hnwi"], segments: "Family Offices, HNWIs, Crypto FoFs" },
+
+            { name: "FinTech Junction 2026", date: "Jul 8, 2026", dateSort: "2026-07-08", venue: "Hilton Tel Aviv", city: "Tel Aviv", geo: "israel", cost: "~$500", costNum: 500, priority: "Strategic", type: "main", month: "July 2026",
+              why: "Israel's leading fintech conference, with a dedicated web3 / digital-assets track. Good for meeting tech-forward allocators and fintech operators who invest in crypto strategies.",
+              tags: ["fof", "crypto"], segments: "Crypto FoFs" },
+
+            { name: "Tel Aviv Family Office Conference (DC Finance)", date: "Oct 21, 2026", dateSort: "2026-10-21", venue: "Kempinski Hotel, Tel Aviv", city: "Tel Aviv", geo: "israel", cost: "By application", costNum: 1500, priority: "Must-Attend", type: "main", month: "October 2026",
+              why: "Israel's flagship family office gathering — hundreds of the country's top UHNWIs and FO executives. DC Finance is the region's most tech-oriented FO group, with real appetite for crypto and alternatives.",
+              tags: ["fo", "hnwi"], segments: "Family Offices, HNWIs" }
         ];
 
         let eventsFilter = 'all';
@@ -2674,7 +2716,8 @@
         }
 
         function renderEvents() {
-            const filtered = getFilteredEvents();
+            const filtered = getFilteredEvents().slice().sort((a, b) =>
+                a.dateSort < b.dateSort ? -1 : a.dateSort > b.dateSort ? 1 : 0);
             const timeline = document.getElementById('eventsTimeline');
 
             // Update stats
@@ -2779,7 +2822,7 @@
             }).filter(Boolean).join(' ');
 
             // Find CRM contacts in same geo
-            const geoMap = { singapore: 'Singapore', hongkong: 'Hong Kong', dubai: 'Dubai', riyadh: 'Riyadh', abudhabi: 'Abu Dhabi', china: 'Shanghai' };
+            const geoMap = { singapore: 'Singapore', hongkong: 'Hong Kong', dubai: 'Dubai', riyadh: 'Riyadh', abudhabi: 'Abu Dhabi', china: 'Shanghai', benelux: 'Amsterdam', israel: 'Tel Aviv' };
             const geoCity = geoMap[e.geo] || '';
             const nearbyContacts = contacts.filter(c => c.location && c.location.toLowerCase().includes(geoCity.toLowerCase()));
             const nearbyPreview = nearbyContacts.slice(0, 5);
